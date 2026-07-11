@@ -1,0 +1,126 @@
+{
+  "changes": [],
+  "corridors": [
+    [
+      "HKD",
+      "IDR"
+    ],
+    [
+      "HKD",
+      "PHP"
+    ]
+  ],
+  "generated_at": "2026-07-11T10:25:46+00:00",
+  "history": {
+    "chandra|HKD|IDR": [
+      {
+        "rate": 2295.0,
+        "t": "2026-07-11T10:25:46+00:00"
+      }
+    ],
+    "pandaremit|HKD|IDR": [
+      {
+        "rate": 2292.2651,
+        "t": "2026-07-11T10:25:46+00:00"
+      }
+    ],
+    "pandaremit|HKD|PHP": [
+      {
+        "rate": 7.8128,
+        "t": "2026-07-11T10:25:46+00:00"
+      }
+    ]
+  },
+  "latest": {
+    "chandra|HKD|IDR": {
+      "captured_at": "2026-07-11T10:25:46+00:00",
+      "confidence": 1.0,
+      "method": "fb_ocr",
+      "note": "vision OCR; 11/07/2026; Kurs Kirim (remittance send rate) is 2295. Kurs Tukar (cash exchange rate) is 2220.",
+      "rate": 2295.0
+    },
+    "pandaremit|HKD|IDR": {
+      "captured_at": "2026-07-11T10:25:46+00:00",
+      "confidence": 0.95,
+      "method": "web",
+      "note": "website unit rate",
+      "rate": 2292.2651
+    },
+    "pandaremit|HKD|PHP": {
+      "captured_at": "2026-07-11T10:25:46+00:00",
+      "confidence": 0.95,
+      "method": "web",
+      "note": "website unit rate",
+      "rate": 7.8128
+    }
+  },
+  "providers": [
+    {
+      "auto": true,
+      "corridors": [
+        [
+          "HKD",
+          "IDR"
+        ],
+        [
+          "HKD",
+          "PHP"
+        ]
+      ],
+      "key": "pandaremit",
+      "name": "Panda Remit"
+    },
+    {
+      "auto": false,
+      "corridors": [
+        [
+          "HKD",
+          "PHP"
+        ],
+        [
+          "HKD",
+          "IDR"
+        ]
+      ],
+      "key": "weremit",
+      "name": "We Remit"
+    },
+    {
+      "auto": true,
+      "corridors": [
+        [
+          "HKD",
+          "IDR"
+        ]
+      ],
+      "key": "chandra",
+      "name": "Chandra Remittance"
+    },
+    {
+      "auto": false,
+      "corridors": [
+        [
+          "HKD",
+          "IDR"
+        ]
+      ],
+      "key": "bri",
+      "name": "BRI Remittance"
+    },
+    {
+      "auto": false,
+      "corridors": [
+        [
+          "HKD",
+          "IDR"
+        ],
+        [
+          "HKD",
+          "PHP"
+        ]
+      ],
+      "key": "alipayhk",
+      "name": "AlipayHK"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>香港同業匯率監控</title>
+<style>
+  :root{
+    --bg:#F4F7F6; --card:rgba(255,255,255,0.75); --card-solid:rgba(255,255,255,0.55);
+    --primary:#88D8C0; --primary-deep:#4FC0A4; --secondary:#7A8AF1;
+    --ink:#1E293B; --body:#475569; --muted:#94A3B8;
+    --up:#3FB99A; --down:#E8837A; --amber:#E9A85C;
+    --radius-lg:20px; --radius-sm:12px;
+    --shadow-out:6px 6px 16px rgba(163,177,198,0.35), -6px -6px 16px rgba(255,255,255,0.8);
+    --shadow-in:inset 2px 2px 5px rgba(163,177,198,0.25), inset -2px -2px 5px rgba(255,255,255,0.75);
+    --ease:cubic-bezier(0.4,0,0.2,1);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;padding:0 0 40px;font:15px/1.55 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans TC",sans-serif;
+    background:var(--bg);color:var(--body);-webkit-font-smoothing:antialiased;}
+  a{color:var(--secondary);}
+  header{margin:22px auto 6px;max-width:1120px;padding:20px 26px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+    background:var(--card);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.6);border-radius:var(--radius-lg);box-shadow:var(--shadow-out);}
+  header .brand{display:flex;flex-direction:column;gap:2px;margin-right:auto;}
+  header h1{font-size:19px;margin:0;color:var(--ink);font-weight:700;}
+  header .sub{font-size:12.5px;color:var(--muted);}
+  main{padding:18px 24px 0;max-width:1120px;margin:0 auto;}
+  .grid{display:grid;gap:20px;}
+  .card{background:var(--card);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.6);border-radius:var(--radius-lg);box-shadow:var(--shadow-out);padding:22px 24px;}
+  h2{font-size:15.5px;margin:0 0 16px;color:var(--ink);font-weight:700;display:flex;align-items:center;gap:10px;}
+  h2 .tag{font-size:12px;font-weight:600;color:var(--primary-deep);background:rgba(136,216,192,0.18);padding:3px 10px;border-radius:20px;}
+  .overflow{overflow-x:auto;}
+  table{width:100%;border-collapse:separate;border-spacing:0 8px;}
+  th{text-align:left;padding:4px 14px;color:var(--muted);font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.03em;}
+  td{padding:13px 14px;background:var(--card-solid);vertical-align:middle;
+    border-top:1px solid rgba(255,255,255,0.5);border-bottom:1px solid rgba(163,177,198,0.10);}
+  tr td:first-child{border-radius:var(--radius-sm) 0 0 var(--radius-sm);border-left:1px solid rgba(255,255,255,0.5);}
+  tr td:last-child{border-radius:0 var(--radius-sm) var(--radius-sm) 0;border-right:1px solid rgba(163,177,198,0.10);}
+  tbody tr{transition:all .25s var(--ease);}
+  tbody tr:hover td{background:rgba(255,255,255,0.9);}
+  td.name{color:var(--ink);font-weight:600;}
+  td.rate{font-variant-numeric:tabular-nums;font-weight:700;color:var(--ink);font-size:15.5px;}
+  tr.best td{background:rgba(136,216,192,0.20);}
+  tr.best td:first-child{box-shadow:inset 4px 0 0 var(--primary-deep);}
+  tr.best td.rate{color:var(--primary-deep);}
+  tr.best td.name .star{color:var(--primary-deep);margin-left:6px;font-size:12px;}
+  .pill{font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;background:rgba(148,163,184,0.15);color:var(--muted);white-space:nowrap;}
+  .pill.web{color:var(--primary-deep);background:rgba(136,216,192,0.20);}
+  .pill.fb_ocr{color:var(--secondary);background:rgba(122,138,241,0.15);}
+  .pill.manual{color:#8a7fd6;background:rgba(122,138,241,0.12);}
+  .lowconf{color:var(--down);font-size:12px;font-weight:600;background:rgba(232,131,122,0.14);padding:2px 8px;border-radius:12px;}
+  .muted{color:var(--muted);font-size:13px;}
+  .chart-tabs{display:flex;gap:10px;margin-bottom:14px;}
+  .chart-tabs button{background:var(--card-solid);border:1px solid rgba(255,255,255,0.6);color:var(--body);
+    border-radius:var(--radius-sm);padding:7px 16px;cursor:pointer;font-size:13px;font-weight:600;
+    box-shadow:3px 3px 8px rgba(163,177,198,0.20), -3px -3px 8px rgba(255,255,255,0.7);transition:all .25s var(--ease);}
+  .chart-tabs button.active{color:#fff;background:linear-gradient(135deg,#8FDCC6,var(--primary-deep));box-shadow:inset 1px 1px 3px rgba(79,192,164,0.3);}
+  svg#chart{width:100%;height:270px;display:block;}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;font-size:12.5px;color:var(--body);}
+  .legend span{display:inline-flex;align-items:center;gap:6px;}
+  .dot{width:10px;height:10px;border-radius:50%;display:inline-block;}
+  h3.group-head{font-size:14px;margin:18px 0 8px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:8px;}
+  h3.group-head:first-of-type{margin-top:4px;}
+  h3.group-head .cnt{font-size:12px;font-weight:600;color:var(--muted);background:rgba(148,163,184,0.14);padding:2px 9px;border-radius:20px;}
+  .up{color:var(--up);font-weight:700;}
+  .down{color:var(--down);font-weight:700;}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>香港同業匯率監控</h1>
+    <span class="sub">HK Competitor FX Monitor · HKD → IDR / PHP</span>
+  </div>
+  <span id="updated" class="muted"></span>
+</header>
+
+<main class="grid" id="app">
+  <section class="card"><p class="muted">載入中…</p></section>
+</main>
+
+<script>
+const COLORS=["#7A8AF1","#4FC0A4","#E9A85C","#E8837A","#9AA5B1"];
+const METHOD_LABEL={web:"web",fb_ocr:"fb_ocr",manual:"manual",proxy:"proxy"};
+const CCY_FLAG={IDR:"🇮🇩",PHP:"🇵🇭"};
+const K=(pk,f,t)=>`${pk}|${f}|${t}`;
+const esc=s=>(s==null?"":String(s)).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const fmt=(v,d=4)=>v==null?"—":Number(v).toFixed(d);
+
+let DATA=null;
+
+fetch("./data.json?_="+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();})
+ .catch(e=>{document.getElementById("app").innerHTML=
+   '<section class="card"><p class="muted">尚無資料（data.json 還沒產生，等第一次排程跑完就會出現）。</p></section>';});
+
+function render(){
+  const app=document.getElementById("app");
+  const upd=DATA.generated_at?new Date(DATA.generated_at).toLocaleString("zh-HK"):"—";
+  document.getElementById("updated").textContent="最後變動："+upd;
+  let html="";
+
+  for(const [f,t] of DATA.corridors){
+    const rows=DATA.providers.filter(p=>p.corridors.some(c=>c[0]===f&&c[1]===t));
+    const cells=rows.map(p=>({p,cell:DATA.latest[K(p.key,f,t)]}));
+    const rates=cells.filter(x=>x.cell&&x.cell.rate!=null).map(x=>x.cell.rate);
+    const best=rates.length?Math.max(...rates):null;
+    html+=`<section class="card"><h2>${f} → ${t} <span class="tag">最新匯率比較</span></h2><div class="overflow"><table>`
+      +`<thead><tr><th>業者</th><th>1 ${f} =</th><th>來源</th><th>信心</th><th>更新時間</th><th>備註</th></tr></thead><tbody>`;
+    for(const {p,cell} of cells){
+      const isBest=cell&&best!=null&&cell.rate===best;
+      const badge=p.auto?"":' <span class="pill manual">手動</span>';
+      const star=isBest?'<span class="star">★</span>':"";
+      const rate=cell&&cell.rate!=null?fmt(cell.rate):'<span class="muted">—</span>';
+      const method=cell&&cell.method?`<span class="pill ${cell.method}">${esc(METHOD_LABEL[cell.method]||cell.method)}</span>`:'<span class="muted">—</span>';
+      let conf='<span class="muted">—</span>';
+      if(cell&&cell.confidence!=null){const pc=Math.round(cell.confidence*100);
+        conf=cell.confidence<0.6?`<span class="lowconf">低 ${pc}%⚠</span>`:`${pc}%`;}
+      const ts=cell&&cell.captured_at?new Date(cell.captured_at).toLocaleString("zh-HK",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}):"—";
+      const note=cell&&cell.note?esc(cell.note):"";
+      html+=`<tr class="${isBest?'best':''}"><td class="name">${esc(p.name)}${badge}${star}</td>`
+        +`<td class="rate">${rate}</td><td>${method}</td><td>${conf}</td>`
+        +`<td class="muted">${ts}</td><td class="muted">${note}</td></tr>`;
+    }
+    html+="</tbody></table></div></section>";
+  }
+
+  // history chart
+  html+=`<section class="card"><h2>歷史走勢</h2><div class="chart-tabs" id="chartTabs">`
+    +DATA.corridors.map((c,i)=>`<button data-f="${c[0]}" data-t="${c[1]}" class="${i===0?'active':''}">${c[0]}→${c[1]}</button>`).join("")
+    +`</div><svg id="chart" viewBox="0 0 800 270" preserveAspectRatio="none"></svg><div class="legend" id="legend"></div></section>`;
+
+  // recent changes grouped by provider
+  html+=`<section class="card"><h2>近期變動 <span class="tag">依業者分類</span></h2>`;
+  const changes=DATA.changes||[];
+  if(changes.length){
+    const byProv={};
+    for(const ch of changes){(byProv[ch.provider]=byProv[ch.provider]||[]).push(ch);}
+    for(const prov of Object.keys(byProv)){
+      const items=byProv[prov];
+      html+=`<h3 class="group-head">${esc(prov)} <span class="cnt">${items.length}</span></h3><div class="overflow"><table>`
+        +`<thead><tr><th>走廊</th><th>舊值</th><th>新值</th><th>方向</th><th>時間</th></tr></thead><tbody>`;
+      for(const ch of items){
+        const flag=CCY_FLAG[ch.to_ccy]||"";
+        const pillCls=ch.to_ccy==="IDR"?"fb_ocr":(ch.to_ccy==="PHP"?"web":"");
+        const dir=ch.old_rate&&ch.new_rate>ch.old_rate?'<span class="up">▲ 升</span>'
+          :(ch.old_rate&&ch.new_rate<ch.old_rate?'<span class="down">▼ 降</span>':'<span class="muted">—</span>');
+        const ts=ch.changed_at?new Date(ch.changed_at).toLocaleString("zh-HK",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}):"—";
+        html+=`<tr><td><span class="pill ${pillCls}">${flag} ${esc(ch.to_ccy)}</span></td>`
+          +`<td class="muted">${fmt(ch.old_rate)}</td><td class="rate">${fmt(ch.new_rate)}</td>`
+          +`<td>${dir}</td><td class="muted">${ts}</td></tr>`;
+      }
+      html+="</tbody></table></div>";
+    }
+  } else { html+='<p class="muted">尚無記錄到的變動。</p>'; }
+  html+=`<p class="muted" style="margin-top:14px">AlipayHK / We Remit / BRI 沒有可自動抓取的公開來源，其匯率由維護者編輯 <code>manual.json</code> 提供。</p></section>`;
+
+  app.innerHTML=html;
+  const tabs=document.getElementById("chartTabs");
+  tabs.addEventListener("click",e=>{
+    if(e.target.tagName!=="BUTTON")return;
+    tabs.querySelectorAll("button").forEach(b=>b.classList.remove("active"));
+    e.target.classList.add("active");
+    drawCorridor(e.target.dataset.f,e.target.dataset.t);
+  });
+  const first=tabs.querySelector("button");
+  if(first)drawCorridor(first.dataset.f,first.dataset.t);
+}
+
+function drawCorridor(f,t){
+  const series={};
+  for(const p of DATA.providers){
+    if(!p.corridors.some(c=>c[0]===f&&c[1]===t))continue;
+    const h=DATA.history[K(p.key,f,t)];
+    if(h&&h.length)series[p.name]=h;
+  }
+  drawChart(series);
+}
+
+function smoothPath(pts){
+  if(pts.length<2)return pts.length?`M${pts[0][0]},${pts[0][1]}`:"";
+  let d=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;
+  for(let i=0;i<pts.length-1;i++){
+    const p0=pts[i-1]||pts[i],p1=pts[i],p2=pts[i+1],p3=pts[i+2]||p2;
+    const c1x=p1[0]+(p2[0]-p0[0])/6,c1y=p1[1]+(p2[1]-p0[1])/6;
+    const c2x=p2[0]-(p3[0]-p1[0])/6,c2y=p2[1]-(p3[1]-p1[1])/6;
+    d+=` C${c1x.toFixed(1)},${c1y.toFixed(1)} ${c2x.toFixed(1)},${c2y.toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;
+  }
+  return d;
+}
+
+function drawChart(series){
+  const svg=document.getElementById("chart"),legend=document.getElementById("legend");
+  svg.innerHTML="";legend.innerHTML="";
+  const W=800,H=270,padL=48,padR=16,padT=18,padB=26;
+  let all=[];Object.values(series).forEach(pts=>pts.forEach(p=>all.push(p.rate)));
+  if(all.length===0){svg.innerHTML='<text x="400" y="135" fill="#94A3B8" text-anchor="middle" font-size="13">尚無歷史資料</text>';return;}
+  let min=Math.min(...all),max=Math.max(...all);
+  const pad=(max-min)*0.15||1;min-=pad;max+=pad;const span=(max-min)||1;
+  let maxLen=0;Object.values(series).forEach(pts=>maxLen=Math.max(maxLen,pts.length));
+  const x=i=>padL+(maxLen<=1?(W-padL-padR)/2:i*(W-padL-padR)/(maxLen-1));
+  const y=v=>H-padB-((v-min)/span)*(H-padT-padB);
+  let defs="<defs>";
+  Object.keys(series).forEach((_,ci)=>{const col=COLORS[ci%COLORS.length];
+    defs+=`<linearGradient id="g${ci}" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="${col}" stop-opacity="0.22"/><stop offset="100%" stop-color="${col}" stop-opacity="0"/></linearGradient>`;});
+  defs+="</defs>";svg.innerHTML+=defs;
+  for(let g=0;g<=3;g++){const gy=padT+g*(H-padT-padB)/3;
+    svg.innerHTML+=`<line x1="${padL}" y1="${gy.toFixed(1)}" x2="${W-padR}" y2="${gy.toFixed(1)}" stroke="rgba(148,163,184,0.18)"/>`;
+    svg.innerHTML+=`<text x="${padL-8}" y="${(gy+4).toFixed(1)}" fill="#94A3B8" font-size="10.5" text-anchor="end">${(max-g*span/3).toFixed(2)}</text>`;}
+  let ci=0;
+  for(const [name,pts] of Object.entries(series)){
+    const col=COLORS[ci%COLORS.length];
+    if(pts.length){
+      const P=pts.map((p,i)=>[x(i),y(p.rate)]);
+      const line=smoothPath(P);
+      const area=line+` L${P[P.length-1][0].toFixed(1)},${H-padB} L${P[0][0].toFixed(1)},${H-padB} Z`;
+      svg.innerHTML+=`<path d="${area}" fill="url(#g${ci})"/>`;
+      svg.innerHTML+=`<path d="${line}" fill="none" stroke="${col}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>`;
+      const last=P[P.length-1];
+      svg.innerHTML+=`<circle cx="${last[0].toFixed(1)}" cy="${last[1].toFixed(1)}" r="3.5" fill="${col}" stroke="#fff" stroke-width="1.5"/>`;
+    }
+    legend.innerHTML+=`<span><span class="dot" style="background:${col}"></span>${esc(name)}</span>`;
+    ci++;
+  }
+}
+</script>
+</body>
+</html>
