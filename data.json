@@ -1,6 +1,22 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-13T07:59:49+00:00",
+      "new_rate": 2310.9934,
+      "old_rate": 2315.3474,
+      "pair": "HKD->IDR",
+      "provider": "Panda Remit",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-07-13T07:59:49+00:00",
+      "new_rate": 7.8592,
+      "old_rate": 7.8647,
+      "pair": "HKD->PHP",
+      "provider": "Panda Remit",
+      "to_ccy": "PHP"
+    },
+    {
       "changed_at": "2026-07-13T04:52:04+00:00",
       "new_rate": 2315.3474,
       "old_rate": 2304.3701,
@@ -51,7 +67,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-13T04:52:04+00:00",
+  "generated_at": "2026-07-13T07:59:49+00:00",
   "history": {
     "chandra|HKD|IDR": [
       {
@@ -75,6 +91,10 @@
       {
         "rate": 2315.3474,
         "t": "2026-07-13T04:52:04+00:00"
+      },
+      {
+        "rate": 2310.9934,
+        "t": "2026-07-13T07:59:49+00:00"
       }
     ],
     "pandaremit|HKD|PHP": [
@@ -89,30 +109,34 @@
       {
         "rate": 7.8632,
         "t": "2026-07-13T01:17:45+00:00"
+      },
+      {
+        "rate": 7.8592,
+        "t": "2026-07-13T07:59:49+00:00"
       }
     ]
   },
   "latest": {
     "chandra|HKD|IDR": {
-      "captured_at": "2026-07-13T04:52:04+00:00",
+      "captured_at": "2026-07-13T07:59:49+00:00",
       "confidence": 0.95,
       "method": "fb_ocr",
-      "note": "vision OCR; 13/07/2026; Kurs Kirim (remittance rate) is 2302 IDR per 1 HKD. Kurs Tukar (cash exchange rate) is 2225 IDR.",
+      "note": "vision OCR; 13/07/2026; Kurs Kirim (remittance rate) is 2302. Kurs Tukar (cash exchange rate) is 2225.",
       "rate": 2302.0
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-13T04:52:04+00:00",
+      "captured_at": "2026-07-13T07:59:49+00:00",
       "confidence": 0.95,
       "method": "web",
       "note": "website unit rate",
-      "rate": 2315.3474
+      "rate": 2310.9934
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-13T04:52:04+00:00",
+      "captured_at": "2026-07-13T07:59:49+00:00",
       "confidence": 0.95,
       "method": "web",
       "note": "website unit rate",
-      "rate": 7.8647
+      "rate": 7.8592
     }
   },
   "providers": [
