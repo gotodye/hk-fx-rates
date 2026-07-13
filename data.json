@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-13T01:17:45+00:00",
+      "new_rate": 7.8632,
+      "old_rate": 7.851,
+      "pair": "HKD->PHP",
+      "provider": "Panda Remit",
+      "to_ccy": "PHP"
+    },
+    {
       "changed_at": "2026-07-12T23:56:30+00:00",
       "new_rate": 2304.3994,
       "old_rate": 2292.2651,
@@ -27,7 +35,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-12T23:56:30+00:00",
+  "generated_at": "2026-07-13T01:17:45+00:00",
   "history": {
     "chandra|HKD|IDR": [
       {
@@ -53,6 +61,10 @@
       {
         "rate": 7.851,
         "t": "2026-07-12T23:56:30+00:00"
+      },
+      {
+        "rate": 7.8632,
+        "t": "2026-07-13T01:17:45+00:00"
       }
     ]
   },
@@ -65,18 +77,18 @@
       "rate": 2295.0
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-12T23:56:30+00:00",
+      "captured_at": "2026-07-13T01:17:45+00:00",
       "confidence": 0.95,
       "method": "web",
       "note": "website unit rate",
-      "rate": 2304.3994
+      "rate": 2304.3701
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-12T23:56:30+00:00",
+      "captured_at": "2026-07-13T01:17:45+00:00",
       "confidence": 0.95,
       "method": "web",
       "note": "website unit rate",
-      "rate": 7.851
+      "rate": 7.8632
     }
   },
   "providers": [
