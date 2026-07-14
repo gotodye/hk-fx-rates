@@ -1,6 +1,22 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-14T04:20:02+00:00",
+      "new_rate": 7.8438,
+      "old_rate": 7.8312,
+      "pair": "HKD->PHP",
+      "provider": "Panda Remit",
+      "to_ccy": "PHP"
+    },
+    {
+      "changed_at": "2026-07-14T04:20:02+00:00",
+      "new_rate": 2300.0,
+      "old_rate": 2302.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-07-13T13:13:52+00:00",
       "new_rate": 2303.1206,
       "old_rate": 2310.9934,
@@ -83,7 +99,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-13T13:13:52+00:00",
+  "generated_at": "2026-07-14T04:20:02+00:00",
   "history": {
     "chandra|HKD|IDR": [
       {
@@ -93,6 +109,10 @@
       {
         "rate": 2302.0,
         "t": "2026-07-13T04:52:04+00:00"
+      },
+      {
+        "rate": 2300.0,
+        "t": "2026-07-14T04:20:02+00:00"
       }
     ],
     "pandaremit|HKD|IDR": [
@@ -137,30 +157,34 @@
       {
         "rate": 7.8312,
         "t": "2026-07-13T13:13:52+00:00"
+      },
+      {
+        "rate": 7.8438,
+        "t": "2026-07-14T04:20:02+00:00"
       }
     ]
   },
   "latest": {
     "chandra|HKD|IDR": {
-      "captured_at": "2026-07-13T13:13:52+00:00",
-      "confidence": 0.95,
+      "captured_at": "2026-07-14T04:20:02+00:00",
+      "confidence": 1.0,
       "method": "fb_ocr",
-      "note": "vision OCR; 13/07/2026; Kurs Kirim (remittance rate) is 2302 IDR per 1 HKD. Kurs Tukar (cash exchange rate) is 2225 IDR.",
-      "rate": 2302.0
+      "note": "vision OCR; 14/7/2026; Kurs Kirim (sending rate) is 2300 IDR per 1 HKD. Kurs Tukar (cash exchange rate) is 2220 IDR.",
+      "rate": 2300.0
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-13T13:13:52+00:00",
+      "captured_at": "2026-07-14T04:20:02+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (+0.83% vs 昨日)",
-      "rate": 2303.1206
+      "note": "貓熊匯率 standard rate (-0.03% vs 昨日)",
+      "rate": 2302.2789
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-13T13:13:52+00:00",
+      "captured_at": "2026-07-14T04:20:02+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (+0.61% vs 昨日)",
-      "rate": 7.8312
+      "note": "貓熊匯率 standard rate (+0.17% vs 昨日)",
+      "rate": 7.8438
     }
   },
   "providers": [
