@@ -73,6 +73,14 @@
     border-radius:var(--radius-sm);padding:9px 12px;font-size:14px;box-shadow:var(--shadow-in);outline:none;min-width:150px;}
   .edit-form input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(136,216,192,0.35);}
   #saveStatus{font-size:13px;}
+  .manual-block{padding:12px 0;border-top:1px solid rgba(163,177,198,0.14);}
+  .manual-block:first-of-type{border-top:0;}
+  .mp-name{font-weight:700;color:var(--ink);align-self:center;min-width:120px;}
+  .btn.secondary{background:var(--card-solid);color:var(--primary-deep);
+    box-shadow:3px 3px 8px rgba(163,177,198,0.20),-3px -3px 8px rgba(255,255,255,0.7);}
+  .report-pre{white-space:pre-wrap;background:var(--card-solid);border:1px solid rgba(255,255,255,0.6);
+    border-radius:var(--radius-sm);padding:14px 16px;margin:2px 0 0;
+    font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink);}
 </style>
 </head>
 <body>
@@ -164,6 +172,7 @@ function render(){
   html+='</section>';
 
   html+=manualCardHtml();
+  html+=reportCardHtml();
 
   app.innerHTML=html;
   wireManual();
@@ -181,37 +190,72 @@ function render(){
 // ---- Manual-rate editor (writes manual.json to the public repo via GitHub API) ----
 const MANUAL_REPO="gotodye/hk-fx-rates";  // dashboard/data repo (no source code)
 
+function b64utf8(s){ return btoa(String.fromCharCode.apply(null,new TextEncoder().encode(s))); }
+function b64toUtf8(b64){ try{ return new TextDecoder().decode(Uint8Array.from(atob((b64||"").replace(/\n/g,"")),c=>c.charCodeAt(0))); }catch(e){ return "{}"; } }
+
+// Each manual provider gets its OWN inputs + save button (save independently).
 function manualCardHtml(){
   const manual=(DATA.providers||[]).filter(p=>!p.auto);
   if(!manual.length) return "";
-  let rows="";
+  let blocks="";
   for(const p of manual){
+    let rows="";
     for(const [f,t] of p.corridors){
-      rows+=`<label>${esc(p.name)} · ${f}→${t}`
-        +`<input type="number" step="0.0001" inputmode="decimal" data-mk="${p.key}|${f}|${t}" placeholder="1 ${f} = ? ${t}"></label>`;
+      rows+=`<label>${f}→${t}<input type="number" step="0.0001" inputmode="decimal" data-mk="${p.key}|${f}|${t}" placeholder="1 ${f} = ? ${t}"></label>`;
     }
+    blocks+=`<div class="manual-block"><div class="edit-row" style="align-items:end">`
+      +`<span class="mp-name">${esc(p.name)}</span>${rows}`
+      +`<button class="btn" type="button" data-save="${p.key}">儲存 ${esc(p.name)}</button></div>`
+      +`<div class="muted" data-status="${p.key}"></div></div>`;
   }
   return `<section class="card"><h2>編輯人工匯率 <span class="tag">${manual.map(p=>esc(p.name)).join(" / ")}</span></h2>`
     +`<div class="edit-form">`
-    +`<div class="edit-row">${rows}</div>`
-    +`<div class="edit-row"><label style="flex:1;min-width:240px">GitHub 權杖（只需貼一次，存在本機瀏覽器）`
+    +`<label style="max-width:440px">GitHub 權杖（只需貼一次，存在本機瀏覽器）`
     +`<input type="password" id="ghToken" placeholder="github_pat_... 或 ghp_..."></label>`
-    +`<button class="btn" id="saveManual" type="button">儲存</button></div>`
-    +`<div id="saveStatus" class="muted"></div>`
-    +`<p class="muted" style="margin:6px 0 0">填 1 HKD 換多少當地幣；留空＝不覆寫。儲存後下一輪排程（每 30 分）會套用並更新儀表板。`
-    +` 權杖請用<b>細粒度、只授權寫入 ${esc(MANUAL_REPO)}（Contents: Read and write）</b>的那種，風險最小。</p>`
+    +blocks
+    +`<p class="muted" style="margin:6px 0 0">每家可<b>分開儲存</b>；填 1 HKD 換多少當地幣、留空＝不動。存後下一輪排程（每 30 分）套用。`
+    +` 權杖用<b>細粒度、只授權寫入 ${esc(MANUAL_REPO)}（Contents: Read and write）</b>的那種。</p>`
     +`</div></section>`;
 }
 
-function b64utf8(s){ return btoa(String.fromCharCode.apply(null,new TextEncoder().encode(s))); }
-function setStatus(msg){ const el=document.getElementById("saveStatus"); if(el) el.textContent=msg; }
+async function ghGetManual(hdr){
+  const api=`https://api.github.com/repos/${MANUAL_REPO}/contents/manual.json`;
+  const r=await fetch(api+"?ref=main",{headers:hdr});
+  if(!r.ok) return {json:{}, sha:undefined};
+  const d=await r.json();
+  let json={}; try{ json=JSON.parse(b64toUtf8(d.content)); }catch(e){}
+  return {json:(json&&typeof json==="object")?json:{}, sha:d.sha};
+}
+
+async function saveManualProvider(key){
+  const st=document.querySelector(`[data-status="${key}"]`);
+  const setS=m=>{ if(st) st.textContent=m; };
+  const token=(document.getElementById("ghToken").value||"").trim();
+  if(!token){ setS("⚠ 請先貼上 GitHub 權杖"); return; }
+  localStorage.setItem("ghToken",token);
+  setS("儲存中…");
+  const hdr={Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json"};
+  let cur; try{ cur=await ghGetManual(hdr); }catch(e){ setS("❌ 讀取現況失敗："+e.message); return; }
+  const manual=cur.json;
+  if(!manual._comment) manual._comment="在儀表板『編輯人工匯率』填寫即可。數字 = 1 HKD 換多少當地幣。";
+  manual[key]=manual[key]||{};  // update ONLY this provider; keep the others
+  document.querySelectorAll(`input[data-mk^="${key}|"]`).forEach(inp=>{
+    const parts=inp.dataset.mk.split("|");
+    manual[key][`${parts[1]}->${parts[2]}`]=inp.value.trim()===""?"":Number(inp.value.trim());
+  });
+  const api=`https://api.github.com/repos/${MANUAL_REPO}/contents/manual.json`;
+  const body={message:`update ${key} manual rate via dashboard`,branch:"main",content:b64utf8(JSON.stringify(manual,null,2))};
+  if(cur.sha) body.sha=cur.sha;
+  try{
+    const r=await fetch(api,{method:"PUT",headers:{...hdr,"Content-Type":"application/json"},body:JSON.stringify(body)});
+    if(r.ok) setS("✅ 已儲存！下一輪排程（每 30 分）套用。");
+    else setS(`❌ 失敗 ${r.status}：${(await r.text()).slice(0,120)}`);
+  }catch(e){ setS("❌ 送出失敗："+e.message); }
+}
 
 async function wireManual(){
-  const btn=document.getElementById("saveManual");
-  if(!btn) return;
   const tokenEl=document.getElementById("ghToken");
-  const saved=localStorage.getItem("ghToken"); if(saved&&tokenEl) tokenEl.value=saved;
-  // pre-fill inputs from the current manual.json (public, no token needed)
+  if(tokenEl){ const saved=localStorage.getItem("ghToken"); if(saved) tokenEl.value=saved; }
   try{
     const r=await fetch(`https://raw.githubusercontent.com/${MANUAL_REPO}/main/manual.json?x=`+Date.now());
     if(r.ok){ const cur=await r.json();
@@ -222,34 +266,72 @@ async function wireManual(){
       });
     }
   }catch(e){}
-  btn.addEventListener("click",saveManual);
+  document.querySelectorAll("[data-save]").forEach(b=>b.addEventListener("click",()=>saveManualProvider(b.dataset.save)));
+  wireReport();
 }
 
-async function saveManual(){
-  const token=(document.getElementById("ghToken").value||"").trim();
-  if(!token){ setStatus("⚠ 請先貼上 GitHub 權杖"); return; }
-  localStorage.setItem("ghToken",token);
-  setStatus("儲存中…");
+// ---- Rate report push to Teams (preview, then send) ----
+function reportCardHtml(){
+  return `<section class="card"><h2>發送匯率快報 <span class="tag">給財務 Kyle</span></h2>`
+    +`<div class="edit-form">`
+    +`<label style="max-width:560px">Teams Webhook 網址（只需貼一次，存在本機瀏覽器）`
+    +`<input type="password" id="teamsHook" placeholder="https://...powerplatform.com/...（Teams Workflows webhook）"></label>`
+    +`<div class="edit-row"><button class="btn secondary" id="previewReport" type="button">產生預覽</button>`
+    +`<button class="btn" id="sendReport" type="button" style="display:none">確認發送到 Teams</button></div>`
+    +`<pre id="reportPreview" class="report-pre" style="display:none"></pre>`
+    +`<div id="reportStatus" class="muted"></div>`
+    +`<p class="muted" style="margin:6px 0 0">先「產生預覽」看內容 → 確認無誤再「確認發送」。內容取目前儀表板的最新匯率。</p>`
+    +`</div></section>`;
+}
 
-  const manual={"_comment":"在儀表板『編輯人工匯率』填寫即可。數字 = 1 HKD 換多少當地幣。"};
-  document.querySelectorAll("input[data-mk]").forEach(inp=>{
-    const [k,f,t]=inp.dataset.mk.split("|");
-    manual[k]=manual[k]||{};
-    manual[k][`${f}->${t}`]=inp.value.trim()===""?"":Number(inp.value.trim());
+function buildReport(){
+  const now=DATA.generated_at?new Date(DATA.generated_at).toLocaleString("zh-HK"):new Date().toLocaleString("zh-HK");
+  const lines=[`📊 香港同業匯率快報`,`資料時間：${now}`];
+  for(const [f,t] of DATA.corridors){
+    lines.push("",`【${f} → ${t}】`);
+    const rows=DATA.providers.filter(p=>p.corridors.some(c=>c[0]===f&&c[1]===t))
+      .map(p=>({name:p.name,cell:DATA.latest[K(p.key,f,t)]}));
+    const rates=rows.filter(x=>x.cell&&x.cell.rate!=null).map(x=>x.cell.rate);
+    const best=rates.length?Math.max(...rates):null;
+    for(const {name,cell} of rows){
+      const r=cell&&cell.rate!=null?Number(cell.rate).toFixed(4):"—（未提供）";
+      const star=(cell&&best!=null&&cell.rate===best)?"  ★最優":"";
+      lines.push(`• ${name}：${r}${star}`);
+    }
+  }
+  return lines.join("\n");
+}
+
+function wireReport(){
+  const hookEl=document.getElementById("teamsHook");
+  if(hookEl){ const s=localStorage.getItem("teamsHook"); if(s) hookEl.value=s; }
+  const pv=document.getElementById("previewReport");
+  const sd=document.getElementById("sendReport");
+  const box=document.getElementById("reportPreview");
+  if(pv) pv.addEventListener("click",()=>{
+    box.textContent=buildReport(); box.style.display="block";
+    if(sd) sd.style.display="inline-flex";
+    const s=document.getElementById("reportStatus"); if(s) s.textContent="";
   });
+  if(sd) sd.addEventListener("click",sendReport);
+}
 
-  const api=`https://api.github.com/repos/${MANUAL_REPO}/contents/manual.json`;
-  const hdr={Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json"};
-  let sha;
-  try{ const g=await fetch(api+"?ref=main",{headers:hdr}); if(g.ok) sha=(await g.json()).sha; }catch(e){}
-  const body={message:"update manual rates via dashboard",branch:"main",
-    content:b64utf8(JSON.stringify(manual,null,2))};
-  if(sha) body.sha=sha;
+async function sendReport(){
+  const st=document.getElementById("reportStatus");
+  const setS=m=>{ if(st) st.textContent=m; };
+  const url=(document.getElementById("teamsHook").value||"").trim();
+  if(!url){ setS("⚠ 請先貼上 Teams Webhook 網址"); return; }
+  localStorage.setItem("teamsHook",url);
+  const text=document.getElementById("reportPreview").textContent||buildReport();
+  setS("發送中…");
+  const card={type:"message",attachments:[{contentType:"application/vnd.microsoft.card.adaptive",
+    content:{type:"AdaptiveCard","$schema":"http://adaptivecards.io/schemas/adaptive-card.json",version:"1.4",
+      body:[{type:"TextBlock",text:text,wrap:true}]}}]};
   try{
-    const r=await fetch(api,{method:"PUT",headers:{...hdr,"Content-Type":"application/json"},body:JSON.stringify(body)});
-    if(r.ok){ setStatus("✅ 已儲存！下一輪排程（每 30 分，港時 07–17 點）會套用。"); }
-    else{ const e=await r.text(); setStatus(`❌ 失敗 ${r.status}：${e.slice(0,140)}`); }
-  }catch(e){ setStatus("❌ 送出失敗："+e.message); }
+    const r=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(card)});
+    if(r.ok||r.status===202) setS("✅ 已發送到 Teams！");
+    else setS(`❌ 失敗 ${r.status}`);
+  }catch(e){ setS("❌ 發送失敗："+e.message); }
 }
 
 function drawCorridor(f,t){
