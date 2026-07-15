@@ -86,9 +86,10 @@
 <body>
 <header>
   <div class="brand">
-    <h1>香港同業匯率監控</h1>
+    <h1 id="hTitle">香港同業匯率監控</h1>
     <span class="sub">HK Competitor FX Monitor · HKD → IDR / PHP</span>
   </div>
+  <button class="btn secondary" id="langBtn" type="button" style="padding:6px 14px">EN</button>
   <span id="updated" class="muted"></span>
 </header>
 
@@ -104,16 +105,73 @@ const K=(pk,f,t)=>`${pk}|${f}|${t}`;
 const esc=s=>(s==null?"":String(s)).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 const fmt=(v,d=4)=>v==null?"—":Number(v).toFixed(d);
 
+// ---- i18n (中 / EN) ----
+const LOCALE={zh:"zh-HK",en:"en-GB"};
+let LANG=localStorage.getItem("fxLang")||"zh";
+const T={
+  title:{zh:"香港同業匯率監控",en:"HK Competitor FX Monitor"},
+  lastChange:{zh:"最後變動：",en:"Last update: "},
+  latest:{zh:"最新匯率比較",en:"Latest rates"},
+  provider:{zh:"業者",en:"Provider"}, source:{zh:"來源",en:"Source"},
+  conf:{zh:"信心",en:"Conf."}, updated:{zh:"更新時間",en:"Updated"},
+  manual:{zh:"手動",en:"Manual"}, low:{zh:"低",en:"Low"},
+  history:{zh:"歷史走勢",en:"History"},
+  recent:{zh:"近期變動",en:"Recent changes"}, byProv:{zh:"依業者分類",en:"by provider"},
+  corridor:{zh:"走廊",en:"Corridor"}, oldv:{zh:"舊值",en:"Old"}, newv:{zh:"新值",en:"New"},
+  dir:{zh:"方向",en:"Dir"}, time:{zh:"時間",en:"Time"},
+  up:{zh:"▲ 升",en:"▲ up"}, down:{zh:"▼ 降",en:"▼ down"},
+  noChanges:{zh:"尚無記錄到的變動。",en:"No changes recorded yet."},
+  editManual:{zh:"編輯人工匯率",en:"Edit manual rates"},
+  ghToken:{zh:"GitHub 權杖（只需貼一次，存在本機瀏覽器）",en:"GitHub token (paste once; kept in your browser)"},
+  save:{zh:"儲存",en:"Save"},
+  manualHint1:{zh:"每家可<b>分開儲存</b>；填 1 HKD 換多少當地幣、留空＝不動。存後下一輪排程（每 30 分）套用。權杖用<b>細粒度、只授權寫入 ",
+    en:"Save each provider separately; enter local currency per 1 HKD, blank = unchanged. Applied on the next run (every 30 min). Use a fine-grained token limited to "},
+  manualHint2:{zh:"（Contents: Read and write）</b>的那種。",en:" (Contents: Read and write)."},
+  sendReport:{zh:"發送匯率快報",en:"Send rate report"}, toKyle:{zh:"給財務 Kyle",en:"to Finance (Kyle)"},
+  preview:{zh:"產生預覽",en:"Preview"}, send:{zh:"確認發送",en:"Send"},
+  reportHint:{zh:"先「產生預覽」看內容 → 確認後按「確認發送」。發送由 <b>GitHub 伺服器端</b>執行（webhook 存在 Secret，不需在瀏覽器貼網址），約 1 分鐘內送達 Teams。使用上方編輯器同一把 GitHub 權杖，須含 <b>hk-fx-monitor 的 Actions（Read and write）</b>權限。",
+    en:"Click Preview to see the content → then Send. Sending runs <b>server-side on GitHub</b> (webhook in a Secret, no browser paste); arrives in Teams within ~1 min. Uses the same GitHub token above, which must include <b>Actions (Read and write) on hk-fx-monitor</b>."},
+  loading:{zh:"載入中…",en:"Loading…"},
+  noData:{zh:"尚無資料（data.json 還沒產生，等第一次排程跑完就會出現）。",en:"No data yet (data.json appears after the first scheduled run)."},
+  rTitle:{zh:"📊 香港同業匯率快報",en:"📊 HK Competitor FX Report"},
+  rTo:{zh:"收件人：",en:"To: "}, rAsOf:{zh:"資料時間：",en:"As of: "},
+  rBest:{zh:"  ★最優",en:"  ★Best"}, rNA:{zh:"—（未提供）",en:"—(N/A)"},
+  stSaving:{zh:"儲存中…",en:"Saving…"},
+  stSaved:{zh:"✅ 已儲存！下一輪排程（每 30 分）套用。",en:"✅ Saved! Applied on the next run (every 30 min)."},
+  stNeedToken:{zh:"⚠ 請先貼上 GitHub 權杖",en:"⚠ Paste your GitHub token first"},
+  stReadFail:{zh:"❌ 讀取現況失敗：",en:"❌ Failed to read current: "},
+  stSendFail:{zh:"❌ 送出失敗：",en:"❌ Submit failed: "},
+  stFail:{zh:"❌ 失敗 ",en:"❌ Failed "},
+  rpNeedToken:{zh:"⚠ 請先在上方『編輯人工匯率』貼上 GitHub 權杖（須含 hk-fx-monitor 的 Actions 寫入權）",en:"⚠ Paste a GitHub token above (needs Actions:write on hk-fx-monitor)"},
+  rpTriggering:{zh:"透過 GitHub 觸發發送中…",en:"Triggering send via GitHub…"},
+  rpDone:{zh:"✅ 已透過 GitHub 觸發發送，約 1 分鐘內送達 Teams（可到 Actions 查看）。",en:"✅ Triggered via GitHub; arrives in Teams within ~1 min (check Actions)."},
+  rpPerm:{zh:"：權杖需具 hk-fx-monitor 的 Actions 寫入權（Read and write）",en:": token needs Actions (Read and write) on hk-fx-monitor"},
+  rpTrigFail:{zh:"❌ 觸發失敗：",en:"❌ Trigger failed: "},
+};
+function L(k){ return (T[k]&&(T[k][LANG]??T[k].zh))??k; }
+function loc(){ return LOCALE[LANG]||"zh-HK"; }
+function setLang(l){
+  LANG=l; localStorage.setItem("fxLang",l);
+  const b=document.getElementById("langBtn"); if(b) b.textContent=LANG==="zh"?"EN":"中";
+  const h=document.getElementById("hTitle"); if(h) h.textContent=L("title");
+  if(DATA) render();
+}
+(function initLang(){
+  const b=document.getElementById("langBtn");
+  if(b){ b.textContent=LANG==="zh"?"EN":"中"; b.addEventListener("click",()=>setLang(LANG==="zh"?"en":"zh")); }
+  const h=document.getElementById("hTitle"); if(h) h.textContent=L("title");
+})();
+
 let DATA=null;
 
 fetch("./data.json?_="+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();})
  .catch(e=>{document.getElementById("app").innerHTML=
-   '<section class="card"><p class="muted">尚無資料（data.json 還沒產生，等第一次排程跑完就會出現）。</p></section>';});
+   `<section class="card"><p class="muted">${L("noData")}</p></section>`;});
 
 function render(){
   const app=document.getElementById("app");
-  const upd=DATA.generated_at?new Date(DATA.generated_at).toLocaleString("zh-HK"):"—";
-  document.getElementById("updated").textContent="最後變動："+upd;
+  const upd=DATA.generated_at?new Date(DATA.generated_at).toLocaleString(loc()):"—";
+  document.getElementById("updated").textContent=L("lastChange")+upd;
   let html="";
 
   for(const [f,t] of DATA.corridors){
@@ -121,33 +179,32 @@ function render(){
     const cells=rows.map(p=>({p,cell:DATA.latest[K(p.key,f,t)]}));
     const rates=cells.filter(x=>x.cell&&x.cell.rate!=null).map(x=>x.cell.rate);
     const best=rates.length?Math.max(...rates):null;
-    html+=`<section class="card"><h2>${f} → ${t} <span class="tag">最新匯率比較</span></h2><div class="overflow"><table>`
-      +`<thead><tr><th>業者</th><th>1 ${f} =</th><th>來源</th><th>信心</th><th>更新時間</th><th>備註</th></tr></thead><tbody>`;
+    html+=`<section class="card"><h2>${f} → ${t} <span class="tag">${L("latest")}</span></h2><div class="overflow"><table>`
+      +`<thead><tr><th>${L("provider")}</th><th>1 ${f} =</th><th>${L("source")}</th><th>${L("conf")}</th><th>${L("updated")}</th></tr></thead><tbody>`;
     for(const {p,cell} of cells){
       const isBest=cell&&best!=null&&cell.rate===best;
-      const badge=p.auto?"":' <span class="pill manual">手動</span>';
+      const badge=p.auto?"":` <span class="pill manual">${L("manual")}</span>`;
       const star=isBest?'<span class="star">★</span>':"";
       const rate=cell&&cell.rate!=null?fmt(cell.rate):'<span class="muted">—</span>';
       const method=cell&&cell.method?`<span class="pill ${cell.method}">${esc(METHOD_LABEL[cell.method]||cell.method)}</span>`:'<span class="muted">—</span>';
       let conf='<span class="muted">—</span>';
       if(cell&&cell.confidence!=null){const pc=Math.round(cell.confidence*100);
-        conf=cell.confidence<0.6?`<span class="lowconf">低 ${pc}%⚠</span>`:`${pc}%`;}
-      const ts=cell&&cell.captured_at?new Date(cell.captured_at).toLocaleString("zh-HK",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}):"—";
-      const note=cell&&cell.note?esc(cell.note):"";
+        conf=cell.confidence<0.6?`<span class="lowconf">${L("low")} ${pc}%⚠</span>`:`${pc}%`;}
+      const ts=cell&&cell.captured_at?new Date(cell.captured_at).toLocaleString(loc(),{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}):"—";
       html+=`<tr class="${isBest?'best':''}"><td class="name">${esc(p.name)}${badge}${star}</td>`
         +`<td class="rate">${rate}</td><td>${method}</td><td>${conf}</td>`
-        +`<td class="muted">${ts}</td><td class="muted">${note}</td></tr>`;
+        +`<td class="muted">${ts}</td></tr>`;
     }
     html+="</tbody></table></div></section>";
   }
 
   // history chart
-  html+=`<section class="card"><h2>歷史走勢</h2><div class="chart-tabs" id="chartTabs">`
+  html+=`<section class="card"><h2>${L("history")}</h2><div class="chart-tabs" id="chartTabs">`
     +DATA.corridors.map((c,i)=>`<button data-f="${c[0]}" data-t="${c[1]}" class="${i===0?'active':''}">${c[0]}→${c[1]}</button>`).join("")
     +`</div><svg id="chart" viewBox="0 0 800 270" preserveAspectRatio="none"></svg><div class="legend" id="legend"></div></section>`;
 
   // recent changes grouped by provider
-  html+=`<section class="card"><h2>近期變動 <span class="tag">依業者分類</span></h2>`;
+  html+=`<section class="card"><h2>${L("recent")} <span class="tag">${L("byProv")}</span></h2>`;
   const changes=DATA.changes||[];
   if(changes.length){
     const byProv={};
@@ -155,20 +212,20 @@ function render(){
     for(const prov of Object.keys(byProv)){
       const items=byProv[prov];
       html+=`<h3 class="group-head">${esc(prov)} <span class="cnt">${items.length}</span></h3><div class="overflow"><table>`
-        +`<thead><tr><th>走廊</th><th>舊值</th><th>新值</th><th>方向</th><th>時間</th></tr></thead><tbody>`;
+        +`<thead><tr><th>${L("corridor")}</th><th>${L("oldv")}</th><th>${L("newv")}</th><th>${L("dir")}</th><th>${L("time")}</th></tr></thead><tbody>`;
       for(const ch of items){
         const flag=CCY_FLAG[ch.to_ccy]||"";
         const pillCls=ch.to_ccy==="IDR"?"fb_ocr":(ch.to_ccy==="PHP"?"web":"");
-        const dir=ch.old_rate&&ch.new_rate>ch.old_rate?'<span class="up">▲ 升</span>'
-          :(ch.old_rate&&ch.new_rate<ch.old_rate?'<span class="down">▼ 降</span>':'<span class="muted">—</span>');
-        const ts=ch.changed_at?new Date(ch.changed_at).toLocaleString("zh-HK",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}):"—";
+        const dir=ch.old_rate&&ch.new_rate>ch.old_rate?`<span class="up">${L("up")}</span>`
+          :(ch.old_rate&&ch.new_rate<ch.old_rate?`<span class="down">${L("down")}</span>`:'<span class="muted">—</span>');
+        const ts=ch.changed_at?new Date(ch.changed_at).toLocaleString(loc(),{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}):"—";
         html+=`<tr><td><span class="pill ${pillCls}">${flag} ${esc(ch.to_ccy)}</span></td>`
           +`<td class="muted">${fmt(ch.old_rate)}</td><td class="rate">${fmt(ch.new_rate)}</td>`
           +`<td>${dir}</td><td class="muted">${ts}</td></tr>`;
       }
       html+="</tbody></table></div>";
     }
-  } else { html+='<p class="muted">尚無記錄到的變動。</p>'; }
+  } else { html+=`<p class="muted">${L("noChanges")}</p>`; }
   html+='</section>';
 
   html+=manualCardHtml();
@@ -205,16 +262,15 @@ function manualCardHtml(){
     }
     blocks+=`<div class="manual-block"><div class="edit-row" style="align-items:end">`
       +`<span class="mp-name">${esc(p.name)}</span>${rows}`
-      +`<button class="btn" type="button" data-save="${p.key}">儲存 ${esc(p.name)}</button></div>`
+      +`<button class="btn" type="button" data-save="${p.key}">${L("save")} ${esc(p.name)}</button></div>`
       +`<div class="muted" data-status="${p.key}"></div></div>`;
   }
-  return `<section class="card"><h2>編輯人工匯率 <span class="tag">${manual.map(p=>esc(p.name)).join(" / ")}</span></h2>`
+  return `<section class="card"><h2>${L("editManual")} <span class="tag">${manual.map(p=>esc(p.name)).join(" / ")}</span></h2>`
     +`<div class="edit-form">`
-    +`<label style="max-width:440px">GitHub 權杖（只需貼一次，存在本機瀏覽器）`
-    +`<input type="password" id="ghToken" placeholder="github_pat_... 或 ghp_..."></label>`
+    +`<label style="max-width:440px">${L("ghToken")}`
+    +`<input type="password" id="ghToken" placeholder="github_pat_... / ghp_..."></label>`
     +blocks
-    +`<p class="muted" style="margin:6px 0 0">每家可<b>分開儲存</b>；填 1 HKD 換多少當地幣、留空＝不動。存後下一輪排程（每 30 分）套用。`
-    +` 權杖用<b>細粒度、只授權寫入 ${esc(MANUAL_REPO)}（Contents: Read and write）</b>的那種。</p>`
+    +`<p class="muted" style="margin:6px 0 0">${L("manualHint1")}${esc(MANUAL_REPO)}${L("manualHint2")}</p>`
     +`</div></section>`;
 }
 
@@ -231,11 +287,11 @@ async function saveManualProvider(key){
   const st=document.querySelector(`[data-status="${key}"]`);
   const setS=m=>{ if(st) st.textContent=m; };
   const token=(document.getElementById("ghToken").value||"").trim();
-  if(!token){ setS("⚠ 請先貼上 GitHub 權杖"); return; }
+  if(!token){ setS(L("stNeedToken")); return; }
   localStorage.setItem("ghToken",token);
-  setS("儲存中…");
+  setS(L("stSaving"));
   const hdr={Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json"};
-  let cur; try{ cur=await ghGetManual(hdr); }catch(e){ setS("❌ 讀取現況失敗："+e.message); return; }
+  let cur; try{ cur=await ghGetManual(hdr); }catch(e){ setS(L("stReadFail")+e.message); return; }
   const manual=cur.json;
   if(!manual._comment) manual._comment="在儀表板『編輯人工匯率』填寫即可。數字 = 1 HKD 換多少當地幣。";
   manual[key]=manual[key]||{};  // update ONLY this provider; keep the others
@@ -248,9 +304,9 @@ async function saveManualProvider(key){
   if(cur.sha) body.sha=cur.sha;
   try{
     const r=await fetch(api,{method:"PUT",headers:{...hdr,"Content-Type":"application/json"},body:JSON.stringify(body)});
-    if(r.ok) setS("✅ 已儲存！下一輪排程（每 30 分）套用。");
-    else setS(`❌ 失敗 ${r.status}：${(await r.text()).slice(0,120)}`);
-  }catch(e){ setS("❌ 送出失敗："+e.message); }
+    if(r.ok) setS(L("stSaved"));
+    else setS(`${L("stFail")}${r.status} ${(await r.text()).slice(0,120)}`);
+  }catch(e){ setS(L("stSendFail")+e.message); }
 }
 
 async function wireManual(){
@@ -275,15 +331,13 @@ const REPORT_TO="Kyle (kyle@eui.money)";
 const MONITOR_REPO="gotodye/hk-fx-monitor";  // private repo hosting send-report.yml
 
 function reportCardHtml(){
-  return `<section class="card"><h2>發送匯率快報 <span class="tag">給財務 Kyle</span></h2>`
+  return `<section class="card"><h2>${L("sendReport")} <span class="tag">${L("toKyle")}</span></h2>`
     +`<div class="edit-form">`
-    +`<div class="edit-row"><button class="btn secondary" id="previewReport" type="button">產生預覽</button>`
-    +`<button class="btn" id="sendReport" type="button" style="display:none">確認發送</button></div>`
+    +`<div class="edit-row"><button class="btn secondary" id="previewReport" type="button">${L("preview")}</button>`
+    +`<button class="btn" id="sendReport" type="button" style="display:none">${L("send")}</button></div>`
     +`<pre id="reportPreview" class="report-pre" style="display:none"></pre>`
     +`<div id="reportStatus" class="muted"></div>`
-    +`<p class="muted" style="margin:6px 0 0">先「產生預覽」看內容 → 確認後按「確認發送」。`
-    +`發送由 <b>GitHub 伺服器端</b>執行（webhook 存在 Secret，不需在瀏覽器貼網址），約 1 分鐘內送達 Teams。`
-    +`使用上方編輯器同一把 GitHub 權杖，該權杖須含 <b>hk-fx-monitor 的 Actions（Read and write）</b>權限。</p>`
+    +`<p class="muted" style="margin:6px 0 0">${L("reportHint")}</p>`
     +`</div></section>`;
 }
 
@@ -295,8 +349,9 @@ function reportDir(key){
 }
 
 function buildReport(){
-  const now=DATA.generated_at?new Date(DATA.generated_at).toLocaleString("zh-HK"):new Date().toLocaleString("zh-HK");
-  const lines=[`📊 香港同業匯率快報`,`收件人：${REPORT_TO}`,`資料時間：${now}`];
+  const now=DATA.generated_at?new Date(DATA.generated_at).toLocaleString(loc()):new Date().toLocaleString(loc());
+  const NA=L("rNA"), BEST=L("rBest"), SEP=(LANG==="en"?": ":"：");
+  const lines=[L("rTitle"),L("rTo")+REPORT_TO,L("rAsOf")+now];
   for(const [f,t] of DATA.corridors){
     lines.push("",`【${f} → ${t}】`);
     const rows=DATA.providers.filter(p=>p.corridors.some(c=>c[0]===f&&c[1]===t))
@@ -305,10 +360,10 @@ function buildReport(){
     const best=rates.length?Math.max(...rates):null;
     for(const {name,key,cell} of rows){
       const has=cell&&cell.rate!=null;
-      const r=has?Number(cell.rate).toFixed(4):"—（未提供）";
+      const r=has?Number(cell.rate).toFixed(4):NA;
       const arrow=has?reportDir(key):"";
-      const star=(has&&best!=null&&cell.rate===best)?"  ★最優":"";
-      lines.push(`• ${name}：${r}${arrow}${star}`);
+      const star=(has&&best!=null&&cell.rate===best)?BEST:"";
+      lines.push(`• ${name}${SEP}${r}${arrow}${star}`);
     }
   }
   return lines.join("\n");
@@ -332,18 +387,18 @@ async function sendReport(){
   const setS=m=>{ if(st) st.textContent=m; };
   const tokEl=document.getElementById("ghToken");
   const token=(localStorage.getItem("ghToken")||(tokEl?tokEl.value:"")||"").trim();
-  if(!token){ setS("⚠ 請先在上方『編輯人工匯率』貼上 GitHub 權杖（須含 hk-fx-monitor 的 Actions 寫入權）"); return; }
-  setS("透過 GitHub 觸發發送中…");
+  if(!token){ setS(L("rpNeedToken")); return; }
+  setS(L("rpTriggering"));
   try{
     const r=await fetch(`https://api.github.com/repos/${MONITOR_REPO}/actions/workflows/send-report.yml/dispatches`,{
       method:"POST",
       headers:{Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json","Content-Type":"application/json"},
-      body:JSON.stringify({ref:"main"})
+      body:JSON.stringify({ref:"main",inputs:{lang:LANG}})
     });
-    if(r.status===204) setS("✅ 已透過 GitHub 觸發發送，約 1 分鐘內送達 Teams（可到 Actions 查看）。");
-    else if(r.status===403||r.status===404) setS(`❌ ${r.status}：權杖需具 hk-fx-monitor 的 Actions 寫入權（Read and write）`);
-    else setS(`❌ 失敗 ${r.status}：${(await r.text()).slice(0,120)}`);
-  }catch(e){ setS("❌ 觸發失敗："+e.message); }
+    if(r.status===204) setS(L("rpDone"));
+    else if(r.status===403||r.status===404) setS(`${L("stFail")}${r.status}${L("rpPerm")}`);
+    else setS(`${L("stFail")}${r.status} ${(await r.text()).slice(0,120)}`);
+  }catch(e){ setS(L("rpTrigFail")+e.message); }
 }
 
 function drawCorridor(f,t){
