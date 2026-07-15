@@ -1,0 +1,5 @@
+{
+  "_comment": "在儀表板網頁的『編輯人工匯率』區直接填即可（會寫到這個檔）。數字 = 1 HKD 換多少當地幣。",
+  "weremit": { "HKD->PHP": "", "HKD->IDR": "" },
+  "alipayhk": { "HKD->IDR": "", "HKD->PHP": "" }
+}
