@@ -131,8 +131,14 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-15T04:20:39+00:00",
+  "generated_at": "2026-07-15T04:54:33+00:00",
   "history": {
+    "bri|HKD|IDR": [
+      {
+        "rate": 2305.0,
+        "t": "2026-07-15T04:54:33+00:00"
+      }
+    ],
     "chandra|HKD|IDR": [
       {
         "rate": 2295.0,
@@ -213,26 +219,33 @@
     ]
   },
   "latest": {
+    "bri|HKD|IDR": {
+      "captured_at": "2026-07-15T04:54:33+00:00",
+      "confidence": 1.0,
+      "method": "fb_ocr",
+      "note": "vision OCR; Rate is 2305 IDR per 1 HKD as shown in the image.",
+      "rate": 2305.0
+    },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-07-15T04:20:39+00:00",
+      "captured_at": "2026-07-15T04:54:33+00:00",
       "confidence": 1.0,
       "method": "fb_ocr",
       "note": "vision OCR; 15/7/2026; Kurs Kirim (remittance rate) is 2295 IDR per 1 HKD. Kurs Tukar (cash exchange rate) is 2220 IDR.",
       "rate": 2295.0
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-15T04:20:39+00:00",
+      "captured_at": "2026-07-15T04:54:33+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (-0.12% vs 昨日)",
-      "rate": 2298.7563
+      "note": "貓熊匯率 standard rate (-0.11% vs 昨日)",
+      "rate": 2298.8149
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-15T04:20:39+00:00",
+      "captured_at": "2026-07-15T04:54:33+00:00",
       "confidence": 0.98,
       "method": "web",
       "note": "貓熊匯率 standard rate (+0.09% vs 昨日)",
-      "rate": 7.8429
+      "rate": 7.8431
     }
   },
   "providers": [
@@ -278,7 +291,7 @@
       "name": "Chandra Remittance"
     },
     {
-      "auto": false,
+      "auto": true,
       "corridors": [
         [
           "HKD",
