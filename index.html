@@ -287,19 +287,28 @@ function reportCardHtml(){
     +`</div></section>`;
 }
 
+function reportDir(key){
+  const h=(DATA.history||{})[key];
+  if(!h||h.length<2) return "";
+  const cur=h[h.length-1].rate, prev=h[h.length-2].rate;
+  return cur>prev?" ▲":cur<prev?" ▼":"";
+}
+
 function buildReport(){
   const now=DATA.generated_at?new Date(DATA.generated_at).toLocaleString("zh-HK"):new Date().toLocaleString("zh-HK");
   const lines=[`📊 香港同業匯率快報`,`收件人：${REPORT_TO}`,`資料時間：${now}`];
   for(const [f,t] of DATA.corridors){
     lines.push("",`【${f} → ${t}】`);
     const rows=DATA.providers.filter(p=>p.corridors.some(c=>c[0]===f&&c[1]===t))
-      .map(p=>({name:p.name,cell:DATA.latest[K(p.key,f,t)]}));
+      .map(p=>({name:p.name,key:K(p.key,f,t),cell:DATA.latest[K(p.key,f,t)]}));
     const rates=rows.filter(x=>x.cell&&x.cell.rate!=null).map(x=>x.cell.rate);
     const best=rates.length?Math.max(...rates):null;
-    for(const {name,cell} of rows){
-      const r=cell&&cell.rate!=null?Number(cell.rate).toFixed(4):"—（未提供）";
-      const star=(cell&&best!=null&&cell.rate===best)?"  ★最優":"";
-      lines.push(`• ${name}：${r}${star}`);
+    for(const {name,key,cell} of rows){
+      const has=cell&&cell.rate!=null;
+      const r=has?Number(cell.rate).toFixed(4):"—（未提供）";
+      const arrow=has?reportDir(key):"";
+      const star=(has&&best!=null&&cell.rate===best)?"  ★最優":"";
+      lines.push(`• ${name}：${r}${arrow}${star}`);
     }
   }
   return lines.join("\n");
