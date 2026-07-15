@@ -271,11 +271,13 @@ async function wireManual(){
 }
 
 // ---- Rate report push to Teams (preview, then send) ----
+const REPORT_TO="Kyle (kyle@eui.money)";
+
 function reportCardHtml(){
   return `<section class="card"><h2>發送匯率快報 <span class="tag">給財務 Kyle</span></h2>`
     +`<div class="edit-form">`
-    +`<label style="max-width:560px">Teams Webhook 網址（只需貼一次，存在本機瀏覽器）`
-    +`<input type="password" id="teamsHook" placeholder="https://...powerplatform.com/...（Teams Workflows webhook）"></label>`
+    +`<label style="max-width:560px">Teams Webhook 網址（指向 Kyle 的 Power Automate flow；只需貼一次，存本機）`
+    +`<input type="password" id="teamsHook" placeholder="https://...powerplatform.com/...（發到 Kyle 的 webhook）"></label>`
     +`<div class="edit-row"><button class="btn secondary" id="previewReport" type="button">產生預覽</button>`
     +`<button class="btn" id="sendReport" type="button" style="display:none">確認發送到 Teams</button></div>`
     +`<pre id="reportPreview" class="report-pre" style="display:none"></pre>`
@@ -286,7 +288,7 @@ function reportCardHtml(){
 
 function buildReport(){
   const now=DATA.generated_at?new Date(DATA.generated_at).toLocaleString("zh-HK"):new Date().toLocaleString("zh-HK");
-  const lines=[`📊 香港同業匯率快報`,`資料時間：${now}`];
+  const lines=[`📊 香港同業匯率快報`,`收件人：${REPORT_TO}`,`資料時間：${now}`];
   for(const [f,t] of DATA.corridors){
     lines.push("",`【${f} → ${t}】`);
     const rows=DATA.providers.filter(p=>p.corridors.some(c=>c[0]===f&&c[1]===t))
