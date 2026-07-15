@@ -181,35 +181,9 @@ function render(){
 // ---- Manual-rate editor (writes manual.json to the public repo via GitHub API) ----
 const MANUAL_REPO="gotodye/hk-fx-rates";  // dashboard/data repo (no source code)
 
-// --- Soft team login. NOTE: this is a SOFT gate on a public static page — the
-//     real write-lock is the GitHub token below (no token = can't save). The
-//     password is stored as a SHA-256 hash, not plaintext, but a client-side
-//     check is bypassable; treat this as team identification + accident-proofing.
-const AUTH_WHITELIST=["angus@eui.money","angela@eui.money","celine@eui.money","rosie@eui.money"];
-const AUTH_PASS_HASH="86517ed57923072e9cede071ad96002727eb22ec3ec5f0aae09f56a22fb57f47"; // sha256("EUI8888")
-
-async function sha256hex(s){
-  const buf=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s));
-  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,"0")).join("");
-}
-function authedUser(){ return localStorage.getItem("fxUser")||""; }
-
 function manualCardHtml(){
   const manual=(DATA.providers||[]).filter(p=>!p.auto);
   if(!manual.length) return "";
-  const head=`<section class="card"><h2>編輯人工匯率 <span class="tag">${manual.map(p=>esc(p.name)).join(" / ")}</span></h2>`;
-
-  if(!authedUser()){
-    return head
-      +`<div class="edit-form"><div class="edit-row">`
-      +`<label>Email<input type="email" id="loginEmail" placeholder="you@eui.money" autocomplete="username"></label>`
-      +`<label>密碼<input type="password" id="loginPass" placeholder="密碼" autocomplete="current-password"></label>`
-      +`<button class="btn" id="loginBtn" type="button">登入</button></div>`
-      +`<div id="loginStatus" class="muted"></div>`
-      +`<p class="muted" style="margin:6px 0 0">僅授權人員可編輯人工匯率（AlipayHK / We Remit）。</p>`
-      +`</div></section>`;
-  }
-
   let rows="";
   for(const p of manual){
     for(const [f,t] of p.corridors){
@@ -217,10 +191,8 @@ function manualCardHtml(){
         +`<input type="number" step="0.0001" inputmode="decimal" data-mk="${p.key}|${f}|${t}" placeholder="1 ${f} = ? ${t}"></label>`;
     }
   }
-  return head
+  return `<section class="card"><h2>編輯人工匯率 <span class="tag">${manual.map(p=>esc(p.name)).join(" / ")}</span></h2>`
     +`<div class="edit-form">`
-    +`<div class="muted" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">已登入：<b>${esc(authedUser())}</b>`
-    +`<button class="btn" id="logoutBtn" type="button" style="padding:4px 12px;font-size:12px">登出</button></div>`
     +`<div class="edit-row">${rows}</div>`
     +`<div class="edit-row"><label style="flex:1;min-width:240px">GitHub 權杖（只需貼一次，存在本機瀏覽器）`
     +`<input type="password" id="ghToken" placeholder="github_pat_... 或 ghp_..."></label>`
@@ -234,27 +206,7 @@ function manualCardHtml(){
 function b64utf8(s){ return btoa(String.fromCharCode.apply(null,new TextEncoder().encode(s))); }
 function setStatus(msg){ const el=document.getElementById("saveStatus"); if(el) el.textContent=msg; }
 
-async function doLogin(){
-  const email=(document.getElementById("loginEmail").value||"").trim().toLowerCase();
-  const pass=(document.getElementById("loginPass").value||"");
-  const st=document.getElementById("loginStatus");
-  if(!AUTH_WHITELIST.includes(email)){ if(st) st.textContent="❌ 此 Email 不在授權名單"; return; }
-  if(await sha256hex(pass)!==AUTH_PASS_HASH){ if(st) st.textContent="❌ 密碼錯誤"; return; }
-  localStorage.setItem("fxUser",email);
-  render();
-}
-
 async function wireManual(){
-  if(!authedUser()){
-    const lb=document.getElementById("loginBtn");
-    if(lb) lb.addEventListener("click",doLogin);
-    const pe=document.getElementById("loginPass");
-    if(pe) pe.addEventListener("keydown",e=>{ if(e.key==="Enter") doLogin(); });
-    return;
-  }
-  const logout=document.getElementById("logoutBtn");
-  if(logout) logout.addEventListener("click",()=>{ localStorage.removeItem("fxUser"); render(); });
-
   const btn=document.getElementById("saveManual");
   if(!btn) return;
   const tokenEl=document.getElementById("ghToken");
@@ -290,7 +242,7 @@ async function saveManual(){
   const hdr={Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json"};
   let sha;
   try{ const g=await fetch(api+"?ref=main",{headers:hdr}); if(g.ok) sha=(await g.json()).sha; }catch(e){}
-  const body={message:`update manual rates via dashboard (${authedUser()||"?"})`,branch:"main",
+  const body={message:"update manual rates via dashboard",branch:"main",
     content:b64utf8(JSON.stringify(manual,null,2))};
   if(sha) body.sha=sha;
   try{
