@@ -270,19 +270,20 @@ async function wireManual(){
   wireReport();
 }
 
-// ---- Rate report push to Teams (preview, then send) ----
+// ---- Rate report → triggers the server-side send-report workflow on GitHub ----
 const REPORT_TO="Kyle (kyle@eui.money)";
+const MONITOR_REPO="gotodye/hk-fx-monitor";  // private repo hosting send-report.yml
 
 function reportCardHtml(){
   return `<section class="card"><h2>發送匯率快報 <span class="tag">給財務 Kyle</span></h2>`
     +`<div class="edit-form">`
-    +`<label style="max-width:560px">Teams Webhook 網址（指向 Kyle 的 Power Automate flow；只需貼一次，存本機）`
-    +`<input type="password" id="teamsHook" placeholder="https://...powerplatform.com/...（發到 Kyle 的 webhook）"></label>`
     +`<div class="edit-row"><button class="btn secondary" id="previewReport" type="button">產生預覽</button>`
-    +`<button class="btn" id="sendReport" type="button" style="display:none">確認發送到 Teams</button></div>`
+    +`<button class="btn" id="sendReport" type="button" style="display:none">確認發送</button></div>`
     +`<pre id="reportPreview" class="report-pre" style="display:none"></pre>`
     +`<div id="reportStatus" class="muted"></div>`
-    +`<p class="muted" style="margin:6px 0 0">先「產生預覽」看內容 → 確認無誤再「確認發送」。內容取目前儀表板的最新匯率。</p>`
+    +`<p class="muted" style="margin:6px 0 0">先「產生預覽」看內容 → 確認後按「確認發送」。`
+    +`發送由 <b>GitHub 伺服器端</b>執行（webhook 存在 Secret，不需在瀏覽器貼網址），約 1 分鐘內送達 Teams。`
+    +`使用上方編輯器同一把 GitHub 權杖，該權杖須含 <b>hk-fx-monitor 的 Actions（Read and write）</b>權限。</p>`
     +`</div></section>`;
 }
 
@@ -305,8 +306,6 @@ function buildReport(){
 }
 
 function wireReport(){
-  const hookEl=document.getElementById("teamsHook");
-  if(hookEl){ const s=localStorage.getItem("teamsHook"); if(s) hookEl.value=s; }
   const pv=document.getElementById("previewReport");
   const sd=document.getElementById("sendReport");
   const box=document.getElementById("reportPreview");
@@ -318,22 +317,24 @@ function wireReport(){
   if(sd) sd.addEventListener("click",sendReport);
 }
 
+// Trigger the server-side send-report workflow (webhook lives in a repo Secret).
 async function sendReport(){
   const st=document.getElementById("reportStatus");
   const setS=m=>{ if(st) st.textContent=m; };
-  const url=(document.getElementById("teamsHook").value||"").trim();
-  if(!url){ setS("⚠ 請先貼上 Teams Webhook 網址"); return; }
-  localStorage.setItem("teamsHook",url);
-  const text=document.getElementById("reportPreview").textContent||buildReport();
-  setS("發送中…");
-  const card={type:"message",attachments:[{contentType:"application/vnd.microsoft.card.adaptive",
-    content:{type:"AdaptiveCard","$schema":"http://adaptivecards.io/schemas/adaptive-card.json",version:"1.4",
-      body:[{type:"TextBlock",text:text,wrap:true}]}}]};
+  const tokEl=document.getElementById("ghToken");
+  const token=(localStorage.getItem("ghToken")||(tokEl?tokEl.value:"")||"").trim();
+  if(!token){ setS("⚠ 請先在上方『編輯人工匯率』貼上 GitHub 權杖（須含 hk-fx-monitor 的 Actions 寫入權）"); return; }
+  setS("透過 GitHub 觸發發送中…");
   try{
-    const r=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(card)});
-    if(r.ok||r.status===202) setS("✅ 已發送到 Teams！");
-    else setS(`❌ 失敗 ${r.status}`);
-  }catch(e){ setS("❌ 發送失敗："+e.message); }
+    const r=await fetch(`https://api.github.com/repos/${MONITOR_REPO}/actions/workflows/send-report.yml/dispatches`,{
+      method:"POST",
+      headers:{Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json","Content-Type":"application/json"},
+      body:JSON.stringify({ref:"main"})
+    });
+    if(r.status===204) setS("✅ 已透過 GitHub 觸發發送，約 1 分鐘內送達 Teams（可到 Actions 查看）。");
+    else if(r.status===403||r.status===404) setS(`❌ ${r.status}：權杖需具 hk-fx-monitor 的 Actions 寫入權（Read and write）`);
+    else setS(`❌ 失敗 ${r.status}：${(await r.text()).slice(0,120)}`);
+  }catch(e){ setS("❌ 觸發失敗："+e.message); }
 }
 
 function drawCorridor(f,t){
