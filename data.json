@@ -131,8 +131,20 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-15T04:54:33+00:00",
+  "generated_at": "2026-07-15T10:40:34+00:00",
   "history": {
+    "alipayhk|HKD|IDR": [
+      {
+        "rate": 2294.7,
+        "t": "2026-07-15T10:40:34+00:00"
+      }
+    ],
+    "alipayhk|HKD|PHP": [
+      {
+        "rate": 7.83,
+        "t": "2026-07-15T10:40:34+00:00"
+      }
+    ],
     "bri|HKD|IDR": [
       {
         "rate": 2305.0,
@@ -216,14 +228,34 @@
         "rate": 7.8429,
         "t": "2026-07-15T04:20:39+00:00"
       }
+    ],
+    "weremit|HKD|IDR": [
+      {
+        "rate": 2297.7,
+        "t": "2026-07-15T10:40:34+00:00"
+      }
     ]
   },
   "latest": {
+    "alipayhk|HKD|IDR": {
+      "captured_at": "2026-07-15T10:40:34+00:00",
+      "confidence": 1.0,
+      "method": "manual",
+      "note": "manual.json",
+      "rate": 2294.7
+    },
+    "alipayhk|HKD|PHP": {
+      "captured_at": "2026-07-15T10:40:34+00:00",
+      "confidence": 1.0,
+      "method": "manual",
+      "note": "manual.json",
+      "rate": 7.83
+    },
     "bri|HKD|IDR": {
-      "captured_at": "2026-07-15T04:54:33+00:00",
+      "captured_at": "2026-07-15T10:40:34+00:00",
       "confidence": 1.0,
       "method": "fb_ocr",
-      "note": "vision OCR; Rate is 2305 IDR per 1 HKD as shown in the image.",
+      "note": "vision OCR; Hari Ini; The exchange rate of 2305 IDR per 1 HKD is clearly displayed in the center of the image under 'KURS HARI INI'.",
       "rate": 2305.0
     },
     "chandra|HKD|IDR": {
@@ -234,18 +266,25 @@
       "rate": 2295.0
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-15T04:54:33+00:00",
+      "captured_at": "2026-07-15T10:40:34+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (-0.11% vs 昨日)",
-      "rate": 2298.8149
+      "note": "貓熊匯率 standard rate (-0.16% vs 昨日)",
+      "rate": 2297.8126
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-15T04:54:33+00:00",
+      "captured_at": "2026-07-15T10:40:34+00:00",
       "confidence": 0.98,
       "method": "web",
       "note": "貓熊匯率 standard rate (+0.09% vs 昨日)",
-      "rate": 7.8431
+      "rate": 7.8434
+    },
+    "weremit|HKD|IDR": {
+      "captured_at": "2026-07-15T10:40:34+00:00",
+      "confidence": 1.0,
+      "method": "manual",
+      "note": "manual.json",
+      "rate": 2297.7
     }
   },
   "providers": [
