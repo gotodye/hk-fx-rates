@@ -66,6 +66,13 @@
   h3.group-head .cnt{font-size:12px;font-weight:600;color:var(--muted);background:rgba(148,163,184,0.14);padding:2px 9px;border-radius:20px;}
   .up{color:var(--up);font-weight:700;}
   .down{color:var(--down);font-weight:700;}
+  .edit-form{display:flex;flex-direction:column;gap:14px;}
+  .edit-row{display:flex;gap:14px;flex-wrap:wrap;align-items:end;}
+  .edit-form label{display:flex;flex-direction:column;font-size:12px;color:var(--muted);gap:5px;font-weight:600;}
+  .edit-form input{background:#fff;color:var(--ink);border:1px solid rgba(148,163,184,0.22);
+    border-radius:var(--radius-sm);padding:9px 12px;font-size:14px;box-shadow:var(--shadow-in);outline:none;min-width:150px;}
+  .edit-form input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(136,216,192,0.35);}
+  #saveStatus{font-size:13px;}
 </style>
 </head>
 <body>
@@ -154,9 +161,12 @@ function render(){
       html+="</tbody></table></div>";
     }
   } else { html+='<p class="muted">尚無記錄到的變動。</p>'; }
-  html+=`<p class="muted" style="margin-top:14px">AlipayHK / We Remit / BRI 沒有可自動抓取的公開來源，其匯率由維護者編輯 <code>manual.json</code> 提供。</p></section>`;
+  html+='</section>';
+
+  html+=manualCardHtml();
 
   app.innerHTML=html;
+  wireManual();
   const tabs=document.getElementById("chartTabs");
   tabs.addEventListener("click",e=>{
     if(e.target.tagName!=="BUTTON")return;
@@ -166,6 +176,80 @@ function render(){
   });
   const first=tabs.querySelector("button");
   if(first)drawCorridor(first.dataset.f,first.dataset.t);
+}
+
+// ---- Manual-rate editor (writes manual.json to the public repo via GitHub API) ----
+const MANUAL_REPO="gotodye/hk-fx-rates";  // dashboard/data repo (no source code)
+
+function manualCardHtml(){
+  const manual=(DATA.providers||[]).filter(p=>!p.auto);
+  if(!manual.length) return "";
+  let rows="";
+  for(const p of manual){
+    for(const [f,t] of p.corridors){
+      rows+=`<label>${esc(p.name)} · ${f}→${t}`
+        +`<input type="number" step="0.0001" inputmode="decimal" data-mk="${p.key}|${f}|${t}" placeholder="1 ${f} = ? ${t}"></label>`;
+    }
+  }
+  return `<section class="card"><h2>編輯人工匯率 <span class="tag">${manual.map(p=>esc(p.name)).join(" / ")}</span></h2>`
+    +`<div class="edit-form">`
+    +`<div class="edit-row">${rows}</div>`
+    +`<div class="edit-row"><label style="flex:1;min-width:240px">GitHub 權杖（只需貼一次，存在本機瀏覽器）`
+    +`<input type="password" id="ghToken" placeholder="github_pat_... 或 ghp_..."></label>`
+    +`<button class="btn" id="saveManual" type="button">儲存</button></div>`
+    +`<div id="saveStatus" class="muted"></div>`
+    +`<p class="muted" style="margin:6px 0 0">填 1 HKD 換多少當地幣；留空＝不覆寫。儲存後下一輪排程（每 30 分）會套用並更新儀表板。`
+    +` 權杖請用<b>細粒度、只授權寫入 ${esc(MANUAL_REPO)}（Contents: Read and write）</b>的那種，風險最小。</p>`
+    +`</div></section>`;
+}
+
+function b64utf8(s){ return btoa(String.fromCharCode.apply(null,new TextEncoder().encode(s))); }
+function setStatus(msg){ const el=document.getElementById("saveStatus"); if(el) el.textContent=msg; }
+
+async function wireManual(){
+  const btn=document.getElementById("saveManual");
+  if(!btn) return;
+  const tokenEl=document.getElementById("ghToken");
+  const saved=localStorage.getItem("ghToken"); if(saved&&tokenEl) tokenEl.value=saved;
+  // pre-fill inputs from the current manual.json (public, no token needed)
+  try{
+    const r=await fetch(`https://raw.githubusercontent.com/${MANUAL_REPO}/main/manual.json?x=`+Date.now());
+    if(r.ok){ const cur=await r.json();
+      document.querySelectorAll("input[data-mk]").forEach(inp=>{
+        const [k,f,t]=inp.dataset.mk.split("|");
+        const v=(cur[k]||{})[`${f}->${t}`];
+        if(v!==undefined&&v!=="") inp.value=v;
+      });
+    }
+  }catch(e){}
+  btn.addEventListener("click",saveManual);
+}
+
+async function saveManual(){
+  const token=(document.getElementById("ghToken").value||"").trim();
+  if(!token){ setStatus("⚠ 請先貼上 GitHub 權杖"); return; }
+  localStorage.setItem("ghToken",token);
+  setStatus("儲存中…");
+
+  const manual={"_comment":"在儀表板『編輯人工匯率』填寫即可。數字 = 1 HKD 換多少當地幣。"};
+  document.querySelectorAll("input[data-mk]").forEach(inp=>{
+    const [k,f,t]=inp.dataset.mk.split("|");
+    manual[k]=manual[k]||{};
+    manual[k][`${f}->${t}`]=inp.value.trim()===""?"":Number(inp.value.trim());
+  });
+
+  const api=`https://api.github.com/repos/${MANUAL_REPO}/contents/manual.json`;
+  const hdr={Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json"};
+  let sha;
+  try{ const g=await fetch(api+"?ref=main",{headers:hdr}); if(g.ok) sha=(await g.json()).sha; }catch(e){}
+  const body={message:"update manual rates via dashboard",branch:"main",
+    content:b64utf8(JSON.stringify(manual,null,2))};
+  if(sha) body.sha=sha;
+  try{
+    const r=await fetch(api,{method:"PUT",headers:{...hdr,"Content-Type":"application/json"},body:JSON.stringify(body)});
+    if(r.ok){ setStatus("✅ 已儲存！下一輪排程（每 30 分，港時 07–17 點）會套用。"); }
+    else{ const e=await r.text(); setStatus(`❌ 失敗 ${r.status}：${e.slice(0,140)}`); }
+  }catch(e){ setStatus("❌ 送出失敗："+e.message); }
 }
 
 function drawCorridor(f,t){
