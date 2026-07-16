@@ -127,7 +127,7 @@ const T={
   manualHint1:{zh:"每家可<b>分開儲存</b>；填 1 HKD 換多少當地幣、留空＝不動。存後下一輪排程（每 30 分）套用。權杖用<b>細粒度、只授權寫入 ",
     en:"Save each provider separately; enter local currency per 1 HKD, blank = unchanged. Applied on the next run (every 30 min). Use a fine-grained token limited to "},
   manualHint2:{zh:"（Contents: Read and write）</b>的那種。",en:" (Contents: Read and write)."},
-  sendReport:{zh:"發送匯率快報",en:"Send rate report"}, toKyle:{zh:"發送到 HK-Remittance",en:"to HK-Remittance"},
+  sendReport:{zh:"發送匯率快報",en:"Send rate report"}, toKyle:{zh:"發送到 HK-ID Remittance",en:"to HK-ID Remittance"},
   preview:{zh:"產生預覽",en:"Preview"}, send:{zh:"確認發送",en:"Send"},
   reportHint:{zh:"先「產生預覽」看內容 → 確認後按「確認發送」。發送由 <b>GitHub 伺服器端</b>執行（webhook 存在 Secret，不需在瀏覽器貼網址），約 1 分鐘內送達 Teams。使用上方編輯器同一把 GitHub 權杖，須含 <b>hk-fx-monitor 的 Actions（Read and write）</b>權限。",
     en:"Click Preview to see the content → then Send. Sending runs <b>server-side on GitHub</b> (webhook in a Secret, no browser paste); arrives in Teams within ~1 min. Uses the same GitHub token above, which must include <b>Actions (Read and write) on hk-fx-monitor</b>."},
@@ -327,7 +327,7 @@ async function wireManual(){
 }
 
 // ---- Rate report → triggers the server-side send-report workflow on GitHub ----
-const REPORT_TO="HK-Remittance";
+const REPORT_TO="HK-ID Remittance";
 const MONITOR_REPO="gotodye/hk-fx-monitor";  // private repo hosting send-report.yml
 
 function reportCardHtml(){
