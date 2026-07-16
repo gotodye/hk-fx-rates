@@ -386,8 +386,9 @@ async function sendReport(){
   const st=document.getElementById("reportStatus");
   const setS=m=>{ if(st) st.textContent=m; };
   const tokEl=document.getElementById("ghToken");
-  const token=(localStorage.getItem("ghToken")||(tokEl?tokEl.value:"")||"").trim();
+  const token=((tokEl&&tokEl.value.trim())||localStorage.getItem("ghToken")||"").trim();
   if(!token){ setS(L("rpNeedToken")); return; }
+  localStorage.setItem("ghToken",token);
   setS(L("rpTriggering"));
   try{
     const r=await fetch(`https://api.github.com/repos/${MONITOR_REPO}/actions/workflows/send-report.yml/dispatches`,{
