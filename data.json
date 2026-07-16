@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-16T06:42:08+00:00",
+      "new_rate": 2290.0095,
+      "old_rate": 2296.7458,
+      "pair": "HKD->IDR",
+      "provider": "Panda Remit",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-07-16T04:29:37+00:00",
       "new_rate": 2296.7458,
       "old_rate": 2298.0471,
@@ -155,7 +163,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-16T04:29:37+00:00",
+  "generated_at": "2026-07-16T06:42:08+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -225,6 +233,10 @@
       {
         "rate": 2296.7458,
         "t": "2026-07-16T04:29:37+00:00"
+      },
+      {
+        "rate": 2290.0095,
+        "t": "2026-07-16T06:42:08+00:00"
       }
     ],
     "pandaremit|HKD|PHP": [
@@ -274,14 +286,14 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-16T04:29:37+00:00",
+      "captured_at": "2026-07-16T06:42:08+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
       "rate": 2294.7
     },
     "alipayhk|HKD|PHP": {
-      "captured_at": "2026-07-16T04:29:37+00:00",
+      "captured_at": "2026-07-16T06:42:08+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
@@ -302,21 +314,21 @@
       "rate": 2296.0
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-16T04:29:37+00:00",
+      "captured_at": "2026-07-16T06:42:08+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (-0.05% vs 昨日)",
-      "rate": 2296.7458
+      "note": "貓熊匯率 standard rate (-0.34% vs 昨日)",
+      "rate": 2290.0095
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-16T04:29:37+00:00",
+      "captured_at": "2026-07-16T06:42:08+00:00",
       "confidence": 0.98,
       "method": "web",
       "note": "貓熊匯率 standard rate (-0.04% vs 昨日)",
-      "rate": 7.8406
+      "rate": 7.8403
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-16T04:29:37+00:00",
+      "captured_at": "2026-07-16T06:42:08+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
