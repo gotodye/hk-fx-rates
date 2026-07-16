@@ -275,8 +275,8 @@ function manualCardHtml(){
 }
 
 async function ghGetManual(hdr){
-  const api=`https://api.github.com/repos/${MANUAL_REPO}/contents/manual.json`;
-  const r=await fetch(api+"?ref=main",{headers:hdr});
+  const api=`https://api.github.com/repos/${MANUAL_REPO}/contents/manual.json?ref=main&_=`+Date.now();
+  const r=await fetch(api,{headers:hdr,cache:"no-store"});
   if(!r.ok) return {json:{}, sha:undefined};
   const d=await r.json();
   let json={}; try{ json=JSON.parse(b64toUtf8(d.content)); }catch(e){}
@@ -291,22 +291,28 @@ async function saveManualProvider(key){
   localStorage.setItem("ghToken",token);
   setS(L("stSaving"));
   const hdr={Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json"};
-  let cur; try{ cur=await ghGetManual(hdr); }catch(e){ setS(L("stReadFail")+e.message); return; }
-  const manual=cur.json;
-  if(!manual._comment) manual._comment="在儀表板『編輯人工匯率』填寫即可。數字 = 1 HKD 換多少當地幣。";
-  manual[key]=manual[key]||{};  // update ONLY this provider; keep the others
+  const api=`https://api.github.com/repos/${MANUAL_REPO}/contents/manual.json`;
+  // collect this provider's field values once
+  const updates={};
   document.querySelectorAll(`input[data-mk^="${key}|"]`).forEach(inp=>{
     const parts=inp.dataset.mk.split("|");
-    manual[key][`${parts[1]}->${parts[2]}`]=inp.value.trim()===""?"":Number(inp.value.trim());
+    updates[`${parts[1]}->${parts[2]}`]=inp.value.trim()===""?"":Number(inp.value.trim());
   });
-  const api=`https://api.github.com/repos/${MANUAL_REPO}/contents/manual.json`;
-  const body={message:`update ${key} manual rate via dashboard`,branch:"main",content:b64utf8(JSON.stringify(manual,null,2))};
-  if(cur.sha) body.sha=cur.sha;
-  try{
-    const r=await fetch(api,{method:"PUT",headers:{...hdr,"Content-Type":"application/json"},body:JSON.stringify(body)});
-    if(r.ok) setS(L("stSaved"));
-    else setS(`${L("stFail")}${r.status} ${(await r.text()).slice(0,120)}`);
-  }catch(e){ setS(L("stSendFail")+e.message); }
+  // Re-read the latest sha and PUT; on 409 (stale sha) re-read and retry.
+  for(let attempt=0; attempt<4; attempt++){
+    let cur; try{ cur=await ghGetManual(hdr); }catch(e){ setS(L("stReadFail")+e.message); return; }
+    const manual=cur.json;
+    if(!manual._comment) manual._comment="在儀表板『編輯人工匯率』填寫即可。數字 = 1 HKD 換多少當地幣。";
+    manual[key]=Object.assign(manual[key]||{}, updates);  // update ONLY this provider; keep others
+    const body={message:`update ${key} manual rate via dashboard`,branch:"main",content:b64utf8(JSON.stringify(manual,null,2))};
+    if(cur.sha) body.sha=cur.sha;
+    try{
+      const r=await fetch(api,{method:"PUT",headers:{...hdr,"Content-Type":"application/json"},body:JSON.stringify(body)});
+      if(r.ok){ setS(L("stSaved")); return; }
+      if(r.status===409 && attempt<3){ await new Promise(x=>setTimeout(x,700)); continue; }  // stale sha → retry
+      setS(`${L("stFail")}${r.status} ${(await r.text()).slice(0,120)}`); return;
+    }catch(e){ setS(L("stSendFail")+e.message); return; }
+  }
 }
 
 async function wireManual(){
@@ -349,7 +355,7 @@ function reportDir(key){
 }
 
 function buildReport(){
-  const now=DATA.generated_at?new Date(DATA.generated_at).toLocaleString(loc()):new Date().toLocaleString(loc());
+  const now=(DATA.generated_at?new Date(DATA.generated_at):new Date()).toLocaleString(loc(),{timeZone:"Asia/Taipei"});
   const NA=L("rNA"), BEST=L("rBest"), SEP=(LANG==="en"?": ":"：");
   const lines=[L("rTitle"),L("rTo")+REPORT_TO,L("rAsOf")+now];
   for(const [f,t] of DATA.corridors){
