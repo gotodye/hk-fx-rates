@@ -1,6 +1,22 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-16T04:29:37+00:00",
+      "new_rate": 2296.7458,
+      "old_rate": 2298.0471,
+      "pair": "HKD->IDR",
+      "provider": "Panda Remit",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-07-16T04:29:37+00:00",
+      "new_rate": 2300.0,
+      "old_rate": 2305.0,
+      "pair": "HKD->IDR",
+      "provider": "BRI Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-07-16T01:13:20+00:00",
       "new_rate": 7.8376,
       "old_rate": 7.8434,
@@ -139,7 +155,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-16T01:13:20+00:00",
+  "generated_at": "2026-07-16T04:29:37+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -157,6 +173,10 @@
       {
         "rate": 2305.0,
         "t": "2026-07-15T04:54:33+00:00"
+      },
+      {
+        "rate": 2300.0,
+        "t": "2026-07-16T04:29:37+00:00"
       }
     ],
     "chandra|HKD|IDR": [
@@ -201,6 +221,10 @@
       {
         "rate": 2298.7563,
         "t": "2026-07-15T04:20:39+00:00"
+      },
+      {
+        "rate": 2296.7458,
+        "t": "2026-07-16T04:29:37+00:00"
       }
     ],
     "pandaremit|HKD|PHP": [
@@ -250,49 +274,49 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-16T01:13:20+00:00",
+      "captured_at": "2026-07-16T04:29:37+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
       "rate": 2294.7
     },
     "alipayhk|HKD|PHP": {
-      "captured_at": "2026-07-16T01:13:20+00:00",
+      "captured_at": "2026-07-16T04:29:37+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
       "rate": 7.83
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-07-15T10:40:34+00:00",
+      "captured_at": "2026-07-16T04:29:37+00:00",
       "confidence": 1.0,
       "method": "fb_ocr",
-      "note": "vision OCR; Hari Ini; The exchange rate of 2305 IDR per 1 HKD is clearly displayed in the center of the image under 'KURS HARI INI'.",
-      "rate": 2305.0
+      "note": "vision OCR; Kurs Hari Ini (Today's Rate) is 2300 IDR for 1 HKD, valid on the remit.go! app and all BRI Global Financial branches.",
+      "rate": 2300.0
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-07-15T04:54:33+00:00",
-      "confidence": 1.0,
+      "captured_at": "2026-07-16T04:29:37+00:00",
+      "confidence": 0.95,
       "method": "fb_ocr",
-      "note": "vision OCR; 15/7/2026; Kurs Kirim (remittance rate) is 2295 IDR per 1 HKD. Kurs Tukar (cash exchange rate) is 2220 IDR.",
-      "rate": 2295.0
+      "note": "vision OCR; 16/7/2026; Kurs Kirim (remittance rate) is 2296. Kurs Tukar (cash exchange rate) is 2220. The date printed on the image is 16/7/2026.",
+      "rate": 2296.0
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-16T01:13:20+00:00",
+      "captured_at": "2026-07-16T04:29:37+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (+0.01% vs 昨日)",
-      "rate": 2298.0471
+      "note": "貓熊匯率 standard rate (-0.05% vs 昨日)",
+      "rate": 2296.7458
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-16T01:13:20+00:00",
+      "captured_at": "2026-07-16T04:29:37+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (-0.08% vs 昨日)",
-      "rate": 7.8376
+      "note": "貓熊匯率 standard rate (-0.04% vs 昨日)",
+      "rate": 7.8406
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-16T01:13:20+00:00",
+      "captured_at": "2026-07-16T04:29:37+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
