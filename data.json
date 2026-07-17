@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-17T00:01:18+00:00",
+      "new_rate": 2280.0,
+      "old_rate": 2300.0,
+      "pair": "HKD->IDR",
+      "provider": "BRI Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-07-16T07:50:43+00:00",
       "new_rate": 2287.3886,
       "old_rate": 2288.6604,
@@ -195,7 +203,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-16T07:50:43+00:00",
+  "generated_at": "2026-07-17T00:01:18+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -217,6 +225,10 @@
       {
         "rate": 2300.0,
         "t": "2026-07-16T04:29:37+00:00"
+      },
+      {
+        "rate": 2280.0,
+        "t": "2026-07-17T00:01:18+00:00"
       }
     ],
     "chandra|HKD|IDR": [
@@ -334,25 +346,25 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-16T07:50:43+00:00",
+      "captured_at": "2026-07-17T00:01:18+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
       "rate": 2294.7
     },
     "alipayhk|HKD|PHP": {
-      "captured_at": "2026-07-16T07:50:43+00:00",
+      "captured_at": "2026-07-17T00:01:18+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
       "rate": 7.83
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-07-16T07:23:31+00:00",
+      "captured_at": "2026-07-17T00:01:18+00:00",
       "confidence": 1.0,
       "method": "fb_ocr",
-      "note": "vision OCR; Kurs Hari Ini (Today's Rate) is 2300 IDR for 1 HKD, valid on the remit.go! app and all BRI Global Financial branches.",
-      "rate": 2300.0
+      "note": "vision OCR; The base rate is clearly stated as 'Kurs hari ini 1 HKD = 2280' on the phone screen. The wheel displays promotional rates with added bonuses.",
+      "rate": 2280.0
     },
     "chandra|HKD|IDR": {
       "captured_at": "2026-07-16T07:50:43+00:00",
@@ -362,21 +374,21 @@
       "rate": 2293.0
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-16T07:50:43+00:00",
+      "captured_at": "2026-07-17T00:01:18+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (-0.46% vs 昨日)",
-      "rate": 2287.3886
+      "note": "貓熊匯率 standard rate (-0.01% vs 昨日)",
+      "rate": 2287.2135
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-16T07:50:43+00:00",
+      "captured_at": "2026-07-17T00:01:18+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (-0.08% vs 昨日)",
-      "rate": 7.8378
+      "note": "貓熊匯率 standard rate (-0.01% vs 昨日)",
+      "rate": 7.8363
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-16T07:50:43+00:00",
+      "captured_at": "2026-07-17T00:01:18+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
