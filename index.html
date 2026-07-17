@@ -103,6 +103,7 @@ const METHOD_LABEL={web:"web",fb_ocr:"fb_ocr",manual:"manual",proxy:"proxy"};
 const CCY_FLAG={IDR:"🇮🇩",PHP:"🇵🇭"};
 const K=(pk,f,t)=>`${pk}|${f}|${t}`;
 const esc=s=>(s==null?"":String(s)).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const escA=s=>esc(s).replace(/"/g,"&quot;");
 const fmt=(v,d=4)=>v==null?"—":Number(v).toFixed(d);
 
 // ---- i18n (中 / EN) ----
@@ -186,7 +187,13 @@ function render(){
       const badge=p.auto?"":` <span class="pill manual">${L("manual")}</span>`;
       const star=isBest?'<span class="star">★</span>':"";
       const rate=cell&&cell.rate!=null?fmt(cell.rate):'<span class="muted">—</span>';
-      const method=cell&&cell.method?`<span class="pill ${cell.method}">${esc(METHOD_LABEL[cell.method]||cell.method)}</span>`:'<span class="muted">—</span>';
+      let method='<span class="muted">—</span>';
+      if(cell&&cell.method){
+        const pill=`<span class="pill ${cell.method}" title="${escA(cell.note||'')}">${esc(METHOD_LABEL[cell.method]||cell.method)}</span>`;
+        const src=cell.source_url?`<a href="${esc(cell.source_url)}" target="_blank" rel="noopener">${pill}</a>`:pill;
+        const img=cell.raw_ref?` <a href="${esc(cell.raw_ref)}" target="_blank" rel="noopener" title="來源圖片 source image">🖼</a>`:"";
+        method=src+img;
+      }
       let conf='<span class="muted">—</span>';
       if(cell&&cell.confidence!=null){const pc=Math.round(cell.confidence*100);
         conf=cell.confidence<0.6?`<span class="lowconf">${L("low")} ${pc}%⚠</span>`:`${pc}%`;}

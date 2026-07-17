@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-17T01:28:03+00:00",
+      "new_rate": 7.83,
+      "old_rate": 7.8363,
+      "pair": "HKD->PHP",
+      "provider": "Panda Remit",
+      "to_ccy": "PHP"
+    },
+    {
       "changed_at": "2026-07-17T00:01:18+00:00",
       "new_rate": 2280.0,
       "old_rate": 2300.0,
@@ -203,7 +211,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-17T00:01:18+00:00",
+  "generated_at": "2026-07-17T01:28:03+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -335,6 +343,10 @@
       {
         "rate": 7.8376,
         "t": "2026-07-16T01:13:20+00:00"
+      },
+      {
+        "rate": 7.83,
+        "t": "2026-07-17T01:28:03+00:00"
       }
     ],
     "weremit|HKD|IDR": [
@@ -346,25 +358,31 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-17T00:01:18+00:00",
+      "captured_at": "2026-07-17T01:28:03+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
-      "rate": 2294.7
+      "rate": 2294.7,
+      "raw_ref": null,
+      "source_url": null
     },
     "alipayhk|HKD|PHP": {
-      "captured_at": "2026-07-17T00:01:18+00:00",
+      "captured_at": "2026-07-17T01:28:03+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
-      "rate": 7.83
+      "rate": 7.83,
+      "raw_ref": null,
+      "source_url": null
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-07-17T00:01:18+00:00",
+      "captured_at": "2026-07-17T01:28:03+00:00",
       "confidence": 1.0,
       "method": "fb_ocr",
       "note": "vision OCR; The base rate is clearly stated as 'Kurs hari ini 1 HKD = 2280' on the phone screen. The wheel displays promotional rates with added bonuses.",
-      "rate": 2280.0
+      "rate": 2280.0,
+      "raw_ref": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.99422-6/749329782_2294407051378080_827097505329502763_n.png?stp=dst-jpg_tt6&cstp=mx828x1026&ctp=s640x640&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XiQLGKwLhJEQ7kNvwHF35RD&_nc_oc=AdoOCg_UYeXCtJ88wGNHPeOIcAMwdCZ792q1coEslUFxm2UWr0vvkoLZm0IwQ3iHwgM&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=6-XxWwUTXzrpOHkGLARPlg&_nc_ss=7c289&oh=00_AQCOU03WQbD6q11dTphO1pqrcwEozGqErRIE0oT5Ju5uNA&oe=6A5F4107",
+      "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
       "captured_at": "2026-07-16T07:50:43+00:00",
@@ -374,25 +392,31 @@
       "rate": 2293.0
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-17T00:01:18+00:00",
+      "captured_at": "2026-07-17T01:28:03+00:00",
       "confidence": 0.98,
       "method": "web",
       "note": "貓熊匯率 standard rate (-0.01% vs 昨日)",
-      "rate": 2287.2135
+      "rate": 2287.0677,
+      "raw_ref": null,
+      "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-17T00:01:18+00:00",
+      "captured_at": "2026-07-17T01:28:03+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (-0.01% vs 昨日)",
-      "rate": 7.8363
+      "note": "貓熊匯率 standard rate (-0.09% vs 昨日)",
+      "rate": 7.83,
+      "raw_ref": null,
+      "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-17T00:01:18+00:00",
+      "captured_at": "2026-07-17T01:28:03+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
-      "rate": 2297.1
+      "rate": 2297.1,
+      "raw_ref": null,
+      "source_url": null
     }
   },
   "providers": [
