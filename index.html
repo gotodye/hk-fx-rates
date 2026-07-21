@@ -138,7 +138,10 @@ const T={
   rTo:{zh:"收件人：",en:"To: "}, rAsOf:{zh:"資料時間：",en:"As of: "},
   rBest:{zh:"  ★最優",en:"  ★Best"}, rNA:{zh:"—（未提供）",en:"—(N/A)"},
   stSaving:{zh:"儲存中…",en:"Saving…"},
-  stSaved:{zh:"✅ 已儲存！下一輪排程（每 30 分）套用。",en:"✅ Saved! Applied on the next run (every 30 min)."},
+  stSaved:{zh:"✅ 已儲存！",en:"✅ Saved!"},
+  stApplying:{zh:"✅ 已儲存，正在套用到儀表板…（約 30–60 秒）",en:"✅ Saved — applying to the dashboard… (~30-60s)"},
+  stApplied:{zh:"✅ 已更新！儀表板已是最新值。",en:"✅ Updated! The dashboard now shows the new value."},
+  stSavedPending:{zh:"✅ 已儲存（即時套用未完成，將於下一輪排程生效）",en:"✅ Saved (instant apply didn't finish; it will take effect on the next scheduled run)"},
   stNeedToken:{zh:"⚠ 請先貼上 GitHub 權杖",en:"⚠ Paste your GitHub token first"},
   stReadFail:{zh:"❌ 讀取現況失敗：",en:"❌ Failed to read current: "},
   stSendFail:{zh:"❌ 送出失敗：",en:"❌ Submit failed: "},
@@ -315,11 +318,56 @@ async function saveManualProvider(key){
     if(cur.sha) body.sha=cur.sha;
     try{
       const r=await fetch(api,{method:"PUT",headers:{...hdr,"Content-Type":"application/json"},body:JSON.stringify(body)});
-      if(r.ok){ setS(L("stSaved")); return; }
+      if(r.ok){ await applyManualNow(key, updates); return; }
       if(r.status===409 && attempt<3){ await new Promise(x=>setTimeout(x,700)); continue; }  // stale sha → retry
       setS(`${L("stFail")}${r.status} ${(await r.text()).slice(0,120)}`); return;
     }catch(e){ setS(L("stSendFail")+e.message); return; }
   }
+}
+
+// After a successful manual save: show the value immediately, trigger the
+// lightweight "Apply Manual Rates" workflow (server-side merge + publish, no
+// scraping, no Teams notification), then poll until the published data.json
+// reflects it — dashboard updates in ~30-60s instead of waiting 30 minutes.
+async function applyManualNow(key, updates){
+  const setS=m=>{ const el=document.querySelector(`[data-status="${key}"]`); if(el) el.textContent=m; };
+  const before=DATA.generated_at;
+
+  // 1) optimistic — the value IS already persisted in manual.json
+  const nowIso=new Date().toISOString();
+  for(const [pair,val] of Object.entries(updates)){
+    if(val===""||val===null||val===undefined) continue;
+    const [f,t]=pair.split("->");
+    DATA.latest[K(key,f,t)]={rate:Number(val),method:"manual",confidence:1.0,
+      note:"manual.json",source_url:null,raw_ref:null,captured_at:nowIso};
+  }
+  render();
+  setS(L("stApplying"));
+
+  // 2) trigger the server-side merge + publish
+  const token=(localStorage.getItem("ghToken")||"").trim();
+  try{
+    const r=await fetch(`https://api.github.com/repos/${MONITOR_REPO}/actions/workflows/apply-manual.yml/dispatches`,{
+      method:"POST",
+      headers:{Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json","Content-Type":"application/json"},
+      body:JSON.stringify({ref:"main"})
+    });
+    if(r.status!==204){ setS(L("stSavedPending")); return; }
+  }catch(e){ setS(L("stSavedPending")); return; }
+
+  // 3) poll the published data.json until it reflects the change (~2 min max)
+  for(let i=0;i<24;i++){
+    await new Promise(x=>setTimeout(x,5000));
+    try{
+      const res=await fetch("./data.json?_="+Date.now(),{cache:"no-store"});
+      if(!res.ok) continue;
+      const fresh=await res.json();
+      if(fresh.generated_at && fresh.generated_at!==before){
+        DATA=fresh; render(); setS(L("stApplied")); return;
+      }
+    }catch(e){}
+  }
+  setS(L("stSavedPending"));
 }
 
 async function wireManual(){
