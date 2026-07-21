@@ -1,6 +1,38 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-21T04:38:47+00:00",
+      "new_rate": 2275.1598,
+      "old_rate": 2282.3572,
+      "pair": "HKD->IDR",
+      "provider": "Panda Remit",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-07-21T04:38:47+00:00",
+      "new_rate": 7.8459,
+      "old_rate": 7.8418,
+      "pair": "HKD->PHP",
+      "provider": "Panda Remit",
+      "to_ccy": "PHP"
+    },
+    {
+      "changed_at": "2026-07-21T04:38:47+00:00",
+      "new_rate": 2282.0,
+      "old_rate": 2284.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-07-21T04:38:47+00:00",
+      "new_rate": 2285.0,
+      "old_rate": 2280.0,
+      "pair": "HKD->IDR",
+      "provider": "BRI Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-07-20T07:53:16+00:00",
       "new_rate": 2282.3572,
       "old_rate": 2285.5311,
@@ -287,38 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-07-13T07:59:49+00:00",
-      "new_rate": 7.8592,
-      "old_rate": 7.8647,
-      "pair": "HKD->PHP",
-      "provider": "Panda Remit",
-      "to_ccy": "PHP"
-    },
-    {
-      "changed_at": "2026-07-13T04:52:04+00:00",
-      "new_rate": 2315.3474,
-      "old_rate": 2304.3701,
-      "pair": "HKD->IDR",
-      "provider": "Panda Remit",
-      "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-07-13T04:52:04+00:00",
-      "new_rate": 2302.0,
-      "old_rate": 2295.0,
-      "pair": "HKD->IDR",
-      "provider": "Chandra Remittance",
-      "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-07-13T01:17:45+00:00",
-      "new_rate": 7.8632,
-      "old_rate": 7.851,
-      "pair": "HKD->PHP",
-      "provider": "Panda Remit",
-      "to_ccy": "PHP"
     }
   ],
   "corridors": [
@@ -331,7 +331,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-20T07:53:16+00:00",
+  "generated_at": "2026-07-21T04:38:47+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -369,6 +369,10 @@
       {
         "rate": 2280.0,
         "t": "2026-07-20T04:57:23+00:00"
+      },
+      {
+        "rate": 2285.0,
+        "t": "2026-07-21T04:38:47+00:00"
       }
     ],
     "chandra|HKD|IDR": [
@@ -407,6 +411,10 @@
       {
         "rate": 2284.0,
         "t": "2026-07-20T04:57:23+00:00"
+      },
+      {
+        "rate": 2282.0,
+        "t": "2026-07-21T04:38:47+00:00"
       }
     ],
     "pandaremit|HKD|IDR": [
@@ -481,6 +489,10 @@
       {
         "rate": 2282.3572,
         "t": "2026-07-20T07:53:16+00:00"
+      },
+      {
+        "rate": 2275.1598,
+        "t": "2026-07-21T04:38:47+00:00"
       }
     ],
     "pandaremit|HKD|PHP": [
@@ -535,6 +547,10 @@
       {
         "rate": 7.8397,
         "t": "2026-07-20T01:17:27+00:00"
+      },
+      {
+        "rate": 7.8459,
+        "t": "2026-07-21T04:38:47+00:00"
       }
     ],
     "weremit|HKD|IDR": [
@@ -546,7 +562,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-20T07:53:16+00:00",
+      "captured_at": "2026-07-21T04:38:47+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
@@ -555,7 +571,7 @@
       "source_url": null
     },
     "alipayhk|HKD|PHP": {
-      "captured_at": "2026-07-20T07:53:16+00:00",
+      "captured_at": "2026-07-21T04:38:47+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
@@ -564,43 +580,43 @@
       "source_url": null
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-07-20T07:53:16+00:00",
+      "captured_at": "2026-07-21T04:38:47+00:00",
       "confidence": 1.0,
       "method": "fb_ocr",
-      "note": "vision OCR; Pagi ini; The exchange rate is clearly stated as 2280 in both the image and the caption.",
-      "rate": 2280.0,
-      "raw_ref": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.99422-6/753337104_1387427279938944_1624440226713541668_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kQJvEiJ_PYUQ7kNvwHslcdc&_nc_oc=AdrLOqwFUexPyefykB78HaVq1bxjuMRnsqFxBFvU1cjZG3fAhSNP1gE6ZhWiWElAccA&_nc_zt=14&_nc_ht=scontent-lga3-3.xx&_nc_gid=iD-DowMprSc0LJFkhw_jBQ&_nc_ss=7c289&oh=00_AQCHZ0hnzBLdapoh2q7voKyRUkMHuewykYR3PwcfwriW8Q&oe=6A63BEB6",
+      "note": "vision OCR; 7/21/2026; The rate is 2285 IDR per 1 HKD as of 7/21/2026 (likely a typo for 2024) shown on the chart and confirmed in the caption.",
+      "rate": 2285.0,
+      "raw_ref": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.99422-6/753231539_1033254862934161_3701838656995484092_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6AtB7dXlBlkQ7kNvwGXflLE&_nc_oc=AdpYOXTpW2vZ0--tVAmJwAfFGkhmGpOiEiSWMgtMKF_JhEln4IJjQKuMFmg6-hNTIzg&_nc_zt=14&_nc_ht=scontent-sea1-1.xx&_nc_gid=J2SclxhJE0VMg9JKhFl4ag&_nc_ss=7c289&oh=00_AQC6itFz_UXtIf8StNnFfrowSkMl1Ovi1-i4Yuw94VKElw&oe=6A64C00A",
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-07-20T07:53:16+00:00",
+      "captured_at": "2026-07-21T04:38:47+00:00",
       "confidence": 1.0,
       "method": "fb_ocr",
-      "note": "vision OCR; 20/7/2026; The remittance rate (Kurs Kirim) is 2284 IDR per 1 HKD. The cash exchange rate (Kurs Tukar) is 2205 IDR. The date printed on the image is 20/7/2026 (likely a typo for 2024).",
-      "rate": 2284.0,
-      "raw_ref": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.99422-6/749652458_1579744693858045_581846563976477187_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8ZpCXkmIezYQ7kNvwG9orpY&_nc_oc=Adoqt3UscUl2X3MJKJHuOtgMyQ6tNwSU6porWYvCXfD5QJ2y1XPLALFO5DQnWkDI8jk&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=L1RPTJHkM7SzAetdwk2iGQ&_nc_ss=7c289&oh=00_AQBikjGFIE7peQQ3DdfAHshzzPAiJC-DUwdRJItEtrvYWg&oe=6A639597",
+      "note": "vision OCR; 21/7/2026; Kurs Kirim (remittance rate) is 2282 IDR per HKD. Kurs Tukar (cash exchange rate) is 2205 IDR. The date printed on the image is 21/7/2026.",
+      "rate": 2282.0,
+      "raw_ref": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.99422-6/752242612_1005394545836289_6729252107345651482_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UxCHM7e5cYQQ7kNvwFJER5Z&_nc_oc=AdpnrkJ3AkIz4K1Bia817Ul3ctLH8A6f-qmzzjmo9ZyTD8VkvL8Id2tQcEw_Mkw7Wj8&_nc_zt=14&_nc_ht=scontent-sea5-1.xx&_nc_gid=ey7p2J-e8TJ41DAwujZrdA&_nc_ss=7c289&oh=00_AQB1vLDBTN79duUJQmmHwk2EXsdbiuQPYnf-LI7XA6M_PQ&oe=6A64B1A9",
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-20T07:53:16+00:00",
+      "captured_at": "2026-07-21T04:38:47+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (+0.84% vs 昨日)",
-      "rate": 2282.3572,
+      "note": "貓熊匯率 standard rate (-0.28% vs 昨日)",
+      "rate": 2275.1598,
       "raw_ref": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-20T07:53:16+00:00",
+      "captured_at": "2026-07-21T04:38:47+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (+0.65% vs 昨日)",
-      "rate": 7.8418,
+      "note": "貓熊匯率 standard rate (+0.04% vs 昨日)",
+      "rate": 7.8459,
       "raw_ref": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-20T07:53:16+00:00",
+      "captured_at": "2026-07-21T04:38:47+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
