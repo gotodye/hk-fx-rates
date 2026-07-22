@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-22T04:39:48+00:00",
+      "new_rate": 2278.5148,
+      "old_rate": 2273.7142,
+      "pair": "HKD->IDR",
+      "provider": "Panda Remit",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-07-22T02:45:29+00:00",
       "new_rate": 2274.6,
       "old_rate": 2280.0,
@@ -311,14 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-07-15T04:20:39+00:00",
-      "new_rate": 7.8429,
-      "old_rate": 7.8488,
-      "pair": "HKD->PHP",
-      "provider": "Panda Remit",
-      "to_ccy": "PHP"
     }
   ],
   "corridors": [
@@ -331,7 +331,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-22T02:45:29+00:00",
+  "generated_at": "2026-07-22T04:39:48+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -509,6 +509,10 @@
       {
         "rate": 2272.6447,
         "t": "2026-07-21T07:24:53+00:00"
+      },
+      {
+        "rate": 2278.5148,
+        "t": "2026-07-22T04:39:48+00:00"
       }
     ],
     "pandaremit|HKD|PHP": [
@@ -590,7 +594,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-22T02:45:29+00:00",
+      "captured_at": "2026-07-22T04:39:48+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
@@ -626,25 +630,25 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-21T09:56:36+00:00",
+      "captured_at": "2026-07-22T04:39:48+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (-0.34% vs 昨日)",
-      "rate": 2273.7142,
+      "note": "貓熊匯率 standard rate (+0.21% vs 昨日)",
+      "rate": 2278.5148,
       "raw_ref": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-21T09:56:36+00:00",
+      "captured_at": "2026-07-22T04:39:48+00:00",
       "confidence": 0.98,
       "method": "web",
-      "note": "貓熊匯率 standard rate (+0.08% vs 昨日)",
-      "rate": 7.849,
+      "note": "貓熊匯率 standard rate (+0.03% vs 昨日)",
+      "rate": 7.8513,
       "raw_ref": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-22T02:45:29+00:00",
+      "captured_at": "2026-07-22T04:39:48+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
