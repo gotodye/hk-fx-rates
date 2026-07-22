@@ -1,15 +1,7 @@
 {
   "changes": [
     {
-      "changed_at": "2026-07-22T02:45:14+00:00",
-      "new_rate": 2279.0,
-      "old_rate": 2275.0,
-      "pair": "HKD->IDR",
-      "provider": "AlipayHK",
-      "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-07-22T02:44:52+00:00",
+      "changed_at": "2026-07-22T02:45:29+00:00",
       "new_rate": 2274.6,
       "old_rate": 2280.0,
       "pair": "HKD->IDR",
@@ -17,7 +9,7 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-07-22T02:44:52+00:00",
+      "changed_at": "2026-07-22T02:45:29+00:00",
       "new_rate": 2275.0,
       "old_rate": 2279.0,
       "pair": "HKD->IDR",
@@ -319,6 +311,14 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-07-15T04:20:39+00:00",
+      "new_rate": 7.8429,
+      "old_rate": 7.8488,
+      "pair": "HKD->PHP",
+      "provider": "Panda Remit",
+      "to_ccy": "PHP"
     }
   ],
   "corridors": [
@@ -331,7 +331,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-22T02:45:14+00:00",
+  "generated_at": "2026-07-22T02:45:29+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -344,11 +344,7 @@
       },
       {
         "rate": 2275.0,
-        "t": "2026-07-22T02:44:52+00:00"
-      },
-      {
-        "rate": 2279.0,
-        "t": "2026-07-22T02:45:14+00:00"
+        "t": "2026-07-22T02:45:29+00:00"
       }
     ],
     "alipayhk|HKD|PHP": [
@@ -588,17 +584,17 @@
       },
       {
         "rate": 2274.6,
-        "t": "2026-07-22T02:44:52+00:00"
+        "t": "2026-07-22T02:45:29+00:00"
       }
     ]
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-22T02:45:14+00:00",
+      "captured_at": "2026-07-22T02:45:29+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
-      "rate": 2279.0,
+      "rate": 2275.0,
       "raw_ref": null,
       "source_url": null
     },
@@ -648,7 +644,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-22T02:45:14+00:00",
+      "captured_at": "2026-07-22T02:45:29+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
