@@ -168,6 +168,8 @@ const T={
   refreshed:{zh:"✅ 已更新",en:"✅ Updated"},
   refreshFail:{zh:"❌ 無法觸發更新（權杖需含 hk-fx-monitor 的 Actions 寫入權）",en:"❌ Couldn't trigger refresh (token needs Actions:write on hk-fx-monitor)"},
   refreshSlow:{zh:"⏳ 已觸發，仍在執行中；稍後重新整理即可",en:"⏳ Triggered and still running; reload in a moment"},
+  refreshedSame:{zh:"✅ 已更新（匯率無變動）",en:"✅ Updated (no rate change)"},
+  nextAuto:{zh:"下次自動更新不早於 ",en:"Next auto update no earlier than "},
   fixTitle:{zh:"修正",en:"Fix"},
   fixHint:{zh:"這個數字抓錯了？填入正確匯率。只要來源仍是錯值就會自動套用；來源真的改價後修正會自動失效。",
     en:"Wrong number? Enter the correct rate. It applies while the source still reports the wrong value, and expires by itself once the source really changes."},
@@ -194,6 +196,7 @@ function setLang(l){
   const b=document.getElementById("langBtn"); if(b) b.textContent=LANG==="zh"?"EN":"中";
   const h=document.getElementById("hTitle"); if(h) h.textContent=L("title");
   const rb=document.getElementById("refreshBtn"); if(rb) rb.textContent=L("refresh");
+  if(rb && !rb.disabled) showNextAuto();   // don't clobber a refresh in progress
   if(DATA) render();
 }
 (function initLang(){
@@ -205,7 +208,7 @@ function setLang(l){
 })();
 
 // ---- Shared: dispatch a workflow, then poll ./data.json until it republishes ----
-async function dispatchWorkflow(file){
+async function dispatchWorkflow(file, inputs){
   const token=(localStorage.getItem("ghToken")||
     ((document.getElementById("ghToken")||{}).value)||"").trim();
   if(!token) return {ok:false, reason:"no-token"};
@@ -213,7 +216,7 @@ async function dispatchWorkflow(file){
     const r=await fetch(`https://api.github.com/repos/${MONITOR_REPO}/actions/workflows/${file}/dispatches`,{
       method:"POST",
       headers:{Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json","Content-Type":"application/json"},
-      body:JSON.stringify({ref:"main"})
+      body:JSON.stringify(inputs?{ref:"main",inputs}:{ref:"main"})
     });
     return {ok:r.status===204, reason:String(r.status)};
   }catch(e){ return {ok:false, reason:e.message}; }
@@ -232,25 +235,66 @@ async function pollUntilPublished(before, tries=36){
   return false;
 }
 
-// "Refresh now" — GitHub drops most scheduled runs, but workflow_dispatch always fires.
+// Every full run stamps last_run.json, even a quiet one — data.json is only
+// rewritten when a rate actually moves, so it can't tell "finished, nothing
+// changed" from "still running". This can.
+async function fetchLastRun(){
+  try{
+    const r=await fetch("./last_run.json?_="+Date.now(),{cache:"no-store"});
+    if(r.ok) return await r.json();
+  }catch(e){}
+  return null;
+}
+
+async function pollRefresh(beforeRun, beforeData, tries=36){
+  for(let i=0;i<tries;i++){
+    await new Promise(x=>setTimeout(x,5000));
+    const lr=await fetchLastRun();
+    if(!lr||!lr.at||lr.at===beforeRun) continue;
+    LAST_RUN=lr;
+    try{
+      const res=await fetch("./data.json?_="+Date.now(),{cache:"no-store"});
+      if(res.ok){ const fresh=await res.json(); if(fresh.generated_at) DATA=fresh; }
+    }catch(e){}
+    render(); showNextAuto();
+    return {done:true, changed:!!(DATA&&DATA.generated_at!==beforeData)};
+  }
+  return {done:false};
+}
+
+// When idle, the status line doubles as "when will this update by itself".
+function showNextAuto(){
+  const st=document.getElementById("refreshStatus");
+  if(!st) return;
+  const nxt=LAST_RUN&&LAST_RUN.next_auto_at?new Date(LAST_RUN.next_auto_at):null;
+  st.textContent=(nxt&&nxt>new Date())
+    ? L("nextAuto")+nxt.toLocaleTimeString(loc(),{hour:"2-digit",minute:"2-digit",timeZone:"Asia/Taipei"})
+    : "";
+}
+
+// "Refresh now" — GitHub drops most scheduled runs, but workflow_dispatch always
+// fires. force=true also bypasses the cooldown gate, and stamping last_run.json
+// pushes the next automatic run a full cooldown out from this manual update.
 async function refreshNow(){
   const btn=document.getElementById("refreshBtn");
   const st=document.getElementById("refreshStatus");
   const setS=m=>{ if(st) st.textContent=m; };
   if(btn) btn.disabled=true;
   setS(L("refreshing"));
-  const d=await dispatchWorkflow("monitor.yml");
+  const before=(await fetchLastRun())||LAST_RUN;
+  const d=await dispatchWorkflow("monitor.yml",{force:"true"});
   if(!d.ok){ setS(L("refreshFail")); if(btn) btn.disabled=false; return; }
-  const ok=await pollUntilPublished(DATA?DATA.generated_at:null);
-  setS(ok?L("refreshed"):L("refreshSlow"));
+  const r=await pollRefresh(before?before.at:null, DATA?DATA.generated_at:null);
+  setS(!r.done?L("refreshSlow"):(r.changed?L("refreshed"):L("refreshedSame")));
   if(btn) btn.disabled=false;
 }
 
-let DATA=null;
+let DATA=null, LAST_RUN=null;
 
 fetch("./data.json?_="+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();})
  .catch(e=>{document.getElementById("app").innerHTML=
    `<section class="card"><p class="muted">${L("noData")}</p></section>`;});
+fetchLastRun().then(lr=>{ LAST_RUN=lr; showNextAuto(); });
 
 function render(){
   const app=document.getElementById("app");
