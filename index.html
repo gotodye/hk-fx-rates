@@ -96,6 +96,9 @@
     outline:none;box-shadow:0 0 0 3px rgba(136,216,192,0.5);}
   .btn:focus:not(:focus-visible),.linkbtn:focus:not(:focus-visible),
   .chart-tabs button:focus:not(:focus-visible){outline:none;}
+  .ver{font:600 11.5px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--primary-deep);
+    background:rgba(136,216,192,0.18);padding:5px 10px;border-radius:20px;letter-spacing:.02em;
+    cursor:default;align-self:center;}
   .linkbtn{background:none;border:0;color:var(--secondary);font-size:12px;font-weight:600;
     cursor:pointer;padding:2px 6px;border-radius:8px;transition:all .2s var(--ease);}
   .linkbtn:hover{background:rgba(122,138,241,0.12);}
@@ -119,6 +122,7 @@
   </div>
   <button class="btn" id="refreshBtn" type="button" style="padding:6px 14px">立即更新</button>
   <button class="btn secondary" id="langBtn" type="button" style="padding:6px 14px">EN</button>
+  <span id="ver" class="ver" hidden></span>
   <span id="refreshStatus" class="muted"></span>
   <span id="updated" class="muted"></span>
 </header>
@@ -188,6 +192,7 @@ const T={
   refreshSlow:{zh:"⏳ 已觸發，仍在執行中；稍後重新整理即可",en:"⏳ Triggered and still running; reload in a moment"},
   refreshedSame:{zh:"✅ 已更新（匯率無變動）",en:"✅ Updated (no rate change)"},
   nextAuto:{zh:"下次自動更新不早於 ",en:"Next auto update no earlier than "},
+  verTip:{zh:"第 %n 次改版　版本 %s　發布於 %d",en:"Revision #%n · build %s · published %d"},
   fixTitle:{zh:"修正",en:"Fix"},
   fixHint:{zh:"這個數字抓錯了？填入正確匯率。只要來源仍是錯值就會自動套用；來源真的改價後修正會自動失效。",
     en:"Wrong number? Enter the correct rate. It applies while the source still reports the wrong value, and expires by itself once the source really changes."},
@@ -215,6 +220,7 @@ function setLang(l){
   const h=document.getElementById("hTitle"); if(h) h.textContent=L("title");
   const rb=document.getElementById("refreshBtn"); if(rb) rb.textContent=L("refresh");
   if(rb && !rb.disabled) showNextAuto();   // don't clobber a refresh in progress
+  showVersion();                           // tooltip is translated too
   if(DATA) render();
 }
 (function initLang(){
@@ -306,6 +312,20 @@ async function refreshNow(){
   setS(!r.done?L("refreshSlow"):(r.changed?L("refreshed"):L("refreshedSame")));
   if(btn) btn.disabled=false;
 }
+
+// Stamped by the publishing workflow from the private repo's git history, so the
+// number is the real revision count — not something anyone has to remember to bump.
+let VER=null;
+function showVersion(){
+  const el=document.getElementById("ver");
+  if(!el||!VER||!VER.count) return;
+  el.textContent="v"+VER.count;
+  el.title=L("verTip").replace("%n",VER.count).replace("%s",VER.sha||"?")
+    .replace("%d",VER.built_at?new Date(VER.built_at).toLocaleString(loc(),{timeZone:"Asia/Taipei"}):"?");
+  el.hidden=false;
+}
+fetch("./version.json?_="+Date.now(),{cache:"no-store"})
+  .then(r=>r.ok?r.json():null).then(v=>{VER=v;showVersion();}).catch(e=>{});
 
 let DATA=null, LAST_RUN=null;
 
