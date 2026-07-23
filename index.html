@@ -76,8 +76,26 @@
   .manual-block{padding:12px 0;border-top:1px solid rgba(163,177,198,0.14);}
   .manual-block:first-of-type{border-top:0;}
   .mp-name{font-weight:700;color:var(--ink);align-self:center;min-width:120px;}
+  /* Design system: gradient mint, no hard borders, soft dual shadow, hover lift. */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;
+    background:linear-gradient(135deg,#8FDCC6,var(--primary-deep));color:#fff;
+    border:0;border-radius:var(--radius-sm);padding:9px 18px;
+    font:inherit;font-size:14px;font-weight:600;line-height:1.2;cursor:pointer;
+    box-shadow:4px 4px 10px rgba(79,192,164,0.28),-3px -3px 8px rgba(255,255,255,0.7);
+    transition:transform .2s var(--ease),box-shadow .2s var(--ease),filter .2s var(--ease);}
+  .btn:hover:not(:disabled){transform:scale(1.03);
+    box-shadow:5px 5px 14px rgba(79,192,164,0.34),-4px -4px 10px rgba(255,255,255,0.85);}
+  .btn:active:not(:disabled){transform:scale(0.98);box-shadow:var(--shadow-in);}
+  .btn:disabled{opacity:.55;cursor:default;box-shadow:none;}
   .btn.secondary{background:var(--card-solid);color:var(--primary-deep);
     box-shadow:3px 3px 8px rgba(163,177,198,0.20),-3px -3px 8px rgba(255,255,255,0.7);}
+  .btn.secondary:hover:not(:disabled){
+    box-shadow:4px 4px 12px rgba(163,177,198,0.28),-4px -4px 10px rgba(255,255,255,0.9);}
+  /* Keyboard focus stays visible, but as a soft mint ring — never the UA's black box. */
+  .btn:focus-visible,.linkbtn:focus-visible,.chart-tabs button:focus-visible{
+    outline:none;box-shadow:0 0 0 3px rgba(136,216,192,0.5);}
+  .btn:focus:not(:focus-visible),.linkbtn:focus:not(:focus-visible),
+  .chart-tabs button:focus:not(:focus-visible){outline:none;}
   .linkbtn{background:none;border:0;color:var(--secondary);font-size:12px;font-weight:600;
     cursor:pointer;padding:2px 6px;border-radius:8px;transition:all .2s var(--ease);}
   .linkbtn:hover{background:rgba(122,138,241,0.12);}
