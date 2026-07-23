@@ -78,6 +78,16 @@
   .mp-name{font-weight:700;color:var(--ink);align-self:center;min-width:120px;}
   .btn.secondary{background:var(--card-solid);color:var(--primary-deep);
     box-shadow:3px 3px 8px rgba(163,177,198,0.20),-3px -3px 8px rgba(255,255,255,0.7);}
+  .linkbtn{background:none;border:0;color:var(--secondary);font-size:12px;font-weight:600;
+    cursor:pointer;padding:2px 6px;border-radius:8px;transition:all .2s var(--ease);}
+  .linkbtn:hover{background:rgba(122,138,241,0.12);}
+  .fix-box{margin-top:12px;padding:14px 16px;border-radius:var(--radius-sm);
+    background:rgba(122,138,241,0.08);border:1px solid rgba(122,138,241,0.25);}
+  .fix-box .edit-row{display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin-top:8px;}
+  .fix-box label{display:flex;flex-direction:column;font-size:12px;color:var(--muted);gap:5px;font-weight:600;}
+  .fix-box input{background:#fff;color:var(--ink);border:1px solid rgba(148,163,184,0.22);
+    border-radius:var(--radius-sm);padding:8px 11px;font-size:14px;box-shadow:var(--shadow-in);outline:none;}
+  .fix-box input:disabled{background:rgba(148,163,184,0.12);color:var(--muted);}
   .report-pre{white-space:pre-wrap;background:var(--card-solid);border:1px solid rgba(255,255,255,0.6);
     border-radius:var(--radius-sm);padding:14px 16px;margin:2px 0 0;
     font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink);}
@@ -89,7 +99,9 @@
     <h1 id="hTitle">香港同業匯率監控</h1>
     <span class="sub">HK Competitor FX Monitor · HKD → IDR / PHP</span>
   </div>
+  <button class="btn" id="refreshBtn" type="button" style="padding:6px 14px">立即更新</button>
   <button class="btn secondary" id="langBtn" type="button" style="padding:6px 14px">EN</button>
+  <span id="refreshStatus" class="muted"></span>
   <span id="updated" class="muted"></span>
 </header>
 
@@ -151,6 +163,29 @@ const T={
   rpDone:{zh:"✅ 已透過 GitHub 觸發發送，約 1 分鐘內送達 Teams（可到 Actions 查看）。",en:"✅ Triggered via GitHub; arrives in Teams within ~1 min (check Actions)."},
   rpPerm:{zh:"：權杖需具 hk-fx-monitor 的 Actions 寫入權（Read and write）",en:": token needs Actions (Read and write) on hk-fx-monitor"},
   rpTrigFail:{zh:"❌ 觸發失敗：",en:"❌ Trigger failed: "},
+  refresh:{zh:"立即更新",en:"Refresh now"},
+  refreshing:{zh:"更新中…（重新抓取各業者，約 1–2 分鐘）",en:"Refreshing… (re-scraping providers, ~1-2 min)"},
+  refreshed:{zh:"✅ 已更新",en:"✅ Updated"},
+  refreshFail:{zh:"❌ 無法觸發更新（權杖需含 hk-fx-monitor 的 Actions 寫入權）",en:"❌ Couldn't trigger refresh (token needs Actions:write on hk-fx-monitor)"},
+  refreshSlow:{zh:"⏳ 已觸發，仍在執行中；稍後重新整理即可",en:"⏳ Triggered and still running; reload in a moment"},
+  fixTitle:{zh:"修正",en:"Fix"},
+  fixHint:{zh:"這個數字抓錯了？填入正確匯率。只要來源仍是錯值就會自動套用；來源真的改價後修正會自動失效。",
+    en:"Wrong number? Enter the correct rate. It applies while the source still reports the wrong value, and expires by itself once the source really changes."},
+  fixCorrect:{zh:"正確匯率",en:"Correct rate"},
+  fixNote:{zh:"備註（選填）",en:"Note (optional)"},
+  fixSave:{zh:"送出修正",en:"Submit fix"},
+  fixCancel:{zh:"取消",en:"Cancel"},
+  fixSaved:{zh:"✅ 修正已送出，套用中…",en:"✅ Fix submitted, applying…"},
+  fixLog:{zh:"修正紀錄",en:"Correction log"},
+  fixLogHint:{zh:"供除錯：看自動抓取讀錯了什麼、修正是否仍生效。點來源可看原始圖片。",
+    en:"For debugging: what the scraper misread and whether the fix is still active. Click the source to view the original image."},
+  fixApplied:{zh:"套用中",en:"active"},
+  fixExpired:{zh:"已失效（來源已改）",en:"expired (source changed)"},
+  fixNone:{zh:"目前沒有修正紀錄。",en:"No corrections recorded."},
+  thWrong:{zh:"抓到的錯值",en:"Scraped (wrong)"},
+  thCorrect:{zh:"修正為",en:"Corrected to"},
+  thStatus:{zh:"狀態",en:"Status"},
+  thSource:{zh:"來源",en:"Source"},
 };
 function L(k){ return (T[k]&&(T[k][LANG]??T[k].zh))??k; }
 function loc(){ return LOCALE[LANG]||"zh-HK"; }
@@ -158,13 +193,58 @@ function setLang(l){
   LANG=l; localStorage.setItem("fxLang",l);
   const b=document.getElementById("langBtn"); if(b) b.textContent=LANG==="zh"?"EN":"中";
   const h=document.getElementById("hTitle"); if(h) h.textContent=L("title");
+  const rb=document.getElementById("refreshBtn"); if(rb) rb.textContent=L("refresh");
   if(DATA) render();
 }
 (function initLang(){
   const b=document.getElementById("langBtn");
   if(b){ b.textContent=LANG==="zh"?"EN":"中"; b.addEventListener("click",()=>setLang(LANG==="zh"?"en":"zh")); }
   const h=document.getElementById("hTitle"); if(h) h.textContent=L("title");
+  const rb=document.getElementById("refreshBtn");
+  if(rb){ rb.textContent=L("refresh"); rb.addEventListener("click",refreshNow); }
 })();
+
+// ---- Shared: dispatch a workflow, then poll ./data.json until it republishes ----
+async function dispatchWorkflow(file){
+  const token=(localStorage.getItem("ghToken")||
+    ((document.getElementById("ghToken")||{}).value)||"").trim();
+  if(!token) return {ok:false, reason:"no-token"};
+  try{
+    const r=await fetch(`https://api.github.com/repos/${MONITOR_REPO}/actions/workflows/${file}/dispatches`,{
+      method:"POST",
+      headers:{Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json","Content-Type":"application/json"},
+      body:JSON.stringify({ref:"main"})
+    });
+    return {ok:r.status===204, reason:String(r.status)};
+  }catch(e){ return {ok:false, reason:e.message}; }
+}
+
+async function pollUntilPublished(before, tries=36){
+  for(let i=0;i<tries;i++){
+    await new Promise(x=>setTimeout(x,5000));
+    try{
+      const res=await fetch("./data.json?_="+Date.now(),{cache:"no-store"});
+      if(!res.ok) continue;
+      const fresh=await res.json();
+      if(fresh.generated_at && fresh.generated_at!==before){ DATA=fresh; render(); return true; }
+    }catch(e){}
+  }
+  return false;
+}
+
+// "Refresh now" — GitHub drops most scheduled runs, but workflow_dispatch always fires.
+async function refreshNow(){
+  const btn=document.getElementById("refreshBtn");
+  const st=document.getElementById("refreshStatus");
+  const setS=m=>{ if(st) st.textContent=m; };
+  if(btn) btn.disabled=true;
+  setS(L("refreshing"));
+  const d=await dispatchWorkflow("monitor.yml");
+  if(!d.ok){ setS(L("refreshFail")); if(btn) btn.disabled=false; return; }
+  const ok=await pollUntilPublished(DATA?DATA.generated_at:null);
+  setS(ok?L("refreshed"):L("refreshSlow"));
+  if(btn) btn.disabled=false;
+}
 
 let DATA=null;
 
@@ -184,7 +264,7 @@ function render(){
     const rates=cells.filter(x=>x.cell&&x.cell.rate!=null).map(x=>x.cell.rate);
     const best=rates.length?Math.max(...rates):null;
     html+=`<section class="card"><h2>${f} → ${t} <span class="tag">${L("latest")}</span></h2><div class="overflow"><table>`
-      +`<thead><tr><th>${L("provider")}</th><th>1 ${f} =</th><th>${L("source")}</th><th>${L("conf")}</th><th>${L("updated")}</th></tr></thead><tbody>`;
+      +`<thead><tr><th>${L("provider")}</th><th>1 ${f} =</th><th>${L("source")}</th><th>${L("conf")}</th><th>${L("updated")}</th><th></th></tr></thead><tbody>`;
     for(const {p,cell} of cells){
       const isBest=cell&&best!=null&&cell.rate===best;
       const badge=p.auto?"":` <span class="pill manual">${L("manual")}</span>`;
@@ -201,9 +281,13 @@ function render(){
       if(cell&&cell.confidence!=null){const pc=Math.round(cell.confidence*100);
         conf=cell.confidence<0.6?`<span class="lowconf">${L("low")} ${pc}%⚠</span>`:`${pc}%`;}
       const ts=cell&&cell.captured_at?new Date(cell.captured_at).toLocaleString(loc(),{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}):"—";
+      // auto-scraped rows get a "fix" entry point (manual rows are edited below)
+      const fixBtn=(p.auto && cell && cell.rate!=null)
+        ? `<button class="linkbtn" type="button" data-fix="${K(p.key,f,t)}" data-cur="${cell.rate}">${L("fixTitle")}</button>`
+        : "";
       html+=`<tr class="${isBest?'best':''}"><td class="name">${esc(p.name)}${badge}${star}</td>`
         +`<td class="rate">${rate}</td><td>${method}</td><td>${conf}</td>`
-        +`<td class="muted">${ts}</td></tr>`;
+        +`<td class="muted">${ts}</td><td>${fixBtn}</td></tr>`;
     }
     html+="</tbody></table></div></section>";
   }
@@ -239,9 +323,12 @@ function render(){
   html+='</section>';
 
   html+=manualCardHtml();
+  html+=correctionLogHtml();
   html+=reportCardHtml();
 
   app.innerHTML=html;
+  document.querySelectorAll("[data-fix]").forEach(b=>
+    b.addEventListener("click",()=>openFixDialog(b.dataset.fix, b.dataset.cur)));
   wireManual();
   const tabs=document.getElementById("chartTabs");
   tabs.addEventListener("click",e=>{
@@ -345,29 +432,12 @@ async function applyManualNow(key, updates){
   setS(L("stApplying"));
 
   // 2) trigger the server-side merge + publish
-  const token=(localStorage.getItem("ghToken")||"").trim();
-  try{
-    const r=await fetch(`https://api.github.com/repos/${MONITOR_REPO}/actions/workflows/apply-manual.yml/dispatches`,{
-      method:"POST",
-      headers:{Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json","Content-Type":"application/json"},
-      body:JSON.stringify({ref:"main"})
-    });
-    if(r.status!==204){ setS(L("stSavedPending")); return; }
-  }catch(e){ setS(L("stSavedPending")); return; }
+  const d=await dispatchWorkflow("apply-manual.yml");
+  if(!d.ok){ setS(L("stSavedPending")); return; }
 
-  // 3) poll the published data.json until it reflects the change (~2 min max)
-  for(let i=0;i<24;i++){
-    await new Promise(x=>setTimeout(x,5000));
-    try{
-      const res=await fetch("./data.json?_="+Date.now(),{cache:"no-store"});
-      if(!res.ok) continue;
-      const fresh=await res.json();
-      if(fresh.generated_at && fresh.generated_at!==before){
-        DATA=fresh; render(); setS(L("stApplied")); return;
-      }
-    }catch(e){}
-  }
-  setS(L("stSavedPending"));
+  // 3) poll the published data.json until it reflects the change
+  const ok=await pollUntilPublished(before, 24);
+  setS(ok?L("stApplied"):L("stSavedPending"));
 }
 
 async function wireManual(){
@@ -385,6 +455,112 @@ async function wireManual(){
   }catch(e){}
   document.querySelectorAll("[data-save]").forEach(b=>b.addEventListener("click",()=>saveManualProvider(b.dataset.save)));
   wireReport();
+}
+
+// ---- Rate corrections: fix a mis-scraped number; logged for debugging ----
+function correctionLogHtml(){
+  const logs=(DATA.correction_log)||[];
+  let body;
+  if(!logs.length){ body=`<p class="muted">${L("fixNone")}</p>`; }
+  else{
+    body=`<div class="overflow"><table><thead><tr>`
+      +`<th>${L("provider")}</th><th>${L("corridor")}</th><th>${L("thWrong")}</th>`
+      +`<th>${L("thCorrect")}</th><th>${L("thStatus")}</th><th>${L("time")}</th><th>${L("thSource")}</th>`
+      +`</tr></thead><tbody>`;
+    for(const c of logs){
+      const st=c.applied
+        ? `<span class="pill web">${L("fixApplied")}</span>`
+        : `<span class="pill">${L("fixExpired")}</span>`;
+      const when=c.corrected_at
+        ? new Date(c.corrected_at).toLocaleString(loc(),{timeZone:"Asia/Taipei",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"})
+        : "—";
+      const src=c.raw_ref?`<a href="${esc(c.raw_ref)}" target="_blank" rel="noopener">🖼</a>`:"—";
+      body+=`<tr><td class="name">${esc(c.provider)}</td>`
+        +`<td class="muted">${esc(c.pair||"")}</td>`
+        +`<td class="muted">${fmt(c.wrong_rate)}</td>`
+        +`<td class="rate">${fmt(c.correct_rate)}</td>`
+        +`<td>${st}</td><td class="muted">${when}</td><td>${src}</td></tr>`;
+    }
+    body+=`</tbody></table></div>`;
+  }
+  return `<section class="card"><h2>${L("fixLog")}</h2>`
+    +body
+    +`<p class="muted" style="margin:10px 0 0">${L("fixLogHint")}</p></section>`;
+}
+
+function openFixDialog(key, current){
+  const [pk,f,t]=key.split("|");
+  const p=(DATA.providers||[]).find(x=>x.key===pk);
+  const row=document.querySelector(`[data-fix="${key}"]`);
+  if(!row || document.getElementById("fixBox")) return;
+  const box=document.createElement("div");
+  box.id="fixBox";
+  box.className="fix-box";
+  box.innerHTML=`<div class="fix-inner">`
+    +`<b>${esc(p?p.name:pk)} · ${f}→${t}</b>`
+    +`<p class="muted" style="margin:6px 0 10px">${L("fixHint")}</p>`
+    +`<div class="edit-row">`
+    +`<label>${L("thWrong")}<input value="${current}" disabled></label>`
+    +`<label>${L("fixCorrect")}<input type="number" step="0.0001" id="fixVal" placeholder="1 ${f} = ? ${t}"></label>`
+    +`<label style="flex:1;min-width:180px">${L("fixNote")}<input id="fixNote" placeholder="OCR 讀到促銷價…"></label>`
+    +`</div>`
+    +`<div class="edit-row"><button class="btn" id="fixSubmit" type="button">${L("fixSave")}</button>`
+    +`<button class="btn secondary" id="fixCancel" type="button">${L("fixCancel")}</button>`
+    +`<span id="fixStatus" class="muted"></span></div></div>`;
+  row.closest("section").appendChild(box);
+  document.getElementById("fixVal").focus();
+  document.getElementById("fixCancel").addEventListener("click",()=>box.remove());
+  document.getElementById("fixSubmit").addEventListener("click",()=>submitFix(key,current,box));
+}
+
+async function submitFix(key, wrongRate, box){
+  const st=box.querySelector("#fixStatus");
+  const setS=m=>{ if(st) st.textContent=m; };
+  const val=(box.querySelector("#fixVal").value||"").trim();
+  if(val==="") { setS("⚠ "+L("fixCorrect")); return; }
+  const token=(localStorage.getItem("ghToken")||"").trim();
+  if(!token){ setS(L("rpNeedToken")); return; }
+  setS(L("stSaving"));
+
+  const hdr={Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json"};
+  const api=`https://api.github.com/repos/${MANUAL_REPO}/contents/corrections.json`;
+  const entry={wrong_rate:Number(wrongRate), correct_rate:Number(val),
+    corrected_at:new Date().toISOString(), note:(box.querySelector("#fixNote").value||"").trim()};
+
+  for(let attempt=0; attempt<4; attempt++){
+    let cur={json:{},sha:undefined};
+    try{
+      const g=await fetch(api+"?ref=main&_="+Date.now(),{headers:hdr,cache:"no-store"});
+      if(g.ok){ const d=await g.json();
+        try{ cur.json=JSON.parse(b64toUtf8(d.content)); }catch(e){ cur.json={}; }
+        cur.sha=d.sha;
+      }
+    }catch(e){ setS(L("stReadFail")+e.message); return; }
+
+    const doc=(cur.json&&typeof cur.json==="object")?cur.json:{};
+    if(!doc._comment) doc._comment="匯率修正：只要來源仍是錯值就自動套用；來源改變後自動失效。";
+    doc.corrections=doc.corrections||{};
+    doc.corrections[key]=entry;
+
+    const body={message:`fix ${key} rate via dashboard`,branch:"main",
+      content:b64utf8(JSON.stringify(doc,null,2))};
+    if(cur.sha) body.sha=cur.sha;
+    try{
+      const r=await fetch(api,{method:"PUT",headers:{...hdr,"Content-Type":"application/json"},body:JSON.stringify(body)});
+      if(r.ok){
+        setS(L("fixSaved"));
+        const before=DATA.generated_at;
+        // optimistic: show the corrected number right away
+        if(DATA.latest[key]) DATA.latest[key].rate=Number(val);
+        render();
+        const d=await dispatchWorkflow("apply-manual.yml");
+        if(d.ok) await pollUntilPublished(before, 24);
+        return;
+      }
+      if(r.status===409 && attempt<3){ await new Promise(x=>setTimeout(x,700)); continue; }
+      setS(`${L("stFail")}${r.status} ${(await r.text()).slice(0,120)}`); return;
+    }catch(e){ setS(L("stSendFail")+e.message); return; }
+  }
 }
 
 // ---- Rate report → triggers the server-side send-report workflow on GitHub ----
