@@ -372,7 +372,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-24T07:41:39+00:00",
+  "generated_at": "2026-07-24T07:59:39+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -488,6 +488,12 @@
       {
         "rate": 2297.0,
         "t": "2026-07-24T07:41:39+00:00"
+      }
+    ],
+    "eui|HKD|IDR": [
+      {
+        "rate": 2284.0,
+        "t": "2026-07-24T07:59:39+00:00"
       }
     ],
     "pandaremit|HKD|IDR": [
@@ -703,7 +709,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-24T07:41:39+00:00",
+      "captured_at": "2026-07-24T07:59:39+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
@@ -738,6 +744,15 @@
       "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/755151980_1563552608505379_8532406939056432417_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mbKH9ZSVAS4Q7kNvwHUI2BC&_nc_oc=Adqod_LIufJUdzs2Y51NirO04dkidbF8P2kJhricgXDKmgvce_BtwhTlFx94UULowCM&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=9VRs4xYdAHDGQDBhtC0Djg&_nc_ss=7c289&oh=00_AQAXnuxjdMZsVb7VjYqr8BKv2EXygeBuJEYvWmxQTV5eqQ&oe=6A68EE04",
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
+    "eui|HKD|IDR": {
+      "captured_at": "2026-07-24T07:59:39+00:00",
+      "confidence": 1.0,
+      "method": "manual",
+      "note": "manual.json",
+      "rate": 2284.0,
+      "raw_ref": null,
+      "source_url": null
+    },
     "pandaremit|HKD|IDR": {
       "captured_at": "2026-07-24T07:41:39+00:00",
       "confidence": 0.98,
@@ -757,7 +772,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-24T07:41:39+00:00",
+      "captured_at": "2026-07-24T07:59:39+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
