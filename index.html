@@ -74,6 +74,29 @@
   h3.group-head .cnt{font-size:12px;font-weight:600;color:var(--muted);background:rgba(148,163,184,0.14);padding:2px 9px;border-radius:20px;}
   .up{color:var(--up);font-weight:700;}
   .down{color:var(--down);font-weight:700;}
+  /* Promo badge + detail popup */
+  .promo-badge{font:600 11px/1 inherit;color:#b06b00;background:rgba(233,168,92,0.22);
+    border:0;border-radius:20px;padding:4px 9px;margin-left:6px;cursor:pointer;white-space:nowrap;
+    transition:all .2s var(--ease);vertical-align:middle;}
+  .promo-badge:hover{background:rgba(233,168,92,0.38);transform:scale(1.05);}
+  #promoModal{position:fixed;inset:0;z-index:10000;background:rgba(30,41,59,0.45);
+    display:flex;align-items:center;justify-content:center;padding:24px;
+    -webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);}
+  .promo-card{background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow-out);
+    padding:26px;max-width:460px;width:100%;max-height:86vh;overflow-y:auto;}
+  .promo-card h3{margin:0 0 16px;font-size:16px;color:var(--ink);}
+  .promo-rates{display:flex;gap:12px;margin-bottom:16px;}
+  .promo-rates>div{flex:1;background:var(--card-solid);border-radius:var(--radius-sm);padding:12px;text-align:center;}
+  .promo-rates>div.hot{background:rgba(233,168,92,0.18);}
+  .promo-rates span{display:block;font-size:11.5px;color:var(--muted);margin-bottom:4px;}
+  .promo-rates b{font-size:17px;color:var(--ink);font-variant-numeric:tabular-nums;}
+  .promo-rates .hot b{color:#b06b00;}
+  .promo-row{display:flex;gap:10px;padding:8px 0;border-top:1px solid rgba(163,177,198,0.16);font-size:13px;}
+  .promo-row span{color:var(--muted);min-width:66px;flex-shrink:0;}
+  .promo-row b{color:var(--ink);font-weight:600;}
+  .promo-img{width:100%;border-radius:var(--radius-sm);margin-top:14px;display:block;}
+  .promo-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px;}
+  .promo-actions .btn{text-decoration:none;}
   /* Full-page sign-in gate */
   #gate{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;
     background:var(--bg);padding:24px;}
@@ -206,6 +229,15 @@ const T={
   editManual:{zh:"編輯人工匯率",en:"Edit manual rates"},
   ghToken:{zh:"GitHub 權杖（只需貼一次，存在本機瀏覽器）",en:"GitHub token (paste once; kept in your browser)"},
   needLogin:{zh:"⚠ 請先用 Google 登入",en:"⚠ Sign in with Google first"},
+  promoTag:{zh:"促銷",en:"Promo"},
+  promoTip:{zh:"另有促銷匯率，點擊查看條件與原始圖片",en:"A promo rate is also running — click for terms and the source image"},
+  promoTitle:{zh:"促銷匯率",en:"Promo rate"},
+  promoStd:{zh:"標準匯率",en:"Standard rate"},
+  promoPeriod:{zh:"適用期間",en:"Valid"},
+  promoTerms:{zh:"條件",en:"Terms"},
+  promoImg:{zh:"原始圖片",en:"Source image"},
+  promoOpenFb:{zh:"到 Facebook 查看",en:"View on Facebook"},
+  promoClose:{zh:"關閉",en:"Close"},
   gateChecking:{zh:"驗證中…",en:"Verifying…"},
   gateNetFail:{zh:"無法連線到驗證伺服器，請稍後再試",en:"Can't reach the auth server — try again"},
   sessionExpired:{zh:"⚠ 登入已過期，請重新用 Google 登入",en:"⚠ Session expired — sign in with Google again"},
@@ -471,8 +503,14 @@ function render(){
           ? ` <span class="up">▲ ${L("gapAhead").replace("%s",(+pct).toFixed(2))}</span>`
           : ` <span class="down">▼ ${L("gapBehind").replace("%s",Math.abs(pct))}</span>`;
       }
+      // A promo running alongside the standard rate (weekend / capped / branch-only).
+      // Shown next to it, not instead of it — it's real competitive info, but not
+      // the rate an ordinary customer gets.
+      const promoBadge=(cell&&cell.promo&&cell.promo.rate!=null)
+        ? ` <button class="promo-badge" type="button" data-promo="${K(p.key,f,t)}" title="${L("promoTip")}">${L("promoTag")} ${fmt(cell.promo.rate,2)}</button>`
+        : "";
       html+=`<tr class="${p.is_self?'self':(isBest?'best':'')}"><td class="name">${esc(p.name)}${badge}${star}</td>`
-        +`<td class="rate">${rate}${gap}</td><td>${method}</td><td>${conf}</td>`
+        +`<td class="rate">${rate}${gap}${promoBadge}</td><td>${method}</td><td>${conf}</td>`
         +`<td class="muted">${ts}</td><td>${fixBtn}</td></tr>`;
     }
     html+="</tbody></table></div></section>";
@@ -515,6 +553,8 @@ function render(){
   app.innerHTML=html;
   document.querySelectorAll("[data-fix]").forEach(b=>
     b.addEventListener("click",()=>openFixDialog(b.dataset.fix, b.dataset.cur)));
+  document.querySelectorAll("[data-promo]").forEach(b=>
+    b.addEventListener("click",()=>openPromo(b.dataset.promo)));
   wireManual();
   const tabs=document.getElementById("chartTabs");
   tabs.addEventListener("click",e=>{
@@ -624,6 +664,39 @@ function mountGoogleButton(){
     google.accounts.id.initialize({client_id:GOOGLE_CLIENT_ID,callback:onGoogleCredential});
     google.accounts.id.renderButton(el,{theme:"outline",size:"large",text:"signin_with",shape:"pill"});
   }catch(e){ el.textContent=L("gLoadFail"); }
+}
+
+// ---- Promo detail popup -------------------------------------------------------
+function openPromo(key){
+  const cell=DATA.latest[key]; if(!cell||!cell.promo) return;
+  const p=cell.promo;
+  const [pk]=key.split("|");
+  const prov=(DATA.providers.find(x=>x.key===pk)||{}).name||pk;
+  const row=(label,val)=>val?`<div class="promo-row"><span>${label}</span><b>${esc(val)}</b></div>`:"";
+
+  const wrap=document.createElement("div");
+  wrap.id="promoModal";
+  wrap.innerHTML=`<div class="promo-card">
+    <h3>${esc(prov)} · ${L("promoTitle")}</h3>
+    <div class="promo-rates">
+      <div><span>${L("promoStd")}</span><b>${fmt(cell.rate,4)}</b></div>
+      <div class="hot"><span>${L("promoTitle")}</span><b>${fmt(p.rate,4)}</b></div>
+    </div>
+    ${row(L("promoPeriod"),p.date_text)}
+    ${row(L("promoTerms"),p.note)}
+    ${p.image?`<img class="promo-img" src="${esc(p.image)}" alt="${L("promoImg")}" referrerpolicy="no-referrer">`:""}
+    <div class="promo-actions">
+      ${cell.source_url?`<a class="btn secondary" href="${esc(cell.source_url)}" target="_blank" rel="noopener">${L("promoOpenFb")}</a>`:""}
+      <button class="btn" type="button" id="promoClose">${L("promoClose")}</button>
+    </div>
+  </div>`;
+  document.body.appendChild(wrap);
+  const close=()=>wrap.remove();
+  wrap.addEventListener("click",e=>{ if(e.target===wrap) close(); });   // click backdrop
+  wrap.querySelector("#promoClose").addEventListener("click",close);
+  document.addEventListener("keydown",function esc2(e){
+    if(e.key==="Escape"){ close(); document.removeEventListener("keydown",esc2); }
+  });
 }
 
 /** Sign-in block: Google's button when signed out, who-you-are when signed in. */
