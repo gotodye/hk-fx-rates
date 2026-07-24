@@ -323,7 +323,7 @@
   ],
   "correction_log": [
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2285.6,
       "corrected_at": "2026-07-24T02:51:16.365Z",
       "key": "pandaremit|HKD|IDR",
@@ -331,12 +331,12 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2277.9046,
-      "status": "applied",
+      "source_rate": 2285.6,
+      "status": "expired (source changed)",
       "wrong_rate": 2277.9046
     },
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2280.0,
       "corrected_at": "2026-07-24T02:51:26.530Z",
       "key": "chandra|HKD|IDR",
@@ -344,8 +344,8 @@
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "raw_ref": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.99422-6/749355688_1756288222464819_3090815564392440540_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=nAhMELi-P7UQ7kNvwHOiKfj&_nc_oc=AdpK5y0BWaL3m2O_xQb9J1C4vdDHitfm1z8zGPRgf_dlGtJt-1An09TVca5C9Joqewk&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=B8pxPmLISEPnAxuyzxidgA&_nc_ss=7c289&oh=00_AQAgifgEhFi6xXy3iLLhniUaFMnUWeyOhSHaNxnyIN9epA&oe=6A678D67",
-      "source_rate": 2279.0,
-      "status": "applied",
+      "source_rate": 2280.0,
+      "status": "expired (source changed)",
       "wrong_rate": 2279.0
     }
   ],
@@ -359,7 +359,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-24T02:51:41+00:00",
+  "generated_at": "2026-07-24T02:51:59+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -670,7 +670,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-24T02:51:41+00:00",
+      "captured_at": "2026-07-24T02:51:59+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
@@ -724,7 +724,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-24T02:51:41+00:00",
+      "captured_at": "2026-07-24T02:51:59+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
