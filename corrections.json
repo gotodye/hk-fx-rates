@@ -6,6 +6,12 @@
       "correct_rate": 2285.6,
       "corrected_at": "2026-07-24T02:51:16.365Z",
       "note": ""
+    },
+    "chandra|HKD|IDR": {
+      "wrong_rate": 2279,
+      "correct_rate": 2280,
+      "corrected_at": "2026-07-24T02:51:26.530Z",
+      "note": ""
     }
   }
 }
