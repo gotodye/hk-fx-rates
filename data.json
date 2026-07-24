@@ -1,6 +1,22 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-24T02:45:20+00:00",
+      "new_rate": 2283.0,
+      "old_rate": 2276.9,
+      "pair": "HKD->IDR",
+      "provider": "We Remit",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-07-24T02:45:20+00:00",
+      "new_rate": 2283.4,
+      "old_rate": 2275.0,
+      "pair": "HKD->IDR",
+      "provider": "AlipayHK",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-07-24T01:41:43+00:00",
       "new_rate": 7.8601,
       "old_rate": 7.8503,
@@ -303,22 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-07-17T04:32:20+00:00",
-      "new_rate": 2285.0,
-      "old_rate": 2280.0,
-      "pair": "HKD->IDR",
-      "provider": "BRI Remittance",
-      "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-07-17T01:28:03+00:00",
-      "new_rate": 7.83,
-      "old_rate": 7.8363,
-      "pair": "HKD->PHP",
-      "provider": "Panda Remit",
-      "to_ccy": "PHP"
     }
   ],
   "correction_log": [],
@@ -332,7 +332,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-24T01:41:43+00:00",
+  "generated_at": "2026-07-24T02:45:20+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -346,6 +346,10 @@
       {
         "rate": 2275.0,
         "t": "2026-07-22T02:45:29+00:00"
+      },
+      {
+        "rate": 2283.4,
+        "t": "2026-07-24T02:45:20+00:00"
       }
     ],
     "alipayhk|HKD|PHP": [
@@ -630,16 +634,20 @@
       {
         "rate": 2276.9,
         "t": "2026-07-23T05:47:52+00:00"
+      },
+      {
+        "rate": 2283.0,
+        "t": "2026-07-24T02:45:20+00:00"
       }
     ]
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-24T01:41:43+00:00",
+      "captured_at": "2026-07-24T02:45:20+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
-      "rate": 2275.0,
+      "rate": 2283.4,
       "raw_ref": null,
       "source_url": null
     },
@@ -689,11 +697,11 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-24T01:41:43+00:00",
+      "captured_at": "2026-07-24T02:45:20+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
-      "rate": 2276.9,
+      "rate": 2283.0,
       "raw_ref": null,
       "source_url": null
     }
