@@ -1,7 +1,7 @@
 {
   "changes": [
     {
-      "changed_at": "2026-07-24T05:29:40+00:00",
+      "changed_at": "2026-07-24T05:29:54+00:00",
       "new_rate": 2284.2,
       "old_rate": 2283.0,
       "pair": "HKD->IDR",
@@ -372,7 +372,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-24T05:29:40+00:00",
+  "generated_at": "2026-07-24T05:29:54+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -685,13 +685,13 @@
       },
       {
         "rate": 2284.2,
-        "t": "2026-07-24T05:29:40+00:00"
+        "t": "2026-07-24T05:29:54+00:00"
       }
     ]
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-24T05:29:40+00:00",
+      "captured_at": "2026-07-24T05:29:54+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
@@ -745,7 +745,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-24T05:29:40+00:00",
+      "captured_at": "2026-07-24T05:29:54+00:00",
       "confidence": 1.0,
       "method": "manual",
       "note": "manual.json",
