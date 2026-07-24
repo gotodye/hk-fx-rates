@@ -70,6 +70,17 @@
   h3.group-head .cnt{font-size:12px;font-weight:600;color:var(--muted);background:rgba(148,163,184,0.14);padding:2px 9px;border-radius:20px;}
   .up{color:var(--up);font-weight:700;}
   .down{color:var(--down);font-weight:700;}
+  /* Full-page sign-in gate */
+  #gate{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;
+    background:var(--bg);padding:24px;}
+  .gate-card{background:var(--card);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.6);border-radius:var(--radius-lg);box-shadow:var(--shadow-out);
+    padding:40px 36px;text-align:center;max-width:420px;width:100%;}
+  .gate-card h1{font-size:20px;margin:0 0 4px;color:var(--ink);font-weight:700;}
+  .gate-card .sub{font-size:12.5px;color:var(--muted);margin:0 0 26px;}
+  .gate-card #gateBtn{display:flex;justify-content:center;min-height:44px;}
+  .gate-hint{font-size:12.5px;color:var(--muted);margin:20px 0 0;}
+  .gate-hint.err{color:var(--down);font-weight:600;}
   .edit-form{display:flex;flex-direction:column;gap:14px;}
   .edit-row{display:flex;gap:14px;flex-wrap:wrap;align-items:end;}
   .edit-form label{display:flex;flex-direction:column;font-size:12px;color:var(--muted);gap:5px;font-weight:600;}
@@ -120,6 +131,19 @@
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
+<!-- Sign-in gate. Note this hides the UI, it does not protect the data: the page
+     and data.json are on public GitHub Pages, so treat it as keeping the board
+     out of casual view, not as a security boundary. -->
+<div id="gate">
+  <div class="gate-card">
+    <h1>香港同業匯率監控</h1>
+    <p class="sub">HK Competitor FX Monitor</p>
+    <div id="gateBtn"></div>
+    <p class="gate-hint" id="gateHint">請用授權的 Google 帳號登入</p>
+  </div>
+</div>
+
+<div id="shell" hidden>
 <header>
   <div class="brand">
     <h1 id="hTitle">香港同業匯率監控</h1>
@@ -135,6 +159,7 @@
 <main class="grid" id="app">
   <section class="card"><p class="muted">載入中…</p></section>
 </main>
+</div>
 
 <script>
 const COLORS=["#7A8AF1","#4FC0A4","#E9A85C","#E8837A","#9AA5B1"];
@@ -177,6 +202,8 @@ const T={
   editManual:{zh:"編輯人工匯率",en:"Edit manual rates"},
   ghToken:{zh:"GitHub 權杖（只需貼一次，存在本機瀏覽器）",en:"GitHub token (paste once; kept in your browser)"},
   needLogin:{zh:"⚠ 請先用 Google 登入",en:"⚠ Sign in with Google first"},
+  gateChecking:{zh:"驗證中…",en:"Verifying…"},
+  gateNetFail:{zh:"無法連線到驗證伺服器，請稍後再試",en:"Can't reach the auth server — try again"},
   sessionExpired:{zh:"⚠ 登入已過期，請重新用 Google 登入",en:"⚠ Session expired — sign in with Google again"},
   gLoadFail:{zh:"Google 登入元件載入失敗，請重新整理",en:"Google Sign-In failed to load — please refresh"},
   signedInAs:{zh:"已登入",en:"Signed in"},
@@ -348,10 +375,13 @@ fetch("./version.json?_="+Date.now(),{cache:"no-store"})
 
 let DATA=null, LAST_RUN=null;
 
-fetch("./data.json?_="+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();})
- .catch(e=>{document.getElementById("app").innerHTML=
-   `<section class="card"><p class="muted">${L("noData")}</p></section>`;});
-fetchLastRun().then(lr=>{ LAST_RUN=lr; showNextAuto(); });
+// Deferred until the gate opens — no point fetching a board nobody may see.
+function loadData(){
+  fetch("./data.json?_="+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();})
+   .catch(e=>{document.getElementById("app").innerHTML=
+     `<section class="card"><p class="muted">${L("noData")}</p></section>`;});
+  fetchLastRun().then(lr=>{ LAST_RUN=lr; showNextAuto(); });
+}
 
 function render(){
   const app=document.getElementById("app");
@@ -474,14 +504,63 @@ function parseJwt(t){
 }
 
 // Google calls this after a successful sign-in.
-function onGoogleCredential(resp){
+async function onGoogleCredential(resp){
   GOOGLE_CRED=resp.credential;
   const c=parseJwt(GOOGLE_CRED);
   GOOGLE_USER=c?{email:(c.email||"").toLowerCase(),name:c.name||"",picture:c.picture||""}:null;
   // Remember only the email, to greet the user on reload — never the credential,
   // which is short-lived and must not be persisted.
   if(GOOGLE_USER) localStorage.setItem("fxEmail",GOOGLE_USER.email);
-  render();
+
+  // The whitelist lives in the Worker, so ask it rather than trusting the client.
+  const hint=document.getElementById("gateHint");
+  if(hint){ hint.className="gate-hint"; hint.textContent=L("gateChecking"); }
+  const v=await workerVerify();
+  if(!v.ok){
+    GOOGLE_CRED=null; GOOGLE_USER=null;
+    if(hint){ hint.className="gate-hint err"; hint.textContent=v.error; }
+    try{ google.accounts.id.disableAutoSelect(); }catch(e){}
+    return;
+  }
+  unlock();
+}
+
+/** Ask the Worker whether this signed-in user is allowed to see the board. */
+async function workerVerify(){
+  if(!GOOGLE_CRED) return {ok:false,error:L("needLogin")};
+  try{
+    const r=await fetch(WORKER_URL,{
+      method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({id_token:GOOGLE_CRED,action:"verify"})
+    });
+    const d=await r.json().catch(()=>({}));
+    return r.ok?{ok:true}:{ok:false,error:d.error||`HTTP ${r.status}`};
+  }catch(e){ return {ok:false,error:L("gateNetFail")}; }
+}
+
+/** Reveal the dashboard once the user is verified. */
+function unlock(){
+  const gate=document.getElementById("gate"), shell=document.getElementById("shell");
+  if(gate) gate.remove();
+  if(shell) shell.hidden=false;
+  if(!DATA) loadData(); else render();
+}
+
+/** Put Google's button on the gate and offer one-tap for returning users. */
+function initAuth(){
+  const slot=document.getElementById("gateBtn");
+  if(!slot) return;               // already unlocked
+  if(!(window.google&&google.accounts)){ setTimeout(initAuth,300); return; }
+  try{
+    google.accounts.id.initialize({
+      client_id:GOOGLE_CLIENT_ID, callback:onGoogleCredential, auto_select:true,
+    });
+    google.accounts.id.renderButton(slot,{theme:"outline",size:"large",text:"signin_with",shape:"pill"});
+    google.accounts.id.prompt();  // silently signs returning users back in
+  }catch(e){
+    const hint=document.getElementById("gateHint");
+    if(hint){ hint.className="gate-hint err"; hint.textContent=L("gLoadFail"); }
+  }
 }
 
 function signedIn(){ return !!(GOOGLE_CRED && GOOGLE_USER); }
@@ -860,6 +939,9 @@ function drawChart(series){
     ci++;
   }
 }
+
+// Boot last: initAuth() touches consts declared above, which aren't hoisted.
+initAuth();
 </script>
 </body>
 </html>
