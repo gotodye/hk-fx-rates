@@ -51,6 +51,10 @@
   .pill.fb_ocr{color:var(--secondary);background:rgba(122,138,241,0.15);}
   .pill.manual{color:#8a7fd6;background:rgba(122,138,241,0.12);}
   .lowconf{color:var(--down);font-size:12px;font-weight:600;background:rgba(232,131,122,0.14);padding:2px 8px;border-radius:12px;}
+  .stale{color:var(--amber);font-weight:600;background:rgba(233,168,92,0.16);padding:2px 8px;border-radius:12px;white-space:nowrap;cursor:help;}
+  tr.self td{background:rgba(122,138,241,0.13);}
+  tr.self td:first-child{box-shadow:inset 4px 0 0 var(--secondary);}
+  tr.self td.name{color:var(--secondary);}
   .muted{color:var(--muted);font-size:13px;}
   .chart-tabs{display:flex;gap:10px;margin-bottom:14px;}
   .chart-tabs button{background:var(--card-solid);border:1px solid rgba(255,255,255,0.6);color:var(--body);
@@ -140,6 +144,19 @@ const esc=s=>(s==null?"":String(s)).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;"
 const escA=s=>esc(s).replace(/"/g,"&quot;");
 const fmt=(v,d=4)=>v==null?"—":Number(v).toFixed(d);
 
+// A rate that stopped refreshing looks identical to a current one — that's how a
+// day-old Chandra number sat on the board unnoticed. Facebook intermittently
+// blocks the runner, so this will happen again; surface it instead of hiding it.
+const STALE_HOURS=6;
+function staleTs(iso){
+  const t=new Date(iso);
+  const txt=t.toLocaleString(loc(),{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"});
+  const hrs=(Date.now()-t.getTime())/3600000;
+  if(hrs<STALE_HOURS) return txt;
+  const age=hrs<24?`${Math.floor(hrs)}h`:`${Math.floor(hrs/24)}d`;
+  return `<span class="stale" title="${L("staleTip")}">⚠ ${txt} (${age})</span>`;
+}
+
 // ---- i18n (中 / EN) ----
 const LOCALE={zh:"zh-HK",en:"en-GB"};
 let LANG=localStorage.getItem("fxLang")||"zh";
@@ -193,6 +210,10 @@ const T={
   refreshedSame:{zh:"✅ 已更新（匯率無變動）",en:"✅ Updated (no rate change)"},
   nextAuto:{zh:"下次自動更新不早於 ",en:"Next auto update no earlier than "},
   verTip:{zh:"第 %n 次改版　版本 %s　發布於 %d",en:"Revision #%n · build %s · published %d"},
+  gapAhead:{zh:"領先最佳對手 %s%",en:"%s% above best rival"},
+  gapBehind:{zh:"落後最佳對手 %s%",en:"%s% below best rival"},
+  staleTip:{zh:"這筆已超過 6 小時沒更新（來源可能暫時抓不到），顯示的是上次抓到的值。",
+    en:"Not refreshed for over 6 hours — the source was likely unreachable, so this is the last value we captured."},
   fixTitle:{zh:"修正",en:"Fix"},
   fixHint:{zh:"這個數字抓錯了？填入正確匯率。只要來源仍是錯值就會自動套用；來源真的改價後修正會自動失效。",
     en:"Wrong number? Enter the correct rate. It applies while the source still reports the wrong value, and expires by itself once the source really changes."},
@@ -350,8 +371,11 @@ function render(){
   for(const [f,t] of DATA.corridors){
     const rows=DATA.providers.filter(p=>p.corridors.some(c=>c[0]===f&&c[1]===t));
     const cells=rows.map(p=>({p,cell:DATA.latest[K(p.key,f,t)]}));
-    const rates=cells.filter(x=>x.cell&&x.cell.rate!=null).map(x=>x.cell.rate);
+    // ★ marks the best COMPETITOR rate — our own row is the benchmark you compare
+    // against, so including it would just star ourselves and hide who's beating us.
+    const rates=cells.filter(x=>!x.p.is_self&&x.cell&&x.cell.rate!=null).map(x=>x.cell.rate);
     const best=rates.length?Math.max(...rates):null;
+    const ourRate=(cells.find(x=>x.p.is_self)||{}).cell;
     html+=`<section class="card"><h2>${f} → ${t} <span class="tag">${L("latest")}</span></h2><div class="overflow"><table>`
       +`<thead><tr><th>${L("provider")}</th><th>1 ${f} =</th><th>${L("source")}</th><th>${L("conf")}</th><th>${L("updated")}</th><th></th></tr></thead><tbody>`;
     for(const {p,cell} of cells){
@@ -369,13 +393,21 @@ function render(){
       let conf='<span class="muted">—</span>';
       if(cell&&cell.confidence!=null){const pc=Math.round(cell.confidence*100);
         conf=cell.confidence<0.6?`<span class="lowconf">${L("low")} ${pc}%⚠</span>`:`${pc}%`;}
-      const ts=cell&&cell.captured_at?new Date(cell.captured_at).toLocaleString(loc(),{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}):"—";
+      const ts=cell&&cell.captured_at?staleTs(cell.captured_at):"—";
       // auto-scraped rows get a "fix" entry point (manual rows are edited below)
       const fixBtn=(p.auto && cell && cell.rate!=null)
         ? `<button class="linkbtn" type="button" data-fix="${K(p.key,f,t)}" data-cur="${cell.rate}">${L("fixTitle")}</button>`
         : "";
-      html+=`<tr class="${isBest?'best':''}"><td class="name">${esc(p.name)}${badge}${star}</td>`
-        +`<td class="rate">${rate}</td><td>${method}</td><td>${conf}</td>`
+      // How we stack up against the best competitor — the number this whole board exists for.
+      let gap="";
+      if(p.is_self&&cell&&cell.rate!=null&&best!=null){
+        const d=cell.rate-best, pct=(d/best*100).toFixed(2);
+        gap=d>=0
+          ? ` <span class="up">▲ ${L("gapAhead").replace("%s",(+pct).toFixed(2))}</span>`
+          : ` <span class="down">▼ ${L("gapBehind").replace("%s",Math.abs(pct))}</span>`;
+      }
+      html+=`<tr class="${p.is_self?'self':(isBest?'best':'')}"><td class="name">${esc(p.name)}${badge}${star}</td>`
+        +`<td class="rate">${rate}${gap}</td><td>${method}</td><td>${conf}</td>`
         +`<td class="muted">${ts}</td><td>${fixBtn}</td></tr>`;
     }
     html+="</tbody></table></div></section>";
