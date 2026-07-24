@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-24T23:37:09+00:00",
+      "new_rate": 2285.0,
+      "old_rate": 2297.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-07-24T23:01:02+00:00",
       "new_rate": 2268.7665,
       "old_rate": 2280.2837,
@@ -311,14 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-07-20T01:17:27+00:00",
-      "new_rate": 7.8397,
-      "old_rate": 7.8306,
-      "pair": "HKD->PHP",
-      "provider": "Panda Remit",
-      "to_ccy": "PHP"
     }
   ],
   "correction_log": [
@@ -343,8 +343,8 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
-      "raw_ref": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwGIuAOm&_nc_oc=AdpswF0Arr0zZrkf3aF15HxiiYZQJK7iN0RbZj8PQGPzB67mzM12G31O9dtAKOPlLWU&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=n1iBb2_XncSJo4aZmQnMlQ&_nc_ss=7c289&oh=00_AQDuivO4zTjY56JWX3-6osjoDOfg4LRa2ODSE_n1RVSUBw&oe=6A69DFFD",
-      "source_rate": 2297.0,
+      "raw_ref": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.99422-6/753337045_1069355755515742_5080467361582676347_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_g9jFcFpfI0Q7kNvwFLNhPG&_nc_oc=AdqSxJ8yI8t_gmC5RSpOvVDysgs0cwMunUUOvXxPQg_k3O7xerHmZe6A8pazyVc5gHo&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=Z1xtC2GM-Dbzi2cdZm0vrQ&_nc_ss=7e2a8&oh=00_AQAqtZNBzHJ0_ciurZtkCvTSjv0XuFVqrc8usNbt0q2giw&oe=6A69D9BC",
+      "source_rate": 2285.0,
       "status": "expired (source changed)",
       "wrong_rate": 2279.0
     },
@@ -356,7 +356,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
-      "raw_ref": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.99422-6/756148663_1985963728772486_5201190354844850117_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=z2aYbD0FBtMQ7kNvwHYd1Ng&_nc_oc=Adrfz8smf9Lmvjn52ny_n-vfHsPI1auMGTKVzMujcqm83M3KCKGmgVCu1DpYEzG-q44&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=fkTkqJM0ffqlZ6tLeQxf-A&_nc_ss=7c289&oh=00_AQBqGcXNV83cBOmPVyYyhPR_uOoh5NNdRKOZcTij1-Q8IQ&oe=6A69D45C",
+      "raw_ref": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.99422-6/756148663_1985963728772486_5201190354844850117_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=z2aYbD0FBtMQ7kNvwEMmhDm&_nc_oc=AdrDo4RmK8U2yvCovSyt7cO59CfLaSryE_0q4O8ksrUKbPtCDvdOkH_9sm8CIrhpeSo&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=VsY5cYQdWDspICm0l2VlGQ&_nc_ss=7c2a8&oh=00_AQAtHCnHPagq44Qz3nq-CSGIXDIQ0YsmoE4tkBscl_jMPg&oe=6A69D45C",
       "source_rate": 2280.0,
       "status": "expired (source changed)",
       "wrong_rate": 2281.0
@@ -372,7 +372,7 @@
       "PHP"
     ]
   ],
-  "generated_at": "2026-07-24T23:12:52+00:00",
+  "generated_at": "2026-07-24T23:37:09+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -496,6 +496,10 @@
       {
         "rate": 2297.0,
         "t": "2026-07-24T09:24:31+00:00"
+      },
+      {
+        "rate": 2285.0,
+        "t": "2026-07-24T23:37:09+00:00"
       }
     ],
     "eui|HKD|IDR": [
@@ -733,7 +737,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-24T23:12:52+00:00",
+      "captured_at": "2026-07-24T23:37:09+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -753,34 +757,34 @@
       "source_url": null
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-07-24T23:12:52+00:00",
+      "captured_at": "2026-07-24T23:37:09+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
-      "note": "vision OCR; Daily rate post from BRI Remittance showing 1 HKD = 2280 IDR.",
+      "note": "vision OCR; BRI Remittance daily rate card posted for IDR at 2280.",
       "promo": null,
       "rate": 2280.0,
-      "raw_ref": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.99422-6/756148663_1985963728772486_5201190354844850117_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=z2aYbD0FBtMQ7kNvwHYd1Ng&_nc_oc=Adrfz8smf9Lmvjn52ny_n-vfHsPI1auMGTKVzMujcqm83M3KCKGmgVCu1DpYEzG-q44&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=fkTkqJM0ffqlZ6tLeQxf-A&_nc_ss=7c289&oh=00_AQBqGcXNV83cBOmPVyYyhPR_uOoh5NNdRKOZcTij1-Q8IQ&oe=6A69D45C",
+      "raw_ref": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.99422-6/756148663_1985963728772486_5201190354844850117_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=z2aYbD0FBtMQ7kNvwEMmhDm&_nc_oc=AdrDo4RmK8U2yvCovSyt7cO59CfLaSryE_0q4O8ksrUKbPtCDvdOkH_9sm8CIrhpeSo&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=VsY5cYQdWDspICm0l2VlGQ&_nc_ss=7c2a8&oh=00_AQAtHCnHPagq44Qz3nq-CSGIXDIQ0YsmoE4tkBscl_jMPg&oe=6A69D45C",
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-07-24T23:12:52+00:00",
-      "confidence": 0.95,
-      "is_promo_rate": true,
+      "captured_at": "2026-07-24T23:37:09+00:00",
+      "confidence": 1.0,
+      "is_promo_rate": false,
       "method": "fb_ocr",
-      "note": "vision OCR; PROMO; 25/07/2026 - 26/07/2026 08:00; Promotional rate ('Rate Cantik') of 2297 IDR per 1 HKD for remittances under HK$8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday and Sunday. General currency exchange rate ('Kurs Tukar Cantik') is 2220.",
+      "note": "vision OCR; 24/07/2026; Kurs kirim (remittance rate) is 2285 IDR for 1 HKD. Kurs tukar (exchange rate) is 2215 IDR.",
       "promo": {
-        "date_text": "25/07/2026 - 26/07/2026 08:00",
-        "image": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwGIuAOm&_nc_oc=AdpswF0Arr0zZrkf3aF15HxiiYZQJK7iN0RbZj8PQGPzB67mzM12G31O9dtAKOPlLWU&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=n1iBb2_XncSJo4aZmQnMlQ&_nc_ss=7c289&oh=00_AQDuivO4zTjY56JWX3-6osjoDOfg4LRa2ODSE_n1RVSUBw&oe=6A69DFFD",
-        "note": "Promotional rate ('Rate Cantik') of 2297 IDR per 1 HKD for remittances under HK$8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday and Sunday. General currency exchange rate ('Kurs Tukar Cantik') is 2220.",
+        "date_text": "25/07/2026 - 26/07/2026",
+        "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwEAaBzY&_nc_oc=AdqFV9aROiBJv_LRL45ZF2WiJTNj-flDSy51L_4kJZSUq9FvlaGJfgYwIhZq_7-tBU8&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=KIg8cKd-BaH1VniNo4ejkg&_nc_ss=7c2a8&oh=00_AQCnn9H06OK3ul5tg17Wem9iWJE3KdefzqGUSzVqUNMyqw&oe=6A69DFFD",
+        "note": "Chandra Remittance weekend promo rate (Rate Cantik) of 2297 IDR per 1 HKD for transfers below HKD 8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches.",
         "rate": 2297.0
       },
-      "rate": 2297.0,
-      "raw_ref": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwGIuAOm&_nc_oc=AdpswF0Arr0zZrkf3aF15HxiiYZQJK7iN0RbZj8PQGPzB67mzM12G31O9dtAKOPlLWU&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=n1iBb2_XncSJo4aZmQnMlQ&_nc_ss=7c289&oh=00_AQDuivO4zTjY56JWX3-6osjoDOfg4LRa2ODSE_n1RVSUBw&oe=6A69DFFD",
+      "rate": 2285.0,
+      "raw_ref": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.99422-6/753337045_1069355755515742_5080467361582676347_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_g9jFcFpfI0Q7kNvwFLNhPG&_nc_oc=AdqSxJ8yI8t_gmC5RSpOvVDysgs0cwMunUUOvXxPQg_k3O7xerHmZe6A8pazyVc5gHo&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=Z1xtC2GM-Dbzi2cdZm0vrQ&_nc_ss=7e2a8&oh=00_AQAqtZNBzHJ0_ciurZtkCvTSjv0XuFVqrc8usNbt0q2giw&oe=6A69D9BC",
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-07-24T23:12:52+00:00",
+      "captured_at": "2026-07-24T23:37:09+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -791,7 +795,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-24T23:12:52+00:00",
+      "captured_at": "2026-07-24T23:37:09+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -802,7 +806,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-24T23:12:52+00:00",
+      "captured_at": "2026-07-24T23:37:09+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -813,7 +817,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-24T23:12:52+00:00",
+      "captured_at": "2026-07-24T23:37:09+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
