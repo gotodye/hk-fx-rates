@@ -231,10 +231,17 @@ function setLang(l){
   if(rb){ rb.textContent=L("refresh"); rb.addEventListener("click",refreshNow); }
 })();
 
+// Single source of truth for the token: prefer what's typed in the box right now,
+// fall back to what was saved earlier. (Fix/refresh used to read only one of the
+// two, so a freshly-typed token looked "missing".)
+function getToken(){
+  const el=document.getElementById("ghToken");
+  return ((el&&el.value.trim())||localStorage.getItem("ghToken")||"").trim();
+}
+
 // ---- Shared: dispatch a workflow, then poll ./data.json until it republishes ----
 async function dispatchWorkflow(file, inputs){
-  const token=(localStorage.getItem("ghToken")||
-    ((document.getElementById("ghToken")||{}).value)||"").trim();
+  const token=getToken();
   if(!token) return {ok:false, reason:"no-token"};
   try{
     const r=await fetch(`https://api.github.com/repos/${MONITOR_REPO}/actions/workflows/${file}/dispatches`,{
@@ -600,7 +607,7 @@ async function submitFix(key, wrongRate, box){
   const setS=m=>{ if(st) st.textContent=m; };
   const val=(box.querySelector("#fixVal").value||"").trim();
   if(val==="") { setS("⚠ "+L("fixCorrect")); return; }
-  const token=(localStorage.getItem("ghToken")||"").trim();
+  const token=getToken();
   if(!token){ setS(L("rpNeedToken")); return; }
   setS(L("stSaving"));
 
@@ -704,8 +711,7 @@ function wireReport(){
 async function sendReport(){
   const st=document.getElementById("reportStatus");
   const setS=m=>{ if(st) st.textContent=m; };
-  const tokEl=document.getElementById("ghToken");
-  const token=((tokEl&&tokEl.value.trim())||localStorage.getItem("ghToken")||"").trim();
+  const token=getToken();
   if(!token){ setS(L("rpNeedToken")); return; }
   localStorage.setItem("ghToken",token);
   setS(L("rpTriggering"));
