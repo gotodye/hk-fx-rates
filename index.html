@@ -385,6 +385,46 @@ function loadData(){
    .catch(e=>{document.getElementById("app").innerHTML=
      `<section class="card"><p class="muted">${L("noData")}</p></section>`;});
   fetchLastRun().then(lr=>{ LAST_RUN=lr; showNextAuto(); });
+  startAutoRefresh();
+}
+
+// ---- Keep a long-lived tab current, without a manual reload --------------------
+const POLL_MS=60000;
+let pollTimer=null;
+
+/** True while someone is filling in a rate — re-rendering would wipe what they typed. */
+function isEditing(){
+  const a=document.activeElement;
+  return !!(a && a.tagName==="INPUT" && (a.dataset.mk!==undefined || a.id==="fixVal" || a.id==="fixNote"));
+}
+
+async function pollForUpdate(){
+  if(document.hidden || isEditing()) return;   // retry on the next tick
+  try{
+    const r=await fetch("./data.json?_="+Date.now(),{cache:"no-store"});
+    if(!r.ok) return;
+    const fresh=await r.json();
+    // Only touch the DOM when the data actually moved: a needless re-render would
+    // reset the chart tab and scroll position while someone is reading.
+    if(!DATA || fresh.generated_at!==DATA.generated_at){
+      DATA=fresh; render(); flashUpdated();
+    }
+  }catch(e){ /* transient: keep polling */ }
+  fetchLastRun().then(lr=>{ LAST_RUN=lr; showNextAuto(); }).catch(e=>{});
+}
+
+function flashUpdated(){
+  const el=document.getElementById("updated");
+  if(!el) return;
+  el.style.transition="none"; el.style.color="var(--primary-deep)";
+  setTimeout(()=>{ el.style.transition="color 1.5s"; el.style.color=""; },80);
+}
+
+function startAutoRefresh(){
+  if(pollTimer) return;
+  pollTimer=setInterval(pollForUpdate,POLL_MS);
+  // A backgrounded tab gets throttled, so check once the moment it's looked at again.
+  document.addEventListener("visibilitychange",()=>{ if(!document.hidden) pollForUpdate(); });
 }
 
 function render(){
