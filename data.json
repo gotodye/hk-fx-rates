@@ -356,7 +356,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
-      "raw_ref": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.99422-6/754555094_2491852927996344_7679038339752905352_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IvL3EYkOfREQ7kNvwGfoPRy&_nc_oc=AdpUKxLclTZgZZF7wOCVKvHIjtAxRcmtPjgDOhmUr4AJnyyISQNdWwc-wRuf9jFl_dw&_nc_zt=14&_nc_ht=scontent-sea5-1.xx&_nc_gid=rdF-899X1LrTbQQInqMCSw&_nc_ss=7c2a8&oh=00_AQAi3aV6LeszMCm4fWM2t2Jc5bZ99_hHxyrqh5cfX0V33A&oe=6A69DEB5",
+      "raw_ref": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.99422-6/754555094_2491852927996344_7679038339752905352_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IvL3EYkOfREQ7kNvwFoWpDu&_nc_oc=AdrGPYqDcsodGUUJA0vjuJoF_MJWNRuSj2q670hJD6Inax4LkHVUJtG2Eyt8Qz9nrSA&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=GjYbP7uD3YUdxbx_ILCWMA&_nc_ss=7c289&oh=00_AQAL1I745DMgjQau7zU-rBpYHrVmh7LXEHO-qIUPuXeAjQ&oe=6A6A16F5",
       "source_rate": 2288.0,
       "status": "expired (source changed)",
       "wrong_rate": 2281.0
@@ -373,7 +373,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-07-25T03:00:51+00:00",
+  "generated_at": "2026-07-25T03:46:59+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -750,7 +750,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-25T03:00:51+00:00",
+      "captured_at": "2026-07-25T03:46:59+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -770,14 +770,14 @@
       "source_url": null
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-07-25T03:00:51+00:00",
+      "captured_at": "2026-07-25T03:46:59+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
-      "note": "vision OCR; Pagi ini; Kurs hari ini 2288 IDR per 1 HKD dari BRI Remittance.",
+      "note": "vision OCR; Daily exchange rate posted by BRI Remittance / remit.go! showing 1 HKD = 2288 IDR.",
       "promo": null,
       "rate": 2288.0,
-      "raw_ref": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.99422-6/754555094_2491852927996344_7679038339752905352_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IvL3EYkOfREQ7kNvwGfoPRy&_nc_oc=AdpUKxLclTZgZZF7wOCVKvHIjtAxRcmtPjgDOhmUr4AJnyyISQNdWwc-wRuf9jFl_dw&_nc_zt=14&_nc_ht=scontent-sea5-1.xx&_nc_gid=rdF-899X1LrTbQQInqMCSw&_nc_ss=7c2a8&oh=00_AQAi3aV6LeszMCm4fWM2t2Jc5bZ99_hHxyrqh5cfX0V33A&oe=6A69DEB5",
+      "raw_ref": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.99422-6/754555094_2491852927996344_7679038339752905352_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IvL3EYkOfREQ7kNvwFoWpDu&_nc_oc=AdrGPYqDcsodGUUJA0vjuJoF_MJWNRuSj2q670hJD6Inax4LkHVUJtG2Eyt8Qz9nrSA&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=GjYbP7uD3YUdxbx_ILCWMA&_nc_ss=7c289&oh=00_AQAL1I745DMgjQau7zU-rBpYHrVmh7LXEHO-qIUPuXeAjQ&oe=6A6A16F5",
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
@@ -797,7 +797,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-07-25T03:00:51+00:00",
+      "captured_at": "2026-07-25T03:46:59+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -808,7 +808,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-25T03:00:51+00:00",
+      "captured_at": "2026-07-25T03:46:59+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -819,7 +819,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-25T03:00:51+00:00",
+      "captured_at": "2026-07-25T03:46:59+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -830,7 +830,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-25T03:00:51+00:00",
+      "captured_at": "2026-07-25T03:46:59+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
