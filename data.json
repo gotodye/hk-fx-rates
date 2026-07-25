@@ -343,7 +343,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
-      "raw_ref": "https://scontent-fra5-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwGTBmfu&_nc_oc=AdpjtkQzg4GdRRaSGlHb3Y2elWC1X3o8KUoHUlaz1MejI3HMQksDxf_308j_ZqOUpGI&_nc_zt=14&_nc_ht=scontent-fra5-1.xx&_nc_gid=MdVp-T9dgxsnNif-036J2g&_nc_ss=7c289&oh=00_AQB5sJXG2ynOxAwhbYmB6S52W-VDyzG6ANwHdAzeNEUbHg&oe=6A6A183D",
+      "raw_ref": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwH7Zaz6&_nc_oc=AdptX6KuvxQjIEEACu5WQiFKyUTZyFxZ7ZvoiUg14mEbWdt_07-sl3MxffpXGYhDtsU&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=I8fXgfgQ-n5cmk-i51ZF8w&_nc_ss=7c289&oh=00_AQB5Ncg85tDLbiMq-yrbj2AuqGMHt9PPz0yihz5YIrzy0g&oe=6A6A183D",
       "source_rate": 2297.0,
       "status": "expired (source changed)",
       "wrong_rate": 2279.0
@@ -356,7 +356,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
-      "raw_ref": "https://scontent-fra3-1.xx.fbcdn.net/v/t39.99422-6/754555094_2491852927996344_7679038339752905352_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IvL3EYkOfREQ7kNvwFLREGL&_nc_oc=AdoXb6NI7I6dJUC5zwnSk88UbpgstJTbF1eMKK050KgfZeuiP3NtMy95W7dwt-MlGWI&_nc_zt=14&_nc_ht=scontent-fra3-1.xx&_nc_gid=-4-0EpOj2RyQFx1xgH5bKg&_nc_ss=7c289&oh=00_AQBNptAD1Yxe5VBUngmNs2gZAz7MdFL0cvLFy_sWLTV2Xg&oe=6A6A16F5",
+      "raw_ref": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.99422-6/754555094_2491852927996344_7679038339752905352_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IvL3EYkOfREQ7kNvwH98zi6&_nc_oc=Adoj_h0tsljtz9jI-3qm1QSM3twRmR9y4QAo4MZbdffiY-yMqC7Erc5wTVcY5FrYNpA&_nc_zt=14&_nc_ht=scontent-ord5-2.xx&_nc_gid=rEnR6P2yh4XXcTPrFJZHMw&_nc_ss=7c289&oh=00_AQC9S5WpxoxBu8zsVejCkwZQJIHMO400LCMf9t8VV3spIQ&oe=6A6A16F5",
       "source_rate": 2288.0,
       "status": "expired (source changed)",
       "wrong_rate": 2281.0
@@ -373,7 +373,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-07-25T04:06:51+00:00",
+  "generated_at": "2026-07-25T04:47:57+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -754,7 +754,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-25T04:06:51+00:00",
+      "captured_at": "2026-07-25T04:47:57+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -774,34 +774,34 @@
       "source_url": null
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-07-25T04:06:51+00:00",
+      "captured_at": "2026-07-25T04:47:57+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
-      "note": "vision OCR; Hari Ini; Extracted 2288 IDR/HKD rate from BRI Remittance daily rate card.",
+      "note": "vision OCR; Pagi ini; Daily rate card for BRI Remittance (IDR) showing 2288.",
       "promo": null,
       "rate": 2288.0,
-      "raw_ref": "https://scontent-fra3-1.xx.fbcdn.net/v/t39.99422-6/754555094_2491852927996344_7679038339752905352_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IvL3EYkOfREQ7kNvwFLREGL&_nc_oc=AdoXb6NI7I6dJUC5zwnSk88UbpgstJTbF1eMKK050KgfZeuiP3NtMy95W7dwt-MlGWI&_nc_zt=14&_nc_ht=scontent-fra3-1.xx&_nc_gid=-4-0EpOj2RyQFx1xgH5bKg&_nc_ss=7c289&oh=00_AQBNptAD1Yxe5VBUngmNs2gZAz7MdFL0cvLFy_sWLTV2Xg&oe=6A6A16F5",
+      "raw_ref": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.99422-6/754555094_2491852927996344_7679038339752905352_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IvL3EYkOfREQ7kNvwH98zi6&_nc_oc=Adoj_h0tsljtz9jI-3qm1QSM3twRmR9y4QAo4MZbdffiY-yMqC7Erc5wTVcY5FrYNpA&_nc_zt=14&_nc_ht=scontent-ord5-2.xx&_nc_gid=rEnR6P2yh4XXcTPrFJZHMw&_nc_ss=7c289&oh=00_AQC9S5WpxoxBu8zsVejCkwZQJIHMO400LCMf9t8VV3spIQ&oe=6A6A16F5",
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-07-25T04:06:51+00:00",
-      "confidence": 0.98,
+      "captured_at": "2026-07-25T04:47:57+00:00",
+      "confidence": 0.95,
       "is_promo_rate": true,
       "method": "fb_ocr",
-      "note": "vision OCR; PROMO; 25/07/2026 - 26/07/2026; Promotional 'Rate Cantik' remittance rate of 2297 IDR per HKD for transfers under HKD 8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday and Sunday.",
+      "note": "vision OCR; PROMO; 25/01/2025, 26/01/2025; Promotional rate ('Rate Cantik') of 2297 IDR for remittances under HK$8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Jan 25-26, 2025.",
       "promo": {
-        "date_text": "25/07/2026 - 26/07/2026",
-        "image": "https://scontent-fra5-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwGTBmfu&_nc_oc=AdpjtkQzg4GdRRaSGlHb3Y2elWC1X3o8KUoHUlaz1MejI3HMQksDxf_308j_ZqOUpGI&_nc_zt=14&_nc_ht=scontent-fra5-1.xx&_nc_gid=MdVp-T9dgxsnNif-036J2g&_nc_ss=7c289&oh=00_AQB5sJXG2ynOxAwhbYmB6S52W-VDyzG6ANwHdAzeNEUbHg&oe=6A6A183D",
-        "note": "Promotional 'Rate Cantik' remittance rate of 2297 IDR per HKD for transfers under HKD 8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday and Sunday.",
+        "date_text": "",
+        "image": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwH7Zaz6&_nc_oc=AdptX6KuvxQjIEEACu5WQiFKyUTZyFxZ7ZvoiUg14mEbWdt_07-sl3MxffpXGYhDtsU&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=I8fXgfgQ-n5cmk-i51ZF8w&_nc_ss=7c289&oh=00_AQB5Ncg85tDLbiMq-yrbj2AuqGMHt9PPz0yihz5YIrzy0g&oe=6A6A183D",
+        "note": "Promotional rate ('Rate Cantik') of 2297 IDR for remittances under HK$8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Jan 25-26, 2025.",
         "rate": 2297.0
       },
       "rate": 2297.0,
-      "raw_ref": "https://scontent-fra5-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwGTBmfu&_nc_oc=AdpjtkQzg4GdRRaSGlHb3Y2elWC1X3o8KUoHUlaz1MejI3HMQksDxf_308j_ZqOUpGI&_nc_zt=14&_nc_ht=scontent-fra5-1.xx&_nc_gid=MdVp-T9dgxsnNif-036J2g&_nc_ss=7c289&oh=00_AQB5sJXG2ynOxAwhbYmB6S52W-VDyzG6ANwHdAzeNEUbHg&oe=6A6A183D",
+      "raw_ref": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwH7Zaz6&_nc_oc=AdptX6KuvxQjIEEACu5WQiFKyUTZyFxZ7ZvoiUg14mEbWdt_07-sl3MxffpXGYhDtsU&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=I8fXgfgQ-n5cmk-i51ZF8w&_nc_ss=7c289&oh=00_AQB5Ncg85tDLbiMq-yrbj2AuqGMHt9PPz0yihz5YIrzy0g&oe=6A6A183D",
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-07-25T04:06:51+00:00",
+      "captured_at": "2026-07-25T04:47:57+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -812,7 +812,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-25T04:06:51+00:00",
+      "captured_at": "2026-07-25T04:47:57+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -823,7 +823,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-25T04:06:51+00:00",
+      "captured_at": "2026-07-25T04:47:57+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -834,7 +834,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-25T04:06:51+00:00",
+      "captured_at": "2026-07-25T04:47:57+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
