@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-26T04:30:58+00:00",
+      "new_rate": 2297.0,
+      "old_rate": 2285.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-07-25T05:30:52+00:00",
       "new_rate": 2285.0,
       "old_rate": 2297.0,
@@ -311,14 +319,6 @@
       "pair": "HKD->PHP",
       "provider": "Panda Remit",
       "to_ccy": "PHP"
-    },
-    {
-      "changed_at": "2026-07-21T04:38:47+00:00",
-      "new_rate": 2282.0,
-      "old_rate": 2284.0,
-      "pair": "HKD->IDR",
-      "provider": "Chandra Remittance",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -343,8 +343,8 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
-      "raw_ref": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.99422-6/753306470_2095489787710385_6156712724421126508_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-_saRrZbLasQ7kNvwGBaZ1Y&_nc_oc=AdrPFBAPMeUucLKHOFynEq-BYS-eWc2Drc_wFcYN2sfRcjhR4m0H4HnLSCW9JtMWbJs&_nc_zt=14&_nc_ht=scontent-ord5-1.xx&_nc_gid=Cm1G5-MvkU9b8ywWRiV7Rw&_nc_ss=7c289&oh=00_AQBExf5Wyj0yg6BWQBmHe4_W5GHspBRRd5sR0vgXRv_35Q&oe=6A6A3A51",
-      "source_rate": 2285.0,
+      "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwEyR1CO&_nc_oc=AdoIwpWrm_Z3kd651gSeVnCOElISYvZ7pUsXs1KSX64gdUu8PGD58I7As17u1yX4jis&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=_AzIVAx53lCd-S1UHjBGxQ&_nc_ss=7c289&oh=00_AQBixqZkc-bGLtfZD4vwcsfjwI2gqJmxIE69Feo-mQC3fA&oe=6A6B69BD",
+      "source_rate": 2297.0,
       "status": "expired (source changed)",
       "wrong_rate": 2279.0
     },
@@ -375,7 +375,7 @@
   "fb_health": {
     "fail_since": "2026-07-26T03:42:04+00:00"
   },
-  "generated_at": "2026-07-26T03:42:04+00:00",
+  "generated_at": "2026-07-26T04:30:58+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -523,6 +523,10 @@
       {
         "rate": 2285.0,
         "t": "2026-07-25T05:30:52+00:00"
+      },
+      {
+        "rate": 2297.0,
+        "t": "2026-07-26T04:30:58+00:00"
       }
     ],
     "eui|HKD|IDR": [
@@ -760,7 +764,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-26T03:42:04+00:00",
+      "captured_at": "2026-07-26T04:30:58+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -791,18 +795,23 @@
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-07-25T09:00:50+00:00",
+      "captured_at": "2026-07-26T04:30:58+00:00",
       "confidence": 0.95,
-      "is_promo_rate": false,
+      "is_promo_rate": true,
       "method": "fb_ocr",
-      "note": "vision OCR; 25/07/2026; Extracted Kurs Kirim rate of 2285 IDR per HKD from Chandra Remittance daily rate card.",
-      "promo": null,
-      "rate": 2285.0,
-      "raw_ref": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.99422-6/753306470_2095489787710385_6156712724421126508_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-_saRrZbLasQ7kNvwGBaZ1Y&_nc_oc=AdrPFBAPMeUucLKHOFynEq-BYS-eWc2Drc_wFcYN2sfRcjhR4m0H4HnLSCW9JtMWbJs&_nc_zt=14&_nc_ht=scontent-ord5-1.xx&_nc_gid=Cm1G5-MvkU9b8ywWRiV7Rw&_nc_ss=7c289&oh=00_AQBExf5Wyj0yg6BWQBmHe4_W5GHspBRRd5sR0vgXRv_35Q&oe=6A6A3A51",
+      "note": "vision OCR; PROMO; 25/07/2026 - 26/07/2026; Chandra Remittance Kurs Kirim Rate Cantik of 2297 IDR per HKD valid for transfers under HK$8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday & Sunday.",
+      "promo": {
+        "date_text": "25/07/2026 - 26/07/2026",
+        "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwEyR1CO&_nc_oc=AdoIwpWrm_Z3kd651gSeVnCOElISYvZ7pUsXs1KSX64gdUu8PGD58I7As17u1yX4jis&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=_AzIVAx53lCd-S1UHjBGxQ&_nc_ss=7c289&oh=00_AQBixqZkc-bGLtfZD4vwcsfjwI2gqJmxIE69Feo-mQC3fA&oe=6A6B69BD",
+        "note": "Chandra Remittance Kurs Kirim Rate Cantik of 2297 IDR per HKD valid for transfers under HK$8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday & Sunday.",
+        "rate": 2297.0
+      },
+      "rate": 2297.0,
+      "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwEyR1CO&_nc_oc=AdoIwpWrm_Z3kd651gSeVnCOElISYvZ7pUsXs1KSX64gdUu8PGD58I7As17u1yX4jis&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=_AzIVAx53lCd-S1UHjBGxQ&_nc_ss=7c289&oh=00_AQBixqZkc-bGLtfZD4vwcsfjwI2gqJmxIE69Feo-mQC3fA&oe=6A6B69BD",
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-07-26T03:42:04+00:00",
+      "captured_at": "2026-07-26T04:30:58+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -813,7 +822,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-26T03:42:04+00:00",
+      "captured_at": "2026-07-26T04:30:58+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -824,7 +833,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-26T03:42:04+00:00",
+      "captured_at": "2026-07-26T04:30:58+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -835,7 +844,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-26T03:42:04+00:00",
+      "captured_at": "2026-07-26T04:30:58+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
