@@ -343,7 +343,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
-      "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwHnAS_B&_nc_oc=Adp5aMRaqvOqe7P7UxoXAzPxjL4f9w6dfuwH1_RzNhvTKCEXMI5ErfKBWMl6DRYbb-g&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=PDcCiMjJ44PHsPMi3KlosQ&_nc_ss=7c289&oh=00_AQAoeAHo-I6ljtAJeyUQkzK2kvKU3DXNWYdku1oSlWFtXQ&oe=6A6B69BD",
+      "raw_ref": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwGraZRE&_nc_oc=AdpjWmahy-YSK9nsonmag-stIe84o2tlusc0aZMM4pe_eiSJf3p0mu_mDXN2oZghUD8&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=r4shEqDDl39lqsMBDCbKDg&_nc_ss=7c289&oh=00_AQBFxcXssCmzCEV0kRVGvAr9rlicvZ639O8rziVhiQSu4w&oe=6A6B69BD",
       "source_rate": 2297.0,
       "status": "expired (source changed)",
       "wrong_rate": 2279.0
@@ -375,7 +375,7 @@
   "fb_health": {
     "fail_since": "2026-07-26T03:42:04+00:00"
   },
-  "generated_at": "2026-07-26T06:25:23+00:00",
+  "generated_at": "2026-07-26T07:00:55+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -764,7 +764,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-26T06:25:23+00:00",
+      "captured_at": "2026-07-26T07:00:55+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -795,23 +795,23 @@
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-07-26T06:25:23+00:00",
+      "captured_at": "2026-07-26T07:00:55+00:00",
       "confidence": 0.95,
       "is_promo_rate": true,
       "method": "fb_ocr",
-      "note": "vision OCR; PROMO; 25/07/2026 - 26/07/2026; Rate Cantik remittance rate of 2297 IDR/HKD for transfers under HKD 8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday and Sunday.",
+      "note": "vision OCR; PROMO; 25/07/2026 - 26/07/2026; Kurs Kirim Rate Cantik is 2297, valid for transfers under HK$8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday & Sunday. Currency exchange rate (Kurs Tukar) is 2220.",
       "promo": {
         "date_text": "25/07/2026 - 26/07/2026",
-        "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwHnAS_B&_nc_oc=Adp5aMRaqvOqe7P7UxoXAzPxjL4f9w6dfuwH1_RzNhvTKCEXMI5ErfKBWMl6DRYbb-g&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=PDcCiMjJ44PHsPMi3KlosQ&_nc_ss=7c289&oh=00_AQAoeAHo-I6ljtAJeyUQkzK2kvKU3DXNWYdku1oSlWFtXQ&oe=6A6B69BD",
-        "note": "Rate Cantik remittance rate of 2297 IDR/HKD for transfers under HKD 8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday and Sunday.",
+        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwGraZRE&_nc_oc=AdpjWmahy-YSK9nsonmag-stIe84o2tlusc0aZMM4pe_eiSJf3p0mu_mDXN2oZghUD8&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=r4shEqDDl39lqsMBDCbKDg&_nc_ss=7c289&oh=00_AQBFxcXssCmzCEV0kRVGvAr9rlicvZ639O8rziVhiQSu4w&oe=6A6B69BD",
+        "note": "Kurs Kirim Rate Cantik is 2297, valid for transfers under HK$8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday & Sunday. Currency exchange rate (Kurs Tukar) is 2220.",
         "rate": 2297.0
       },
       "rate": 2297.0,
-      "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwHnAS_B&_nc_oc=Adp5aMRaqvOqe7P7UxoXAzPxjL4f9w6dfuwH1_RzNhvTKCEXMI5ErfKBWMl6DRYbb-g&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=PDcCiMjJ44PHsPMi3KlosQ&_nc_ss=7c289&oh=00_AQAoeAHo-I6ljtAJeyUQkzK2kvKU3DXNWYdku1oSlWFtXQ&oe=6A6B69BD",
+      "raw_ref": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwGraZRE&_nc_oc=AdpjWmahy-YSK9nsonmag-stIe84o2tlusc0aZMM4pe_eiSJf3p0mu_mDXN2oZghUD8&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=r4shEqDDl39lqsMBDCbKDg&_nc_ss=7c289&oh=00_AQBFxcXssCmzCEV0kRVGvAr9rlicvZ639O8rziVhiQSu4w&oe=6A6B69BD",
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-07-26T06:25:23+00:00",
+      "captured_at": "2026-07-26T07:00:55+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -822,7 +822,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-26T06:25:23+00:00",
+      "captured_at": "2026-07-26T07:00:55+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -833,7 +833,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-26T06:25:23+00:00",
+      "captured_at": "2026-07-26T07:00:55+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -844,7 +844,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-26T06:25:23+00:00",
+      "captured_at": "2026-07-26T07:00:55+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
