@@ -343,7 +343,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
-      "raw_ref": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwELiPta&_nc_oc=AdobvGp1I8D8MukjmrqSYZ1LEeVZt1ktfZ2yHMTEBI5brrb3pDoB05JIAxKMEQtaQM4&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=YsGcmgkvF-4ayDqdhusMmg&_nc_ss=7c289&oh=00_AQAY731P6JkjMWBDn2UmbR8vl1QJFoAXNl7U7ymqrCy5HQ&oe=6A6C4ABD",
+      "raw_ref": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwGO_yPx&_nc_oc=Adq1heWhy-M7Q4eCP87J91VpF-DtFTm7PbBJwMPsepB-8QA8Vh9g2TYPkITi8ruDSnQ&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=FS8LdnGSPtT9lTkhPB1FgA&_nc_ss=7c289&oh=00_AQARwYRpULixqVkDFAKER0OTBAA7NZS_2HyHn1Y5--4IoA&oe=6A6C82FD",
       "source_rate": 2297.0,
       "status": "expired (source changed)",
       "wrong_rate": 2279.0
@@ -376,7 +376,7 @@
     "alerted": true,
     "fail_since": "2026-07-26T10:30:50+00:00"
   },
-  "generated_at": "2026-07-26T23:00:50+00:00",
+  "generated_at": "2026-07-27T00:01:05+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -781,7 +781,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-26T23:00:50+00:00",
+      "captured_at": "2026-07-27T00:01:05+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -812,23 +812,23 @@
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-07-26T23:00:50+00:00",
+      "captured_at": "2026-07-27T00:01:05+00:00",
       "confidence": 0.95,
       "is_promo_rate": true,
       "method": "fb_ocr",
-      "note": "vision OCR; PROMO; 25/07/2026, 26/07/2026; Kurs Kirim Rate Cantik of 2297 IDR per 1 HKD for transfers under HK$8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday and Sunday.",
+      "note": "vision OCR; PROMO; 25/07/2026 - 26/07/2026; Kurs Kirim Rate Cantik of 2297 IDR per HKD valid for transactions under HKD 8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday and Sunday. Cash exchange rate (Kurs Tukar Cantik) is 2220.",
       "promo": {
-        "date_text": "25/07/2026, 26/07/2026",
-        "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwELiPta&_nc_oc=AdobvGp1I8D8MukjmrqSYZ1LEeVZt1ktfZ2yHMTEBI5brrb3pDoB05JIAxKMEQtaQM4&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=YsGcmgkvF-4ayDqdhusMmg&_nc_ss=7c289&oh=00_AQAY731P6JkjMWBDn2UmbR8vl1QJFoAXNl7U7ymqrCy5HQ&oe=6A6C4ABD",
-        "note": "Kurs Kirim Rate Cantik of 2297 IDR per 1 HKD for transfers under HK$8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday and Sunday.",
+        "date_text": "25/07/2026 - 26/07/2026",
+        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwGO_yPx&_nc_oc=Adq1heWhy-M7Q4eCP87J91VpF-DtFTm7PbBJwMPsepB-8QA8Vh9g2TYPkITi8ruDSnQ&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=FS8LdnGSPtT9lTkhPB1FgA&_nc_ss=7c289&oh=00_AQARwYRpULixqVkDFAKER0OTBAA7NZS_2HyHn1Y5--4IoA&oe=6A6C82FD",
+        "note": "Kurs Kirim Rate Cantik of 2297 IDR per HKD valid for transactions under HKD 8000 at Tsuen Wan, Yuen Long, and Sai Ying Pun branches on Saturday and Sunday. Cash exchange rate (Kurs Tukar Cantik) is 2220.",
         "rate": 2297.0
       },
       "rate": 2297.0,
-      "raw_ref": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwELiPta&_nc_oc=AdobvGp1I8D8MukjmrqSYZ1LEeVZt1ktfZ2yHMTEBI5brrb3pDoB05JIAxKMEQtaQM4&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=YsGcmgkvF-4ayDqdhusMmg&_nc_ss=7c289&oh=00_AQAY731P6JkjMWBDn2UmbR8vl1QJFoAXNl7U7ymqrCy5HQ&oe=6A6C4ABD",
+      "raw_ref": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.99422-6/753550948_2638479146609327_3539513296793000025_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZPzAo4dki_IQ7kNvwGO_yPx&_nc_oc=Adq1heWhy-M7Q4eCP87J91VpF-DtFTm7PbBJwMPsepB-8QA8Vh9g2TYPkITi8ruDSnQ&_nc_zt=14&_nc_ht=scontent-dfw5-2.xx&_nc_gid=FS8LdnGSPtT9lTkhPB1FgA&_nc_ss=7c289&oh=00_AQARwYRpULixqVkDFAKER0OTBAA7NZS_2HyHn1Y5--4IoA&oe=6A6C82FD",
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-07-26T23:00:50+00:00",
+      "captured_at": "2026-07-27T00:01:05+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -839,7 +839,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-26T23:00:50+00:00",
+      "captured_at": "2026-07-27T00:01:05+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -850,18 +850,18 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-26T23:00:50+00:00",
+      "captured_at": "2026-07-27T00:01:05+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
-      "note": "貓熊匯率 standard rate (+0.42% vs 昨日)",
+      "note": "貓熊匯率 standard rate (+0.43% vs 昨日)",
       "promo": null,
-      "rate": 7.8553,
+      "rate": 7.8557,
       "raw_ref": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-26T23:00:50+00:00",
+      "captured_at": "2026-07-27T00:01:05+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
