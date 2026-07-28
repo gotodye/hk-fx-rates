@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-28T02:00:52+00:00",
+      "new_rate": 7.8503,
+      "old_rate": 7.8413,
+      "pair": "HKD->PHP",
+      "provider": "Panda Remit",
+      "to_ccy": "PHP"
+    },
+    {
       "changed_at": "2026-07-27T07:30:48+00:00",
       "new_rate": 2289.2314,
       "old_rate": 2287.8724,
@@ -311,14 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-07-22T07:27:22+00:00",
-      "new_rate": 2275.45,
-      "old_rate": 2278.5148,
-      "pair": "HKD->IDR",
-      "provider": "Panda Remit",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -331,7 +331,7 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2289.3482,
+      "source_rate": 2289.4066,
       "status": "expired (source changed)",
       "wrong_rate": 2277.9046
     },
@@ -343,7 +343,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
-      "raw_ref": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.99422-6/756620402_1040125955041935_270677869410225257_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5Xg01P7ULGsQ7kNvwGRsVAh&_nc_oc=AdqqLdEpAKNZhXXcPt8X3_EgxyFCDZyRCQwcSx2s3TJ9zHydoReqjuJAsxvYxYUVnto&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=MF5EcxJ-fJSWT3fBHFinXw&_nc_ss=7c289&oh=00_AQBwQXh_rulIXiHxCZNiF_YEF182OlFHl7X-1AMmkWSzyA&oe=6A6DE6A1",
+      "raw_ref": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.99422-6/756620402_1040125955041935_270677869410225257_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5Xg01P7ULGsQ7kNvwHcm97i&_nc_oc=AdqS9AffnpzzXqty_fKv3HTJC1r1b0ANVrpVNGhoK6Z-kYL6_c3y-_aFh4NxpB2mqVI&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=KlPM-MB8Q7rSL2ZvjikTQA&_nc_ss=7c289&oh=00_AQBsk_JgePzu3EI6-9Zm-iZhTmL-rusIEs8JBBhtvqdPwg&oe=6A6DE6A1",
       "source_rate": 2288.0,
       "status": "expired (source changed)",
       "wrong_rate": 2279.0
@@ -373,7 +373,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-07-28T01:00:55+00:00",
+  "generated_at": "2026-07-28T02:00:52+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -767,6 +767,10 @@
       {
         "rate": 7.843,
         "t": "2026-07-27T01:30:45+00:00"
+      },
+      {
+        "rate": 7.8503,
+        "t": "2026-07-28T02:00:52+00:00"
       }
     ],
     "weremit|HKD|IDR": [
@@ -802,7 +806,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-28T01:00:55+00:00",
+      "captured_at": "2026-07-28T02:00:52+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -833,18 +837,18 @@
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-07-28T01:00:55+00:00",
+      "captured_at": "2026-07-28T02:00:52+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "fb_ocr",
-      "note": "vision OCR; 27/7/2026; The posted sending exchange rate (Kurs Kirim) for HKD to IDR is 2288.",
+      "note": "vision OCR; 27/7/2026 15:23 pm; Kurs Kirim (remittance rate) for HKD to IDR is 2288.",
       "promo": null,
       "rate": 2288.0,
-      "raw_ref": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.99422-6/756620402_1040125955041935_270677869410225257_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5Xg01P7ULGsQ7kNvwGRsVAh&_nc_oc=AdqqLdEpAKNZhXXcPt8X3_EgxyFCDZyRCQwcSx2s3TJ9zHydoReqjuJAsxvYxYUVnto&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=MF5EcxJ-fJSWT3fBHFinXw&_nc_ss=7c289&oh=00_AQBwQXh_rulIXiHxCZNiF_YEF182OlFHl7X-1AMmkWSzyA&oe=6A6DE6A1",
+      "raw_ref": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.99422-6/756620402_1040125955041935_270677869410225257_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5Xg01P7ULGsQ7kNvwHcm97i&_nc_oc=AdqS9AffnpzzXqty_fKv3HTJC1r1b0ANVrpVNGhoK6Z-kYL6_c3y-_aFh4NxpB2mqVI&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=KlPM-MB8Q7rSL2ZvjikTQA&_nc_ss=7c289&oh=00_AQBsk_JgePzu3EI6-9Zm-iZhTmL-rusIEs8JBBhtvqdPwg&oe=6A6DE6A1",
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-07-28T01:00:55+00:00",
+      "captured_at": "2026-07-28T02:00:52+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -855,29 +859,29 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-28T01:00:55+00:00",
+      "captured_at": "2026-07-28T02:00:52+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
       "note": "貓熊匯率 standard rate (+0.01% vs 昨日)",
       "promo": null,
-      "rate": 2289.3482,
+      "rate": 2289.4066,
       "raw_ref": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "pandaremit|HKD|PHP": {
-      "captured_at": "2026-07-28T01:00:55+00:00",
+      "captured_at": "2026-07-28T02:00:52+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
-      "note": "貓熊匯率 standard rate (+0.01% vs 昨日)",
+      "note": "貓熊匯率 standard rate (+0.12% vs 昨日)",
       "promo": null,
-      "rate": 7.8413,
+      "rate": 7.8503,
       "raw_ref": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-28T01:00:55+00:00",
+      "captured_at": "2026-07-28T02:00:52+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
