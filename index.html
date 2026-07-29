@@ -392,7 +392,7 @@ const GUIDE={
 <h4>④ 會收到的 Teams 通知 → 怎麼辦</h4>
 <table class="g-tbl"><tbody>
   <tr><td><b>匯率變動</b></td><td>看是否需要跟進調價。</td></tr>
-  <tr><td><b>⚠ FB cookie 可能已失效</b></td><td>Chandra/BRI 連續 6 小時抓不到標準卡 → 重新匯出 cookie（見下）。</td></tr>
+  <tr><td><b>⚠ FB cookie 可能已失效</b></td><td>FB 連續 6 小時把我方擋在登入頁外（session 被拒）→ 重新匯出 cookie（見下）。<b>只有這個告警才代表真的要重匯</b>；單純促銷價／「N 小時未更新」多是過夜薄 feed，會自己恢復。</td></tr>
 </tbody></table>
 
 <h4>⑤ 定期維護</h4>
@@ -404,8 +404,8 @@ const GUIDE={
 
 <h4>⑥ 遇到問題</h4>
 <table class="g-tbl"><tbody>
-  <tr><td>某家 <b>⚠ N 小時未更新</b></td><td>FB 暫時擋、或該家沒發卡。通常自己恢復；兩家都持續 → 重匯 cookie。</td></tr>
-  <tr><td>Chandra 卡在 <b>促銷價</b></td><td>只抓到促銷卡，通常下輪補上；持續 → 重匯 cookie。</td></tr>
+  <tr><td>某家 <b>⚠ N 小時未更新</b></td><td>FB 暫時薄 feed、或該家沒發卡，通常自己恢復（過夜／下午補發）。<b>只有收到「FB cookie 可能已失效」才需重匯 cookie。</b></td></tr>
+  <tr><td>Chandra 卡在 <b>促銷價</b></td><td>只抓到促銷卡（薄 feed），通常下輪／隔天白天補上。這不代表 cookie 過期。</td></tr>
   <tr><td>儀表板打不開</td><td>Pages 部署延遲或 GitHub 當機，等幾分鐘重整。</td></tr>
   <tr><td>登入後看不到編輯區 / 存不了</td><td>Google 憑證約 1 小時過期 → 重整頁面重新登入。</td></tr>
 </tbody></table>
@@ -443,7 +443,7 @@ const GUIDE={
 <h4>④ Teams alerts → what to do</h4>
 <table class="g-tbl"><tbody>
   <tr><td><b>Rate changes</b></td><td>Check whether to respond with a price move.</td></tr>
-  <tr><td><b>⚠ FB cookie may have expired</b></td><td>Chandra/BRI got no standard card for 6h → re-export cookies (below).</td></tr>
+  <tr><td><b>⚠ FB cookie may have expired</b></td><td>FB has walled us out at the login page for 6h (session rejected) → re-export cookies (below). <b>Only this alert means a real re-export</b> — a lone promo / "N h old" is usually a benign overnight thin feed that self-heals.</td></tr>
 </tbody></table>
 
 <h4>⑤ Routine maintenance</h4>
@@ -455,8 +455,8 @@ const GUIDE={
 
 <h4>⑥ Troubleshooting</h4>
 <table class="g-tbl"><tbody>
-  <tr><td>A provider shows <b>⚠ N hours old</b></td><td>FB blocked us briefly, or they didn't post. Usually self-heals; both FB providers stale → re-export cookies.</td></tr>
-  <tr><td>Chandra stuck on <b>promo</b></td><td>Only the promo card came through; usually recovers next run; persists → re-export cookies.</td></tr>
+  <tr><td>A provider shows <b>⚠ N hours old</b></td><td>A thin FB feed, or they didn't post — usually self-heals (overnight / by afternoon). <b>Only re-export cookies if you get the "FB cookie may have expired" alert.</b></td></tr>
+  <tr><td>Chandra stuck on <b>promo</b></td><td>Only the promo card came through (thin feed); usually recovers next run / next day. This alone is not cookie expiry.</td></tr>
   <tr><td>Dashboard won't load</td><td>Pages deploy lag or GitHub outage — wait a few minutes and refresh.</td></tr>
   <tr><td>Can't see the editor / can't save</td><td>Google session expires after ~1h → refresh and sign in again.</td></tr>
 </tbody></table>
