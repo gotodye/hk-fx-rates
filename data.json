@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-07-30T03:18:40+00:00",
+      "new_rate": 2298.0,
+      "old_rate": 2284.0,
+      "pair": "HKD->IDR",
+      "provider": "EUI MONEY",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-07-30T03:09:39+00:00",
       "new_rate": 2283.4,
       "old_rate": 2293.4,
@@ -311,14 +319,6 @@
       "pair": "HKD->PHP",
       "provider": "Panda Remit",
       "to_ccy": "PHP"
-    },
-    {
-      "changed_at": "2026-07-24T16:41:44+00:00",
-      "new_rate": 7.8526,
-      "old_rate": 7.8586,
-      "pair": "HKD->PHP",
-      "provider": "Panda Remit",
-      "to_ccy": "PHP"
     }
   ],
   "correction_log": [
@@ -373,7 +373,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-07-30T03:09:39+00:00",
+  "generated_at": "2026-07-30T03:18:40+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -571,6 +571,10 @@
       {
         "rate": 2284.0,
         "t": "2026-07-24T07:59:39+00:00"
+      },
+      {
+        "rate": 2298.0,
+        "t": "2026-07-30T03:18:40+00:00"
       }
     ],
     "pandaremit|HKD|IDR": [
@@ -888,7 +892,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-30T03:09:39+00:00",
+      "captured_at": "2026-07-30T03:18:40+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -930,13 +934,13 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-07-30T03:09:39+00:00",
+      "captured_at": "2026-07-30T03:18:40+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
       "note": "manual.json",
       "promo": null,
-      "rate": 2284.0,
+      "rate": 2298.0,
       "raw_ref": null,
       "source_url": null
     },
@@ -963,7 +967,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/PHP"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-30T03:09:39+00:00",
+      "captured_at": "2026-07-30T03:18:40+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -974,7 +978,7 @@
       "source_url": null
     },
     "weremit|HKD|PHP": {
-      "captured_at": "2026-07-30T03:09:39+00:00",
+      "captured_at": "2026-07-30T03:18:40+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
