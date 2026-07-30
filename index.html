@@ -571,7 +571,7 @@ let DATA=null, LAST_RUN=null;
 
 // Deferred until the gate opens — no point fetching a board nobody may see.
 function loadData(){
-  fetch("./data.json?_="+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();})
+  fetch("./data.json?_="+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(d=>{DATA=d;render();})
    .catch(e=>{document.getElementById("app").innerHTML=
      `<section class="card"><p class="muted">${L("noData")}</p></section>`;});
   fetchLastRun().then(lr=>{ LAST_RUN=lr; showNextAuto(); });
