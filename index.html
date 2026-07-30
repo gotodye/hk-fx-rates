@@ -916,10 +916,15 @@ function b64toUtf8(b64){ try{ return new TextDecoder().decode(Uint8Array.from(at
 function manualCardHtml(){
   const manual=(DATA.providers||[]).filter(p=>!p.auto);
   if(!manual.length) return "";
+  // Only offer inputs for corridors the board actually shows — a corridor gated
+  // off until launch (server drops it from DATA.corridors) shouldn't get a dead
+  // input that saves a value which then never appears.
+  const vis=new Set((DATA.corridors||[]).map(c=>c[0]+"|"+c[1]));
   let blocks="";
   for(const p of manual){
     let rows="";
     for(const [f,t] of p.corridors){
+      if(!vis.has(f+"|"+t)) continue;
       rows+=`<label>${f}→${t}<input type="number" step="0.0001" inputmode="decimal" data-mk="${p.key}|${f}|${t}" placeholder="1 ${f} = ? ${t}"></label>`;
     }
     blocks+=`<div class="manual-block"><div class="edit-row" style="align-items:end">`
