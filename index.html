@@ -34,6 +34,12 @@
   header .brand{display:flex;flex-direction:column;gap:2px;margin-right:auto;}
   header h1{font-size:19px;margin:0;color:var(--ink);font-weight:700;}
   header .sub{font-size:12.5px;color:var(--muted);}
+  /* Version chip + refresh status + last-change on their own tidy row under the
+     title/buttons, so the two timestamps don't crowd the buttons or wrap messily. */
+  .hmeta{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;
+    justify-content:flex-end;margin-top:4px;padding-top:8px;
+    border-top:1px solid rgba(163,177,198,0.16);}
+  .hmeta:empty{display:none;}
   main{padding:18px 24px 0;max-width:1120px;margin:0 auto;}
   .grid{display:grid;gap:20px;}
   .card{background:var(--card);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
@@ -200,6 +206,7 @@
     .linkbtn{min-height:40px;padding:9px 14px;font-size:13px;}
     .promo-badge{padding:7px 11px;}
     .ver{align-self:auto;}
+    .hmeta{justify-content:flex-start;gap:6px 10px;}
     .promo-rates{flex-direction:column;}
     .guide-body{padding:20px 18px;}
   }
@@ -246,9 +253,11 @@
   <button class="btn" id="refreshBtn" type="button" style="padding:6px 14px">立即更新</button>
   <button class="btn secondary" id="guideBtn" type="button" style="padding:6px 14px">使用手冊</button>
   <button class="btn secondary" id="langBtn" type="button" style="padding:6px 14px">EN</button>
-  <span id="ver" class="ver" hidden></span>
-  <span id="refreshStatus" class="muted"></span>
-  <span id="updated" class="muted"></span>
+  <div class="hmeta">
+    <span id="ver" class="ver" hidden></span>
+    <span id="refreshStatus" class="muted"></span>
+    <span id="updated" class="muted"></span>
+  </div>
 </header>
 
 <main class="grid" id="app">
