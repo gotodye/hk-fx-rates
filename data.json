@@ -340,7 +340,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
-      "raw_ref": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.99422-6/759622469_2113004066303732_7002477949153184963_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ztq2XONG7hQQ7kNvwGLhM7-&_nc_oc=AdpRRyXQTqiaUIJyC2ZVOuIisnBOsxnGDMNTy_8BDZWPSYIY__kAFLMnK9ANHywSDtE&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=GrtkAE2wDOvCdPYQd9fTtQ&_nc_ss=7c289&oh=00_AQHJK3UktIuU2lzrt3ufhxyxnAOxjVfsCT8bC4W-uOuM6w&oe=6A72E2A0",
+      "raw_ref": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.99422-6/759622469_2113004066303732_7002477949153184963_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ztq2XONG7hQQ7kNvwE9kipk&_nc_oc=AdpDBCypIvdTafZtukVB4SdUiVItleuKA3656nxqibPaOT1n46AIVJDZTg3QGVYh8pU&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=81GtZG425TMJeDkPa6y1lA&_nc_ss=7c289&oh=00_AQHBptbdPOYPxIu3RaC5SeCtk0emxRRcZxJZYXUjW_BzOA&oe=6A731AE0",
       "source_rate": 2302.0,
       "status": "expired (source changed)",
       "wrong_rate": 2288.0
@@ -353,7 +353,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-07-31T23:00:59+00:00",
+  "generated_at": "2026-08-01T00:01:04+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -822,7 +822,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-07-31T23:00:59+00:00",
+      "captured_at": "2026-08-01T00:01:04+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -833,14 +833,14 @@
       "source_url": null
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-07-31T23:00:59+00:00",
+      "captured_at": "2026-08-01T00:01:04+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
-      "note": "vision OCR; Pagi ini; Standard daily exchange rate card from BRI Remittance Hong Kong showing 1 HKD = 2302 IDR.",
+      "note": "vision OCR; BRI Remittance daily exchange rate showing 1 HKD = 2302 IDR.",
       "promo": null,
       "rate": 2302.0,
-      "raw_ref": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.99422-6/759622469_2113004066303732_7002477949153184963_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ztq2XONG7hQQ7kNvwGLhM7-&_nc_oc=AdpRRyXQTqiaUIJyC2ZVOuIisnBOsxnGDMNTy_8BDZWPSYIY__kAFLMnK9ANHywSDtE&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=GrtkAE2wDOvCdPYQd9fTtQ&_nc_ss=7c289&oh=00_AQHJK3UktIuU2lzrt3ufhxyxnAOxjVfsCT8bC4W-uOuM6w&oe=6A72E2A0",
+      "raw_ref": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.99422-6/759622469_2113004066303732_7002477949153184963_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ztq2XONG7hQQ7kNvwE9kipk&_nc_oc=AdpDBCypIvdTafZtukVB4SdUiVItleuKA3656nxqibPaOT1n46AIVJDZTg3QGVYh8pU&_nc_zt=14&_nc_ht=scontent-iad3-1.xx&_nc_gid=81GtZG425TMJeDkPa6y1lA&_nc_ss=7c289&oh=00_AQHBptbdPOYPxIu3RaC5SeCtk0emxRRcZxJZYXUjW_BzOA&oe=6A731AE0",
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
@@ -860,7 +860,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-07-31T23:00:59+00:00",
+      "captured_at": "2026-08-01T00:01:04+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -871,7 +871,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-07-31T23:00:59+00:00",
+      "captured_at": "2026-08-01T00:01:04+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -882,7 +882,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-07-31T23:00:59+00:00",
+      "captured_at": "2026-08-01T00:01:04+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
