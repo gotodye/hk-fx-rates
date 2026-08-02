@@ -343,7 +343,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
-      "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/760620775_807098009097597_1221846738049984484_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mozbR2P0TFkQ7kNvwG1nBys&_nc_oc=AdolWi_1Fbieu-f91fdqOoVgygUmFtR3M4wc-3TSDGQqT368lcYgNIy92eCG9WWbaCA&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=aAJEuSRseclpGkG10ELfpg&_nc_ss=7c289&oh=00_AQHFf0LHJB1ugQPXj7aS-FYhyPrLNtUdokIgj9r_0qH59Q&oe=6A744631",
+      "raw_ref": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.99422-6/760620775_807098009097597_1221846738049984484_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mozbR2P0TFkQ7kNvwE92E-H&_nc_oc=AdrueFn2E1aWpE9-mqfj_mx3DWGOqMozdKT1DSuYjuuIXLr9hIffz5kII1ie1XFggaI&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=RWVQo84LSJT-wLdUR2kDCQ&_nc_ss=7c289&oh=00_AQHqQjJgzYUfEdwxupI07rIJXI9cg9hHDFSniddjnio4XQ&oe=6A744631",
       "source_rate": 2290.0,
       "status": "expired (source changed)",
       "wrong_rate": 2300.0
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-01T23:01:06+00:00",
+  "generated_at": "2026-08-02T00:01:13+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -850,7 +850,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-01T23:01:06+00:00",
+      "captured_at": "2026-08-02T00:01:13+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -872,18 +872,18 @@
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-08-01T23:01:06+00:00",
+      "captured_at": "2026-08-02T00:01:13+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
-      "note": "vision OCR; 1/8/2026 17:32 pm; Extracted sending exchange rate (Kurs Kirim) of 2290 IDR for 1 HKD from Chandra Remittance daily rate card.",
+      "note": "vision OCR; 1/8/2026; Kurs kirim (remittance rate) is 2290 IDR per 1 HKD. Kurs tukar (cash exchange rate) is 2220 IDR.",
       "promo": null,
       "rate": 2290.0,
-      "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/760620775_807098009097597_1221846738049984484_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mozbR2P0TFkQ7kNvwG1nBys&_nc_oc=AdolWi_1Fbieu-f91fdqOoVgygUmFtR3M4wc-3TSDGQqT368lcYgNIy92eCG9WWbaCA&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=aAJEuSRseclpGkG10ELfpg&_nc_ss=7c289&oh=00_AQHFf0LHJB1ugQPXj7aS-FYhyPrLNtUdokIgj9r_0qH59Q&oe=6A744631",
+      "raw_ref": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.99422-6/760620775_807098009097597_1221846738049984484_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mozbR2P0TFkQ7kNvwE92E-H&_nc_oc=AdrueFn2E1aWpE9-mqfj_mx3DWGOqMozdKT1DSuYjuuIXLr9hIffz5kII1ie1XFggaI&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=RWVQo84LSJT-wLdUR2kDCQ&_nc_ss=7c289&oh=00_AQHqQjJgzYUfEdwxupI07rIJXI9cg9hHDFSniddjnio4XQ&oe=6A744631",
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-01T23:01:06+00:00",
+      "captured_at": "2026-08-02T00:01:13+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -894,7 +894,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-08-01T23:01:06+00:00",
+      "captured_at": "2026-08-02T00:01:13+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -905,7 +905,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-01T23:01:06+00:00",
+      "captured_at": "2026-08-02T00:01:13+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
