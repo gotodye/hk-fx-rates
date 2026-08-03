@@ -1,11 +1,11 @@
 {
   "changes": [
     {
-      "changed_at": "2026-08-03T02:17:41+00:00",
-      "new_rate": 2288.0,
-      "old_rate": 2293.7,
+      "changed_at": "2026-08-03T02:18:11+00:00",
+      "new_rate": 2284.8,
+      "old_rate": 2294.8,
       "pair": "HKD->IDR",
-      "provider": "We Remit",
+      "provider": "AlipayHK",
       "to_ccy": "IDR"
     },
     {
@@ -323,17 +323,17 @@
   ],
   "correction_log": [
     {
-      "applied": false,
-      "correct_rate": 2294.9882,
-      "corrected_at": "2026-07-31T05:51:20.060Z",
+      "applied": true,
+      "correct_rate": 2285.5337,
+      "corrected_at": "2026-08-03T02:17:39.948Z",
       "key": "pandaremit|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
       "source_rate": 2288.7124,
-      "status": "expired (source changed)",
-      "wrong_rate": 2297.4814
+      "status": "applied",
+      "wrong_rate": 2288.7124
     },
     {
       "applied": false,
@@ -349,17 +349,17 @@
       "wrong_rate": 2300.0
     },
     {
-      "applied": true,
-      "correct_rate": 2292.0,
-      "corrected_at": "2026-08-03T02:15:58.721Z",
+      "applied": false,
+      "correct_rate": 2290.0,
+      "corrected_at": "2026-07-28T03:03:05.188Z",
       "key": "bri|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
       "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/760671475_1964876467509538_3760837460749901589_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7nM_tu6k2OAQ7kNvwHhEhmA&_nc_oc=Adrm-EmjRULpR77nd0qvoSdODZrqZkO7JEWeoJuvA0Q-FWZm51xEmIaw7loyfDk53ZA&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=Ipa249NHVGwA_WH0uLS5tw&_nc_ss=7e289&oh=00_AQHW-OmgcJIKJA97mtQPrerlWI3HarO7jrNfmsPwrdMzaA&oe=6A75AA4D",
       "source_rate": 2296.0,
-      "status": "applied",
-      "wrong_rate": 2296.0
+      "status": "expired (source changed)",
+      "wrong_rate": 2288.0
     }
   ],
   "corridors": [
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-03T02:17:41+00:00",
+  "generated_at": "2026-08-03T02:18:11+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -403,6 +403,10 @@
       {
         "rate": 2294.8,
         "t": "2026-07-31T03:07:18+00:00"
+      },
+      {
+        "rate": 2284.8,
+        "t": "2026-08-03T02:18:11+00:00"
       }
     ],
     "bri|HKD|IDR": [
@@ -849,22 +853,18 @@
       {
         "rate": 2293.7,
         "t": "2026-07-31T05:51:09+00:00"
-      },
-      {
-        "rate": 2288.0,
-        "t": "2026-08-03T02:17:41+00:00"
       }
     ]
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-03T02:17:41+00:00",
+      "captured_at": "2026-08-03T02:18:11+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
       "note": "manual.json",
       "promo": null,
-      "rate": 2294.8,
+      "rate": 2284.8,
       "raw_ref": null,
       "source_url": null
     },
@@ -873,9 +873,9 @@
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
-      "note": "vision OCR; Daily exchange rate posted by BRI Remittance HK (1 HKD = 2296 IDR).; corrected from 2296",
+      "note": "vision OCR; Daily exchange rate posted by BRI Remittance HK (1 HKD = 2296 IDR).",
       "promo": null,
-      "rate": 2292.0,
+      "rate": 2296.0,
       "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/760671475_1964876467509538_3760837460749901589_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7nM_tu6k2OAQ7kNvwHhEhmA&_nc_oc=Adrm-EmjRULpR77nd0qvoSdODZrqZkO7JEWeoJuvA0Q-FWZm51xEmIaw7loyfDk53ZA&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=Ipa249NHVGwA_WH0uLS5tw&_nc_ss=7e289&oh=00_AQHW-OmgcJIKJA97mtQPrerlWI3HarO7jrNfmsPwrdMzaA&oe=6A75AA4D",
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
@@ -896,7 +896,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-03T02:17:41+00:00",
+      "captured_at": "2026-08-03T02:18:11+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -911,20 +911,20 @@
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
-      "note": "貓熊匯率 standard rate (+0.55% vs 昨日)",
+      "note": "貓熊匯率 standard rate (+0.55% vs 昨日); corrected from 2288.71",
       "promo": null,
-      "rate": 2288.7124,
+      "rate": 2285.5337,
       "raw_ref": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-03T02:17:41+00:00",
+      "captured_at": "2026-08-03T02:18:11+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
       "note": "manual.json",
       "promo": null,
-      "rate": 2288.0,
+      "rate": 2293.7,
       "raw_ref": null,
       "source_url": null
     }
