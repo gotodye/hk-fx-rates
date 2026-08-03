@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-08-03T02:17:17+00:00",
+      "new_rate": 2294.0,
+      "old_rate": 2299.0,
+      "pair": "HKD->IDR",
+      "provider": "EUI MONEY",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-08-02T23:01:16+00:00",
       "new_rate": 2288.5081,
       "old_rate": 2276.1533,
@@ -311,14 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-07-27T03:30:50+00:00",
-      "new_rate": 2286.7573,
-      "old_rate": 2283.5013,
-      "pair": "HKD->IDR",
-      "provider": "Panda Remit",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -349,17 +349,17 @@
       "wrong_rate": 2300.0
     },
     {
-      "applied": false,
-      "correct_rate": 2290.0,
-      "corrected_at": "2026-07-28T03:03:05.188Z",
+      "applied": true,
+      "correct_rate": 2292.0,
+      "corrected_at": "2026-08-03T02:15:58.721Z",
       "key": "bri|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
       "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/760671475_1964876467509538_3760837460749901589_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7nM_tu6k2OAQ7kNvwHhEhmA&_nc_oc=Adrm-EmjRULpR77nd0qvoSdODZrqZkO7JEWeoJuvA0Q-FWZm51xEmIaw7loyfDk53ZA&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=Ipa249NHVGwA_WH0uLS5tw&_nc_ss=7e289&oh=00_AQHW-OmgcJIKJA97mtQPrerlWI3HarO7jrNfmsPwrdMzaA&oe=6A75AA4D",
       "source_rate": 2296.0,
-      "status": "expired (source changed)",
-      "wrong_rate": 2288.0
+      "status": "applied",
+      "wrong_rate": 2296.0
     }
   ],
   "corridors": [
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-03T01:01:12+00:00",
+  "generated_at": "2026-08-03T02:17:17+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -621,6 +621,10 @@
       {
         "rate": 2299.0,
         "t": "2026-07-31T03:01:03+00:00"
+      },
+      {
+        "rate": 2294.0,
+        "t": "2026-08-03T02:17:17+00:00"
       }
     ],
     "pandaremit|HKD|IDR": [
@@ -854,7 +858,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-03T01:01:12+00:00",
+      "captured_at": "2026-08-03T02:17:17+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -869,9 +873,9 @@
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
-      "note": "vision OCR; Daily exchange rate posted by BRI Remittance HK (1 HKD = 2296 IDR).",
+      "note": "vision OCR; Daily exchange rate posted by BRI Remittance HK (1 HKD = 2296 IDR).; corrected from 2296",
       "promo": null,
-      "rate": 2296.0,
+      "rate": 2292.0,
       "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/760671475_1964876467509538_3760837460749901589_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7nM_tu6k2OAQ7kNvwHhEhmA&_nc_oc=Adrm-EmjRULpR77nd0qvoSdODZrqZkO7JEWeoJuvA0Q-FWZm51xEmIaw7loyfDk53ZA&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=Ipa249NHVGwA_WH0uLS5tw&_nc_ss=7e289&oh=00_AQHW-OmgcJIKJA97mtQPrerlWI3HarO7jrNfmsPwrdMzaA&oe=6A75AA4D",
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
@@ -892,13 +896,13 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-03T01:01:12+00:00",
+      "captured_at": "2026-08-03T02:17:17+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
       "note": "manual.json",
       "promo": null,
-      "rate": 2299.0,
+      "rate": 2294.0,
       "raw_ref": null,
       "source_url": null
     },
@@ -914,7 +918,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-03T01:01:12+00:00",
+      "captured_at": "2026-08-03T02:17:17+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
