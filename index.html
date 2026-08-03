@@ -1202,7 +1202,12 @@ function wireReport(){
   const pv=document.getElementById("previewReport");
   const sd=document.getElementById("sendReport");
   const box=document.getElementById("reportPreview");
-  if(pv) pv.addEventListener("click",()=>{
+  if(pv) pv.addEventListener("click",async ()=>{
+    // Preview the CURRENT live data (not a snapshot the page loaded earlier), so
+    // what you review — and then send — reflects the latest rates. FB-OCR values
+    // drift between scrapes, so a stale in-memory copy is what made 發送≠預覽.
+    try{ const r=await fetch("./data.json?_="+Date.now(),{cache:"no-store"});
+      if(r.ok){ DATA=await r.json(); render(); } }catch(e){}
     box.textContent=buildReport(); box.style.display="block";
     if(sd) sd.style.display="inline-flex";
     const s=document.getElementById("reportStatus"); if(s) s.textContent="";
@@ -1216,7 +1221,13 @@ async function sendReport(){
   const setS=m=>{ if(st) st.textContent=m; };
   if(!signedIn()){ setS(L("needLogin")); return; }
   setS(L("rpTriggering"));
-  const d=await workerDispatch("send-report.yml",{lang:LANG});
+  // Send EXACTLY the text shown in the preview box (WYSIWYG). The workflow posts
+  // this verbatim instead of re-fetching data.json and rebuilding from a possibly
+  // different snapshot — so 發送 always matches 預覽. Fall back to composing now if
+  // the box is somehow empty.
+  const box=document.getElementById("reportPreview");
+  const body=(box && box.textContent.trim()) ? box.textContent : buildReport();
+  const d=await workerDispatch("send-report.yml",{lang:LANG, body});
   setS(d.ok?L("rpDone"):`${L("stFail")}${d.error}`);
 }
 
