@@ -537,17 +537,29 @@ function openGuide(){
 // two, so a freshly-typed token looked "missing".)
 
 
-async function pollUntilPublished(before, tries=36){
-  for(let i=0;i<tries;i++){
-    await new Promise(x=>setTimeout(x,5000));
+// Single-flight: saving several providers (or a save + a correction) in quick
+// succession used to spawn one poll loop EACH — redundant data.json fetches and
+// repeated render() calls. Now concurrent callers share ONE loop; when data.json
+// advances past the first caller's baseline they all resolve together (the
+// republished file already holds every value saved before its run read manual.json).
+let _republishPoll=null;
+function pollUntilPublished(before, tries=24){
+  if(_republishPoll) return _republishPoll;
+  _republishPoll=(async()=>{
     try{
-      const res=await fetch("./data.json?_="+Date.now(),{cache:"no-store"});
-      if(!res.ok) continue;
-      const fresh=await res.json();
-      if(fresh.generated_at && fresh.generated_at!==before){ DATA=fresh; render(); return true; }
-    }catch(e){}
-  }
-  return false;
+      for(let i=0;i<tries;i++){
+        await new Promise(x=>setTimeout(x,5000));
+        try{
+          const res=await fetch("./data.json?_="+Date.now(),{cache:"no-store"});
+          if(!res.ok) continue;
+          const fresh=await res.json();
+          if(fresh.generated_at && fresh.generated_at!==before){ DATA=fresh; render(); return true; }
+        }catch(e){}
+      }
+      return false;
+    } finally { _republishPoll=null; }
+  })();
+  return _republishPoll;
 }
 
 // Every full run stamps last_run.json, even a quiet one — data.json is only
