@@ -331,7 +331,7 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2293.5594,
+      "source_rate": 2293.1589,
       "status": "expired (source changed)",
       "wrong_rate": 2288.7124
     },
@@ -343,7 +343,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
-      "raw_ref": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.99422-6/762156915_1060437743016824_4365245460261936522_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4Clj1WyTKu0Q7kNvwFN0fGO&_nc_oc=AdpVIWFPtamuY5MZTJytiTLgvDi0o8eNo4YOcMrKynkNTtgcGOs9Yd35r5W6LMxOZLI&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=kKmlh8DKMpc_QGEORHSGAA&_nc_ss=7c289&oh=00_AQHscL50CttxjvEcCkczqlvTIygmlJFNSLzGD6U2HmwuWQ&oe=6A77360D",
+      "raw_ref": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.99422-6/762156915_1060437743016824_4365245460261936522_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4Clj1WyTKu0Q7kNvwFojphs&_nc_oc=Adp3xZmqYqODA33h8EFVdf9HoSvbHMzaWj2if7vBnOKi6axRgn4s98CGgnjdmWEMuqU&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2-2rdB9PWf9iOj1v77zEuw&_nc_ss=7c289&oh=00_AQFAEE4W_yG3jO16A9L7nVqr6HT9mgZPQ5MQmBhBHg1Q5Q&oe=6A77360D",
       "source_rate": 2292.0,
       "status": "expired (source changed)",
       "wrong_rate": 2300.0
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-04T04:30:56+00:00",
+  "generated_at": "2026-08-04T05:30:47+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -906,7 +906,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-04T04:30:56+00:00",
+      "captured_at": "2026-08-04T05:30:47+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -928,18 +928,18 @@
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-08-04T04:30:56+00:00",
+      "captured_at": "2026-08-04T05:30:47+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
-      "note": "vision OCR; 4/8/2026 11:07 am; Posted remittance send rate (Kurs Kirim) is 2292 IDR per 1 HKD.",
+      "note": "vision OCR; 4/8/2026; Posted remittance rate (Kurs Kirim) is 2292 IDR per 1 HKD.",
       "promo": null,
       "rate": 2292.0,
-      "raw_ref": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.99422-6/762156915_1060437743016824_4365245460261936522_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4Clj1WyTKu0Q7kNvwFN0fGO&_nc_oc=AdpVIWFPtamuY5MZTJytiTLgvDi0o8eNo4YOcMrKynkNTtgcGOs9Yd35r5W6LMxOZLI&_nc_zt=14&_nc_ht=scontent-iad6-1.xx&_nc_gid=kKmlh8DKMpc_QGEORHSGAA&_nc_ss=7c289&oh=00_AQHscL50CttxjvEcCkczqlvTIygmlJFNSLzGD6U2HmwuWQ&oe=6A77360D",
+      "raw_ref": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.99422-6/762156915_1060437743016824_4365245460261936522_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4Clj1WyTKu0Q7kNvwFojphs&_nc_oc=Adp3xZmqYqODA33h8EFVdf9HoSvbHMzaWj2if7vBnOKi6axRgn4s98CGgnjdmWEMuqU&_nc_zt=14&_nc_ht=scontent-lga3-2.xx&_nc_gid=2-2rdB9PWf9iOj1v77zEuw&_nc_ss=7c289&oh=00_AQFAEE4W_yG3jO16A9L7nVqr6HT9mgZPQ5MQmBhBHg1Q5Q&oe=6A77360D",
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-04T04:30:56+00:00",
+      "captured_at": "2026-08-04T05:30:47+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -950,18 +950,18 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-08-04T04:30:56+00:00",
+      "captured_at": "2026-08-04T05:30:47+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
-      "note": "貓熊匯率 standard rate (+0.28% vs 昨日)",
+      "note": "貓熊匯率 standard rate (+0.26% vs 昨日)",
       "promo": null,
-      "rate": 2293.5594,
+      "rate": 2293.1589,
       "raw_ref": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-04T04:30:56+00:00",
+      "captured_at": "2026-08-04T05:30:47+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
