@@ -760,25 +760,40 @@ function render(){
   } else { html+=`<p class="muted">${L("noChanges")}</p>`; }
   html+='</section>';
 
-  html+=manualCardHtml();
-  html+=correctionLogHtml();
-  html+=reportCardHtml();
-
-  app.innerHTML=html;
-  document.querySelectorAll("[data-fix]").forEach(b=>
+  // Two regions: #board (data — re-rendered on every refresh) and #panel (the
+  // interactive editor/report — built ONCE). Rebuilding the panel on every rate
+  // refresh tore down the manual inputs and wiped whatever the user was typing
+  // (a background apply-poll render blanked the fields — the recorded bug). The
+  // panel only rebuilds when its structure actually changes (providers/corridors/
+  // correction log), not when a rate ticks.
+  let board=document.getElementById("board"), panel=document.getElementById("panel");
+  if(!board||!panel){
+    app.innerHTML='<div id="board"></div><div id="panel"></div>';
+    board=document.getElementById("board"); panel=document.getElementById("panel");
+  }
+  board.innerHTML=html;
+  board.querySelectorAll("[data-fix]").forEach(b=>
     b.addEventListener("click",()=>openFixDialog(b.dataset.fix, b.dataset.cur)));
-  document.querySelectorAll("[data-promo]").forEach(b=>
+  board.querySelectorAll("[data-promo]").forEach(b=>
     b.addEventListener("click",()=>openPromo(b.dataset.promo)));
-  wireManual();
   const tabs=document.getElementById("chartTabs");
-  tabs.addEventListener("click",e=>{
-    if(e.target.tagName!=="BUTTON")return;
-    tabs.querySelectorAll("button").forEach(b=>b.classList.remove("active"));
-    e.target.classList.add("active");
-    drawCorridor(e.target.dataset.f,e.target.dataset.t);
-  });
-  const first=tabs.querySelector("button");
-  if(first)drawCorridor(first.dataset.f,first.dataset.t);
+  if(tabs){
+    tabs.addEventListener("click",e=>{
+      if(e.target.tagName!=="BUTTON")return;
+      tabs.querySelectorAll("button").forEach(b=>b.classList.remove("active"));
+      e.target.classList.add("active");
+      drawCorridor(e.target.dataset.f,e.target.dataset.t);
+    });
+    const first=tabs.querySelector("button");
+    if(first)drawCorridor(first.dataset.f,first.dataset.t);
+  }
+
+  const sig=JSON.stringify([DATA.providers,DATA.corridors,DATA.correction_log||[]]);
+  if(panel.dataset.sig!==sig){
+    panel.innerHTML=manualCardHtml()+correctionLogHtml()+reportCardHtml();
+    panel.dataset.sig=sig;
+    wireManual();   // fills inputs from manual.json + wires save buttons + wireReport()
+  }
 }
 
 // ---- Manual-rate editor (writes manual.json to the public repo via GitHub API) ----
