@@ -537,30 +537,33 @@ function openGuide(){
 // two, so a freshly-typed token looked "missing".)
 
 
-// Single-flight: saving several providers (or a save + a correction) in quick
-// succession used to spawn one poll loop EACH — redundant data.json fetches and
-// repeated render() calls. Now concurrent callers share ONE loop; when data.json
-// advances past the first caller's baseline they all resolve together (the
-// republished file already holds every value saved before its run read manual.json).
-let _republishPoll=null;
-function pollUntilPublished(before, tries=24){
-  if(_republishPoll) return _republishPoll;
-  _republishPoll=(async()=>{
-    try{
-      for(let i=0;i<tries;i++){
-        await new Promise(x=>setTimeout(x,5000));
-        try{
-          const res=await fetch("./data.json?_="+Date.now(),{cache:"no-store"});
-          if(!res.ok) continue;
-          const fresh=await res.json();
-          if(fresh.generated_at && fresh.generated_at!==before){ DATA=fresh; render(); return true; }
-        }catch(e){}
-      }
-      return false;
-    } finally { _republishPoll=null; }
-  })();
-  return _republishPoll;
+// Shared republish watcher. Many saves/corrections share ONE fetch loop, but each
+// waiter resolves on ITS OWN condition. A manual save waits until data.json shows
+// ITS value — not merely "some republish", which with concurrent saves could be an
+// earlier save's run that hasn't included this provider yet, giving a premature and
+// misleading "✅ Updated". render() runs only when generated_at actually advances.
+let _pollWaiters=[], _pollActive=false;
+function pollForData(check, tries=24){
+  return new Promise(resolve=>{
+    _pollWaiters.push({check,resolve});
+    if(_pollActive) return;
+    _pollActive=true;
+    (async()=>{
+      try{
+        for(let i=0;i<tries && _pollWaiters.length;i++){
+          await new Promise(x=>setTimeout(x,5000));
+          let fresh=null;
+          try{ const r=await fetch("./data.json?_="+Date.now(),{cache:"no-store"}); if(r.ok) fresh=await r.json(); }catch(e){}
+          if(!fresh) continue;
+          if(fresh.generated_at && fresh.generated_at!==DATA.generated_at){ DATA=fresh; render(); }
+          _pollWaiters=_pollWaiters.filter(w=>{ try{ if(w.check(fresh)){ w.resolve(true); return false; } }catch(e){} return true; });
+        }
+      } finally { _pollWaiters.forEach(w=>w.resolve(false)); _pollWaiters=[]; _pollActive=false; }
+    })();
+  });
 }
+// Watch until data.json is republished past `before` (used by the correction flow).
+const pollUntilPublished=(before,tries=24)=>pollForData(fresh=>!!fresh.generated_at&&fresh.generated_at!==before,tries);
 
 // Every full run stamps last_run.json, even a quiet one — data.json is only
 // rewritten when a rate actually moves, so it can't tell "finished, nothing
@@ -1108,8 +1111,16 @@ async function applyManualNow(key, updates){
   const d=await workerDispatch("apply-manual.yml");
   if(!d.ok){ setS(L("stSavedPending")); return; }
 
-  // 3) poll the published data.json until it reflects the change
-  const ok=await pollUntilPublished(before, 24);
+  // 3) declare "Updated" only when the published data.json actually shows THIS
+  //    provider's value — otherwise a concurrent save's earlier republish could
+  //    flip us to "Updated" while our number isn't live yet.
+  const targets=Object.entries(updates)
+    .filter(([p,v])=>v!==""&&v!=null)
+    .map(([pair,v])=>{ const [f,t]=pair.split("->"); return {k:K(key,f,t), v:Number(v)}; });
+  const ok = targets.length
+    ? await pollForData(fresh=>targets.every(tg=>{
+        const c=fresh.latest[tg.k]; return c && Math.abs(Number(c.rate)-tg.v)<1e-6; }))
+    : true;
   setS(ok?L("stApplied"):L("stSavedPending"));
 }
 
@@ -1126,6 +1137,16 @@ async function wireManual(){
     });
   }
   document.querySelectorAll("[data-save]").forEach(b=>b.addEventListener("click",()=>saveManualProvider(b.dataset.save)));
+  // Editing a field clears that provider's stale status: a leftover "✅ Updated"
+  // sitting next to a newly-typed (unsaved) value made the editor look like it
+  // disagreed with the board/report (it didn't — the message was just stale).
+  document.querySelectorAll("input[data-mk]").forEach(inp=>{
+    inp.addEventListener("input",()=>{
+      inp.style.borderColor="";
+      const st=document.querySelector(`[data-status="${inp.dataset.mk.split("|")[0]}"]`);
+      if(st) st.textContent="";
+    });
+  });
   wireReport();
 }
 
