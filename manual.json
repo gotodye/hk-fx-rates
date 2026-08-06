@@ -2,10 +2,10 @@
   "_comment": "在儀表板『編輯人工匯率』填寫即可。數字 = 1 HKD 換多少當地幣。",
   "weremit": {
     "HKD->PHP": 2294.2,
-    "HKD->IDR": 2293.7
+    "HKD->IDR": 2278.3
   },
   "alipayhk": {
-    "HKD->IDR": 2274.9,
+    "HKD->IDR": 2289.6,
     "HKD->PHP": ""
   },
   "eui": {
