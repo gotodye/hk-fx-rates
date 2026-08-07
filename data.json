@@ -343,7 +343,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
-      "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/764358226_1415203400670953_9122050809322261320_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HmR4HG_keAoQ7kNvwGAhZoL&_nc_oc=Adp_KwiUwR2KbONU8wQRe1s-WnBlmrySvm3PVJRzlabyPm_TGKaw5ZMUikTUOV7yvH4&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=lWxf9OL9wweFWus7wKkRMA&_nc_ss=7c289&oh=00_AQG7JPUxtnMK1vJlEiOBXISahRUSOEZXh6HarFCb6FaZpg&oe=6A7C47E7",
+      "raw_ref": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.99422-6/764358226_1415203400670953_9122050809322261320_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HmR4HG_keAoQ7kNvwHuxpIb&_nc_oc=Adoe6QXWnK4BbAEXI6_OsCHS6fIDXY2bXkA3iguqsfLA97ss4G6VtDrRhAM2H1wXZTY&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=KAyJAm7rhjRzZ6EGsMYt5g&_nc_ss=7c289&oh=00_AQE9bLNX0YmrRZJyIp3NJDdXHGVFiv_PxAtBFeSxQIHi9w&oe=6A7C47E7",
       "source_rate": 2285.0,
       "status": "applied",
       "wrong_rate": 2285.0
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-07T23:01:13+00:00",
+  "generated_at": "2026-08-07T23:39:47+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1022,7 +1022,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-07T23:01:13+00:00",
+      "captured_at": "2026-08-07T23:39:47+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1044,23 +1044,23 @@
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-08-07T23:01:13+00:00",
-      "confidence": 0.98,
+      "captured_at": "2026-08-07T23:39:47+00:00",
+      "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
-      "note": "vision OCR; PROMO; 8/8/2026 - 9/8/2026; Kurs KIRIM Rate Cantik (HANYA berlaku untuk kiriman uang DIBAWAH HK$8000 di Cabang Toko Chandra NORTH POINT, YUENLONG & SAI YING PUN pada hari SABTU & MINGGU); corrected from 2285",
+      "note": "vision OCR; PROMO; 8/8/2026 9/8/2026; Kurs Kirim Rate Cantik; corrected from 2285",
       "promo": {
-        "date_text": "8/8/2026 - 9/8/2026",
-        "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/764358226_1415203400670953_9122050809322261320_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HmR4HG_keAoQ7kNvwGAhZoL&_nc_oc=Adp_KwiUwR2KbONU8wQRe1s-WnBlmrySvm3PVJRzlabyPm_TGKaw5ZMUikTUOV7yvH4&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=lWxf9OL9wweFWus7wKkRMA&_nc_ss=7c289&oh=00_AQG7JPUxtnMK1vJlEiOBXISahRUSOEZXh6HarFCb6FaZpg&oe=6A7C47E7",
-        "note": "Kurs KIRIM Rate Cantik (HANYA berlaku untuk kiriman uang DIBAWAH HK$8000 di Cabang Toko Chandra NORTH POINT, YUENLONG & SAI YING PUN pada hari SABTU & MINGGU)",
+        "date_text": "8/8/2026 9/8/2026",
+        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.99422-6/764358226_1415203400670953_9122050809322261320_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HmR4HG_keAoQ7kNvwHuxpIb&_nc_oc=Adoe6QXWnK4BbAEXI6_OsCHS6fIDXY2bXkA3iguqsfLA97ss4G6VtDrRhAM2H1wXZTY&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=KAyJAm7rhjRzZ6EGsMYt5g&_nc_ss=7c289&oh=00_AQE9bLNX0YmrRZJyIp3NJDdXHGVFiv_PxAtBFeSxQIHi9w&oe=6A7C47E7",
+        "note": "Kurs Kirim Rate Cantik",
         "rate": 2285.0
       },
       "rate": 2275.0,
-      "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/764358226_1415203400670953_9122050809322261320_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HmR4HG_keAoQ7kNvwGAhZoL&_nc_oc=Adp_KwiUwR2KbONU8wQRe1s-WnBlmrySvm3PVJRzlabyPm_TGKaw5ZMUikTUOV7yvH4&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=lWxf9OL9wweFWus7wKkRMA&_nc_ss=7c289&oh=00_AQG7JPUxtnMK1vJlEiOBXISahRUSOEZXh6HarFCb6FaZpg&oe=6A7C47E7",
+      "raw_ref": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.99422-6/764358226_1415203400670953_9122050809322261320_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HmR4HG_keAoQ7kNvwHuxpIb&_nc_oc=Adoe6QXWnK4BbAEXI6_OsCHS6fIDXY2bXkA3iguqsfLA97ss4G6VtDrRhAM2H1wXZTY&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=KAyJAm7rhjRzZ6EGsMYt5g&_nc_ss=7c289&oh=00_AQE9bLNX0YmrRZJyIp3NJDdXHGVFiv_PxAtBFeSxQIHi9w&oe=6A7C47E7",
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-07T23:01:13+00:00",
+      "captured_at": "2026-08-07T23:39:47+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1071,7 +1071,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-08-07T23:01:13+00:00",
+      "captured_at": "2026-08-07T23:39:47+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -1082,7 +1082,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-07T23:01:13+00:00",
+      "captured_at": "2026-08-07T23:39:47+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
