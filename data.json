@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-08-10T02:20:37+00:00",
+      "new_rate": 2263.5,
+      "old_rate": 2270.0,
+      "pair": "HKD->IDR",
+      "provider": "AlipayHK",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-08-09T23:01:09+00:00",
       "new_rate": 2273.682,
       "old_rate": 2261.4649,
@@ -311,14 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-07-31T23:00:59+00:00",
-      "new_rate": 2276.1533,
-      "old_rate": 2287.6788,
-      "pair": "HKD->IDR",
-      "provider": "Panda Remit",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-10T01:30:59+00:00",
+  "generated_at": "2026-08-10T02:20:37+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -423,6 +423,10 @@
       {
         "rate": 2270.0,
         "t": "2026-08-07T09:24:35+00:00"
+      },
+      {
+        "rate": 2263.5,
+        "t": "2026-08-10T02:20:37+00:00"
       }
     ],
     "bri|HKD|IDR": [
@@ -1026,13 +1030,13 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-10T01:30:59+00:00",
+      "captured_at": "2026-08-10T02:20:37+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
       "note": "manual.json",
       "promo": null,
-      "rate": 2270.0,
+      "rate": 2263.5,
       "raw_ref": null,
       "source_url": null
     },
@@ -1064,7 +1068,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-10T01:30:59+00:00",
+      "captured_at": "2026-08-10T02:20:37+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1086,7 +1090,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-10T01:30:59+00:00",
+      "captured_at": "2026-08-10T02:20:37+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
