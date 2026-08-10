@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-08-10T03:01:12+00:00",
+      "new_rate": 2264.0,
+      "old_rate": 2274.7,
+      "pair": "HKD->IDR",
+      "provider": "We Remit",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-08-10T02:24:27+00:00",
       "new_rate": 2265.2304,
       "old_rate": 2273.682,
@@ -311,14 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-08-01T03:00:57+00:00",
-      "new_rate": 2292.0,
-      "old_rate": 2302.0,
-      "pair": "HKD->IDR",
-      "provider": "Chandra Remittance",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-10T02:24:27+00:00",
+  "generated_at": "2026-08-10T03:01:12+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1029,12 +1029,16 @@
       {
         "rate": 2274.7,
         "t": "2026-08-07T09:46:51+00:00"
+      },
+      {
+        "rate": 2264.0,
+        "t": "2026-08-10T03:01:12+00:00"
       }
     ]
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-10T02:24:27+00:00",
+      "captured_at": "2026-08-10T03:01:12+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1072,7 +1076,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-10T02:24:27+00:00",
+      "captured_at": "2026-08-10T03:01:12+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1094,13 +1098,13 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-10T02:24:27+00:00",
+      "captured_at": "2026-08-10T03:01:12+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
       "note": "manual.json",
       "promo": null,
-      "rate": 2274.7,
+      "rate": 2264.0,
       "raw_ref": null,
       "source_url": null
     }
