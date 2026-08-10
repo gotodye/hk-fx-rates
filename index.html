@@ -276,6 +276,7 @@ const K=(pk,f,t)=>`${pk}|${f}|${t}`;
 // agree and a save shows instantly); everything else (auto providers, or a manual
 // field not yet in manual.json) falls back to the server-baked DATA.latest.
 function cellFor(pk,f,t){
+  const key=K(pk,f,t);
   const p=(DATA.providers||[]).find(x=>x.key===pk);
   if(p && !p.auto && MANUAL){
     const raw=(MANUAL[pk]||{})[`${f}->${t}`];
@@ -286,7 +287,20 @@ function cellFor(pk,f,t){
               source_url:null,raw_ref:null,promo:null,is_promo_rate:false,captured_at:null};
     }
   }
-  return DATA.latest[K(pk,f,t)];
+  let cell=DATA.latest[key];
+  // Apply a still-valid correction (mirrors app/ci.py::_apply_corrections): only
+  // while the scraped source STILL reports the flagged wrong value; once the source
+  // genuinely changes it stops matching and expires by itself. A human correction
+  // also asserts "this is the real standard rate", so drop the promo-headline flag.
+  if(CORRECTIONS && cell && cell.rate!=null){
+    const c=CORRECTIONS[key];
+    if(c && c.correct_rate!=null && c.wrong_rate>0 &&
+       Math.abs(cell.rate-c.wrong_rate)/c.wrong_rate < 1e-6){
+      cell={...cell, rate:Number(c.correct_rate), is_promo_rate:false,
+            note:[cell.note,`corrected from ${(+c.wrong_rate)}`].filter(Boolean).join("; ")};
+    }
+  }
+  return cell;
 }
 const esc=s=>(s==null?"":String(s)).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 const escA=s=>esc(s).replace(/"/g,"&quot;");
@@ -654,6 +668,11 @@ let DATA=null, LAST_RUN=null;
 // editor and report always agree and a manual save shows instantly — no waiting
 // for the apply-manual workflow to bake it into data.json (gh-pages).
 let MANUAL=null;
+// corrections.json (data repo `main`), the `corrections` map. Same idea as MANUAL:
+// cellFor() applies a still-valid correction over the scraped value at render time,
+// so a submitted "Fix" shows instantly and identically on the board AND the report,
+// instead of waiting ~30-60s for the server to bake it into data.json.
+let CORRECTIONS=null;
 
 // Deferred until the gate opens — no point fetching a board nobody may see.
 function loadData(){
@@ -663,7 +682,8 @@ function loadData(){
   Promise.all([
     fetch("./data.json?_="+Date.now(),{cache:"no-store"}).then(r=>r.json()),
     fetchManualJson().catch(()=>null),
-  ]).then(([d,m])=>{ DATA=d; MANUAL=m; render(); })
+    fetchCorrectionsJson().catch(()=>null),
+  ]).then(([d,m,c])=>{ DATA=d; MANUAL=m; CORRECTIONS=(c&&c.corrections)||null; render(); })
     .catch(e=>{document.getElementById("app").innerHTML=
       `<section class="card"><p class="muted">${L("noData")}</p></section>`;});
   fetchLastRun().then(lr=>{ LAST_RUN=lr; showNextAuto(); });
@@ -683,18 +703,23 @@ function isEditing(){
 async function pollForUpdate(){
   if(document.hidden || isEditing()) return;   // retry on the next tick
   try{
-    const [fresh,mFresh]=await Promise.all([
+    const [fresh,mFresh,cFresh]=await Promise.all([
       fetch("./data.json?_="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():null),
       fetchManualJson().catch(()=>MANUAL),   // also pick up a colleague's manual save
+      fetchCorrectionsJson().catch(()=>null),// …and a colleague's correction
     ]);
     // Only touch the DOM when something actually moved: a needless re-render would
-    // reset the chart tab and scroll position while someone is reading. Manual
-    // values live in MANUAL, so watch it too, not just data.json's generated_at.
+    // reset the chart tab and scroll position while someone is reading. Manual values
+    // and corrections live in MANUAL/CORRECTIONS, so watch them too, not just
+    // data.json's generated_at.
+    const cNew = cFresh ? ((cFresh.corrections)||{}) : null;
     const dataMoved = fresh && (!DATA || fresh.generated_at!==DATA.generated_at);
     const manualMoved = mFresh && JSON.stringify(mFresh)!==JSON.stringify(MANUAL);
+    const corrMoved = cNew && JSON.stringify(cNew)!==JSON.stringify(CORRECTIONS);
     if(fresh) DATA=fresh;
     if(mFresh) MANUAL=mFresh;
-    if(dataMoved || manualMoved){ render(); syncManualInputs(); flashUpdated(); }
+    if(cNew) CORRECTIONS=cNew;
+    if(dataMoved || manualMoved || corrMoved){ render(); syncManualInputs(); flashUpdated(); }
   }catch(e){ /* transient: keep polling */ }
   fetchLastRun().then(lr=>{ LAST_RUN=lr; showNextAuto(); }).catch(e=>{});
 }
@@ -745,9 +770,12 @@ function render(){
       if(cell&&cell.confidence!=null){const pc=Math.round(cell.confidence*100);
         conf=cell.confidence<0.6?`<span class="lowconf">${L("low")} ${pc}%⚠</span>`:`${pc}%`;}
       const ts=cell&&cell.captured_at?staleTs(cell.captured_at):"—";
-      // auto-scraped rows get a "fix" entry point (manual rows are edited below)
-      const fixBtn=(p.auto && cell && cell.rate!=null)
-        ? `<button class="linkbtn" type="button" data-fix="${K(p.key,f,t)}" data-cur="${cell.rate}">${L("fixTitle")}</button>`
+      // auto-scraped rows get a "fix" entry point (manual rows are edited below).
+      // data-cur is the RAW scraped value (not `cell` which may already be corrected),
+      // so a correction's "wrong" matches the source and re-correcting works.
+      const scraped=(DATA.latest[K(p.key,f,t)]||{}).rate;
+      const fixBtn=(p.auto && cell && cell.rate!=null && scraped!=null)
+        ? `<button class="linkbtn" type="button" data-fix="${K(p.key,f,t)}" data-cur="${scraped}">${L("fixTitle")}</button>`
         : "";
       // How we stack up against the best competitor — the number this whole board exists for.
       let gap="";
@@ -1070,18 +1098,22 @@ function manualCardHtml(){
 // falling back to the raw CDN. The raw CDN can be ~5 min stale, and we MERGE onto
 // this base before writing the whole file back — a stale base would silently revert
 // a colleague's recent edit to another provider.
-async function fetchManualJson(){
-  const api=`https://api.github.com/repos/${MANUAL_REPO}/contents/manual.json?ref=main&_=`+Date.now();
+// Read a JSON file from the data repo's main branch, contents-API first (read-after-
+// write consistent) then raw CDN fallback. Used for manual.json + corrections.json.
+async function fetchRepoJson(file){
+  const api=`https://api.github.com/repos/${MANUAL_REPO}/contents/${file}?ref=main&_=`+Date.now();
   try{
     const r=await fetch(api,{headers:{Accept:"application/vnd.github.raw"},cache:"no-store"});
     if(r.ok){ const j=await r.json(); if(j&&typeof j==="object") return j; }
   }catch(e){}
   try{
-    const r=await fetch(`https://raw.githubusercontent.com/${MANUAL_REPO}/main/manual.json?_=`+Date.now(),{cache:"no-store"});
+    const r=await fetch(`https://raw.githubusercontent.com/${MANUAL_REPO}/main/${file}?_=`+Date.now(),{cache:"no-store"});
     if(r.ok){ const j=await r.json(); if(j&&typeof j==="object") return j; }
   }catch(e){}
   return null;
 }
+async function fetchManualJson(){ return fetchRepoJson("manual.json"); }
+async function fetchCorrectionsJson(){ return fetchRepoJson("corrections.json"); }
 
 async function saveManualProvider(key){
   const st=document.querySelector(`[data-status="${key}"]`);
@@ -1228,11 +1260,9 @@ async function submitFix(key, wrongRate, box){
     corrected_at:new Date().toISOString(), note:(box.querySelector("#fixNote").value||"").trim(),
     by:(GOOGLE_USER&&GOOGLE_USER.email)||""};
 
-  let doc={};
-  try{
-    const g=await fetch(`https://raw.githubusercontent.com/${MANUAL_REPO}/main/corrections.json?_=`+Date.now(),{cache:"no-store"});
-    if(g.ok) doc=await g.json();
-  }catch(e){ setS(L("stReadFail")+e.message); return; }
+  // Read the current corrections.json fresh (contents API) so a colleague's other
+  // correction isn't clobbered, then merge this one in.
+  let doc=await fetchCorrectionsJson();
   if(!doc||typeof doc!=="object") doc={};
   if(!doc._comment) doc._comment="匯率修正：只要來源仍是錯值就自動套用；來源改變後自動失效。";
   doc.corrections=doc.corrections||{};
@@ -1241,12 +1271,14 @@ async function submitFix(key, wrongRate, box){
   const res=await workerWrite("corrections.json", doc);
   if(!res.ok){ setS(`${L("stFail")}${res.error}`); return; }
 
-  setS(L("fixSaved"));
-  const before=DATA.generated_at;
-  if(DATA.latest[key]) DATA.latest[key].rate=Number(val);   // optimistic
+  // corrections.json is the browser's source of truth for corrections (cellFor
+  // applies a still-valid one), so update it and re-render — the board AND report
+  // reflect the fix INSTANTLY and identically, no optimistic overlay and no polling.
+  // apply-manual bakes it into data.json/history/scheduled report in the background.
+  CORRECTIONS=doc.corrections;
   render();
-  const d=await workerRefresh();
-  if(d.ok) await pollUntilPublished(before, 24);
+  setS(L("fixSaved"));
+  workerDispatch("apply-manual.yml");   // fire-and-forget
 }
 
 // ---- Rate report → triggers the server-side send-report workflow on GitHub ----
