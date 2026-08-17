@@ -67,6 +67,7 @@
   .pill.manual{color:#8a7fd6;background:rgba(122,138,241,0.12);}
   .lowconf{color:var(--down);font-size:12px;font-weight:600;background:rgba(232,131,122,0.14);padding:2px 8px;border-radius:12px;}
   .stale{color:var(--stale-text);font-weight:600;background:rgba(233,168,92,0.16);padding:2px 8px;border-radius:12px;white-space:nowrap;cursor:help;}
+  .needsreview{color:var(--down);font-weight:600;background:rgba(232,131,122,0.18);padding:2px 8px;border-radius:12px;white-space:nowrap;cursor:help;}
   tr.self td{background:rgba(122,138,241,0.13);}
   tr.self td:first-child{box-shadow:inset 4px 0 0 var(--secondary);}
   tr.self td.name{color:var(--secondary);}
@@ -284,7 +285,8 @@ function cellFor(pk,f,t){
       // captured_at:null on purpose — a human-entered rate has no scrape time and
       // must NOT show a "time (Nh) ⚠" stale badge like an OCR/scraped value would.
       return {rate:Number(raw),method:"manual",confidence:1.0,note:"manual.json",
-              source_url:null,raw_ref:null,promo:null,is_promo_rate:false,captured_at:null};
+              source_url:null,raw_ref:null,promo:null,is_promo_rate:false,
+              needs_review:false,review_reason:null,captured_at:null};
     }
   }
   let cell=DATA.latest[key];
@@ -297,6 +299,7 @@ function cellFor(pk,f,t){
     if(c && c.correct_rate!=null && c.wrong_rate>0 &&
        Math.abs(cell.rate-c.wrong_rate)/c.wrong_rate < 1e-6){
       cell={...cell, rate:Number(c.correct_rate), is_promo_rate:false,
+            needs_review:false, review_reason:null,
             note:[cell.note,`corrected from ${(+c.wrong_rate)}`].filter(Boolean).join("; ")};
     }
   }
@@ -342,6 +345,9 @@ const T={
   promoOnlyTag:{zh:"⚠ 此為促銷價",en:"⚠ Promo rate"},
   promoOnlyTip:{zh:"目前只抓到促銷卡，這個數字是有條件的促銷價，非一般客戶的標準匯率。點擊查看條件與原圖。",
     en:"Only a promo card was available, so this figure is a restricted offer, not the standard rate. Click for terms and the source image."},
+  needsReviewTag:{zh:"⚠ 待人工核對",en:"⚠ Needs review"},
+  needsReviewTip:{zh:"系統偵測到這個匯率與同業共識或自身走勢明顯偏離，AI 二次重讀後仍無法確認，可能是 OCR 誤讀或把促銷當標準價。已暫不計入走勢，請核對原始圖片，必要時用『修正』覆蓋。",
+    en:"This rate deviates sharply from peer consensus or its own trend and an AI re-read couldn't confirm it — likely an OCR misread or a promo taken as standard. It's held out of the trend; please check the source image and use Fix to override if needed."},
   promoNoStd:{zh:"未取得",en:"Not captured"},
   promoTip:{zh:"另有促銷匯率，點擊查看條件與原始圖片",en:"A promo rate is also running — click for terms and the source image"},
   promoTitle:{zh:"促銷匯率",en:"Promo rate"},
@@ -749,7 +755,9 @@ function render(){
     const cells=rows.map(p=>({p,cell:cellFor(p.key,f,t)}));
     // ★ marks the best COMPETITOR rate — our own row is the benchmark you compare
     // against, so including it would just star ourselves and hide who's beating us.
-    const rates=cells.filter(x=>!x.p.is_self&&x.cell&&x.cell.rate!=null).map(x=>x.cell.rate);
+    // Exclude a needs_review cell from the ★best pick — a suspected misread must not be
+    // presented as the best competitor rate.
+    const rates=cells.filter(x=>!x.p.is_self&&x.cell&&x.cell.rate!=null&&!x.cell.needs_review).map(x=>x.cell.rate);
     const best=rates.length?Math.max(...rates):null;
     const ourRate=(cells.find(x=>x.p.is_self)||{}).cell;
     html+=`<section class="card"><h2>${f} → ${t} <span class="tag">${L("latest")}</span></h2><div class="overflow"><table>`
@@ -797,8 +805,14 @@ function render(){
       }else if(cell&&cell.promo&&cell.promo.rate!=null){
         promoBadge=` <button class="promo-badge" type="button" data-promo="${K(p.key,f,t)}" title="${L("promoTip")}">${L("promoTag")} ${fmt(cell.promo.rate,2)}</button>`;
       }
+      // The automated anomaly check couldn't auto-verify this value — badge it (with the
+      // reason as a tooltip) so a human knows to check the source image.
+      let reviewBadge="";
+      if(cell&&cell.needs_review){
+        reviewBadge=` <span class="needsreview" title="${escA(cell.review_reason||L("needsReviewTip"))}">${L("needsReviewTag")}</span>`;
+      }
       html+=`<tr class="${p.is_self?'self':(isBest?'best':'')}"><td class="name">${esc(p.name)}${badge}${star}</td>`
-        +`<td class="rate">${rate}${gap}${promoBadge}</td><td>${method}</td><td>${conf}</td>`
+        +`<td class="rate">${rate}${gap}${promoBadge}${reviewBadge}</td><td>${method}</td><td>${conf}</td>`
         +`<td class="muted">${ts}</td><td>${fixBtn}</td></tr>`;
     }
     html+="</tbody></table></div></section>";
@@ -1311,7 +1325,7 @@ function buildReport(){
     lines.push("",`【${f} → ${t}】`);
     const rows=DATA.providers.filter(p=>p.corridors.some(c=>c[0]===f&&c[1]===t))
       .map(p=>({name:p.name,key:K(p.key,f,t),cell:cellFor(p.key,f,t)}));
-    const rates=rows.filter(x=>x.cell&&x.cell.rate!=null).map(x=>x.cell.rate);
+    const rates=rows.filter(x=>x.cell&&x.cell.rate!=null&&!x.cell.needs_review).map(x=>x.cell.rate);
     const best=rates.length?Math.max(...rates):null;
     for(const {name,key,cell} of rows){
       const has=cell&&cell.rate!=null;
