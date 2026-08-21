@@ -323,7 +323,7 @@
   ],
   "correction_log": [
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2249.98,
       "corrected_at": "2026-08-21T08:34:54.457Z",
       "key": "pandaremit|HKD|IDR",
@@ -331,8 +331,8 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2249.8431,
-      "status": "applied",
+      "source_rate": 2249.8144,
+      "status": "expired (source changed)",
       "wrong_rate": 2249.8431
     },
     {
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-21T13:01:13+00:00",
+  "generated_at": "2026-08-21T14:09:25+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1238,7 +1238,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-21T13:01:13+00:00",
+      "captured_at": "2026-08-21T14:09:25+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1282,7 +1282,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-21T13:01:13+00:00",
+      "captured_at": "2026-08-21T14:09:25+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1295,20 +1295,20 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-08-21T13:01:13+00:00",
+      "captured_at": "2026-08-21T14:09:25+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
       "needs_review": false,
-      "note": "貓熊匯率 standard rate (-0.28% vs 昨日); corrected from 2249.84",
+      "note": "貓熊匯率 standard rate (-0.28% vs 昨日)",
       "promo": null,
-      "rate": 2249.98,
+      "rate": 2249.8144,
       "raw_ref": null,
       "review_reason": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-21T13:01:13+00:00",
+      "captured_at": "2026-08-21T14:09:25+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
