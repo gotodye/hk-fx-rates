@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-08-21T08:29:21+00:00",
+      "new_rate": 2254.0,
+      "old_rate": 2262.0,
+      "pair": "HKD->IDR",
+      "provider": "EUI MONEY",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-08-21T04:56:39+00:00",
       "new_rate": 2257.0,
       "old_rate": 2266.0,
@@ -311,14 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-08-07T23:01:13+00:00",
-      "new_rate": 2261.4649,
-      "old_rate": 2273.5951,
-      "pair": "HKD->IDR",
-      "provider": "Panda Remit",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-21T08:00:55+00:00",
+  "generated_at": "2026-08-21T08:29:21+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -813,6 +813,10 @@
       {
         "rate": 2262.0,
         "t": "2026-08-21T02:36:54+00:00"
+      },
+      {
+        "rate": 2254.0,
+        "t": "2026-08-21T08:29:21+00:00"
       }
     ],
     "pandaremit|HKD|IDR": [
@@ -1226,7 +1230,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-21T08:00:55+00:00",
+      "captured_at": "2026-08-21T08:29:21+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1270,14 +1274,14 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-21T08:00:55+00:00",
+      "captured_at": "2026-08-21T08:29:21+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
       "needs_review": false,
       "note": "manual.json",
       "promo": null,
-      "rate": 2262.0,
+      "rate": 2254.0,
       "raw_ref": null,
       "review_reason": null,
       "source_url": null
@@ -1296,7 +1300,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-21T08:00:55+00:00",
+      "captured_at": "2026-08-21T08:29:21+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
