@@ -1,6 +1,22 @@
 {
   "changes": [
     {
+      "changed_at": "2026-08-22T07:48:08+00:00",
+      "new_rate": 2258.0,
+      "old_rate": 2250.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-08-22T07:48:08+00:00",
+      "new_rate": 2252.0,
+      "old_rate": 2257.0,
+      "pair": "HKD->IDR",
+      "provider": "BRI Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-08-21T23:01:00+00:00",
       "new_rate": 2237.8968,
       "old_rate": 2250.0153,
@@ -303,22 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-08-10T05:20:00+00:00",
-      "new_rate": 2268.0,
-      "old_rate": 2278.0,
-      "pair": "HKD->IDR",
-      "provider": "EUI MONEY",
-      "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-08-10T03:01:07+00:00",
-      "new_rate": 2264.0,
-      "old_rate": 2274.7,
-      "pair": "HKD->IDR",
-      "provider": "We Remit",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -343,8 +343,8 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
-      "raw_ref": "https://scontent.fyyc6-1.fna.fbcdn.net/v/t39.99422-6/781924722_1038023465820429_401046263285534576_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Oa64viN_eNEQ7kNvwH8R2lF&_nc_oc=AdoXDnmElG6B4Uf3GItxzxgQHTCk_3Tw9EMz_-FYO9jwj9x-e0M66V0hOpaitqQ3mp8&_nc_zt=14&_nc_ht=scontent.fyyc6-1.fna&_nc_gid=tbllAoNHNhOAvyMER0Rbpw&_nc_ss=7c289&oh=00_AQHCy-zyzUFIs5UVpOduaIFWRtzxADUGPy2dYaWqBOPjBQ&oe=6A8E19C4",
-      "source_rate": 2250.0,
+      "raw_ref": "https://scontent.fasu9-1.fna.fbcdn.net/v/t39.99422-6/779728914_1055609007226647_2586295370891807117_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5R7_tWcEflQQ7kNvwE14jWq&_nc_oc=AdqOWSgdchliyc8IvKQGrfNwCy6NalNXE9AX9VGyfBtSV9EzyWSgS_Ltd6MSM1--pto&_nc_zt=14&_nc_ht=scontent.fasu9-1.fna&_nc_gid=cDazyP8I52C580wKgr_6yg&_nc_ss=7c289&oh=00_AQF5Lq4DKySdj8KDRXr-kW8zHCfsBz-bZr10P8ccnaFm4g&oe=6A8F227D",
+      "source_rate": 2258.0,
       "status": "expired (source changed)",
       "wrong_rate": 2256.0
     },
@@ -356,8 +356,8 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
-      "raw_ref": "https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.99422-6/779357344_4627391777588781_2614841115799909782_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qtMPTO7jOMYQ7kNvwHcFQId&_nc_oc=AdpSUcz1BMd9qphVMf2wk4Ps1dc2pBRIwpMBLFrDiOLZb7_lD8OWGp3oE40fcJTkTJMJvCMl5vZk4YZ0ZFOWvjAA&_nc_zt=14&_nc_ht=scontent.fsgn3-1.fna&_nc_gid=4fNoMUKAsdp63_KvLhmCdw&_nc_ss=7c289&oh=00_AQG3knCuH8B2wbeeXmmHmZT7c5Tjzh3E-bB_QS6_yiGYSw&oe=6A8E2EE7",
-      "source_rate": 2257.0,
+      "raw_ref": "https://scontent-mad2-1.xx.fbcdn.net/v/t39.99422-6/781251254_38310716858512466_6322738203445315633_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=x6KpO6ZLOgwQ7kNvwES5rrp&_nc_oc=Adp1Np1gsGRqY1Q-PzBNFhz2L2mq8KG_p2K0N54qlIQNz4pkG-HmgiyOQ5Zli42gpss&_nc_zt=14&_nc_ht=scontent-mad2-1.xx&_nc_gid=1KT-UpGv6Z0dIWH5XTazng&_nc_ss=7c289&oh=00_AQFuFvBa3Lj6Ol_CE_1STdQHOlFYNo0Bfa2XTgzqClYO4A&oe=6A8F1763",
+      "source_rate": 2252.0,
       "status": "expired (source changed)",
       "wrong_rate": 2268.0
     }
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-21T23:01:00+00:00",
+  "generated_at": "2026-08-22T07:48:08+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -525,6 +525,10 @@
       {
         "rate": 2257.0,
         "t": "2026-08-21T04:56:39+00:00"
+      },
+      {
+        "rate": 2252.0,
+        "t": "2026-08-22T07:48:08+00:00"
       }
     ],
     "chandra|HKD|IDR": [
@@ -743,6 +747,10 @@
       {
         "rate": 2256.0,
         "t": "2026-08-21T02:30:56+00:00"
+      },
+      {
+        "rate": 2258.0,
+        "t": "2026-08-22T07:48:08+00:00"
       }
     ],
     "eui|HKD|IDR": [
@@ -1242,7 +1250,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-21T23:01:00+00:00",
+      "captured_at": "2026-08-22T07:48:08+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1255,38 +1263,38 @@
       "source_url": null
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-08-21T13:01:13+00:00",
+      "captured_at": "2026-08-22T07:48:08+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; 21/08/2026; KURS HARI INI",
+      "note": "vision OCR; 22/08/2026; KURS HARI INI",
       "promo": null,
-      "rate": 2257.0,
-      "raw_ref": "https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.99422-6/779357344_4627391777588781_2614841115799909782_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qtMPTO7jOMYQ7kNvwHcFQId&_nc_oc=AdpSUcz1BMd9qphVMf2wk4Ps1dc2pBRIwpMBLFrDiOLZb7_lD8OWGp3oE40fcJTkTJMJvCMl5vZk4YZ0ZFOWvjAA&_nc_zt=14&_nc_ht=scontent.fsgn3-1.fna&_nc_gid=4fNoMUKAsdp63_KvLhmCdw&_nc_ss=7c289&oh=00_AQG3knCuH8B2wbeeXmmHmZT7c5Tjzh3E-bB_QS6_yiGYSw&oe=6A8E2EE7",
+      "rate": 2252.0,
+      "raw_ref": "https://scontent-mad2-1.xx.fbcdn.net/v/t39.99422-6/781251254_38310716858512466_6322738203445315633_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=x6KpO6ZLOgwQ7kNvwES5rrp&_nc_oc=Adp1Np1gsGRqY1Q-PzBNFhz2L2mq8KG_p2K0N54qlIQNz4pkG-HmgiyOQ5Zli42gpss&_nc_zt=14&_nc_ht=scontent-mad2-1.xx&_nc_gid=1KT-UpGv6Z0dIWH5XTazng&_nc_ss=7c289&oh=00_AQFuFvBa3Lj6Ol_CE_1STdQHOlFYNo0Bfa2XTgzqClYO4A&oe=6A8F1763",
       "review_reason": null,
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-08-21T13:01:13+00:00",
-      "confidence": 1.0,
-      "is_promo_rate": false,
+      "captured_at": "2026-08-22T07:48:08+00:00",
+      "confidence": 0.95,
+      "is_promo_rate": true,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; 21/8/2026 16:12 pm; Kurs Kirim: 2250, Kurs Tukar: 2190",
+      "note": "vision OCR; PROMO; 22/8/2026 23/8/2026 8:00 am; Rate Cantik Kurs Kirim (2258) valid for transfers under HK$8000 on Saturday & Sunday at selected branches; Kurs Tukar Cantik is 2190",
       "promo": {
         "date_text": "22/8/2026 23/8/2026 8:00 am",
-        "image": "https://scontent.fyyc6-1.fna.fbcdn.net/v/t39.99422-6/779728914_1055609007226647_2586295370891807117_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5R7_tWcEflQQ7kNvwEWBEl4&_nc_oc=AdojHvYqjGJ_rQYGKjMMIrt1CvNqB85EDPj-g2YttSMP0HG-N2gsA6SPaiUSmtCm7sQ&_nc_zt=14&_nc_ht=scontent.fyyc6-1.fna&_nc_gid=_FceYbgZq7aqAxMgSz3enA&_nc_ss=7c289&oh=00_AQEOuQaNPZPRT8bhwTw11xeKE-dDoc1LAqydLVfqhInCHQ&oe=6A8E093D",
-        "note": "Rate Cantik (Kurs Kirim): 2258, berlaku khusus kiriman uang di bawah HK$8000 pada hari Sabtu & Minggu di cabang tertentu.",
+        "image": "https://scontent.fasu9-1.fna.fbcdn.net/v/t39.99422-6/779728914_1055609007226647_2586295370891807117_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5R7_tWcEflQQ7kNvwE14jWq&_nc_oc=AdqOWSgdchliyc8IvKQGrfNwCy6NalNXE9AX9VGyfBtSV9EzyWSgS_Ltd6MSM1--pto&_nc_zt=14&_nc_ht=scontent.fasu9-1.fna&_nc_gid=cDazyP8I52C580wKgr_6yg&_nc_ss=7c289&oh=00_AQF5Lq4DKySdj8KDRXr-kW8zHCfsBz-bZr10P8ccnaFm4g&oe=6A8F227D",
+        "note": "Rate Cantik Kurs Kirim (2258) valid for transfers under HK$8000 on Saturday & Sunday at selected branches; Kurs Tukar Cantik is 2190",
         "rate": 2258.0
       },
-      "rate": 2250.0,
-      "raw_ref": "https://scontent.fyyc6-1.fna.fbcdn.net/v/t39.99422-6/781924722_1038023465820429_401046263285534576_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Oa64viN_eNEQ7kNvwH8R2lF&_nc_oc=AdoXDnmElG6B4Uf3GItxzxgQHTCk_3Tw9EMz_-FYO9jwj9x-e0M66V0hOpaitqQ3mp8&_nc_zt=14&_nc_ht=scontent.fyyc6-1.fna&_nc_gid=tbllAoNHNhOAvyMER0Rbpw&_nc_ss=7c289&oh=00_AQHCy-zyzUFIs5UVpOduaIFWRtzxADUGPy2dYaWqBOPjBQ&oe=6A8E19C4",
+      "rate": 2258.0,
+      "raw_ref": "https://scontent.fasu9-1.fna.fbcdn.net/v/t39.99422-6/779728914_1055609007226647_2586295370891807117_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5R7_tWcEflQQ7kNvwE14jWq&_nc_oc=AdqOWSgdchliyc8IvKQGrfNwCy6NalNXE9AX9VGyfBtSV9EzyWSgS_Ltd6MSM1--pto&_nc_zt=14&_nc_ht=scontent.fasu9-1.fna&_nc_gid=cDazyP8I52C580wKgr_6yg&_nc_ss=7c289&oh=00_AQF5Lq4DKySdj8KDRXr-kW8zHCfsBz-bZr10P8ccnaFm4g&oe=6A8F227D",
       "review_reason": null,
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-21T23:01:00+00:00",
+      "captured_at": "2026-08-22T07:48:08+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1299,7 +1307,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-08-21T23:01:00+00:00",
+      "captured_at": "2026-08-22T07:48:08+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
@@ -1312,7 +1320,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-21T23:01:00+00:00",
+      "captured_at": "2026-08-22T07:48:08+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
