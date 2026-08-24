@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-08-24T08:11:18+00:00",
+      "new_rate": 2251.16,
+      "old_rate": 2250.3,
+      "pair": "HKD->IDR",
+      "provider": "We Remit",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-08-24T05:55:58+00:00",
       "new_rate": 2253.0,
       "old_rate": 2250.0,
@@ -311,14 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "EUI MONEY",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-08-16T23:01:04+00:00",
-      "new_rate": 2264.9013,
-      "old_rate": 2252.6453,
-      "pair": "HKD->IDR",
-      "provider": "Panda Remit",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-24T08:01:04+00:00",
+  "generated_at": "2026-08-24T08:11:18+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1265,12 +1265,16 @@
       {
         "rate": 2250.3,
         "t": "2026-08-24T03:05:11+00:00"
+      },
+      {
+        "rate": 2251.16,
+        "t": "2026-08-24T08:11:18+00:00"
       }
     ]
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-24T08:01:04+00:00",
+      "captured_at": "2026-08-24T08:11:18+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1314,7 +1318,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-24T08:01:04+00:00",
+      "captured_at": "2026-08-24T08:11:18+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1340,14 +1344,14 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-24T08:01:04+00:00",
+      "captured_at": "2026-08-24T08:11:18+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
       "needs_review": false,
       "note": "manual.json",
       "promo": null,
-      "rate": 2250.3,
+      "rate": 2251.16,
       "raw_ref": null,
       "review_reason": null,
       "source_url": null
