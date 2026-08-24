@@ -1,7 +1,7 @@
 {
   "changes": [
     {
-      "changed_at": "2026-08-24T03:04:12+00:00",
+      "changed_at": "2026-08-24T03:05:11+00:00",
       "new_rate": 2250.3,
       "old_rate": 2249.38,
       "pair": "HKD->IDR",
@@ -9,7 +9,7 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-08-24T03:04:12+00:00",
+      "changed_at": "2026-08-24T03:05:11+00:00",
       "new_rate": 2249.4,
       "old_rate": 2247.73,
       "pair": "HKD->IDR",
@@ -17,7 +17,7 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-08-24T03:04:12+00:00",
+      "changed_at": "2026-08-24T03:05:11+00:00",
       "new_rate": 2251.0,
       "old_rate": 2254.0,
       "pair": "HKD->IDR",
@@ -336,17 +336,17 @@
       "wrong_rate": 2249.8431
     },
     {
-      "applied": false,
+      "applied": true,
       "correct_rate": 2250.0,
-      "corrected_at": "2026-08-21T08:30:16.846Z",
+      "corrected_at": "2026-08-24T03:04:52.434Z",
       "key": "chandra|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "raw_ref": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.99422-6/779728914_1055609007226647_2586295370891807117_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1A0km2EpNa8Q7kNvwGtNI2w&_nc_oc=AdrYuNFr6ZWL6ih6wbhTEVsNorShNSS1QcJXhsINsK7uFR_cju4sdNlaprhFFxSEZKuuSmQZZimPowINLVxMTW81&_nc_zt=14&_nc_ht=scontent-ord5-1.xx&_nc_gid=7NNW8IemdCWek6sKUCCIwQ&_nc_ss=7c289&oh=00_AQHVWRXfyL6WXTrtbeMCkgbNU67InqniPBMAk0fEyKLsug&oe=6A9154FD",
       "source_rate": 2258.0,
-      "status": "expired (source changed)",
-      "wrong_rate": 2256.0
+      "status": "applied",
+      "wrong_rate": 2258.0
     },
     {
       "applied": false,
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-24T03:04:12+00:00",
+  "generated_at": "2026-08-24T03:05:11+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -450,7 +450,7 @@
       },
       {
         "rate": 2249.4,
-        "t": "2026-08-24T03:04:12+00:00"
+        "t": "2026-08-24T03:05:11+00:00"
       }
     ],
     "bri|HKD|IDR": [
@@ -836,7 +836,7 @@
       },
       {
         "rate": 2251.0,
-        "t": "2026-08-24T03:04:12+00:00"
+        "t": "2026-08-24T03:05:11+00:00"
       }
     ],
     "pandaremit|HKD|IDR": [
@@ -1260,13 +1260,13 @@
       },
       {
         "rate": 2250.3,
-        "t": "2026-08-24T03:04:12+00:00"
+        "t": "2026-08-24T03:05:11+00:00"
       }
     ]
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-24T03:04:12+00:00",
+      "captured_at": "2026-08-24T03:05:11+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1294,23 +1294,23 @@
     "chandra|HKD|IDR": {
       "captured_at": "2026-08-23T23:00:59+00:00",
       "confidence": 0.95,
-      "is_promo_rate": true,
+      "is_promo_rate": false,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; PROMO; 22/8/2026 - 23/8/2026 8:00 am; Kurs Kirim 'Rate Cantik' 2258 (hanya berlaku untuk kiriman di bawah HK$8000 di cabang tertentu pada hari Sabtu & Minggu). Kurs Tukar Cantik 2190.",
+      "note": "vision OCR; PROMO; 22/8/2026 - 23/8/2026 8:00 am; Kurs Kirim 'Rate Cantik' 2258 (hanya berlaku untuk kiriman di bawah HK$8000 di cabang tertentu pada hari Sabtu & Minggu). Kurs Tukar Cantik 2190.; corrected from 2258",
       "promo": {
         "date_text": "22/8/2026 - 23/8/2026 8:00 am",
         "image": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.99422-6/779728914_1055609007226647_2586295370891807117_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1A0km2EpNa8Q7kNvwGtNI2w&_nc_oc=AdrYuNFr6ZWL6ih6wbhTEVsNorShNSS1QcJXhsINsK7uFR_cju4sdNlaprhFFxSEZKuuSmQZZimPowINLVxMTW81&_nc_zt=14&_nc_ht=scontent-ord5-1.xx&_nc_gid=7NNW8IemdCWek6sKUCCIwQ&_nc_ss=7c289&oh=00_AQHVWRXfyL6WXTrtbeMCkgbNU67InqniPBMAk0fEyKLsug&oe=6A9154FD",
         "note": "Kurs Kirim 'Rate Cantik' 2258 (hanya berlaku untuk kiriman di bawah HK$8000 di cabang tertentu pada hari Sabtu & Minggu). Kurs Tukar Cantik 2190.",
         "rate": 2258.0
       },
-      "rate": 2258.0,
+      "rate": 2250.0,
       "raw_ref": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.99422-6/779728914_1055609007226647_2586295370891807117_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1A0km2EpNa8Q7kNvwGtNI2w&_nc_oc=AdrYuNFr6ZWL6ih6wbhTEVsNorShNSS1QcJXhsINsK7uFR_cju4sdNlaprhFFxSEZKuuSmQZZimPowINLVxMTW81&_nc_zt=14&_nc_ht=scontent-ord5-1.xx&_nc_gid=7NNW8IemdCWek6sKUCCIwQ&_nc_ss=7c289&oh=00_AQHVWRXfyL6WXTrtbeMCkgbNU67InqniPBMAk0fEyKLsug&oe=6A9154FD",
       "review_reason": null,
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-24T03:04:12+00:00",
+      "captured_at": "2026-08-24T03:05:11+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1336,7 +1336,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-24T03:04:12+00:00",
+      "captured_at": "2026-08-24T03:05:11+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
