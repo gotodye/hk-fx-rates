@@ -1,7 +1,7 @@
 {
   "changes": [
     {
-      "changed_at": "2026-08-28T02:24:32+00:00",
+      "changed_at": "2026-08-28T02:24:51+00:00",
       "new_rate": 2254.6956,
       "old_rate": 2259.65,
       "pair": "HKD->IDR",
@@ -9,7 +9,7 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-08-28T02:24:32+00:00",
+      "changed_at": "2026-08-28T02:24:51+00:00",
       "new_rate": 2251.571,
       "old_rate": 2259.2,
       "pair": "HKD->IDR",
@@ -17,7 +17,7 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-08-28T02:24:32+00:00",
+      "changed_at": "2026-08-28T02:24:51+00:00",
       "new_rate": 2258.0,
       "old_rate": 2252.0,
       "pair": "HKD->IDR",
@@ -323,20 +323,20 @@
   ],
   "correction_log": [
     {
-      "applied": false,
-      "correct_rate": 2260.5359,
-      "corrected_at": "2026-08-27T02:38:13.776Z",
+      "applied": true,
+      "correct_rate": 2249.6912,
+      "corrected_at": "2026-08-28T02:24:37.451Z",
       "key": "pandaremit|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
       "source_rate": 2254.3331,
-      "status": "expired (source changed)",
-      "wrong_rate": 2253.3465
+      "status": "applied",
+      "wrong_rate": 2254.3331
     },
     {
-      "applied": false,
+      "applied": true,
       "correct_rate": 2253.0,
       "corrected_at": "2026-08-28T02:21:31.414Z",
       "key": "chandra|HKD|IDR",
@@ -344,8 +344,8 @@
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "raw_ref": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.99422-6/778985525_1090916583402420_3193554005185711758_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=64IzRek5NpEQ7kNvwG1yJYv&_nc_oc=AdpoWUPgF9H8ZcWGROtLynjUCbYOdyr1OOTzd79PCtCYagiUEAbZzcTZkAcN-C_evsk&_nc_zt=14&_nc_ht=scontent-lga3-1.xx&_nc_gid=LIbOtm92vBSnl2b24JKdXw&_nc_ss=7c289&oh=00_AQHGXagEzjWpizYefIvGHRfbr3109VUQifEXBm02EoNW_w&oe=6A96D28E",
-      "source_rate": 2253.0,
-      "status": "expired (source changed)",
+      "source_rate": 2260.0,
+      "status": "applied",
       "wrong_rate": 2260.0
     },
     {
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-28T02:24:32+00:00",
+  "generated_at": "2026-08-28T02:24:51+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -466,7 +466,7 @@
       },
       {
         "rate": 2251.571,
-        "t": "2026-08-28T02:24:32+00:00"
+        "t": "2026-08-28T02:24:51+00:00"
       }
     ],
     "bri|HKD|IDR": [
@@ -924,7 +924,7 @@
       },
       {
         "rate": 2258.0,
-        "t": "2026-08-28T02:24:32+00:00"
+        "t": "2026-08-28T02:24:51+00:00"
       }
     ],
     "pandaremit|HKD|IDR": [
@@ -1384,13 +1384,13 @@
       },
       {
         "rate": 2254.6956,
-        "t": "2026-08-28T02:24:32+00:00"
+        "t": "2026-08-28T02:24:51+00:00"
       }
     ]
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-28T02:24:32+00:00",
+      "captured_at": "2026-08-28T02:24:51+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1434,7 +1434,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-28T02:24:32+00:00",
+      "captured_at": "2026-08-28T02:24:51+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1452,15 +1452,15 @@
       "is_promo_rate": false,
       "method": "web",
       "needs_review": false,
-      "note": "貓熊匯率 standard rate (-0.01% vs 昨日)",
+      "note": "貓熊匯率 standard rate (-0.01% vs 昨日); corrected from 2254.33",
       "promo": null,
-      "rate": 2254.3331,
+      "rate": 2249.6912,
       "raw_ref": null,
       "review_reason": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-28T02:24:32+00:00",
+      "captured_at": "2026-08-28T02:24:51+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
