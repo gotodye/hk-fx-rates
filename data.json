@@ -331,7 +331,7 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2251.6563,
+      "source_rate": 2252.0255,
       "status": "expired (source changed)",
       "wrong_rate": 2254.3331
     },
@@ -356,7 +356,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
-      "raw_ref": "https://scontent-yyz1-1.xx.fbcdn.net/v/t39.99422-6/788212398_1419236870086202_1291042133201314645_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FV5g-s643bkQ7kNvwHz37B7&_nc_oc=Adq7a_1g2SfpwiNQIqpwicfOAW6iQXZLvyF8ym2xWJORMa1Pz_9GFCaptk9kJynVK-8&_nc_zt=14&_nc_ht=scontent-yyz1-1.xx&_nc_gid=SK1dfamxRINfAum5vUxvPg&_nc_ss=7c289&oh=00_AQFlxZ8s8l_mc6UdxF5s73ndZAVkmqpcTEH03qWD4h9phw&oe=6A96F3A2",
+      "raw_ref": "https://scontent.fcia6-1.fna.fbcdn.net/v/t39.99422-6/788212398_1419236870086202_1291042133201314645_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FV5g-s643bkQ7kNvwFQQM-Q&_nc_oc=Adq2fwd_bC6OxLZ1BPyixBvu7_1HORSD5DG2Jhk_ACAvHeYMsaariZsdXsiyPg-Kqb8&_nc_zt=14&_nc_ht=scontent.fcia6-1.fna&_nc_gid=qeWcDRQm4aHf07WLgLNPXQ&_nc_ss=7c289&oh=00_AQHRXNEx6iSWOBN_h7W1AGd1eM58UyRlXRtdlvnDezfjfA&oe=6A96F3A2",
       "source_rate": 2262.0,
       "status": "expired (source changed)",
       "wrong_rate": 2255.0
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-28T05:01:21+00:00",
+  "generated_at": "2026-08-28T06:01:08+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1394,7 +1394,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-28T05:01:21+00:00",
+      "captured_at": "2026-08-28T06:01:08+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1407,7 +1407,7 @@
       "source_url": null
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-08-28T05:01:21+00:00",
+      "captured_at": "2026-08-28T06:01:08+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
@@ -1415,7 +1415,7 @@
       "note": "vision OCR; 28/08/2026; KURS HARI INI",
       "promo": null,
       "rate": 2262.0,
-      "raw_ref": "https://scontent-yyz1-1.xx.fbcdn.net/v/t39.99422-6/788212398_1419236870086202_1291042133201314645_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FV5g-s643bkQ7kNvwHz37B7&_nc_oc=Adq7a_1g2SfpwiNQIqpwicfOAW6iQXZLvyF8ym2xWJORMa1Pz_9GFCaptk9kJynVK-8&_nc_zt=14&_nc_ht=scontent-yyz1-1.xx&_nc_gid=SK1dfamxRINfAum5vUxvPg&_nc_ss=7c289&oh=00_AQFlxZ8s8l_mc6UdxF5s73ndZAVkmqpcTEH03qWD4h9phw&oe=6A96F3A2",
+      "raw_ref": "https://scontent.fcia6-1.fna.fbcdn.net/v/t39.99422-6/788212398_1419236870086202_1291042133201314645_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FV5g-s643bkQ7kNvwFQQM-Q&_nc_oc=Adq2fwd_bC6OxLZ1BPyixBvu7_1HORSD5DG2Jhk_ACAvHeYMsaariZsdXsiyPg-Kqb8&_nc_zt=14&_nc_ht=scontent.fcia6-1.fna&_nc_gid=qeWcDRQm4aHf07WLgLNPXQ&_nc_ss=7c289&oh=00_AQHRXNEx6iSWOBN_h7W1AGd1eM58UyRlXRtdlvnDezfjfA&oe=6A96F3A2",
       "review_reason": null,
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
@@ -1438,7 +1438,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-28T05:01:21+00:00",
+      "captured_at": "2026-08-28T06:01:08+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1451,20 +1451,20 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-08-28T05:01:21+00:00",
+      "captured_at": "2026-08-28T06:01:08+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
       "needs_review": false,
-      "note": "貓熊匯率 standard rate (-0.13% vs 昨日)",
+      "note": "貓熊匯率 standard rate (-0.11% vs 昨日)",
       "promo": null,
-      "rate": 2251.6563,
+      "rate": 2252.0255,
       "raw_ref": null,
       "review_reason": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-28T05:01:21+00:00",
+      "captured_at": "2026-08-28T06:01:08+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
