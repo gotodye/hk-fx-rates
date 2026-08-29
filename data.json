@@ -343,7 +343,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
-      "raw_ref": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.99422-6/788414930_2551341072006208_4386590670397717532_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=atEFR-qySwEQ7kNvwHkHI8h&_nc_oc=Adr-qaVPM-Px5k9BTOJTop0s8hHUCMpEzDoQyVYtn4WHazYi_MJP3W_Mv4nEKpaya2c&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=jp_IdKJcx9Q0N3BsNfw6Nw&_nc_ss=7c289&oh=00_AQIFHLCLUdh1oktzcYnYGNstrUhRWBSY8ltapCj8rUFI3w&oe=6A98C88A",
+      "raw_ref": "https://scontent.fruh2-2.fna.fbcdn.net/v/t39.99422-6/788414930_2551341072006208_4386590670397717532_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=atEFR-qySwEQ7kNvwG3q6Ao&_nc_oc=Adoi5qzlJOS_GXKSwUeD2UqwEF4QJEMJJiYAtIrQG4tuJVOxaotMqi9c3kfOgGECLlk&_nc_zt=14&_nc_ht=scontent.fruh2-2.fna&_nc_gid=j8_AbMcBj08rOJAQ4GmBIQ&_nc_ss=7c289&oh=00_AQJunO8bntxTEpWOgHCWfsTUW5kA_7tNxH2MLo-DlVzTmg&oe=6A9900CA",
       "source_rate": 2253.0,
       "status": "expired (source changed)",
       "wrong_rate": 2260.0
@@ -369,7 +369,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-08-29T15:01:00+00:00",
+  "generated_at": "2026-08-29T17:13:21+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1402,7 +1402,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-08-29T15:01:00+00:00",
+      "captured_at": "2026-08-29T17:13:21+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1428,20 +1428,20 @@
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-08-29T15:01:00+00:00",
+      "captured_at": "2026-08-29T17:13:21+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; 29/08/2026 10:10; Kurs Kirim: 2253, Kurs Tukar: 2190",
+      "note": "vision OCR; 29/08/2026 10:10; Kurs Kirim: 2253 (Kurs Tukar: 2190)",
       "promo": null,
       "rate": 2253.0,
-      "raw_ref": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.99422-6/788414930_2551341072006208_4386590670397717532_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=atEFR-qySwEQ7kNvwHkHI8h&_nc_oc=Adr-qaVPM-Px5k9BTOJTop0s8hHUCMpEzDoQyVYtn4WHazYi_MJP3W_Mv4nEKpaya2c&_nc_zt=14&_nc_ht=scontent-dfw5-1.xx&_nc_gid=jp_IdKJcx9Q0N3BsNfw6Nw&_nc_ss=7c289&oh=00_AQIFHLCLUdh1oktzcYnYGNstrUhRWBSY8ltapCj8rUFI3w&oe=6A98C88A",
+      "raw_ref": "https://scontent.fruh2-2.fna.fbcdn.net/v/t39.99422-6/788414930_2551341072006208_4386590670397717532_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=atEFR-qySwEQ7kNvwG3q6Ao&_nc_oc=Adoi5qzlJOS_GXKSwUeD2UqwEF4QJEMJJiYAtIrQG4tuJVOxaotMqi9c3kfOgGECLlk&_nc_zt=14&_nc_ht=scontent.fruh2-2.fna&_nc_gid=j8_AbMcBj08rOJAQ4GmBIQ&_nc_ss=7c289&oh=00_AQJunO8bntxTEpWOgHCWfsTUW5kA_7tNxH2MLo-DlVzTmg&oe=6A9900CA",
       "review_reason": null,
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-08-29T15:01:00+00:00",
+      "captured_at": "2026-08-29T17:13:21+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
@@ -1454,12 +1454,12 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-08-29T15:01:00+00:00",
+      "captured_at": "2026-08-29T17:13:21+00:00",
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
       "needs_review": false,
-      "note": "貓熊匯率 standard rate (-0.54% vs 昨日)",
+      "note": "貓熊匯率 standard rate (0.00% vs 昨日)",
       "promo": null,
       "rate": 2237.6847,
       "raw_ref": null,
@@ -1467,7 +1467,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-08-29T15:01:00+00:00",
+      "captured_at": "2026-08-29T17:13:21+00:00",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "manual",
