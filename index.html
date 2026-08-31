@@ -286,7 +286,7 @@ function cellFor(pk,f,t){
       // must NOT show a "time (Nh) ⚠" stale badge like an OCR/scraped value would.
       return {rate:Number(raw),method:"manual",confidence:1.0,note:"manual.json",
               source_url:null,raw_ref:null,promo:null,is_promo_rate:false,
-              needs_review:false,review_reason:null,captured_at:null};
+              needs_review:false,review_reason:null,card_date:null,captured_at:null};
     }
   }
   let cell=DATA.latest[key];
@@ -322,6 +322,19 @@ function staleTs(iso){
   return `<span class="stale" title="${L("staleTip")}">⚠ ${txt} (${age})</span>`;
 }
 
+// An FB rate card can be scraped RECENTLY but PRINTED days ago (the competitor only
+// posted promos since, so the newest standard card is old). captured_at then looks
+// fresh while the number is stale. cardDaysOld compares the card's own printed date
+// (ISO, HKT) to today so the board can flag it honestly. 0 = today/unknown/future.
+function cardDaysOld(iso){
+  if(!iso) return 0;
+  const today=new Date(Date.now()+8*3600000).toISOString().slice(0,10);   // today in HKT
+  const a=Date.parse(iso+"T00:00:00Z"), b=Date.parse(today+"T00:00:00Z");
+  if(isNaN(a)||isNaN(b)) return 0;
+  return Math.max(0, Math.round((b-a)/86400000));
+}
+function fmtCardDate(iso){ const p=(iso||"").split("-"); return p.length===3?`${p[2]}/${p[1]}`:iso; }
+
 // ---- i18n (中 / EN) ----
 const LOCALE={zh:"zh-HK",en:"en-GB"};
 let LANG=localStorage.getItem("fxLang")||"zh";
@@ -348,6 +361,9 @@ const T={
   needsReviewTag:{zh:"⚠ 待人工核對",en:"⚠ Needs review"},
   needsReviewTip:{zh:"系統偵測到這個匯率與同業共識或自身走勢明顯偏離，AI 二次重讀後仍無法確認，可能是 OCR 誤讀或把促銷當標準價。已暫不計入走勢，請核對原始圖片，必要時用『修正』覆蓋。",
     en:"This rate deviates sharply from peer consensus or its own trend and an AI re-read couldn't confirm it — likely an OCR misread or a promo taken as standard. It's held out of the trend; please check the source image and use Fix to override if needed."},
+  cardOld:{zh:"卡片",en:"card"},
+  cardOldTip:{zh:"這個數字來自一張較舊日期的匯率卡——該業者近期可能只發促銷、沒發當天標準卡。雖然剛抓過（更新時間新），但卡片本身是舊的，數字可能已非今天行情，請留意或人工核對。",
+    en:"This figure comes from a rate card printed on an earlier date — the provider may have posted only promos recently, not today's standard card. The scrape is recent but the card itself is old, so the number may be out of date."},
   promoNoStd:{zh:"未取得",en:"Not captured"},
   promoTip:{zh:"另有促銷匯率，點擊查看條件與原始圖片",en:"A promo rate is also running — click for terms and the source image"},
   promoTitle:{zh:"促銷匯率",en:"Promo rate"},
@@ -811,8 +827,15 @@ function render(){
       if(cell&&cell.needs_review){
         reviewBadge=` <span class="needsreview" title="${escA(cell.review_reason||L("needsReviewTip"))}">${L("needsReviewTag")}</span>`;
       }
+      // Old-card flag: the rate was scraped recently but printed on an earlier-dated
+      // card (provider posting only promos). Shows the card's date + how many days old.
+      let cardBadge="";
+      if(cell&&cell.card_date){
+        const dOld=cardDaysOld(cell.card_date);
+        if(dOld>=1) cardBadge=` <span class="stale" title="${L("cardOldTip")}">⚠ ${L("cardOld")} ${fmtCardDate(cell.card_date)} (${dOld}d)</span>`;
+      }
       html+=`<tr class="${p.is_self?'self':(isBest?'best':'')}"><td class="name">${esc(p.name)}${badge}${star}</td>`
-        +`<td class="rate">${rate}${gap}${promoBadge}${reviewBadge}</td><td>${method}</td><td>${conf}</td>`
+        +`<td class="rate">${rate}${gap}${promoBadge}${reviewBadge}${cardBadge}</td><td>${method}</td><td>${conf}</td>`
         +`<td class="muted">${ts}</td><td>${fixBtn}</td></tr>`;
     }
     html+="</tbody></table></div></section>";
