@@ -21,6 +21,13 @@
       "corrected_at": "2026-09-01T02:21:46.544Z",
       "note": "",
       "by": "angelanovita6@gmail.com"
+    },
+    "westernunion|HKD|IDR": {
+      "wrong_rate": 2260.0852236,
+      "correct_rate": 2248.748,
+      "corrected_at": "2026-09-01T05:18:19.879Z",
+      "note": "",
+      "by": "angelanovita6@gmail.com"
     }
   }
 }
