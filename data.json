@@ -360,6 +360,19 @@
       "source_rate": 2260.0,
       "status": "expired (source changed)",
       "wrong_rate": 2255.0
+    },
+    {
+      "applied": true,
+      "correct_rate": 2248.748,
+      "corrected_at": "2026-09-01T05:18:19.879Z",
+      "key": "westernunion|HKD|IDR",
+      "note": "",
+      "pair": "HKD->IDR",
+      "provider": "Western Union",
+      "raw_ref": null,
+      "source_rate": 2260.0852236,
+      "status": "applied",
+      "wrong_rate": 2260.0852236
     }
   ],
   "corridors": [
@@ -369,7 +382,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-09-01T05:14:05+00:00",
+  "generated_at": "2026-09-01T05:18:43+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1460,7 +1473,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-09-01T05:14:05+00:00",
+      "captured_at": "2026-09-01T05:18:43+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -1507,7 +1520,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-09-01T05:14:05+00:00",
+      "captured_at": "2026-09-01T05:18:43+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -1535,7 +1548,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-09-01T05:14:05+00:00",
+      "captured_at": "2026-09-01T05:18:43+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -1555,9 +1568,9 @@
       "is_promo_rate": false,
       "method": "web",
       "needs_review": false,
-      "note": "WU catalog fx_rate (headline digital rate)",
+      "note": "WU catalog fx_rate (headline digital rate); corrected from 2260.09",
       "promo": null,
-      "rate": 2260.0852236,
+      "rate": 2248.748,
       "raw_ref": null,
       "review_reason": null,
       "source_url": "https://www.westernunion.com/hk/en/web/send-money/start"
