@@ -2,9 +2,9 @@
   "_comment": "匯率修正：只要來源仍是錯值就自動套用；來源改變後自動失效。",
   "corrections": {
     "pandaremit|HKD|IDR": {
-      "wrong_rate": 2245.0692,
-      "correct_rate": 2245.4531,
-      "corrected_at": "2026-09-07T02:39:17.116Z",
+      "wrong_rate": 2245.6123,
+      "correct_rate": 2244.404,
+      "corrected_at": "2026-09-07T06:32:56.894Z",
       "note": "",
       "by": "angelanovita6@gmail.com"
     },
