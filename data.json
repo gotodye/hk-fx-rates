@@ -331,7 +331,7 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2230.0675,
+      "source_rate": 2230.1244,
       "status": "expired (source changed)",
       "wrong_rate": 2227.5085
     },
@@ -382,7 +382,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-09-10T23:01:01+00:00",
+  "generated_at": "2026-09-11T00:01:04+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1737,7 +1737,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-09-10T23:01:01+00:00",
+      "captured_at": "2026-09-11T00:01:04+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -1784,7 +1784,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-09-10T23:01:01+00:00",
+      "captured_at": "2026-09-11T00:01:04+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -1798,7 +1798,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-09-10T23:01:01+00:00",
+      "captured_at": "2026-09-11T00:01:04+00:00",
       "card_date": null,
       "confidence": 0.98,
       "is_promo_rate": false,
@@ -1806,13 +1806,13 @@
       "needs_review": false,
       "note": "貓熊匯率 standard rate (0.00% vs 昨日)",
       "promo": null,
-      "rate": 2230.0675,
+      "rate": 2230.1244,
       "raw_ref": null,
       "review_reason": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-09-10T23:01:01+00:00",
+      "captured_at": "2026-09-11T00:01:04+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -1826,7 +1826,7 @@
       "source_url": null
     },
     "westernunion|HKD|IDR": {
-      "captured_at": "2026-09-10T23:01:01+00:00",
+      "captured_at": "2026-09-11T00:01:04+00:00",
       "card_date": null,
       "confidence": 0.98,
       "is_promo_rate": false,
