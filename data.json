@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-09-14T02:55:28+00:00",
+      "new_rate": 2238.8944,
+      "old_rate": 2237.33,
+      "pair": "HKD->IDR",
+      "provider": "We Remit",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-09-14T02:50:01+00:00",
       "new_rate": 2237.0,
       "old_rate": 2230.0,
@@ -311,14 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "Western Union",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-09-04T02:36:12+00:00",
-      "new_rate": 2240.075,
-      "old_rate": 2248.398,
-      "pair": "HKD->IDR",
-      "provider": "AlipayHK",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -382,7 +382,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-09-14T02:50:01+00:00",
+  "generated_at": "2026-09-14T02:55:28+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1698,6 +1698,10 @@
       {
         "rate": 2237.33,
         "t": "2026-09-11T02:36:04+00:00"
+      },
+      {
+        "rate": 2238.8944,
+        "t": "2026-09-14T02:55:28+00:00"
       }
     ],
     "westernunion|HKD|IDR": [
@@ -1773,7 +1777,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-09-14T02:50:01+00:00",
+      "captured_at": "2026-09-14T02:55:28+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -1820,7 +1824,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-09-14T02:50:01+00:00",
+      "captured_at": "2026-09-14T02:55:28+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -1848,7 +1852,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-09-14T02:50:01+00:00",
+      "captured_at": "2026-09-14T02:55:28+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -1856,7 +1860,7 @@
       "needs_review": false,
       "note": "manual.json",
       "promo": null,
-      "rate": 2237.33,
+      "rate": 2238.8944,
       "raw_ref": null,
       "review_reason": null,
       "source_url": null
