@@ -382,7 +382,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-09-16T07:39:19+00:00",
+  "generated_at": "2026-09-16T07:40:15+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1865,7 +1865,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-09-16T07:39:19+00:00",
+      "captured_at": "2026-09-16T07:40:15+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -1912,7 +1912,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-09-16T07:39:19+00:00",
+      "captured_at": "2026-09-16T07:40:15+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -1940,7 +1940,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-09-16T07:39:19+00:00",
+      "captured_at": "2026-09-16T07:40:15+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
