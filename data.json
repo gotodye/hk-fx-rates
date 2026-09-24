@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-09-24T02:21:05+00:00",
+      "new_rate": 2273.205,
+      "old_rate": 2260.124,
+      "pair": "HKD->IDR",
+      "provider": "AlipayHK",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-09-23T09:01:03+00:00",
       "new_rate": 2261.1761,
       "old_rate": 2266.25,
@@ -311,14 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "AlipayHK",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-09-15T02:34:44+00:00",
-      "new_rate": 2244.1013,
-      "old_rate": 2238.8944,
-      "pair": "HKD->IDR",
-      "provider": "We Remit",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -382,7 +382,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-09-24T01:01:06+00:00",
+  "generated_at": "2026-09-24T02:21:05+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -556,6 +556,10 @@
       {
         "rate": 2260.124,
         "t": "2026-09-23T05:26:00+00:00"
+      },
+      {
+        "rate": 2273.205,
+        "t": "2026-09-24T02:21:05+00:00"
       }
     ],
     "bri|HKD|IDR": [
@@ -2029,7 +2033,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-09-24T01:01:06+00:00",
+      "captured_at": "2026-09-24T02:21:05+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2037,7 +2041,7 @@
       "needs_review": false,
       "note": "manual.json",
       "promo": null,
-      "rate": 2260.124,
+      "rate": 2273.205,
       "raw_ref": null,
       "review_reason": null,
       "source_url": null
@@ -2076,7 +2080,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-09-24T01:01:06+00:00",
+      "captured_at": "2026-09-24T02:21:05+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2104,7 +2108,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-09-24T01:01:06+00:00",
+      "captured_at": "2026-09-24T02:21:05+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
