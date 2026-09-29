@@ -362,17 +362,17 @@
       "wrong_rate": 2276.0
     },
     {
-      "applied": false,
-      "correct_rate": 2269.0991,
-      "corrected_at": "2026-09-24T03:15:43.512Z",
+      "applied": true,
+      "correct_rate": 2284.6856,
+      "corrected_at": "2026-09-29T03:09:22.615Z",
       "key": "westernunion|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Western Union",
       "raw_ref": null,
       "source_rate": 2278.1539785,
-      "status": "expired (source changed)",
-      "wrong_rate": 2258.1893172
+      "status": "applied",
+      "wrong_rate": 2278.1539785
     }
   ],
   "corridors": [
@@ -382,7 +382,7 @@
     ]
   ],
   "fb_health": {},
-  "generated_at": "2026-09-29T03:09:00+00:00",
+  "generated_at": "2026-09-29T03:09:39+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -2109,7 +2109,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-09-29T03:09:00+00:00",
+      "captured_at": "2026-09-29T03:09:39+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2156,7 +2156,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-09-29T03:09:00+00:00",
+      "captured_at": "2026-09-29T03:09:39+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2184,7 +2184,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-09-29T03:09:00+00:00",
+      "captured_at": "2026-09-29T03:09:39+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2204,13 +2204,13 @@
       "is_promo_rate": false,
       "method": "web",
       "needs_review": false,
-      "note": "WU standard rate (strike_fx_rate, read via browser session)",
+      "note": "WU standard rate (strike_fx_rate, read via browser session); corrected from 2278.15",
       "promo": {
         "image": null,
         "note": "boosted/new-customer rate",
         "rate": 2289.6019884
       },
-      "rate": 2278.1539785,
+      "rate": 2284.6856,
       "raw_ref": null,
       "review_reason": null,
       "source_url": "https://www.westernunion.com/hk/en/web/send-money/start"
