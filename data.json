@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-09-29T09:12:25+00:00",
+      "new_rate": 2285.0,
+      "old_rate": 2282.0,
+      "pair": "HKD->IDR",
+      "provider": "EUI MONEY",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-09-29T03:24:00+00:00",
       "new_rate": 2286.482,
       "old_rate": 2273.205,
@@ -311,14 +319,6 @@
       "pair": "HKD->IDR",
       "provider": "Western Union",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-09-17T03:01:07+00:00",
-      "new_rate": 2255.6001,
-      "old_rate": 2248.7246,
-      "pair": "HKD->IDR",
-      "provider": "Panda Remit",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -383,7 +383,7 @@
   ],
   "fb_health": {},
   "fb_stale": {},
-  "generated_at": "2026-09-29T08:30:48+00:00",
+  "generated_at": "2026-09-29T09:12:25+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1195,6 +1195,10 @@
       {
         "rate": 2282.0,
         "t": "2026-09-29T03:07:59+00:00"
+      },
+      {
+        "rate": 2285.0,
+        "t": "2026-09-29T09:12:25+00:00"
       }
     ],
     "pandaremit|HKD|IDR": [
@@ -2118,7 +2122,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-09-29T08:30:48+00:00",
+      "captured_at": "2026-09-29T09:12:25+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2165,7 +2169,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-09-29T08:30:48+00:00",
+      "captured_at": "2026-09-29T09:12:25+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2173,7 +2177,7 @@
       "needs_review": false,
       "note": "manual.json",
       "promo": null,
-      "rate": 2282.0,
+      "rate": 2285.0,
       "raw_ref": null,
       "review_reason": null,
       "source_url": null
@@ -2193,7 +2197,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-09-29T08:30:48+00:00",
+      "captured_at": "2026-09-29T09:12:25+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
