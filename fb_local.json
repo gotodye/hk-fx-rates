@@ -1,0 +1,31 @@
+{
+  "heartbeat": "2026-09-29T06:36:09+00:00",
+  "fetch_ok": true,
+  "records": {
+    "chandra|HKD|IDR": {
+      "rate": 2285.0,
+      "note": "vision OCR; 29/09/2026 10:11; Kurs Kirim: 2285 (Kurs Tukar: 2225)",
+      "confidence": 1.0,
+      "source_url": "https://www.facebook.com/ChandraPusat",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/825268270_2106699373270849_1902381747180486042_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=AVVNbp7J__AQ7kNvwESMP4O&_nc_oc=AdqezAHPhwafwOf4yEUnRzz1nxOSscrb4WZEI4xnYbCkCV07P9LehQOoF2Ru9OedY0c&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=HkXh-ZfF_iVecgLG3rLgyQ&_nc_ss=7b289&oh=00_AQOYZRxKjdnc5fgKBykV16DFnNYBadhmK3HgjgTSvqXVYA&oe=6AC1236B",
+      "promo": {
+        "rate": 2290.0,
+        "note": "Special RATE BAPAK PMI / UPDATE KIRIM KURS+ (hanya berlaku untuk kiriman uang dibawah HK$8000 di cabang tertentu Senin-Jumat)",
+        "date_text": "29/9/2026 11:10 am",
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/825293000_1133955755873388_719929680022289352_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=oiKW8lNPNSsQ7kNvwHpjFtN&_nc_oc=AdrvqaZzBwkdCXd76d9cUTIMxFe3U0IgUHrgNvQD7D8rMmn1xirkqUfEB2gzrh-36iU&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=I9vZZimRP3Lzht8VIcJ5sg&_nc_ss=7a289&oh=00_AQNlxHA1TpXBLze03mBUdAnYDrb9CZYfukXMg9zsJ2dj2w&oe=6AC14001"
+      },
+      "is_promo_rate": false,
+      "card_date": "2026-09-29"
+    },
+    "bri|HKD|IDR": {
+      "rate": 2283.0,
+      "note": "vision OCR; 29 September 2026; Kurs Hari Ini",
+      "confidence": 0.95,
+      "source_url": "https://www.facebook.com/briglobalfinancial",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/825278992_1436022105288489_429165377350666387_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fX7de3DmZcoQ7kNvwGh7cvx&_nc_oc=Adpgf66E7C5x9bV_sGIDb2TvFN9vBbcES6pKtT3U7c68dINH0TtbPlffk1XzhlyhIIM&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=-CDGcFyJk5vSOOrcaN-rig&_nc_ss=7a289&oh=00_AQNXDWmj6zyJlXxE5EZNwTLCxqHh4SyMbOeFbVmwib0FaQ&oe=6AC133CF",
+      "promo": null,
+      "is_promo_rate": false,
+      "card_date": null
+    }
+  }
+}
