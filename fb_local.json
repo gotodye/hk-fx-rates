@@ -1,18 +1,18 @@
 {
-  "heartbeat": "2026-10-01T15:00:56+00:00",
+  "heartbeat": "2026-10-01T23:01:05+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2276.0,
-      "note": "vision OCR; 1/10/2026 10:24 am; Kurs Kirim: 2276 (Kurs Tukar: 2220)",
+      "note": "vision OCR; 1/10/2026 10:24 am; Kurs Kirim 2276, Kurs Tukar 2220",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/830350324_28809144775442947_7256294865323647504_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mAp8F0rSe1IQ7kNvwF49Dtt&_nc_oc=AdoF3HHpUy7K9y6J9mwsralKTdZ07aweKfbCnEU4fRp9Wq-m8dUHD-uPJtqzOO3HcH8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=MI8bP1dOrDUxFy0rcmkbAA&_nc_ss=7b289&oh=00_AQMABRKSyZvIMkdpmnnGvUfvFwsQoJueprJDv6Jy4eS0Dw&oe=6AC4354D",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/830350324_28809144775442947_7256294865323647504_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mAp8F0rSe1IQ7kNvwF49Dtt&_nc_oc=AdoF3HHpUy7K9y6J9mwsralKTdZ07aweKfbCnEU4fRp9Wq-m8dUHD-uPJtqzOO3HcH8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=LpvMO6GxtB9IU_oGZbPTRQ&_nc_ss=7b289&oh=00_AQNO-E4jJ2h1xzMgpJqSOnJc3DCbJ9TbPBUphKURJyx-Qw&oe=6AC4A5CD",
       "promo": {
-        "rate": 2277.0,
-        "note": "Special RATE BAPAK PMI / UPDATE KIRIM KURS+ (2277), valid only for remittances under HK$8000 at listed branches Monday-Friday. Kurs Tukar is 2220.",
-        "date_text": "30/9/2026 13:03 pm",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/825268455_2004255173568141_5851973418587106485_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=x7mc4pM6xRMQ7kNvwEP_etT&_nc_oc=AdrSYDSMMgIOf7IwI7TKFzwnNI01oHJGAs0IwuaM-HjdIONvBcl8aHfyETA25c9Mw2U&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=7yK85QyvcHDxgdktefzufw&_nc_ss=7b289&oh=00_AQPL3icZTUUlkkykcXxnLOP6U8HEWaWIYQDqqzLWgu3Pow&oe=6AC43A1E"
+        "rate": 2280.0,
+        "note": "Special RATE BAPAK PMI - UPDATE KIRIM KURS+ 2280 (hanya berlaku untuk kiriman uang dibawah HK$8000 Senin-Jumat). Kurs tukar: 2220.",
+        "date_text": "1/10/2026 11:15 am",
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/828343248_1652992929735601_1605699844953666091_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Uu0T_x7BLGYQ7kNvwGiQxOj&_nc_oc=Adp7zDk1ya_uNo6QfAdfX_G-im46KB4n5V0NLV6Ce4lax-PhoYCunUqtk5fbhXDPZI4&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=zhqCzv9ITarwIT3MmvovQw&_nc_ss=7a289&oh=00_AQO8uOsvf8AFdoJQGX12bgwVYAbvRRUqDFuJBZc0d-F_hQ&oe=6AC49D27"
       },
       "is_promo_rate": false,
       "card_date": "2026-10-01"
@@ -22,7 +22,7 @@
       "note": "vision OCR; 01 Oktober 2026; KURS HARI INI",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/829247093_1568723367798677_3337138353568649324_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SEQyKvrLyc8Q7kNvwFrzaHm&_nc_oc=Adp2jdoBv7EwAdfM-k82I1wfIAlb35UuTAIdLvP_icfV95MWd9Zovmvso8GOumavEsA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=WfhU7YQECGnu8gbU7zlEEQ&_nc_ss=7b289&oh=00_AQOt8JPd7V8sQEFoKMSA05CR9GDl0_yD5yCS9J5K-AeVlw&oe=6AC4498B",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/829247093_1568723367798677_3337138353568649324_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SEQyKvrLyc8Q7kNvwFrzaHm&_nc_oc=Adp2jdoBv7EwAdfM-k82I1wfIAlb35UuTAIdLvP_icfV95MWd9Zovmvso8GOumavEsA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=sSeTC0g5FvEpMJ19TlFolw&_nc_ss=7b289&oh=00_AQMRUzhXTKQUWq2QUuYv3wYXRkEsvEwb1laNdzIuEN8EHw&oe=6AC4BA0B",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null
