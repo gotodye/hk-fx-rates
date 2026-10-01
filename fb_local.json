@@ -1,5 +1,5 @@
 {
-  "heartbeat": "2026-10-01T03:30:51+00:00",
+  "heartbeat": "2026-10-01T04:00:48+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
@@ -7,22 +7,22 @@
       "note": "vision OCR; 1/10/2026 10:24 am; Kurs Kirim: 2276 (Kurs Tukar: 2220)",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/830350324_28809144775442947_7256294865323647504_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mAp8F0rSe1IQ7kNvwF49Dtt&_nc_oc=AdoF3HHpUy7K9y6J9mwsralKTdZ07aweKfbCnEU4fRp9Wq-m8dUHD-uPJtqzOO3HcH8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=ba4VYTXE_oDh6FTFYyQVuQ&_nc_ss=7a289&oh=00_AQNvglUOeEzHhuP1oiudjy2UXFZ8CDcK_znEfCCzy9msmg&oe=6AC38C8D",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/830350324_28809144775442947_7256294865323647504_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mAp8F0rSe1IQ7kNvwF49Dtt&_nc_oc=AdoF3HHpUy7K9y6J9mwsralKTdZ07aweKfbCnEU4fRp9Wq-m8dUHD-uPJtqzOO3HcH8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=42H3nob4wnx4BGgvNpsTqg&_nc_ss=7b289&oh=00_AQNhW18mUggU4zQTjxLoRES7JpdRhYY-tDapIT6Wu5u8eg&oe=6AC3C4CD",
       "promo": {
-        "rate": 2277.0,
-        "note": "Special RATE BAPAK PMI / UPDATE KIRIM KURS+ 2277 (hanya berlaku untuk kiriman dibawah HK$8000 di cabang tertentu Senin-Jumat); Kurs Tukar adalah 2220",
-        "date_text": "30/9/2026 13:03 pm",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/825268455_2004255173568141_5851973418587106485_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DGyZg8rsYVQQ7kNvwFtisoV&_nc_oc=AdpylFOjGd-NjNkA6nzcY_zlAiOx_olMGqvnbvWCE8qa4BNc20cEvvubbSp0kR4fqM4&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=JrDNCUtYeDh_cCLxNFmMhg&_nc_ss=7b289&oh=00_AQOODsYjax9c_8Z3vmpMl02HoV9m67zjeasu2lUvH28uvg&oe=6AC3915E"
+        "rate": 2280.0,
+        "note": "Special RATE BAPAK PMI - UPDATE KIRIM KURS+ 2280, only valid for transfers under HK$8000 at specified branches Monday-Friday",
+        "date_text": "1/10/2026 11:15 am",
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/828343248_1652992929735601_1605699844953666091_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=P0mPgxnLfokQ7kNvwHfWH_S&_nc_oc=AdqDivwPFpTPus1fWkrQ6JDsJ8hRFz2Qb5d689HbQdeVE19ToZbgS3JMhLK2PR4ue4U&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=j8CEK0nYBK6GvTxTy7Uu1A&_nc_ss=7a289&oh=00_AQN-jqxZrgGBz8D5k9J_omF-Iw-ZGIlDZt_X5GENc8twYQ&oe=6AC3BC27"
       },
       "is_promo_rate": false,
       "card_date": "2026-10-01"
     },
     "bri|HKD|IDR": {
       "rate": 2275.0,
-      "note": "vision OCR; 01 Oktober 2026; Kurs Hari Ini",
+      "note": "vision OCR; 01 Oktober 2024; Kurs Hari Ini",
       "confidence": 0.95,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/829247093_1568723367798677_3337138353568649324_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SEQyKvrLyc8Q7kNvwFrzaHm&_nc_oc=Adp2jdoBv7EwAdfM-k82I1wfIAlb35UuTAIdLvP_icfV95MWd9Zovmvso8GOumavEsA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=jULl2iuzYf6a1hxbLguNlg&_nc_ss=7a289&oh=00_AQPVIVwEMM3x5SvmpMBXVFyqKhiYt2Z0bxcusikYD-OYXQ&oe=6AC3A0CB",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/829247093_1568723367798677_3337138353568649324_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SEQyKvrLyc8Q7kNvwFrzaHm&_nc_oc=Adp2jdoBv7EwAdfM-k82I1wfIAlb35UuTAIdLvP_icfV95MWd9Zovmvso8GOumavEsA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=DzGq_tpSSdFp_cxvQbuQYQ&_nc_ss=7a289&oh=00_AQOKrc8h90n5xfQKB7dKpMyzMJjf6ur_WT24aDvm-EdrVw&oe=6AC3A0CB",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null
