@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "changed_at": "2026-10-02T05:24:58+00:00",
+      "new_rate": 2268.64,
+      "old_rate": 2274.009,
+      "pair": "HKD->IDR",
+      "provider": "AlipayHK",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-10-02T05:23:48+00:00",
       "new_rate": 2277.606,
       "old_rate": 2279.86,
@@ -311,19 +319,11 @@
       "pair": "HKD->IDR",
       "provider": "EUI MONEY",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-09-22T07:04:36+00:00",
-      "new_rate": 2269.92,
-      "old_rate": 2270.45,
-      "pair": "HKD->IDR",
-      "provider": "We Remit",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2272.9007,
       "corrected_at": "2026-10-02T05:23:33.601Z",
       "key": "pandaremit|HKD|IDR",
@@ -331,12 +331,12 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2272.9297,
-      "status": "applied",
+      "source_rate": 2272.9007,
+      "status": "expired (source changed)",
       "wrong_rate": 2272.9297
     },
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2272.0,
       "corrected_at": "2026-10-02T05:21:48.680Z",
       "key": "chandra|HKD|IDR",
@@ -344,8 +344,8 @@
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/829555688_1024419213990745_6602869476255123161_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NmGosT6BdX8Q7kNvwGzVC3h&_nc_oc=Adp6T4gLulFHX3VTexX4qmhhx1lXlQWVhPv-toq7rfYO6LBJ1KbP88dbV4aWiCU8sTM&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=f-it7MPHI3n2LdxqKw2bMQ&_nc_ss=7b289&oh=00_AQMPTfgqx7ZMvsHpfzfS4wwUSNmDrYF8p2KrUr4FMCsBBA&oe=6AC50946",
-      "source_rate": 2275.0,
-      "status": "applied",
+      "source_rate": 2272.0,
+      "status": "expired (source changed)",
       "wrong_rate": 2275.0
     },
     {
@@ -384,7 +384,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-10-02T05:23:48+00:00",
+  "generated_at": "2026-10-02T05:24:58+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -574,6 +574,10 @@
       {
         "rate": 2274.009,
         "t": "2026-10-02T02:53:21+00:00"
+      },
+      {
+        "rate": 2268.64,
+        "t": "2026-10-02T05:24:58+00:00"
       }
     ],
     "bri|HKD|IDR": [
@@ -2227,7 +2231,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-02T05:23:48+00:00",
+      "captured_at": "2026-10-02T05:24:58+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2235,7 +2239,7 @@
       "needs_review": false,
       "note": "manual.json",
       "promo": null,
-      "rate": 2274.009,
+      "rate": 2268.64,
       "raw_ref": null,
       "review_reason": null,
       "source_url": null
@@ -2274,7 +2278,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-02T05:23:48+00:00",
+      "captured_at": "2026-10-02T05:24:58+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2302,7 +2306,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-02T05:23:48+00:00",
+      "captured_at": "2026-10-02T05:24:58+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
