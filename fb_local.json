@@ -1,28 +1,28 @@
 {
-  "heartbeat": "2026-10-02T04:30:52+00:00",
+  "heartbeat": "2026-10-02T05:00:50+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2275.0,
-      "note": "vision OCR; 2/10/2026 10:52; Kurs Kirim: 2275",
+      "note": "vision OCR; 2/10/2026 10:52; Kurs Kirim",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/829555688_1024419213990745_6602869476255123161_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NmGosT6BdX8Q7kNvwGzVC3h&_nc_oc=Adp6T4gLulFHX3VTexX4qmhhx1lXlQWVhPv-toq7rfYO6LBJ1KbP88dbV4aWiCU8sTM&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=6aicQ38vB0GyyQylND_PJg&_nc_ss=7b289&oh=00_AQOMUdC81OQRaMk6R1ZVnlebgVxHopkQb4txUdgV6xQilw&oe=6AC50946",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/829555688_1024419213990745_6602869476255123161_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NmGosT6BdX8Q7kNvwGzVC3h&_nc_oc=Adp6T4gLulFHX3VTexX4qmhhx1lXlQWVhPv-toq7rfYO6LBJ1KbP88dbV4aWiCU8sTM&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=f-it7MPHI3n2LdxqKw2bMQ&_nc_ss=7b289&oh=00_AQMPTfgqx7ZMvsHpfzfS4wwUSNmDrYF8p2KrUr4FMCsBBA&oe=6AC50946",
       "promo": {
         "rate": 2278.0,
-        "note": "Special RATE BAPAK PMI - UPDATE KURS+ KIRIM 2278, hanya berlaku untuk kiriman uang di bawah HK$8000 di cabang tertentu Senin-Jumat",
+        "note": "Special RATE BAPAK PMI / UPDATE KIRIM KURS+ (berlaku untuk kiriman uang dibawah HK$8000)",
         "date_text": "2/10/2026 11:49 am",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/831355094_2006924799975879_7480521994674372880_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zRnZpbA69VkQ7kNvwF3GBJ7&_nc_oc=AdrjIyylJ9N1eW7novpi4CMUBaaAmqMDUZ7ugRvcVb2KQK5o8QN8bKQPHR2kjC2ABKI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=30bPbqBehY69DC6IwKCItw&_nc_ss=7a289&oh=00_AQPHc5kgjgWCPIIWrAIHa0dqBns5WXbL96bciOKXpQZMGA&oe=6AC50A46"
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/831355094_2006924799975879_7480521994674372880_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zRnZpbA69VkQ7kNvwF3GBJ7&_nc_oc=AdrjIyylJ9N1eW7novpi4CMUBaaAmqMDUZ7ugRvcVb2KQK5o8QN8bKQPHR2kjC2ABKI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Z6VZfyF5_1Q1-WvQSZ8aTw&_nc_ss=7a289&oh=00_AQObpJxM1yJJZTXBgb7dGrEDffDJR-LgRCnl64nZpLMyGA&oe=6AC50A46"
       },
       "is_promo_rate": false,
       "card_date": "2026-10-02"
     },
     "bri|HKD|IDR": {
       "rate": 2282.0,
-      "note": "vision OCR; 02 Oktober 2024; KURS HARI INI",
-      "confidence": 0.99,
+      "note": "vision OCR; 02 Oktober 2026; KURS HARI INI",
+      "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/833852901_1068494399278543_3684947714779875801_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=e5GcwdT6dlYQ7kNvwGgwMEu&_nc_oc=Adr5Ej1LxBardcF-mbuYbulg8cuz83cB2aUCPrAHXmIfnhbDPuGnmWwRazCUO2SX78c&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=SMydaN66c_tq_0hdTMOiJQ&_nc_ss=7a289&oh=00_AQPeZbW8b3jFD4VZfZp7z73FFF4eJO7rSNPQTYQNuBX9wQ&oe=6AC51951",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/833852901_1068494399278543_3684947714779875801_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=e5GcwdT6dlYQ7kNvwGgwMEu&_nc_oc=Adr5Ej1LxBardcF-mbuYbulg8cuz83cB2aUCPrAHXmIfnhbDPuGnmWwRazCUO2SX78c&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=ZeCsg0YC5t_gGvuTH0D26Q&_nc_ss=7a289&oh=00_AQPbRGCePvGZJXCEmU2LWpiMaOPD38e1dVEoMfK48wAYsg&oe=6AC51951",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null
