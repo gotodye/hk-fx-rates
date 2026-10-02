@@ -1,28 +1,28 @@
 {
-  "heartbeat": "2026-10-02T14:30:58+00:00",
+  "heartbeat": "2026-10-02T15:00:56+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2272.0,
-      "note": "vision OCR; 2/10/2026 13:16 am; Kurs Kirim: 2272 (Kurs Tukar: 2225)",
-      "confidence": 0.95,
+      "note": "vision OCR; 2/10/2026 13:16 am; Kurs Kirim",
+      "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/831492650_2154421031812063_1871502970563147993_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5XbaM3GmEKQQ7kNvwGp9ByS&_nc_oc=AdqwhSgckbBiAqDaarjAWJG8ao6vONbisY3HEtyoyG5pwWUCkmitoGJWShQKUXpqO8E&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=r35aUCNWKiZRwmu5KhWvJw&_nc_ss=7b289&oh=00_AQNBkLTLbtOc9qDoFhhZ_3HWhWiTim7f9EzK7zpPetitwQ&oe=6AC59EFF",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/831492650_2154421031812063_1871502970563147993_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5XbaM3GmEKQQ7kNvwGp9ByS&_nc_oc=AdqwhSgckbBiAqDaarjAWJG8ao6vONbisY3HEtyoyG5pwWUCkmitoGJWShQKUXpqO8E&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=AmYUVde3a_r4aYmn3LpxYg&_nc_ss=7b289&oh=00_AQOzFuep7n7C_2ea7tEfTcad9Mu9tImfVeiZBdUt93reYQ&oe=6AC59EFF",
       "promo": {
         "rate": 2276.0,
-        "note": "Rate Cantik / Kurs Kirim 2276 (hanya berlaku untuk kiriman uang di bawah HK$8000 pada hari Sabtu & Minggu)",
-        "date_text": "3/10/2026 4/10/2026 8:00 am",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/831224130_935565575867372_3157332494462235900_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LHQXtKky2CIQ7kNvwF4_pmA&_nc_oc=AdqWHfL7C7n4rtGlZ62WA8i5pnvTHFsosP5pGkcgTb0-slawamVbPRbRVFEVGoSwTDo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Dm8-Jh8Dd-RPcc_-PLBlbw&_nc_ss=7a289&oh=00_AQOjUBHiH25XE6hHsqkWysTwYf1YGZKyHW_uKNlVRcyyFA&oe=6AC5A02E"
+        "note": "Kurs Kirim Rate Cantik: 2276 (berlaku untuk kiriman di bawah HK$8000 pada Sabtu & Minggu di cabang tertentu); Kurs Tukar Cantik: 2220",
+        "date_text": "3/10/2026 - 4/10/2026 8:00 am",
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/831224130_935565575867372_3157332494462235900_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LHQXtKky2CIQ7kNvwF4_pmA&_nc_oc=AdqWHfL7C7n4rtGlZ62WA8i5pnvTHFsosP5pGkcgTb0-slawamVbPRbRVFEVGoSwTDo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=3fZd6EP8Zns9FO4T3KzOdA&_nc_ss=7a289&oh=00_AQP9GU3eUzgsWOViSSLtlb8_0a7_KobHSvqFSvJ8WoqgDQ&oe=6AC5A02E"
       },
       "is_promo_rate": false,
       "card_date": "2026-10-02"
     },
     "bri|HKD|IDR": {
       "rate": 2275.0,
-      "note": "vision OCR; 02 Oktober 2026; Kurs Hari Ini",
+      "note": "vision OCR; 02 Oktober 2026; Kurs Hari Ini 2275",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/829672223_2153264545570288_57602784258613524_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Ud__JDg5834Q7kNvwFKWZgb&_nc_oc=AdoOKC01w3qnSIkcRXJT5bqoQWKGt-4OAwoOcwfjDNvbQXvGYOPytt9EVP8Fmu1Rs2A&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=M3hrWt8x0ideyyIKVNFBVg&_nc_ss=7b289&oh=00_AQPH1wzLKXMp4OtkuczNTSj5hAI2UqclJvM2DilasR9gWQ&oe=6AC59CCF",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/829672223_2153264545570288_57602784258613524_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Ud__JDg5834Q7kNvwFKWZgb&_nc_oc=AdoOKC01w3qnSIkcRXJT5bqoQWKGt-4OAwoOcwfjDNvbQXvGYOPytt9EVP8Fmu1Rs2A&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Fa6bZmIuKmMZ4coEfgVgow&_nc_ss=7b289&oh=00_AQNjcRpKNxkc079JUJEu--pnB3PhUFDpctkbTBRRLKc1pA&oe=6AC59CCF",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null
