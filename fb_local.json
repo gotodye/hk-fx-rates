@@ -1,18 +1,18 @@
 {
-  "heartbeat": "2026-10-03T11:30:49+00:00",
+  "heartbeat": "2026-10-03T12:00:48+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2273.0,
-      "note": "vision OCR; 3/10/2026 09:51 am; Kurs Kirim 2273, Kurs Tukar 2220",
+      "note": "vision OCR; 3/10/2026 09:51 am; Kurs Kirim: 2273",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/830513840_1965601071040736_9039010716111401815_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=YsbQPCvA_QUQ7kNvwFD47W6&_nc_oc=AdoQLk0AbLylzmysAUeQpigNgDQX4uzud80oZICE0fsw0uLbWFugM0bCnvOlWGsddjI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Zt33wYbqLn8oZU-NVo78rQ&_nc_ss=7a289&oh=00_AQPyISpXDkxwhZXrYCfquKe1UDpe9JH_aZzasjF12Rn2cg&oe=6AC6B1C5",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/830513840_1965601071040736_9039010716111401815_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=YsbQPCvA_QUQ7kNvwFD47W6&_nc_oc=AdoQLk0AbLylzmysAUeQpigNgDQX4uzud80oZICE0fsw0uLbWFugM0bCnvOlWGsddjI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Hrrk52xCn9ZsXl38qOQH-Q&_nc_ss=7a289&oh=00_AQMog8v2bFIBLEdYkBckZQ6IvHDzGFf-91sbtyzEJS27Sg&oe=6AC6B1C5",
       "promo": {
         "rate": 2276.0,
-        "note": "Rate Cantik / Kurs Kirim 2276 (hanya berlaku untuk kiriman uang di bawah HK$8000 pada hari Sabtu & Minggu)",
+        "note": "Rate Cantik 'KURS KIRIM' of 2276 restricted to remittances under HK$8000 on Saturday and Sunday at specified branches.",
         "date_text": "3/10/2026 4/10/2026 8:00 am",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/831224130_935565575867372_3157332494462235900_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LHQXtKky2CIQ7kNvwF4_pmA&_nc_oc=AdqWHfL7C7n4rtGlZ62WA8i5pnvTHFsosP5pGkcgTb0-slawamVbPRbRVFEVGoSwTDo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=LfPTKtWFJ_0KK5o9qPVEcw&_nc_ss=7b289&oh=00_AQOuuYyE9XKqcFbk7dO7X1AGgepKmntU78Z2PbtGFi8FXw&oe=6AC6B96E"
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/831224130_935565575867372_3157332494462235900_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LHQXtKky2CIQ7kNvwF4_pmA&_nc_oc=AdqWHfL7C7n4rtGlZ62WA8i5pnvTHFsosP5pGkcgTb0-slawamVbPRbRVFEVGoSwTDo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=d8om7NdI9TXpmH5BXyCjiA&_nc_ss=7b289&oh=00_AQOHA63pd7-hiO0JdCz35mpT2LQsobv4My6lk7-vPS45Dw&oe=6AC6B96E"
       },
       "is_promo_rate": false,
       "card_date": "2026-10-03"
@@ -20,9 +20,9 @@
     "bri|HKD|IDR": {
       "rate": 2277.0,
       "note": "vision OCR; 02 Oktober 2026; Kurs Hari Ini",
-      "confidence": 0.99,
+      "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/833412611_2110985012885473_191131892987130087_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4hqcrH-0RTsQ7kNvwHkNcX2&_nc_oc=AdptvzSLR57J1sS9UVaY6LHbGSJoB6fAT0A_6irpxGcsERlVibHHcqe9cn393qZjj5c&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=XMZmzbgpH2y7nnJLL0pJnQ&_nc_ss=7b289&oh=00_AQNoLoyQSvbFmNcxM7HVIfFWNJGOZKmkxQTX-_r9nJQweg&oe=6AC6CF01",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/833412611_2110985012885473_191131892987130087_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4hqcrH-0RTsQ7kNvwHkNcX2&_nc_oc=AdptvzSLR57J1sS9UVaY6LHbGSJoB6fAT0A_6irpxGcsERlVibHHcqe9cn393qZjj5c&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=0EqLBCDArLFvmlGKA9SLVQ&_nc_ss=7b289&oh=00_AQMJUSu3ilXn4kbII_IqFrJCy_AtGb0QJ8z4Pg7queUqFQ&oe=6AC6CF01",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null
