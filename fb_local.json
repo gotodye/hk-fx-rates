@@ -1,18 +1,18 @@
 {
-  "heartbeat": "2026-10-04T08:00:56+00:00",
+  "heartbeat": "2026-10-04T08:30:43+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2273.0,
-      "note": "vision OCR; 3/10/2026 09:51 am; Kurs Kirim: 2273 (Kurs Tukar: 2220)",
-      "confidence": 0.99,
+      "note": "vision OCR; 3/10/2026 09:51 am; Kurs Kirim",
+      "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/830513840_1965601071040736_9039010716111401815_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=YsbQPCvA_QUQ7kNvwFD47W6&_nc_oc=AdoQLk0AbLylzmysAUeQpigNgDQX4uzud80oZICE0fsw0uLbWFugM0bCnvOlWGsddjI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=FsYfKNfKsHpbj4zThv8osA&_nc_ss=7a289&oh=00_AQMeAOF0Xje8j2lZbSv4gpti3JDAaBKpGMR7wgFG7lKqOQ&oe=6AC7CB05",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/830513840_1965601071040736_9039010716111401815_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=YsbQPCvA_QUQ7kNvwFD47W6&_nc_oc=AdoQLk0AbLylzmysAUeQpigNgDQX4uzud80oZICE0fsw0uLbWFugM0bCnvOlWGsddjI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=nKiTyceiTvcWBAh5-C19JA&_nc_ss=7a289&oh=00_AQPCQAVOApDPvC2Mp5loa1Z6xd4CFhmh6ZmnddowLzTVmw&oe=6AC7CB05",
       "promo": {
         "rate": 2276.0,
-        "note": "Rate Cantik 'KURS KIRIM' 2276 (hanya berlaku untuk kiriman di bawah HK$8000 di cabang tertentu pada hari Sabtu & Minggu)",
+        "note": "Labeled as 'RATE CANTIK' - 'KURS KIRIM', restricted to remittances under HK$8000 on Saturday and Sunday at specified branches.",
         "date_text": "3/10/2026 4/10/2026 8:00 am",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/831224130_935565575867372_3157332494462235900_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LHQXtKky2CIQ7kNvwF4_pmA&_nc_oc=AdqWHfL7C7n4rtGlZ62WA8i5pnvTHFsosP5pGkcgTb0-slawamVbPRbRVFEVGoSwTDo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=tzJxXNDaI81L1jDEKU5Clg&_nc_ss=7b289&oh=00_AQPOF7txyNWti7_UHOMw4JojvpsfckhiMLozHFt55H_KlA&oe=6AC7D2AE"
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/831224130_935565575867372_3157332494462235900_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LHQXtKky2CIQ7kNvwF4_pmA&_nc_oc=AdqWHfL7C7n4rtGlZ62WA8i5pnvTHFsosP5pGkcgTb0-slawamVbPRbRVFEVGoSwTDo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=P8ScbvcVv62cY6fNOmz2NQ&_nc_ss=7b289&oh=00_AQP3wIoQmA7bMo1UoW6pEtgx0tswD3podSwNI7NGu5pLiw&oe=6AC7D2AE"
       },
       "is_promo_rate": false,
       "card_date": "2026-10-03"
@@ -22,7 +22,7 @@
       "note": "vision OCR; 04 Oktober 2026; KURS HARI INI",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/833276768_4092678141036443_6729246578680409481_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=QK9nMepfAhoQ7kNvwEL7Af1&_nc_oc=AdpzLVowShXRbGpBGmO7iwcXPPWz8oFwgsvUYqeJOOQG4p4iimZWsr5NM5PQw9tgmm0&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=wkEhgtNvsSsrAawxcJRl1g&_nc_ss=7a289&oh=00_AQNjtRCSXwxA5nciRDzTY6CUPpG4lTH8ANSaU4fhaiLoHg&oe=6AC7BFD2",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/833276768_4092678141036443_6729246578680409481_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=QK9nMepfAhoQ7kNvwEL7Af1&_nc_oc=AdpzLVowShXRbGpBGmO7iwcXPPWz8oFwgsvUYqeJOOQG4p4iimZWsr5NM5PQw9tgmm0&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=qubqidr2lWRN98nkUwEfYw&_nc_ss=7a289&oh=00_AQOGy2j-nE8oIQi2ZktWtzA_tj7Xfe290GzNLrc0ytJA0w&oe=6AC7F812",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null
