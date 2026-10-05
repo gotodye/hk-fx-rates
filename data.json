@@ -9,6 +9,14 @@
       "to_ccy": "IDR"
     },
     {
+      "changed_at": "2026-10-05T04:00:59+00:00",
+      "new_rate": 2276.9723,
+      "old_rate": 2272.5831,
+      "pair": "HKD->IDR",
+      "provider": "Panda Remit",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-10-05T02:52:23+00:00",
       "new_rate": 2270.978,
       "old_rate": 2272.372,
@@ -31,6 +39,246 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-03T02:30:50+00:00",
+      "new_rate": 2277.0,
+      "old_rate": 2247.0,
+      "pair": "HKD->IDR",
+      "provider": "BRI Remittance",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-02T23:00:59+00:00",
+      "new_rate": 2258.8201,
+      "old_rate": 2271.3703,
+      "pair": "HKD->IDR",
+      "provider": "Panda Remit",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-02T08:37:23+00:00",
+      "new_rate": 2272.372,
+      "old_rate": 2277.606,
+      "pair": "HKD->IDR",
+      "provider": "We Remit",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-02T08:36:40+00:00",
+      "new_rate": 2272.0,
+      "old_rate": 2279.0,
+      "pair": "HKD->IDR",
+      "provider": "EUI MONEY",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-02T05:24:58+00:00",
+      "new_rate": 2268.64,
+      "old_rate": 2274.009,
+      "pair": "HKD->IDR",
+      "provider": "AlipayHK",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-02T05:23:48+00:00",
+      "new_rate": 2279.0,
+      "old_rate": 2277.0,
+      "pair": "HKD->IDR",
+      "provider": "EUI MONEY",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-02T05:23:48+00:00",
+      "new_rate": 2277.606,
+      "old_rate": 2279.86,
+      "pair": "HKD->IDR",
+      "provider": "We Remit",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-02T04:01:01+00:00",
+      "new_rate": 2275.2694,
+      "old_rate": 2281.5757,
+      "pair": "HKD->IDR",
+      "provider": "Panda Remit",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-02T03:01:01+00:00",
+      "new_rate": 2275.0,
+      "old_rate": 2252.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-02T02:53:21+00:00",
+      "new_rate": 2274.009,
+      "old_rate": 2272.826,
+      "pair": "HKD->IDR",
+      "provider": "AlipayHK",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-02T02:53:21+00:00",
+      "new_rate": 2277.0,
+      "old_rate": 2275.0,
+      "pair": "HKD->IDR",
+      "provider": "EUI MONEY",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-01T08:42:21+00:00",
+      "new_rate": 2275.0,
+      "old_rate": 2272.0,
+      "pair": "HKD->IDR",
+      "provider": "EUI MONEY",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-01T08:42:21+00:00",
+      "new_rate": 2278.733,
+      "old_rate": 2272.7412,
+      "pair": "HKD->IDR",
+      "provider": "We Remit",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-01T04:00:58+00:00",
+      "new_rate": 2279.0526,
+      "old_rate": 2270.9262,
+      "pair": "HKD->IDR",
+      "provider": "Panda Remit",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-01T04:00:58+00:00",
+      "new_rate": 2273.4886092,
+      "old_rate": 2266.6463814,
+      "pair": "HKD->IDR",
+      "provider": "Western Union",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-01T02:48:35+00:00",
+      "new_rate": 2272.0,
+      "old_rate": 2279.0,
+      "pair": "HKD->IDR",
+      "provider": "EUI MONEY",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-01T02:48:35+00:00",
+      "new_rate": 2272.7412,
+      "old_rate": 2274.576,
+      "pair": "HKD->IDR",
+      "provider": "We Remit",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-30T03:31:34+00:00",
+      "new_rate": 2268.1046842,
+      "old_rate": 2278.5024955,
+      "pair": "HKD->IDR",
+      "provider": "Western Union",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-30T02:34:48+00:00",
+      "new_rate": 2272.826,
+      "old_rate": 2286.482,
+      "pair": "HKD->IDR",
+      "provider": "AlipayHK",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-29T03:24:00+00:00",
+      "new_rate": 2286.482,
+      "old_rate": 2273.205,
+      "pair": "HKD->IDR",
+      "provider": "AlipayHK",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-25T04:00:53+00:00",
+      "new_rate": 2275.3767787,
+      "old_rate": 2259.0341169,
+      "pair": "HKD->IDR",
+      "provider": "Western Union",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-23T04:00:55+00:00",
+      "new_rate": 2259.0341169,
+      "old_rate": 2267.7885626,
+      "pair": "HKD->IDR",
+      "provider": "Western Union",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-05T02:31:02+00:00",
+      "new_rate": 2247.0,
+      "old_rate": 2252.0,
+      "pair": "HKD->IDR",
+      "provider": "BRI Remittance",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-04T07:01:09+00:00",
+      "new_rate": 2252.0,
+      "old_rate": 2257.0,
+      "pair": "HKD->IDR",
+      "provider": "BRI Remittance",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-04T06:00:52+00:00",
+      "new_rate": 2257.0,
+      "old_rate": 2262.0,
+      "pair": "HKD->IDR",
+      "provider": "BRI Remittance",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-04T05:00:56+00:00",
+      "new_rate": 2262.0,
+      "old_rate": 2257.0,
+      "pair": "HKD->IDR",
+      "provider": "BRI Remittance",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-03T06:30:52+00:00",
+      "new_rate": 2252.0,
+      "old_rate": 2259.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-02T04:11:16+00:00",
+      "new_rate": 2260.0,
+      "old_rate": 2266.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-02T03:31:03+00:00",
+      "new_rate": 2266.0,
+      "old_rate": 2260.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-09-02T02:31:01+00:00",
+      "new_rate": 2260.0,
+      "old_rate": 2265.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -43,7 +291,7 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2277.6077,
+      "source_rate": 2277.5786,
       "status": "expired (source changed)",
       "wrong_rate": 2272.5831
     },
@@ -96,7 +344,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-10-05T04:16:36+00:00",
+  "generated_at": "2026-10-05T04:23:24+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1991,7 +2239,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-05T04:16:36+00:00",
+      "captured_at": "2026-10-05T04:23:24+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2005,7 +2253,7 @@
       "source_url": null
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-10-05T04:16:36+00:00",
+      "captured_at": "2026-10-05T04:23:24+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2019,7 +2267,7 @@
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-10-05T04:16:36+00:00",
+      "captured_at": "2026-10-05T04:23:24+00:00",
       "card_date": "2026-10-05",
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2033,7 +2281,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-05T04:16:36+00:00",
+      "captured_at": "2026-10-05T04:23:24+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2047,7 +2295,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-10-05T04:16:36+00:00",
+      "captured_at": "2026-10-05T04:23:24+00:00",
       "card_date": null,
       "confidence": 0.98,
       "is_promo_rate": false,
@@ -2055,13 +2303,13 @@
       "needs_review": false,
       "note": "貓熊匯率 standard rate (+0.83% vs 昨日)",
       "promo": null,
-      "rate": 2277.6077,
+      "rate": 2277.5786,
       "raw_ref": null,
       "review_reason": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-05T04:16:36+00:00",
+      "captured_at": "2026-10-05T04:23:24+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2075,7 +2323,7 @@
       "source_url": null
     },
     "westernunion|HKD|IDR": {
-      "captured_at": "2026-10-05T04:16:36+00:00",
+      "captured_at": "2026-10-05T04:23:24+00:00",
       "card_date": null,
       "confidence": 0.98,
       "is_promo_rate": false,
