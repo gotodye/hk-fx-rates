@@ -1,28 +1,28 @@
 {
-  "heartbeat": "2026-10-05T02:30:52+00:00",
+  "heartbeat": "2026-10-05T03:00:41+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
-      "rate": 2273.0,
-      "note": "vision OCR; 3/10/2026 09:51 am; Kurs Kirim: 2273 (Kurs Tukar: 2220)",
-      "confidence": 0.95,
+      "rate": 2275.0,
+      "note": "vision OCR; 05/10/2026 10:30; Kurs Kirim: 2275",
+      "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/830513840_1965601071040736_9039010716111401815_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=YsbQPCvA_QUQ7kNvwFD47W6&_nc_oc=AdoQLk0AbLylzmysAUeQpigNgDQX4uzud80oZICE0fsw0uLbWFugM0bCnvOlWGsddjI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=c3epB9HWnLeR-4xOELJQNQ&_nc_ss=7a289&oh=00_AQOXzV_RLP-H4vNcnf7Tc4d-l2xgzg0ntwvOwunREbFapA&oe=6AC8E445",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/834962996_2160933324823726_424323748135038018_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UmuRuvy3HEwQ7kNvwH6chnA&_nc_oc=AdrPV0z6jH57BicoGUm7MiqHD7f77qYDFdN7IJqHgn3LuztkDHZ_I4W_eSV717JwiUA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=1PUOCQ_pqBAJqsXOMaauzA&_nc_ss=7a289&oh=00_AQO_UaTWE4erSNZQbe_We1-GWFkpBg6VPaVQkaLg3YNhYQ&oe=6AC8E6D5",
       "promo": {
         "rate": 2276.0,
-        "note": "Rate Cantik / Kurs Kirim 2276 (hanya berlaku untuk kiriman di bawah HK$8000 di cabang tertentu pada hari Sabtu & Minggu)",
-        "date_text": "3/10/2026 4/10/2026 8:00 am",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/831224130_935565575867372_3157332494462235900_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LHQXtKky2CIQ7kNvwF4_pmA&_nc_oc=AdqWHfL7C7n4rtGlZ62WA8i5pnvTHFsosP5pGkcgTb0-slawamVbPRbRVFEVGoSwTDo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=FRFxj3_Znq5nsvS8FUZ3SQ&_nc_ss=7b289&oh=00_AQNh2yEEk_qo35U22oc8SRVKGIceV94557IADFNxfawyAA&oe=6AC8EBEE"
+        "note": "Kurs Kirim Rate Cantik (berlaku untuk kiriman uang di bawah HK$8000 di cabang tertentu pada hari Sabtu & Minggu)",
+        "date_text": "3/10/2026 - 4/10/2026 8:00 am",
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/831224130_935565575867372_3157332494462235900_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LHQXtKky2CIQ7kNvwF4_pmA&_nc_oc=AdqWHfL7C7n4rtGlZ62WA8i5pnvTHFsosP5pGkcgTb0-slawamVbPRbRVFEVGoSwTDo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=tPL7bue3vEEXt5wJVPvU5Q&_nc_ss=7b289&oh=00_AQOYdiTJGh936WqyoOu8XxjpY-3UdTLNFrT8pbGvuhq9bw&oe=6AC8EBEE"
       },
       "is_promo_rate": false,
-      "card_date": "2026-10-03"
+      "card_date": "2026-10-05"
     },
     "bri|HKD|IDR": {
       "rate": 2275.0,
-      "note": "vision OCR; 05 Oktober 2026; Kurs Hari Ini",
-      "confidence": 0.99,
+      "note": "vision OCR; 05 Oktober 2026; KURS HARI INI",
+      "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/833882764_2438673169874531_4627433507762604724_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=k-DcucdymvEQ7kNvwGZ0A-B&_nc_oc=AdrbdnYlD955X22ufJDFBnGX36mybMXuLjlwu-TqzUqb_RZwSr_Mlv1USlImQYKo9Ys&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=sXO7_83I2AW0I7NI3KTWxw&_nc_ss=7a289&oh=00_AQPGirUuAQfDd_j0t7r-Y7rH7zcA2zMvnaEGI5GayYp6FQ&oe=6AC8E88B",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/833882764_2438673169874531_4627433507762604724_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=k-DcucdymvEQ7kNvwGZ0A-B&_nc_oc=AdrbdnYlD955X22ufJDFBnGX36mybMXuLjlwu-TqzUqb_RZwSr_Mlv1USlImQYKo9Ys&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=7tsre3rqlaazC2t1Oxs0Tg&_nc_ss=7b289&oh=00_AQPe_aKk4t9hPvN4GZTQowhCKiZ_UdcgUv6nXL-cFz6HXA&oe=6AC8E88B",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null
