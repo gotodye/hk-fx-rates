@@ -1,31 +1,48 @@
 {
-  "heartbeat": "2026-10-05T08:00:43+00:00",
+  "heartbeat": "2026-10-05T08:30:53+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2275.0,
-      "note": "vision OCR; 05/10/2026 10:30; Kurs Kirim: 2275 (Kurs Tukar: 2220)",
-      "confidence": 0.99,
+      "note": "vision OCR; 05/10/2026 10:30; Kurs Kirim",
+      "confidence": 0.95,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/834962996_2160933324823726_424323748135038018_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UmuRuvy3HEwQ7kNvwH6chnA&_nc_oc=AdrPV0z6jH57BicoGUm7MiqHD7f77qYDFdN7IJqHgn3LuztkDHZ_I4W_eSV717JwiUA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=53sk30cTyEzj6QBzWi6isQ&_nc_ss=7b289&oh=00_AQNxYpg107Ao1-QeHzHahJDIJzwkS5rAYZQlPIuX7ifbqQ&oe=6AC91F15",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/834962996_2160933324823726_424323748135038018_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UmuRuvy3HEwQ7kNvwH6chnA&_nc_oc=AdrPV0z6jH57BicoGUm7MiqHD7f77qYDFdN7IJqHgn3LuztkDHZ_I4W_eSV717JwiUA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=u-2vNSjl5WlOb-NfOngUqg&_nc_ss=7b289&oh=00_AQNN5XTAJG-XqCxip-C318UcW0aBlRqKmzu6OwoVGp4jgw&oe=6AC91F15",
       "promo": {
-        "rate": 2280.0,
-        "note": "Special RATE BAPAK PMI - UPDATE KIRIM KURS+ 2280 (hanya berlaku untuk kiriman uang dibawah HK$8000)",
-        "date_text": "5/10/2026 12:00",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/836298012_1638321424585324_1894769925124634082_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s590x590&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=rBLXahLAhXQQ7kNvwGMwbQ-&_nc_oc=AdrIoNfjnnoaEUbxs8dLyr5AHBIhx3y0OatGW6LbAc0Rw6Ea_ESssczMk8H34hUH2Go&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=DQS2jP1oGyNStpto12LeFg&_nc_ss=7a289&oh=00_AQPfF-Lp-bTI0MloIBLRc5FlaK-G26VxIV5uqAjBwlVfkg&oe=6AC919A7"
+        "rate": 2278.0,
+        "note": "Special RATE BAPAK PMI / UPDATE KURS+ KIRIM (berlaku untuk kiriman uang DIBAWAH HK$8000 di cabang tertentu Senin-Jumat). KURS TUKAR is 2220.",
+        "date_text": "5/10/2026 11:21 am",
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/836515357_1589551668782263_6846999477079905650_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8BcsAFVj2AUQ7kNvwGPR60M&_nc_oc=AdpVJ-JqzdKTm_SIuybSRcEpvEd1m4e7FraMGxLLp63NH6qPO7Ad4iJijTytkHDwq-o&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=u-2vNSjl5WlOb-NfOngUqg&_nc_ss=7b289&oh=00_AQMRAlv9B4F0e3-Uj78UhlvEiLuUYDDQHdz5CR-Z1scQKw&oe=6AC93A5C"
       },
       "is_promo_rate": false,
-      "card_date": "2026-10-05"
+      "card_date": "2026-10-05",
+      "date_conflict": true,
+      "conflict_cards": [
+        {
+          "rate": 2277.0,
+          "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/834284874_944855078243840_7259632360953304717_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s590x590&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ddatFPqq7iEQ7kNvwFmoHNJ&_nc_oc=AdrUGS4Tx3gbsg3e7Ast39Li5xWYbuMoQXzPlwmIACf0ZtK7XxNr9hafW4oqFWgDMqI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=x3z4ntuiZ1_tPp79FoU-tA&_nc_ss=7a289&oh=00_AQNjFWVgqGeQL8R1IFY09NbtK3BAmr6_a2usuhPI5RIOHg&oe=6AC943DB",
+          "card_date": "2026-10-03",
+          "post_date": "2026-10-05"
+        },
+        {
+          "rate": 2275.0,
+          "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/834962996_2160933324823726_424323748135038018_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UmuRuvy3HEwQ7kNvwH6chnA&_nc_oc=AdrPV0z6jH57BicoGUm7MiqHD7f77qYDFdN7IJqHgn3LuztkDHZ_I4W_eSV717JwiUA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=u-2vNSjl5WlOb-NfOngUqg&_nc_ss=7b289&oh=00_AQNN5XTAJG-XqCxip-C318UcW0aBlRqKmzu6OwoVGp4jgw&oe=6AC91F15",
+          "card_date": "2026-10-05",
+          "post_date": "2026-10-05"
+        }
+      ]
     },
     "bri|HKD|IDR": {
       "rate": 2275.0,
-      "note": "vision OCR; 05 Oktober 2024; KURS HARI INI",
+      "note": "vision OCR; 05 Oktober 2024; Kurs Hari Ini",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/833882764_2438673169874531_4627433507762604724_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=k-DcucdymvEQ7kNvwGZ0A-B&_nc_oc=AdrbdnYlD955X22ufJDFBnGX36mybMXuLjlwu-TqzUqb_RZwSr_Mlv1USlImQYKo9Ys&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=rWaS85Frswby3zazbhi_Yw&_nc_ss=7b289&oh=00_AQNzwdNy-O0lUjBkZ0xyJqXhYPXVpKfWWjYBkneDWJfUZg&oe=6AC920CB",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/833882764_2438673169874531_4627433507762604724_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=u2KIVOzrEL4Q7kNvwHW9s6G&_nc_oc=AdqcFrdSNT6cOxwj4nTJ_1DUVWChuSxWlBMqAXgKcgLRtpQ9EWWCCQSzCj434-5iYiE&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=w5_JrU3dbktrfZokUSXvBQ&_nc_ss=7b289&oh=00_AQNdx-3GhL2HVVJgmo3dYedjahoGG-qHFXFpfQZs0nLSwQ&oe=6AC920CB",
       "promo": null,
       "is_promo_rate": false,
-      "card_date": null
+      "card_date": null,
+      "date_conflict": false,
+      "conflict_cards": []
     }
   }
 }
