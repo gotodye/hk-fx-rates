@@ -1,18 +1,18 @@
 {
-  "heartbeat": "2026-10-07T05:23:52+00:00",
+  "heartbeat": "2026-10-07T05:53:37+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2272.0,
-      "note": "vision OCR; 7/10/2026 09:55 am; Kurs Kirim: 2272",
-      "confidence": 1.0,
+      "note": "vision OCR; 7/10/2026 09:55 am; Kurs Kirim: 2272 (Kurs Tukar: 2220)",
+      "confidence": 0.99,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/838579475_1489700069673646_3039074345354340598_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=F7op19-ikEYQ7kNvwFQrPIL&_nc_oc=AdpeMzHxZpLhicEJVEhQt1uhf1S3KCyL1r_1PWfrzzbii6BFMSfQt4JxrvQCIMgByhA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=WpZvOUAhrpJAuo3ZdgIM1Q&_nc_ss=7b289&oh=00_AQPN-HPdT_PjWL84twyCbQpFFrWFLhpDtI4L38BhEEPQnw&oe=6ACB9AF7",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/838579475_1489700069673646_3039074345354340598_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=F7op19-ikEYQ7kNvwFQrPIL&_nc_oc=AdpeMzHxZpLhicEJVEhQt1uhf1S3KCyL1r_1PWfrzzbii6BFMSfQt4JxrvQCIMgByhA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=ZSaXFTo_hpj2hFHZXjSnmQ&_nc_ss=7b289&oh=00_AQMZgmIhcunhx6TSKcdIFa7An343nhG6Ijo3Fus6-kPYyA&oe=6ACB9AF7",
       "promo": {
         "rate": 2275.0,
-        "note": "Special RATE BAPAK PMI / UPDATE KIRIM KURS+ 2275 (hanya berlaku untuk kiriman uang di bawah HK$8000 di cabang tertentu Senin-Jumat)",
+        "note": "Special RATE BAPAK PMI - UPDATE KURS+ KIRIM (hanya berlaku untuk kiriman uang dibawah HK$8000 di cabang tertentu Senin-Jumat)",
         "date_text": "7/10/2026 11:08",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/838196102_1086625613959620_210105242673852724_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8Avy5yoALycQ7kNvwH7JWs3&_nc_oc=AdqIBIp3gl6k02tga9ijcT56rowCwV2cAxMMy75lLRu8NvSCvZlWF2UfPx0zY-6cw40&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=P0ZJXXqJfMTafUorgBTv_w&_nc_ss=7a289&oh=00_AQPlGmPpPCXPWsQBR25di3kJgf6iZCBnTLzAVi9GI3tgNw&oe=6ACB9B24"
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/838196102_1086625613959620_210105242673852724_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8Avy5yoALycQ7kNvwH7JWs3&_nc_oc=AdqIBIp3gl6k02tga9ijcT56rowCwV2cAxMMy75lLRu8NvSCvZlWF2UfPx0zY-6cw40&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=jSf4jXNKsN00gcLAns12pQ&_nc_ss=7a289&oh=00_AQPwJ4whtj0PFmzlVn14BGW0jgNDsZ2JeAb3IajHmQJy6A&oe=6ACB9B24"
       },
       "is_promo_rate": false,
       "card_date": "2026-10-07",
@@ -24,7 +24,7 @@
       "note": "vision OCR; 07 Oktober 2026; KURS HARI INI",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/841121301_1567993811306293_873879508437285646_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=p8ZT3r1HN8UQ7kNvwHcFpQe&_nc_oc=AdpombUvSD6r3185iRzoAqbiKsKV7nGUABtDavR5ulP_-hNeUgaPi6u49_xRlA5NMIk&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=EibQB0f0G3403Gxtqd-cJg&_nc_ss=7a289&oh=00_AQOZyk-tEyvVCwxd5DAblK2CwQaa9bexPMLi3Zis4DHvtQ&oe=6ACBB0E1",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/841121301_1567993811306293_873879508437285646_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=p8ZT3r1HN8UQ7kNvwHcFpQe&_nc_oc=AdpombUvSD6r3185iRzoAqbiKsKV7nGUABtDavR5ulP_-hNeUgaPi6u49_xRlA5NMIk&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=vinLxF91z0VsYKAw5zh7sw&_nc_ss=7a289&oh=00_AQMWONp5PPyVHpRoSpy93x7mX5WpZr-QPMCEAnh1BI6_-w&oe=6ACBB0E1",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null,
