@@ -2,6 +2,14 @@
   "card_review": {},
   "changes": [
     {
+      "changed_at": "2026-10-08T05:06:30+00:00",
+      "new_rate": 2274.0,
+      "old_rate": 2272.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-10-08T04:31:39+00:00",
       "new_rate": 2272.0,
       "old_rate": 2274.0,
@@ -297,17 +305,17 @@
       "wrong_rate": 2271.9067
     },
     {
-      "applied": false,
-      "correct_rate": 2275.0,
-      "corrected_at": "2026-10-06T02:49:11.268Z",
+      "applied": true,
+      "correct_rate": 2274.0,
+      "corrected_at": "2026-10-08T05:06:13.183Z",
       "key": "chandra|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/838783179_2141896096426218_7408275112234341646_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=fghugHawu6wQ7kNvwEkO8xT&_nc_oc=Adpfl9B6_toSyJrHzDNfdKU_hut1MefFvXrA9a7zRnbtalcR_BC2UVVJdXIBII6x6bs&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=pHZoe3mn6nOrKS3nd-KPrg&_nc_ss=7a289&oh=00_AQPzT0vW2iOipG5UbCyyX9IB9qgwXqwmbbeIttDt6cb5hg&oe=6ACCE99B",
       "source_rate": 2272.0,
-      "status": "expired (source changed)",
-      "wrong_rate": 2277.0
+      "status": "applied",
+      "wrong_rate": 2272.0
     },
     {
       "applied": false,
@@ -345,7 +353,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-10-08T04:31:39+00:00",
+  "generated_at": "2026-10-08T05:06:30+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1007,6 +1015,10 @@
       {
         "rate": 2272.0,
         "t": "2026-10-08T04:31:39+00:00"
+      },
+      {
+        "rate": 2274.0,
+        "t": "2026-10-08T05:06:30+00:00"
       }
     ],
     "eui|HKD|IDR": [
@@ -2340,7 +2352,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-08T04:31:39+00:00",
+      "captured_at": "2026-10-08T05:06:30+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2374,20 +2386,20 @@
       "is_promo_rate": false,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; 8/10/2026 11:40; Kurs Kirim: 2272, Kurs Tukar: 2220",
+      "note": "vision OCR; 8/10/2026 11:40; Kurs Kirim: 2272, Kurs Tukar: 2220; corrected from 2272",
       "promo": {
         "date_text": "8/10/2026 11:09",
         "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/838985330_1085896380947677_8341809649384273487_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qvVhqFaJk9AQ7kNvwEriN5C&_nc_oc=AdrWCJf_J4YN4A5Jh34TS2jqyVG1FoHC5fQV73VLuYj6tj-JTY1X8Ax8CSuPlafmFwg&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=5VxczOu2rPcD6Dk-VLmQoQ&_nc_ss=7b289&oh=00_AQNqBY2x-8ZrRFpUKfpwppY19OktB_ua_iHIqiIbeXHfFQ&oe=6ACCD9D5",
         "note": "Special RATE BAPAK PMI UPDATE KIRIM KURS+ 2276, *Rate KURS KIRIM HANYA berlaku untuk kiriman uang DIBAWAH HK$8000 di Cabang Toko Chandra ... SENIN-JUMAT. KURS TUKAR 2220 berlaku disemua Toko Chandra SENIN-JUMAT.",
         "rate": 2276.0
       },
-      "rate": 2272.0,
+      "rate": 2274.0,
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/838783179_2141896096426218_7408275112234341646_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=fghugHawu6wQ7kNvwEkO8xT&_nc_oc=Adpfl9B6_toSyJrHzDNfdKU_hut1MefFvXrA9a7zRnbtalcR_BC2UVVJdXIBII6x6bs&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=pHZoe3mn6nOrKS3nd-KPrg&_nc_ss=7a289&oh=00_AQPzT0vW2iOipG5UbCyyX9IB9qgwXqwmbbeIttDt6cb5hg&oe=6ACCE99B",
       "review_reason": null,
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-08T04:31:39+00:00",
+      "captured_at": "2026-10-08T05:06:30+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2415,7 +2427,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-08T04:31:39+00:00",
+      "captured_at": "2026-10-08T05:06:30+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
