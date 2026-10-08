@@ -1,18 +1,18 @@
 {
-  "heartbeat": "2026-10-08T05:01:14+00:00",
+  "heartbeat": "2026-10-08T05:30:35+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2272.0,
-      "note": "vision OCR; 8/10/2026 11:40; Kurs Kirim 2272, Kurs Tukar 2220",
+      "note": "vision OCR; 8/10/2026 11:40; Kurs Kirim",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/838783179_2141896096426218_7408275112234341646_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=fghugHawu6wQ7kNvwEkO8xT&_nc_oc=Adpfl9B6_toSyJrHzDNfdKU_hut1MefFvXrA9a7zRnbtalcR_BC2UVVJdXIBII6x6bs&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=WUa2H7cID2uwAVqbDnw0tw&_nc_ss=7a289&oh=00_AQMZVQTGKTM-qKTqvtLlmpLdLae7rR5a1SuDbpDWTJ4BJA&oe=6ACCE99B",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/838783179_2141896096426218_7408275112234341646_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=fghugHawu6wQ7kNvwEkO8xT&_nc_oc=Adpfl9B6_toSyJrHzDNfdKU_hut1MefFvXrA9a7zRnbtalcR_BC2UVVJdXIBII6x6bs&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=vGi7XebOBxjaRpa7o7itGQ&_nc_ss=7a289&oh=00_AQMJW9RKGGHohKxVudNHU7dMPkum0LjEKUNKugqnX59M2Q&oe=6ACCE99B",
       "promo": {
         "rate": 2276.0,
-        "note": "Special RATE BAPAK PMI, UPDATE KIRIM KURS+ 2276 (berlaku untuk kiriman uang DIBAWAH HK$8000 di cabang-cabang tertentu Senin-Jumat). Kurs Tukar is 2220.",
+        "note": "Special RATE BAPAK PMI UPDATE KURS KIRIM KURS+ 2276 (berlaku untuk kiriman uang DIBAWAH HK$8000 di cabang tertentu SENIN-JUMAT). Kurs Tukar standar/tukar: 2220.",
         "date_text": "8/10/2026 11:09",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/838985330_1085896380947677_8341809649384273487_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qvVhqFaJk9AQ7kNvwEriN5C&_nc_oc=AdrWCJf_J4YN4A5Jh34TS2jqyVG1FoHC5fQV73VLuYj6tj-JTY1X8Ax8CSuPlafmFwg&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Hd_Ub0nwapM7qioMNZW8Pw&_nc_ss=7b289&oh=00_AQN9kx8M62PaF9zmoUEKiJ8rpjvvOhaw6Xy26a8igP7_bw&oe=6ACD1215"
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/838985330_1085896380947677_8341809649384273487_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qvVhqFaJk9AQ7kNvwEriN5C&_nc_oc=AdrWCJf_J4YN4A5Jh34TS2jqyVG1FoHC5fQV73VLuYj6tj-JTY1X8Ax8CSuPlafmFwg&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=RwZMV8xbfQij8yaRHr1Afg&_nc_ss=7b289&oh=00_AQMFHp6RjxZNx3s3rUOu-eR1a-mY_cq9lgv4ecZYSpudWw&oe=6ACD1215"
       },
       "is_promo_rate": false,
       "card_date": "2026-10-08",
@@ -24,7 +24,7 @@
       "note": "vision OCR; 08 Oktober 2026; Kurs Hari Ini",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/829035875_1406804661080654_5654885375168365048_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ukrIPm-TetsQ7kNvwHqxMn0&_nc_oc=AdotkWh1cjpKUs72f7NyvuDXgcw00hdsOp3NZBhJAvg21wR4M_PeKzT8ud5hHEG_KYI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=WGygSGlVeLLe_Lm7LsiWhA&_nc_ss=7b289&oh=00_AQOnHW0SvGwOQk5aTkr0uUewHCfcv_r8-_kNuqS-IWGW0w&oe=6ACD0DD8",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/829035875_1406804661080654_5654885375168365048_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ukrIPm-TetsQ7kNvwHqxMn0&_nc_oc=AdotkWh1cjpKUs72f7NyvuDXgcw00hdsOp3NZBhJAvg21wR4M_PeKzT8ud5hHEG_KYI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=GImlyUqA_dru9cUnR8kLcQ&_nc_ss=7b289&oh=00_AQP2-DkdeowvV_hgDpyp5na7rmT_QWYX3wMiofCz6V2TTw&oe=6ACD0DD8",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null,
