@@ -2,6 +2,30 @@
   "card_review": {},
   "changes": [
     {
+      "changed_at": "2026-10-08T02:26:02+00:00",
+      "new_rate": 2268.93,
+      "old_rate": 2268.985,
+      "pair": "HKD->IDR",
+      "provider": "AlipayHK",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-08T02:26:02+00:00",
+      "new_rate": 2272.0,
+      "old_rate": 2275.0,
+      "pair": "HKD->IDR",
+      "provider": "EUI MONEY",
+      "to_ccy": "IDR"
+    },
+    {
+      "changed_at": "2026-10-08T02:26:02+00:00",
+      "new_rate": 2275.0,
+      "old_rate": 2277.0,
+      "pair": "HKD->IDR",
+      "provider": "BRI Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-10-07T05:00:54+00:00",
       "new_rate": 2277.0,
       "old_rate": 2280.0,
@@ -203,24 +227,8 @@
     },
     {
       "changed_at": "2026-10-02T02:53:21+00:00",
-      "new_rate": 2274.009,
-      "old_rate": 2272.826,
-      "pair": "HKD->IDR",
-      "provider": "AlipayHK",
-      "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-10-02T02:53:21+00:00",
       "new_rate": 2277.0,
       "old_rate": 2275.0,
-      "pair": "HKD->IDR",
-      "provider": "EUI MONEY",
-      "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-10-01T08:42:21+00:00",
-      "new_rate": 2275.0,
-      "old_rate": 2272.0,
       "pair": "HKD->IDR",
       "provider": "EUI MONEY",
       "to_ccy": "IDR"
@@ -266,14 +274,6 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-09-04T07:01:09+00:00",
-      "new_rate": 2252.0,
-      "old_rate": 2257.0,
-      "pair": "HKD->IDR",
-      "provider": "BRI Remittance",
-      "to_ccy": "IDR"
-    },
-    {
       "changed_at": "2026-09-03T06:30:52+00:00",
       "new_rate": 2252.0,
       "old_rate": 2259.0,
@@ -310,17 +310,17 @@
       "wrong_rate": 2277.0
     },
     {
-      "applied": false,
-      "correct_rate": 2277.0,
-      "corrected_at": "2026-10-06T02:53:26.567Z",
+      "applied": true,
+      "correct_rate": 2275.0,
+      "corrected_at": "2026-10-08T02:25:59.997Z",
       "key": "bri|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/841121301_1567993811306293_873879508437285646_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=p8ZT3r1HN8UQ7kNvwHcFpQe&_nc_oc=AdpombUvSD6r3185iRzoAqbiKsKV7nGUABtDavR5ulP_-hNeUgaPi6u49_xRlA5NMIk&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=fMph8w02nhviCeuYKLGGTg&_nc_ss=7b289&oh=00_AQOdsMxmzDFYm-QVdGs6WSr74ZxzhSHucP6PPerkNqwxRw&oe=6ACCCA21",
       "source_rate": 2277.0,
-      "status": "expired (source changed)",
-      "wrong_rate": 2275.0
+      "status": "applied",
+      "wrong_rate": 2277.0
     },
     {
       "applied": false,
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-10-08T02:23:25+00:00",
+  "generated_at": "2026-10-08T02:26:02+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -551,6 +551,10 @@
       {
         "rate": 2268.985,
         "t": "2026-10-07T03:00:15+00:00"
+      },
+      {
+        "rate": 2268.93,
+        "t": "2026-10-08T02:26:02+00:00"
       }
     ],
     "bri|HKD|IDR": [
@@ -669,6 +673,10 @@
       {
         "rate": 2277.0,
         "t": "2026-10-07T05:00:54+00:00"
+      },
+      {
+        "rate": 2275.0,
+        "t": "2026-10-08T02:26:02+00:00"
       }
     ],
     "chandra|HKD|IDR": [
@@ -1245,6 +1253,10 @@
       {
         "rate": 2275.0,
         "t": "2026-10-06T02:56:36+00:00"
+      },
+      {
+        "rate": 2272.0,
+        "t": "2026-10-08T02:26:02+00:00"
       }
     ],
     "pandaremit|HKD|IDR": [
@@ -2308,7 +2320,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-08T02:23:25+00:00",
+      "captured_at": "2026-10-08T02:26:02+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2316,7 +2328,7 @@
       "needs_review": false,
       "note": "manual.json",
       "promo": null,
-      "rate": 2268.985,
+      "rate": 2268.93,
       "raw_ref": null,
       "review_reason": null,
       "source_url": null
@@ -2328,9 +2340,9 @@
       "is_promo_rate": false,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; 07 Oktober 2026; Kurs Hari Ini 2277, berlaku di aplikasi remit.go! dan seluruh cabang BRI Global Financial",
+      "note": "vision OCR; 07 Oktober 2026; Kurs Hari Ini 2277, berlaku di aplikasi remit.go! dan seluruh cabang BRI Global Financial; corrected from 2277",
       "promo": null,
-      "rate": 2277.0,
+      "rate": 2275.0,
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/841121301_1567993811306293_873879508437285646_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=p8ZT3r1HN8UQ7kNvwHcFpQe&_nc_oc=AdpombUvSD6r3185iRzoAqbiKsKV7nGUABtDavR5ulP_-hNeUgaPi6u49_xRlA5NMIk&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=fMph8w02nhviCeuYKLGGTg&_nc_ss=7b289&oh=00_AQOdsMxmzDFYm-QVdGs6WSr74ZxzhSHucP6PPerkNqwxRw&oe=6ACCCA21",
       "review_reason": null,
       "source_url": "https://www.facebook.com/briglobalfinancial"
@@ -2355,7 +2367,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-08T02:23:25+00:00",
+      "captured_at": "2026-10-08T02:26:02+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2363,7 +2375,7 @@
       "needs_review": false,
       "note": "manual.json",
       "promo": null,
-      "rate": 2275.0,
+      "rate": 2272.0,
       "raw_ref": null,
       "review_reason": null,
       "source_url": null
@@ -2383,7 +2395,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-08T02:23:25+00:00",
+      "captured_at": "2026-10-08T02:26:02+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
