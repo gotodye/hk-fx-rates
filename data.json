@@ -2,6 +2,14 @@
   "card_review": {},
   "changes": [
     {
+      "changed_at": "2026-10-12T03:42:54+00:00",
+      "new_rate": 2271.583,
+      "old_rate": 2270.919,
+      "pair": "HKD->IDR",
+      "provider": "AlipayHK",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-10-12T03:42:41+00:00",
       "new_rate": 2275.0,
       "old_rate": 2277.0,
@@ -210,14 +218,6 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-10-05T02:51:23+00:00",
-      "new_rate": 2272.449,
-      "old_rate": 2268.64,
-      "pair": "HKD->IDR",
-      "provider": "AlipayHK",
-      "to_ccy": "IDR"
-    },
-    {
       "changed_at": "2026-10-04T23:01:03+00:00",
       "new_rate": 2271.1677,
       "old_rate": 2259.7254,
@@ -310,7 +310,7 @@
       "wrong_rate": 2274.0
     },
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2275.0,
       "corrected_at": "2026-10-12T03:42:27.650Z",
       "key": "bri|HKD|IDR",
@@ -318,8 +318,8 @@
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/829035875_1406804661080654_5654885375168365048_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ukrIPm-TetsQ7kNvwHqxMn0&_nc_oc=AdotkWh1cjpKUs72f7NyvuDXgcw00hdsOp3NZBhJAvg21wR4M_PeKzT8ud5hHEG_KYI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=jH_Bxy5m_-1DwTaGslvfSg&_nc_ss=7b289&oh=00_AQPDfWChOu2ObiN05LEqehcpR3VurinAqRVf1GhGB6sWxg&oe=6ACD0DD8",
-      "source_rate": 2277.0,
-      "status": "applied",
+      "source_rate": 2275.0,
+      "status": "expired (source changed)",
       "wrong_rate": 2277.0
     },
     {
@@ -347,7 +347,7 @@
   "fb_value_stale": {
     "alerted": true
   },
-  "generated_at": "2026-10-12T03:42:41+00:00",
+  "generated_at": "2026-10-12T03:42:54+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -561,6 +561,10 @@
       {
         "rate": 2270.919,
         "t": "2026-10-09T03:03:35+00:00"
+      },
+      {
+        "rate": 2271.583,
+        "t": "2026-10-12T03:42:54+00:00"
       }
     ],
     "bri|HKD|IDR": [
@@ -2394,7 +2398,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-12T03:42:41+00:00",
+      "captured_at": "2026-10-12T03:42:54+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2402,7 +2406,7 @@
       "needs_review": false,
       "note": "manual.json",
       "promo": null,
-      "rate": 2270.919,
+      "rate": 2271.583,
       "raw_ref": null,
       "review_reason": null,
       "source_url": null
@@ -2441,7 +2445,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-12T03:42:41+00:00",
+      "captured_at": "2026-10-12T03:42:54+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2469,7 +2473,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-12T03:42:41+00:00",
+      "captured_at": "2026-10-12T03:42:54+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
