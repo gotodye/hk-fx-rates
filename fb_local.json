@@ -1,18 +1,18 @@
 {
-  "heartbeat": "2026-10-13T07:03:16+00:00",
+  "heartbeat": "2026-10-13T07:15:09+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2282.0,
-      "note": "vision OCR; PROMO; 13/10/2026 11:05 am; Special RATE BAPAK PMI UPDATE KURS KIRIM+ 2282 (berlaku untuk kiriman uang DIBAWAH HK$8000 di Cabang Toko Chandra tertentu SENIN-JUMAT); Kurs Tukar adalah 2220",
+      "note": "vision OCR; PROMO; 13/10/2026 11:05 am; Special RATE BAPAK PMI UPDATE KURS KIRIM+ 2282 (berlaku untuk kiriman uang DIBAWAH HK$8000 di cabang-cabang tertentu Senin-Jumat). Kurs tukar: 2220.",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/848153520_1745869009806062_3313326764822065864_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=iGntCs3CnTQQ7kNvwHVIBNE&_nc_oc=AdoYBTNtkXNsIooDSxyg2Aj3nmJ2_ftwzlvmKpOz2OgjTQXlrLZnGM1uycTTEECnZRc&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=TOUv1jnGsb9gSkmWJq8kTg&_nc_ss=79289&oh=00_AQNfJy1cl7fNBjBxcqyt8EBOeCFI9ockFNmVjuSu9Z3igQ&oe=6AD3AAD4",
+      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/848153520_1745869009806062_3313326764822065864_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=iGntCs3CnTQQ7kNvwHVIBNE&_nc_oc=AdoYBTNtkXNsIooDSxyg2Aj3nmJ2_ftwzlvmKpOz2OgjTQXlrLZnGM1uycTTEECnZRc&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=-WFCwPzrX-mfQv1QM3KShQ&_nc_ss=79289&oh=00_AQNmbQjfIUZYD4YPNwmLeOQiQ931Ahpn57cxRRmi39_5Vg&oe=6AD3AAD4",
       "promo": {
         "rate": 2282.0,
-        "note": "Special RATE BAPAK PMI UPDATE KURS KIRIM+ 2282 (berlaku untuk kiriman uang DIBAWAH HK$8000 di Cabang Toko Chandra tertentu SENIN-JUMAT); Kurs Tukar adalah 2220",
+        "note": "Special RATE BAPAK PMI UPDATE KURS KIRIM+ 2282 (berlaku untuk kiriman uang DIBAWAH HK$8000 di cabang-cabang tertentu Senin-Jumat). Kurs tukar: 2220.",
         "date_text": "13/10/2026 11:05 am",
-        "image": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/848153520_1745869009806062_3313326764822065864_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=iGntCs3CnTQQ7kNvwHVIBNE&_nc_oc=AdoYBTNtkXNsIooDSxyg2Aj3nmJ2_ftwzlvmKpOz2OgjTQXlrLZnGM1uycTTEECnZRc&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=TOUv1jnGsb9gSkmWJq8kTg&_nc_ss=79289&oh=00_AQNfJy1cl7fNBjBxcqyt8EBOeCFI9ockFNmVjuSu9Z3igQ&oe=6AD3AAD4"
+        "image": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/848153520_1745869009806062_3313326764822065864_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=iGntCs3CnTQQ7kNvwHVIBNE&_nc_oc=AdoYBTNtkXNsIooDSxyg2Aj3nmJ2_ftwzlvmKpOz2OgjTQXlrLZnGM1uycTTEECnZRc&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=-WFCwPzrX-mfQv1QM3KShQ&_nc_ss=79289&oh=00_AQNmbQjfIUZYD4YPNwmLeOQiQ931Ahpn57cxRRmi39_5Vg&oe=6AD3AAD4"
       },
       "is_promo_rate": true,
       "card_date": "2026-10-13",
