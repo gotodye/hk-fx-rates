@@ -1,13 +1,13 @@
 {
-  "heartbeat": "2026-10-13T02:43:58+00:00",
+  "heartbeat": "2026-10-13T03:01:35+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2278.0,
-      "note": "vision OCR; 13/10/2026 10:04 am; Kurs Kirim: 2278",
+      "note": "vision OCR; 13/10/2026 10:04 am; Kurs Kirim: 2278; Kurs Tukar: 2220",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/843104001_1422409212620457_3225302881101613392_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=i832bKm9HfgQ7kNvwG3tWO-&_nc_oc=AdpoOu7aJpiy22j-KinMoiJpSvVutUQIYA_JDum5KDTr7RbhyzOqtGkZETACAPSQPGY&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=TAqKrwiHZquXClAnLaSxSw&_nc_ss=7a289&oh=00_AQM3-mA1JwlyJiMQT4_GmSLTOQoJKtWB3f1d03v3-QUewQ&oe=6AD38813",
+      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/843104001_1422409212620457_3225302881101613392_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=i832bKm9HfgQ7kNvwG3tWO-&_nc_oc=AdpoOu7aJpiy22j-KinMoiJpSvVutUQIYA_JDum5KDTr7RbhyzOqtGkZETACAPSQPGY&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=nHN1oyxxWV8wFQdKH0Jzqw&_nc_ss=7a289&oh=00_AQNFL5EDAPQ_L9ErUzhC10uZmJYKP-wIfnUpc2ZoUaSGkw&oe=6AD38813",
       "promo": null,
       "is_promo_rate": false,
       "card_date": "2026-10-13",
@@ -16,10 +16,10 @@
     },
     "bri|HKD|IDR": {
       "rate": 2277.0,
-      "note": "vision OCR; 13 Oktober 2026; Kurs Hari Ini",
+      "note": "vision OCR; 13 Oktober 2026; KURS HARI INI",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/844630785_1109668131439780_323398555661489659_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=0nppXi-5QKkQ7kNvwFIHOyb&_nc_oc=Adqf3385O2o7DCkEUziMDP--9RT8HZIV9Y_GAe2qx_pka27Sb8rOCDKi3daQFi4WfhU&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=7skdQUqYFLLMhSu-1pfxYQ&_nc_ss=7a289&oh=00_AQMXf5UP-aoMyUQjkkNx2Uq27Y-XxyX-fcRKP3TPz8GCBQ&oe=6AD35F4D",
+      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/844630785_1109668131439780_323398555661489659_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=0nppXi-5QKkQ7kNvwFIHOyb&_nc_oc=Adqf3385O2o7DCkEUziMDP--9RT8HZIV9Y_GAe2qx_pka27Sb8rOCDKi3daQFi4WfhU&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=bwsThE21kFCb1JlpCfD0Yw&_nc_ss=7a289&oh=00_AQN6nULs4P2KmoMvwxGCOX4WOZGy3UyvhBpxr6v5Nb5bYg&oe=6AD35F4D",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null,
