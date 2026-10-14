@@ -284,7 +284,7 @@
   ],
   "correction_log": [
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2274.0543,
       "corrected_at": "2026-10-14T08:25:56.918Z",
       "key": "pandaremit|HKD|IDR",
@@ -292,8 +292,8 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2273.7312,
-      "status": "applied",
+      "source_rate": 2274.0543,
+      "status": "expired (source changed)",
       "wrong_rate": 2273.7312
     },
     {
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-10-14T08:26:14+00:00",
+  "generated_at": "2026-10-14T08:26:35+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -2512,7 +2512,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-14T08:26:14+00:00",
+      "captured_at": "2026-10-14T08:26:35+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2559,7 +2559,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-14T08:26:14+00:00",
+      "captured_at": "2026-10-14T08:26:35+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2587,7 +2587,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-14T08:26:14+00:00",
+      "captured_at": "2026-10-14T08:26:35+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
