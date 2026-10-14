@@ -2,6 +2,14 @@
   "card_review": {},
   "changes": [
     {
+      "changed_at": "2026-10-14T05:10:55+00:00",
+      "new_rate": 2274.0,
+      "old_rate": 2276.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-10-14T04:00:52+00:00",
       "new_rate": 2268.1638634,
       "old_rate": 2273.1084352,
@@ -186,14 +194,6 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-10-08T05:06:30+00:00",
-      "new_rate": 2274.0,
-      "old_rate": 2272.0,
-      "pair": "HKD->IDR",
-      "provider": "Chandra Remittance",
-      "to_ccy": "IDR"
-    },
-    {
       "changed_at": "2026-10-08T02:44:34+00:00",
       "new_rate": 2270.6775,
       "old_rate": 2273.2099,
@@ -297,17 +297,17 @@
       "wrong_rate": 2273.6041
     },
     {
-      "applied": false,
-      "correct_rate": 2276.0,
-      "corrected_at": "2026-10-14T02:31:40.543Z",
+      "applied": true,
+      "correct_rate": 2274.0,
+      "corrected_at": "2026-10-14T05:10:41.335Z",
       "key": "chandra|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/843104001_1422409212620457_3225302881101613392_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=i832bKm9HfgQ7kNvwFolGTe&_nc_oc=Adpec7UC3xpgrXthwQQ0fiCw1K-KlFI3xQ55Nf52A0QKD27ezfpKm50_zQ_INV4ID0k&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=YUHUaMTatjtaelwpEeE_3w&_nc_ss=7b289&oh=00_AQO7z3yyRrnwz5u3ltDrixiRqWAhxw00Sw12byH3WnIMtg&oe=6AD4A153",
       "source_rate": 2276.0,
-      "status": "expired (source changed)",
-      "wrong_rate": 2278.0
+      "status": "applied",
+      "wrong_rate": 2276.0
     },
     {
       "applied": false,
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-10-14T04:37:28+00:00",
+  "generated_at": "2026-10-14T05:10:55+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1063,6 +1063,10 @@
       {
         "rate": 2276.0,
         "t": "2026-10-14T02:32:14+00:00"
+      },
+      {
+        "rate": 2274.0,
+        "t": "2026-10-14T05:10:55+00:00"
       }
     ],
     "eui|HKD|IDR": [
@@ -2488,7 +2492,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-14T04:37:28+00:00",
+      "captured_at": "2026-10-14T05:10:55+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2522,20 +2526,20 @@
       "is_promo_rate": false,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; 13/10/2026 10:04 am; Kurs Kirim; corrected from 2278",
+      "note": "vision OCR; 13/10/2026 10:04 am; Kurs Kirim; corrected from 2278; corrected from 2276",
       "promo": {
         "date_text": "13/10/2026 11:05 am",
         "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/848153520_1745869009806062_3313326764822065864_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=iGntCs3CnTQQ7kNvwF-BTbl&_nc_oc=Ado5LSf4uRroRJScQCkVN7XtBffMG6A7sXC3RUTKqUi4htAB_NTUhJoDwDOga5u-kfo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Fy-ET07M3rmfCgUiJF11Dg&_nc_ss=7a289&oh=00_AQOOn9avao3NJY9DTedITe9ep_1hYTN10sPlTJH8XxnvZg&oe=6AD48BD4",
         "note": "Special RATE BAPAK PMI UPDATE KURS KIRIM+ 2282 (berlaku untuk kiriman uang DIBAWAH HK$8000 di Cabang Toko Chandra tertentu SENIN-JUMAT). Kurs Tukar: 2220.",
         "rate": 2282.0
       },
-      "rate": 2276.0,
+      "rate": 2274.0,
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/843104001_1422409212620457_3225302881101613392_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=i832bKm9HfgQ7kNvwFolGTe&_nc_oc=Adpec7UC3xpgrXthwQQ0fiCw1K-KlFI3xQ55Nf52A0QKD27ezfpKm50_zQ_INV4ID0k&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=YUHUaMTatjtaelwpEeE_3w&_nc_ss=7b289&oh=00_AQO7z3yyRrnwz5u3ltDrixiRqWAhxw00Sw12byH3WnIMtg&oe=6AD4A153",
       "review_reason": null,
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-14T04:37:28+00:00",
+      "captured_at": "2026-10-14T05:10:55+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2563,7 +2567,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-14T04:37:28+00:00",
+      "captured_at": "2026-10-14T05:10:55+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
