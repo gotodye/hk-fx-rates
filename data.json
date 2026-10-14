@@ -2,6 +2,14 @@
   "card_review": {},
   "changes": [
     {
+      "changed_at": "2026-10-14T02:33:01+00:00",
+      "new_rate": 2272.8544,
+      "old_rate": 2275.2637,
+      "pair": "HKD->IDR",
+      "provider": "We Remit",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-10-14T02:32:14+00:00",
       "new_rate": 2271.006,
       "old_rate": 2277.355,
@@ -218,14 +226,6 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-10-07T02:41:32+00:00",
-      "new_rate": 2273.2099,
-      "old_rate": 2274.137,
-      "pair": "HKD->IDR",
-      "provider": "We Remit",
-      "to_ccy": "IDR"
-    },
-    {
       "changed_at": "2026-10-06T02:56:36+00:00",
       "new_rate": 2275.0,
       "old_rate": 2272.0,
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-10-14T02:32:30+00:00",
+  "generated_at": "2026-10-14T02:33:01+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -2297,6 +2297,10 @@
       {
         "rate": 2275.2637,
         "t": "2026-10-13T08:02:06+00:00"
+      },
+      {
+        "rate": 2272.8544,
+        "t": "2026-10-14T02:33:01+00:00"
       }
     ],
     "westernunion|HKD|IDR": [
@@ -2472,7 +2476,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-14T02:32:30+00:00",
+      "captured_at": "2026-10-14T02:33:01+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2519,7 +2523,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-14T02:32:30+00:00",
+      "captured_at": "2026-10-14T02:33:01+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2547,7 +2551,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-14T02:32:30+00:00",
+      "captured_at": "2026-10-14T02:33:01+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2555,7 +2559,7 @@
       "needs_review": false,
       "note": "manual.json",
       "promo": null,
-      "rate": 2275.2637,
+      "rate": 2272.8544,
       "raw_ref": null,
       "review_reason": null,
       "source_url": null
