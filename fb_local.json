@@ -1,18 +1,18 @@
 {
-  "heartbeat": "2026-10-15T11:30:53+00:00",
+  "heartbeat": "2026-10-15T12:00:45+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2278.0,
-      "note": "vision OCR; 15/10/2026 10:14 am; Kurs Kirim: 2278; Kurs Tukar: 2220",
-      "confidence": 1.0,
+      "note": "vision OCR; 15/10/2026 10:14 am; Kurs Kirim: 2278, Kurs Tukar: 2220",
+      "confidence": 0.99,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/849861139_1406901194890525_9208234926962293873_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XkK35wnbsi8Q7kNvwHUtXen&_nc_oc=AdqKfXrZhed0WDyBOHxcqqfjBEEJWBdQwBLUeWSpQZqBGR880_KSGAfeOYAbCUO9z5M&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=7vZa6Bo410h1uCboFKlxtg&_nc_ss=7b289&oh=00_AQMs3_ZlV9jcK4b3pt2hP3yeNRkpVZR9EmeGfiMYbuLTmg&oe=6AD68197",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/849861139_1406901194890525_9208234926962293873_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XkK35wnbsi8Q7kNvwHUtXen&_nc_oc=AdqKfXrZhed0WDyBOHxcqqfjBEEJWBdQwBLUeWSpQZqBGR880_KSGAfeOYAbCUO9z5M&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=ZWF0cSJxc0wLLUN9v6ktVQ&_nc_ss=7b289&oh=00_AQM-8KmzzaewwOEvZSoQfu_2D8eFN4c0pEjkudpzZ3Yfqg&oe=6AD68197",
       "promo": {
         "rate": 2282.0,
-        "note": "Special RATE BAPAK PMI, UPDATE KURS KIRIM KURS+ 2282 (berlaku untuk kiriman uang DIBAWAH HK$8000 di cabang-cabang tertentu Senin-Jumat). Kurs Tukar is 2220.",
+        "note": "Special RATE BAPAK PMI UPDATE KURS KIRIM KURS+ 2282 (berlaku untuk kiriman uang DIBAWAH HK$8000 di Cabang Toko Chandra tertentu SENIN-JUMAT). Kurs Tukar 2220 berlaku disemua Toko Chandra SENIN-JUMAT.",
         "date_text": "15/10/2026 11:05 am",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/849509160_2942118509481383_3386962677471875444_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8wbBp0fzEhUQ7kNvwHflnpG&_nc_oc=Adowbirxwxe36hoU96LqfnuKSu74t7emLH4fBUaXxlJgmFrGgBZOrNqqrNj6TuIG0eQ&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=i7IdvS73-5JBVCWgyduIxg&_nc_ss=7a289&oh=00_AQOlLG05FkHrwa3GSKZuBYbclUcUEpzAasKwX4Ope5issA&oe=6AD69A69"
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/849509160_2942118509481383_3386962677471875444_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8wbBp0fzEhUQ7kNvwHflnpG&_nc_oc=Adowbirxwxe36hoU96LqfnuKSu74t7emLH4fBUaXxlJgmFrGgBZOrNqqrNj6TuIG0eQ&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=B-LEfg-nZ7T9ks3ns0FAeQ&_nc_ss=7a289&oh=00_AQOFO3qEEkjbwLw2NyU9QE5Kq6KrHhS4CdaZXeMclO2ctw&oe=6AD69A69"
       },
       "is_promo_rate": false,
       "card_date": "2026-10-15",
@@ -21,10 +21,10 @@
     },
     "bri|HKD|IDR": {
       "rate": 2275.0,
-      "note": "vision OCR; 15 Oktober 2026; KURS HARI INI",
-      "confidence": 1.0,
+      "note": "vision OCR; 15 Oktober 2026; Kurs Hari Ini",
+      "confidence": 0.99,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/848498672_1419346426403341_5519765091852179084_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mpLxoZgoRpYQ7kNvwFD9QIN&_nc_oc=AdoRv9FJhoDsKTPwe59Zmfnt68lYV1rjnVYUQwte0pdCrxIQnrcaP-UJuONat6gbu8c&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=ztW_RZ_Pr7TDCWyYDFi53g&_nc_ss=7b289&oh=00_AQPhX4HGIJSkziiWljg3y3QLLCWo6kcYwirfdZ4NBtWovg&oe=6AD6A6D5",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/848498672_1419346426403341_5519765091852179084_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mpLxoZgoRpYQ7kNvwFD9QIN&_nc_oc=AdoRv9FJhoDsKTPwe59Zmfnt68lYV1rjnVYUQwte0pdCrxIQnrcaP-UJuONat6gbu8c&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=q8Y7redkCewV3jGGKKp3Ew&_nc_ss=7b289&oh=00_AQMG_NhyXr9lEYxEUsLPMZBWW8uMu72qHdN-UW3o3G6b9g&oe=6AD6A6D5",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null,
