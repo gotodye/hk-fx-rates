@@ -2,6 +2,14 @@
   "card_review": {},
   "changes": [
     {
+      "changed_at": "2026-10-15T02:23:51+00:00",
+      "new_rate": 2275.0,
+      "old_rate": 2280.0,
+      "pair": "HKD->IDR",
+      "provider": "BRI Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-10-14T08:25:51+00:00",
       "new_rate": 2272.5817,
       "old_rate": 2273.9975,
@@ -234,14 +242,6 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-10-08T02:26:21+00:00",
-      "new_rate": 2275.0,
-      "old_rate": 2277.0,
-      "pair": "HKD->IDR",
-      "provider": "BRI Remittance",
-      "to_ccy": "IDR"
-    },
-    {
       "changed_at": "2026-10-07T03:31:02+00:00",
       "new_rate": 2266.8703369,
       "old_rate": 2270.7374182,
@@ -310,17 +310,17 @@
       "wrong_rate": 2276.0
     },
     {
-      "applied": false,
-      "correct_rate": 2280.0,
-      "corrected_at": "2026-10-14T02:31:54.588Z",
+      "applied": true,
+      "correct_rate": 2275.0,
+      "corrected_at": "2026-10-15T02:23:34.586Z",
       "key": "bri|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844630785_1109668131439780_323398555661489659_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=0nppXi-5QKkQ7kNvwF7Xbgr&_nc_oc=AdoUEbU-9y8kIVqa3Aprv40Ft_rKL7bcgrQCdt3fD6LY3yEGjBrMmVDdlkvDjK5lIqw&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=qKre9ZOY4jB9bH_VGBZxqA&_nc_ss=7b289&oh=00_AQMwh9yLCrvdzo8ByoKknZW0W9MJTBohkTsN6SYcUfGowA&oe=6AD3CFCD",
       "source_rate": 2280.0,
-      "status": "expired (source changed)",
-      "wrong_rate": 2277.0
+      "status": "applied",
+      "wrong_rate": 2280.0
     },
     {
       "applied": false,
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-10-15T02:00:55+00:00",
+  "generated_at": "2026-10-15T02:23:51+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -709,6 +709,10 @@
       {
         "rate": 2280.0,
         "t": "2026-10-14T02:32:14+00:00"
+      },
+      {
+        "rate": 2275.0,
+        "t": "2026-10-15T02:23:51+00:00"
       }
     ],
     "chandra|HKD|IDR": [
@@ -2512,7 +2516,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-15T02:00:55+00:00",
+      "captured_at": "2026-10-15T02:23:51+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2532,9 +2536,9 @@
       "is_promo_rate": false,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; 13 Oktober 2026; Kurs Hari Ini; corrected from 2277",
+      "note": "vision OCR; 13 Oktober 2026; Kurs Hari Ini; corrected from 2277; corrected from 2280",
       "promo": null,
-      "rate": 2280.0,
+      "rate": 2275.0,
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844630785_1109668131439780_323398555661489659_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=0nppXi-5QKkQ7kNvwF7Xbgr&_nc_oc=AdoUEbU-9y8kIVqa3Aprv40Ft_rKL7bcgrQCdt3fD6LY3yEGjBrMmVDdlkvDjK5lIqw&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=qKre9ZOY4jB9bH_VGBZxqA&_nc_ss=7b289&oh=00_AQMwh9yLCrvdzo8ByoKknZW0W9MJTBohkTsN6SYcUfGowA&oe=6AD3CFCD",
       "review_reason": null,
       "source_url": "https://www.facebook.com/briglobalfinancial"
@@ -2559,7 +2563,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-15T02:00:55+00:00",
+      "captured_at": "2026-10-15T02:23:51+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2587,7 +2591,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-15T02:00:55+00:00",
+      "captured_at": "2026-10-15T02:23:51+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
