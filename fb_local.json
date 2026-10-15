@@ -1,18 +1,18 @@
 {
-  "heartbeat": "2026-10-15T04:00:57+00:00",
+  "heartbeat": "2026-10-15T04:30:58+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2278.0,
-      "note": "vision OCR; 15/10/2026 10:14 am; Kurs Kirim: 2278",
+      "note": "vision OCR; 15/10/2026 10:14 am; Kurs Kirim: 2278. Also shows Kurs Tukar: 2220.",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/849861139_1406901194890525_9208234926962293873_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XkK35wnbsi8Q7kNvwHUtXen&_nc_oc=AdqKfXrZhed0WDyBOHxcqqfjBEEJWBdQwBLUeWSpQZqBGR880_KSGAfeOYAbCUO9z5M&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=AFOfoGXiZT1WkunR0pD25w&_nc_ss=7b289&oh=00_AQOTsHx39yiNwwQ5hbdcozqTC0sSQCzpD0On-jjXowyVow&oe=6AD61117",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/849861139_1406901194890525_9208234926962293873_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XkK35wnbsi8Q7kNvwHUtXen&_nc_oc=AdqKfXrZhed0WDyBOHxcqqfjBEEJWBdQwBLUeWSpQZqBGR880_KSGAfeOYAbCUO9z5M&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=0pL9MLCTfNEk28jRjNGcUw&_nc_ss=7b289&oh=00_AQMGxb4_RZR3Ivty9-bNhbPvdIk8hLZOcLkF__bTgXTZSA&oe=6AD61117",
       "promo": {
         "rate": 2282.0,
-        "note": "Special RATE BAPAK PMI UPDATE KURS KIRIM+ 2282 (berlaku untuk kiriman uang DIBAWAH HK$8000 di Cabang Toko Chandra tertentu SENIN-JUMAT); Kurs Tukar is 2220",
+        "note": "Special RATE BAPAK PMI UPDATE KIRIM KURS+ 2282, restricted to kiriman uang DIBAWAH HK$8000 at listed branches SENIN-JUMAT. Kurs Tukar is 2220.",
         "date_text": "15/10/2026 11:05 am",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/849509160_2942118509481383_3386962677471875444_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8wbBp0fzEhUQ7kNvwHflnpG&_nc_oc=Adowbirxwxe36hoU96LqfnuKSu74t7emLH4fBUaXxlJgmFrGgBZOrNqqrNj6TuIG0eQ&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=O01L_11-wY4YbkzYoYm3aQ&_nc_ss=7a289&oh=00_AQM3rkiB0zzodWNaygBT8tSzuJ_12eCd0wxoHQJK6O2AXQ&oe=6AD629E9"
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/849509160_2942118509481383_3386962677471875444_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8wbBp0fzEhUQ7kNvwHflnpG&_nc_oc=Adowbirxwxe36hoU96LqfnuKSu74t7emLH4fBUaXxlJgmFrGgBZOrNqqrNj6TuIG0eQ&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=9-mxC5HpQLBEk8tC0ttE5w&_nc_ss=7a289&oh=00_AQM2avwhP2Qu1_WgnsKkyqNdioAXcVdHkM4SEd7kMfdFpw&oe=6AD629E9"
       },
       "is_promo_rate": false,
       "card_date": "2026-10-15",
@@ -24,7 +24,7 @@
       "note": "vision OCR; 15 Oktober 2026; KURS HARI INI",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/848498672_1419346426403341_5519765091852179084_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=g6ObBxpNrPcQ7kNvwGhjFu4&_nc_oc=Ado04Ty3we9pW1gg08iffHBTeDZ7OF9RKwBMLHLOwtjz-2i4VN_MZfsSdcE2Qh0IcQA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=hhNkrx8G7sQgUD2Zx_qBWQ&_nc_ss=7b289&oh=00_AQMj5zXp_TVr9CrzZK60XEMBxa1EkLr6BWv_NI6HZ9QUOw&oe=6AD63655",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/848498672_1419346426403341_5519765091852179084_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=g6ObBxpNrPcQ7kNvwGhjFu4&_nc_oc=Ado04Ty3we9pW1gg08iffHBTeDZ7OF9RKwBMLHLOwtjz-2i4VN_MZfsSdcE2Qh0IcQA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=ZuVOUWW1w9bHm70CGTQbAw&_nc_ss=7b289&oh=00_AQNHWln8pSX5PtB3cyhh_jZ_6Sh_CLGM66VF5iahEnNttA&oe=6AD63655",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null,
