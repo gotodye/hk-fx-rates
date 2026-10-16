@@ -2,6 +2,14 @@
   "card_review": {},
   "changes": [
     {
+      "changed_at": "2026-10-16T02:38:45+00:00",
+      "new_rate": 2293.0,
+      "old_rate": 2278.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-10-16T02:37:03+00:00",
       "new_rate": 2295.1918,
       "old_rate": 2279.0798,
@@ -186,14 +194,6 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-10-13T06:36:18+00:00",
-      "new_rate": 2282.0,
-      "old_rate": 2278.0,
-      "pair": "HKD->IDR",
-      "provider": "Chandra Remittance",
-      "to_ccy": "IDR"
-    },
-    {
       "changed_at": "2026-10-13T04:01:12+00:00",
       "new_rate": 2274.1118303,
       "old_rate": 2269.4205871,
@@ -292,7 +292,7 @@
   ],
   "correction_log": [
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2295.1918,
       "corrected_at": "2026-10-16T02:36:45.284Z",
       "key": "pandaremit|HKD|IDR",
@@ -300,22 +300,22 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2278.9636,
-      "status": "applied",
+      "source_rate": 2295.1918,
+      "status": "expired (source changed)",
       "wrong_rate": 2278.9636
     },
     {
-      "applied": false,
-      "correct_rate": 2278.0,
-      "corrected_at": "2026-10-15T02:24:59.387Z",
+      "applied": true,
+      "correct_rate": 2293.0,
+      "corrected_at": "2026-10-16T02:38:23.946Z",
       "key": "chandra|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/849861139_1406901194890525_9208234926962293873_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NpgkzLeMrMcQ7kNvwGQWP_i&_nc_oc=AdrQH6DpD4uPDmN42wv8BK6I2vCdndZWrtXfM2IISEuudO9qd8a2Eu2Ux4HMG-dvgZM&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=JekUDqG9lKZ0Idsh24LzQQ&_nc_ss=7b289&oh=00_AQOmr2r8ZrASeSTIIalWIEceDURszGzCyuR67D2jeXpchg&oe=6AD76297",
       "source_rate": 2278.0,
-      "status": "expired (source changed)",
-      "wrong_rate": 2274.0
+      "status": "applied",
+      "wrong_rate": 2278.0
     },
     {
       "applied": false,
@@ -353,7 +353,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-10-16T02:37:03+00:00",
+  "generated_at": "2026-10-16T02:38:45+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1091,6 +1091,10 @@
       {
         "rate": 2278.0,
         "t": "2026-10-15T02:25:18+00:00"
+      },
+      {
+        "rate": 2293.0,
+        "t": "2026-10-16T02:38:45+00:00"
       }
     ],
     "eui|HKD|IDR": [
@@ -2588,7 +2592,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-16T02:37:03+00:00",
+      "captured_at": "2026-10-16T02:38:45+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2622,20 +2626,20 @@
       "is_promo_rate": false,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; 15/10/2026 10:14 am; Kurs Kirim: 2278 (Kurs Tukar: 2220)",
+      "note": "vision OCR; 15/10/2026 10:14 am; Kurs Kirim: 2278 (Kurs Tukar: 2220); corrected from 2278",
       "promo": {
         "date_text": "15/10/2026 11:05 am",
         "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/849509160_2942118509481383_3386962677471875444_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=KBooqBNTSlcQ7kNvwFTjGp6&_nc_oc=AdpdfgffYhY7TJJaU9G7GrLo6HM8lRCHDAqJS4vTIMBob34w_xeDICJCRzJOSelK-j8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=GaK6zc4rhwi3FlGUQED7_A&_nc_ss=7a289&oh=00_AQOzsAvM140pDaWwaGh0t3sYOqxATQyb5xnx56lY-N-fNA&oe=6AD74329",
         "note": "Special RATE BAPAK PMI / UPDATE KURS KIRIM KURS+ 2282 (berlaku untuk kiriman uang DIBAWAH HK$8000 di cabang tertentu SENIN-JUMAT). Kurs Tukar is 2220.",
         "rate": 2282.0
       },
-      "rate": 2278.0,
+      "rate": 2293.0,
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/849861139_1406901194890525_9208234926962293873_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NpgkzLeMrMcQ7kNvwGQWP_i&_nc_oc=AdrQH6DpD4uPDmN42wv8BK6I2vCdndZWrtXfM2IISEuudO9qd8a2Eu2Ux4HMG-dvgZM&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=JekUDqG9lKZ0Idsh24LzQQ&_nc_ss=7b289&oh=00_AQOmr2r8ZrASeSTIIalWIEceDURszGzCyuR67D2jeXpchg&oe=6AD76297",
       "review_reason": null,
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-16T02:37:03+00:00",
+      "captured_at": "2026-10-16T02:38:45+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2663,7 +2667,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-16T02:37:03+00:00",
+      "captured_at": "2026-10-16T02:38:45+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
