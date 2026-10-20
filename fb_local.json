@@ -1,18 +1,18 @@
 {
-  "heartbeat": "2026-10-20T05:00:50+00:00",
+  "heartbeat": "2026-10-20T05:30:45+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2288.0,
       "note": "vision OCR; 20/10/2026 10:20 am; Kurs Kirim: 2288, Kurs Tukar: 2225",
-      "confidence": 1.0,
+      "confidence": 0.95,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/856312954_1642534887261084_3694175423679178862_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=eTLmelg0amQQ7kNvwHTXwfr&_nc_oc=Ado5i3QCajoj7vld0Si9BTTbXNcP8tT_Ur3rCruCVIWgJnKvdQkpnarRizS8Brs3_jU&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=J714-Y-JSOQHkv0vDws3Og&_nc_ss=7a289&oh=00_AQOu9TESwGGfim1unqtT_8UrCn0GR4lwQPbRv6Jdub5hZg&oe=6ADCBAC8",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/856312954_1642534887261084_3694175423679178862_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=eTLmelg0amQQ7kNvwHTXwfr&_nc_oc=Ado5i3QCajoj7vld0Si9BTTbXNcP8tT_Ur3rCruCVIWgJnKvdQkpnarRizS8Brs3_jU&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=5Rd60L01TF11We-wBOQhnQ&_nc_ss=7b289&oh=00_AQPX4k4mBToQK-2qs7A-e71BJ9ES-MAH9MHFvZxnAlG11g&oe=6ADCBAC8",
       "promo": {
         "rate": 2293.0,
-        "note": "RATE CANTIK / KURS KIRIM 2293, berlaku untuk kiriman uang dibawah HK$8000 di cabang tertentu pada hari Sabtu & Minggu.",
+        "note": "RATE CANTIK Kurs KIRIM (HANYA berlaku untuk kiriman uang DIBAWAH HK$8000 di Cabang Toko Chandra tertentu pada hari SABTU & MINGGU)",
         "date_text": "17/10/2026 - 18/10/2026 8:00 am",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/853081123_1101377489268876_3121984262076022822_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4TusqZOsGbQQ7kNvwFnq94d&_nc_oc=AdrumxOe7e_ODMHHxLSHO7lraCJhJ-vtR6PTLCxCqqdJxn81O5Uv0SCvY240L4Nl2WI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=WhSAUMK-Ge-x27yoWQXScw&_nc_ss=7b289&oh=00_AQOI8cTJp7INuPQ1x-T9EusweZa-27wk2sN7BSRItKcvlw&oe=6ADCB9AE"
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/853081123_1101377489268876_3121984262076022822_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4TusqZOsGbQQ7kNvwFnq94d&_nc_oc=AdrumxOe7e_ODMHHxLSHO7lraCJhJ-vtR6PTLCxCqqdJxn81O5Uv0SCvY240L4Nl2WI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=GAUj1j-q_fH0MBeqGdH1Rw&_nc_ss=7b289&oh=00_AQMr-WIr3WN4R-ta8VFQ4jUrDBBesyY58LFskdY84rzaqQ&oe=6ADCB9AE"
       },
       "is_promo_rate": false,
       "card_date": "2026-10-20",
@@ -24,7 +24,7 @@
       "note": "vision OCR; 20 Oktober 2026; Kurs Hari Ini",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/854568660_3740481012784208_7672141326322930991_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=2oBO8l658n8Q7kNvwE_jUIg&_nc_oc=Adp9el4mKToMdKa6-q-9LT9TpJo3_yPInJrXS1WMXAtYalt76ObQCh4D6hj3ydhHx-k&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=eSX8pAxXV8LM2ooAj4KixQ&_nc_ss=7b289&oh=00_AQMUA9cjmdeOxljixTiWrwrQDzznKMpp1x8QQWRDHNc3oQ&oe=6ADCCD82",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/854568660_3740481012784208_7672141326322930991_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=2oBO8l658n8Q7kNvwE_jUIg&_nc_oc=Adp9el4mKToMdKa6-q-9LT9TpJo3_yPInJrXS1WMXAtYalt76ObQCh4D6hj3ydhHx-k&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=0Fnge8Vm5U2lDTXqpZ2Mcg&_nc_ss=7b289&oh=00_AQNnD3tqERFLWGqv_loKt7TzWBjWsRgJnDZMRnq_CerOOA&oe=6ADCCD82",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null,
