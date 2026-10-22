@@ -1,28 +1,16 @@
 {
-  "heartbeat": "2026-10-22T11:00:49+00:00",
+  "heartbeat": "2026-10-22T11:30:41+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2293.0,
-      "note": "vision OCR; 22/10/2026 12:35; Kurs Kirim: 2293, Kurs Tukar: 2225",
-      "confidence": 0.99,
+      "note": "vision OCR; 22/10/2026 12:35; Kurs Kirim: 2293",
+      "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/861834114_4447550872160027_5234322172420527158_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kp74W7bV9UYQ7kNvwHadcEe&_nc_oc=AdrsS_pBHcCmylXE--zvXWfcN_P8uFx9xgchN2J0b7kqWxKW2JjdQ2Lh9stiJNJpn-c&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=AD8ZnMvqXtr2PzwUNFqmcQ&_nc_ss=7a289&oh=00_AQPVhuttOl_tF4ytcmt4dJ-m5QRheJn7qB5dU9_ZOrBk4g&oe=6ADFAF93",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/861834114_4447550872160027_5234322172420527158_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kp74W7bV9UYQ7kNvwHadcEe&_nc_oc=AdrsS_pBHcCmylXE--zvXWfcN_P8uFx9xgchN2J0b7kqWxKW2JjdQ2Lh9stiJNJpn-c&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=QLr7DZzS_WKK6YNp_0irow&_nc_ss=7a289&oh=00_AQMKoYrLG78LmI1q7r9m5Afnt3DDhcpWBZ4T-heP9se7mg&oe=6ADFAF93",
       "promo": null,
       "is_promo_rate": false,
       "card_date": "2026-10-22",
-      "date_conflict": false,
-      "conflict_cards": []
-    },
-    "bri|HKD|IDR": {
-      "rate": 2297.0,
-      "note": "vision OCR; 22 Oktober 2026; Kurs Hari Ini",
-      "confidence": 1.0,
-      "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/857761666_1773086550404254_432907769205042427_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=2Au0GzopXhIQ7kNvwEjiCiR&_nc_oc=Adq75KxYHz19rQZEa2WHgWbXpPTXvvzb7ki8ntK485xbKdt1AXKqxD49Fp9miQKaAs0&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=R07JKaO7bNhdZARl4Og_EA&_nc_ss=7b289&oh=00_AQPx1pBPuqY9gl8AqxyQLtvEXhZqqp0cWOHaMEzcIrIcGg&oe=6ADFA76F",
-      "promo": null,
-      "is_promo_rate": false,
-      "card_date": null,
       "date_conflict": false,
       "conflict_cards": []
     }
