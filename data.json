@@ -2,6 +2,14 @@
   "card_review": {},
   "changes": [
     {
+      "changed_at": "2026-10-22T02:52:49+00:00",
+      "new_rate": 2285.0,
+      "old_rate": 2287.0,
+      "pair": "HKD->IDR",
+      "provider": "EUI MONEY",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-10-21T08:01:00+00:00",
       "new_rate": 2287.627,
       "old_rate": 2283.3468,
@@ -250,14 +258,6 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-10-15T05:58:37+00:00",
-      "new_rate": 2277.0,
-      "old_rate": 2274.0,
-      "pair": "HKD->IDR",
-      "provider": "EUI MONEY",
-      "to_ccy": "IDR"
-    },
-    {
       "changed_at": "2026-10-15T04:00:51+00:00",
       "new_rate": 2275.0246879,
       "old_rate": 2269.1925916,
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-10-22T02:01:19+00:00",
+  "generated_at": "2026-10-22T02:52:49+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1441,6 +1441,10 @@
       {
         "rate": 2287.0,
         "t": "2026-10-21T02:19:52+00:00"
+      },
+      {
+        "rate": 2285.0,
+        "t": "2026-10-22T02:52:49+00:00"
       }
     ],
     "pandaremit|HKD|IDR": [
@@ -2756,7 +2760,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-22T02:01:19+00:00",
+      "captured_at": "2026-10-22T02:52:49+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2798,7 +2802,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-22T02:01:19+00:00",
+      "captured_at": "2026-10-22T02:52:49+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -2806,7 +2810,7 @@
       "needs_review": false,
       "note": "manual.json",
       "promo": null,
-      "rate": 2287.0,
+      "rate": 2285.0,
       "raw_ref": null,
       "review_reason": null,
       "source_url": null
@@ -2826,7 +2830,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-22T02:01:19+00:00",
+      "captured_at": "2026-10-22T02:52:49+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
