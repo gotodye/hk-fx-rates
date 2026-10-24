@@ -1,18 +1,18 @@
 {
-  "heartbeat": "2026-10-24T12:00:55+00:00",
+  "heartbeat": "2026-10-24T12:31:15+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2297.0,
-      "note": "vision OCR; 23/10/2026 13:17 pm; Kurs Kirim: 2297, Kurs Tukar: 2225",
+      "note": "vision OCR; 23/10/2026 13:17 pm; Kurs Kirim: 2297 (Kurs Tukar: 2225)",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/858500798_2177697139846356_2921359088848578069_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=oG1LQsXncD8Q7kNvwG4Udpf&_nc_oc=AdqTz6R1G77aO_ox1vfm6GMbv0LhuU8mjEkyYoO1eoXv9gl3YnO7liVPd9u08szHKW8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=M1ggUEA27iGjaKgRMQS6-A&_nc_ss=7b289&oh=00_AQOz-o2_nxoepGkHG9fGSYro0myQNaotscmQjP03dcoyRA&oe=6AE2801C",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/858500798_2177697139846356_2921359088848578069_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=oG1LQsXncD8Q7kNvwG4Udpf&_nc_oc=AdqTz6R1G77aO_ox1vfm6GMbv0LhuU8mjEkyYoO1eoXv9gl3YnO7liVPd9u08szHKW8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=kHTa5BEN82ppS4tTk4GDrg&_nc_ss=7b289&oh=00_AQNaIZh_H4oIeJAyiqz50VgAuh8Qn641gwBXr6wdYPO4Pg&oe=6AE2801C",
       "promo": {
         "rate": 2300.0,
-        "note": "Kurs Kirim 'RATE CANTIK' 2300 (hanya berlaku untuk kiriman uang DIBAWAH HK$8000 di cabang tertentu pada hari SABTU & MINGGU). Terdapat juga Kurs Tukar Cantik 2225.",
-        "date_text": "24/10/2026 - 25/10/2026 8:00 am",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/860045426_2208621346397627_6174042790261096098_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NHKDTTKs5CsQ7kNvwF_MnaN&_nc_oc=Ado7_gAF2tO12w2n0CQo3xmI7jUA4IzKV1qY6jIs05zqxw6Q75i7Unrd9scWbiYnRU8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=M1ggUEA27iGjaKgRMQS6-A&_nc_ss=7b289&oh=00_AQN7X1Fev4yvfNdr0iLXsN5oSwZcWXt67ReeOM7JxnUWAw&oe=6AE27A63"
+        "note": "RATE CANTIK / KURS KIRIM 2300 (hanya berlaku untuk kiriman uang di bawah HK$8000 di cabang tertentu pada hari Sabtu & Minggu). Kurs Tukar Cantik adalah 2225.",
+        "date_text": "24/10/2026 25/10/2026 8:00 am",
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/860045426_2208621346397627_6174042790261096098_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NHKDTTKs5CsQ7kNvwF_MnaN&_nc_oc=Ado7_gAF2tO12w2n0CQo3xmI7jUA4IzKV1qY6jIs05zqxw6Q75i7Unrd9scWbiYnRU8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=kHTa5BEN82ppS4tTk4GDrg&_nc_ss=7b289&oh=00_AQPzE07Ux3zg5YWGAO4yhs7BQjt6xnm2XVmwM9tD1wfKtw&oe=6AE27A63"
       },
       "is_promo_rate": false,
       "card_date": "2026-10-23",
@@ -24,7 +24,7 @@
       "note": "vision OCR; 24 Oktober 2026; Kurs Hari Ini",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/859865843_1468540228569322_4546649709402603597_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=akcIsWXAJAkQ7kNvwGQxcTi&_nc_oc=Adp089UV78VdtvE_6jwNfbu3pToAef1xVFQXqakQ7Ak9BWK-TFrgjn8xXdN6hlXeiPU&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=stkjLZVDGxfuCX-MU507Ow&_nc_ss=7a289&oh=00_AQM-NftI--dAwmLKVigOFZPI_oM5wpOhtKm29Etrj6vq2g&oe=6AE26AD9",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/859865843_1468540228569322_4546649709402603597_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=akcIsWXAJAkQ7kNvwGQxcTi&_nc_oc=Adp089UV78VdtvE_6jwNfbu3pToAef1xVFQXqakQ7Ak9BWK-TFrgjn8xXdN6hlXeiPU&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=VIlPe3kZA66MWdl3Lc5k7Q&_nc_ss=7a289&oh=00_AQMq0oyAKJt-uMJlmnqHdoCrYlJdFhTi63x1uc3_QanEiA&oe=6AE26AD9",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null,
