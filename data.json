@@ -284,7 +284,7 @@
   ],
   "correction_log": [
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2310.5977,
       "corrected_at": "2026-10-28T05:25:43.732Z",
       "key": "pandaremit|HKD|IDR",
@@ -292,8 +292,8 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2310.9154,
-      "status": "applied",
+      "source_rate": 2310.8271,
+      "status": "expired (source changed)",
       "wrong_rate": 2310.9154
     },
     {
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-10-28T09:01:08+00:00",
+  "generated_at": "2026-10-28T10:01:18+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -2964,7 +2964,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-28T09:01:08+00:00",
+      "captured_at": "2026-10-28T10:01:18+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3006,7 +3006,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-28T09:01:08+00:00",
+      "captured_at": "2026-10-28T10:01:18+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3020,21 +3020,21 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-10-28T09:01:08+00:00",
+      "captured_at": "2026-10-28T10:01:18+00:00",
       "card_date": null,
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
       "needs_review": false,
-      "note": "貓熊匯率 standard rate (+0.17% vs 昨日); corrected from 2310.92",
+      "note": "貓熊匯率 standard rate (+0.16% vs 昨日)",
       "promo": null,
-      "rate": 2310.5977,
+      "rate": 2310.8271,
       "raw_ref": null,
       "review_reason": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-28T09:01:08+00:00",
+      "captured_at": "2026-10-28T10:01:18+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3048,7 +3048,7 @@
       "source_url": null
     },
     "westernunion|HKD|IDR": {
-      "captured_at": "2026-10-28T09:01:08+00:00",
+      "captured_at": "2026-10-28T10:01:18+00:00",
       "card_date": null,
       "confidence": 0.98,
       "is_promo_rate": false,
