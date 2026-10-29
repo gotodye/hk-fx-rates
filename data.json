@@ -297,7 +297,7 @@
       "wrong_rate": 2310.9154
     },
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2305.0,
       "corrected_at": "2026-10-29T02:57:49.571Z",
       "key": "chandra|HKD|IDR",
@@ -305,8 +305,8 @@
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/864787640_2538564276638519_1465660437913583246_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OaGRIvvb8mIQ7kNvwHr8Mvw&_nc_oc=AdoT53FToIbaHfkwYr4-f_RbkPbYt68skWL1BgJTtwv6JV2nxzacXqjwHQ2WYT35ctY&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=EXScXeN426qnaeTmGJWGMw&_nc_ss=7a289&oh=00_AQTDKWmQDk2Jh2gkjD81KRyvzK6JsZMJG86bxIKpH7tK_A&oe=6AE7952F",
-      "source_rate": 2310.0,
-      "status": "applied",
+      "source_rate": 2305.0,
+      "status": "expired (source changed)",
       "wrong_rate": 2310.0
     },
     {
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-10-29T02:58:05+00:00",
+  "generated_at": "2026-10-29T02:58:22+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -2972,7 +2972,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-10-29T02:58:05+00:00",
+      "captured_at": "2026-10-29T02:58:22+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3014,7 +3014,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-10-29T02:58:05+00:00",
+      "captured_at": "2026-10-29T02:58:22+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3042,7 +3042,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-10-29T02:58:05+00:00",
+      "captured_at": "2026-10-29T02:58:22+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
