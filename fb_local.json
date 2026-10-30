@@ -1,28 +1,16 @@
 {
-  "heartbeat": "2026-10-30T00:25:27+00:00",
+  "heartbeat": "2026-10-30T00:30:41+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2305.0,
-      "note": "vision OCR; 29/10/2026 14:30 pm; Kurs Kirim: 2305 (Kurs Tukar: 2230)",
-      "confidence": 1.0,
+      "note": "vision OCR; 29/10/2026 14:30 pm; Kurs Kirim: 2305 (Kurs Tukar is 2230)",
+      "confidence": 0.95,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/874290513_2172382363696844_8540368922683926207_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ongNZYWN9tQQ7kNvwF-__4R&_nc_oc=AdqWO8YSNDWLZGOx1KLifAw-Gk87nuFUznuGkH3hoSnZFlNmfvcvPj5zN8fVai3ck9o&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=_QvFQ5JViOT3A4--LqeMhg&_nc_ss=7a289&oh=00_AQTpChbjEuOpPF7enybSYt3VIVPIjxc9CYP-i0om8jtKtw&oe=6AE9ABF7",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/874290513_2172382363696844_8540368922683926207_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ongNZYWN9tQQ7kNvwF-__4R&_nc_oc=AdqWO8YSNDWLZGOx1KLifAw-Gk87nuFUznuGkH3hoSnZFlNmfvcvPj5zN8fVai3ck9o&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Sv6slVlE7pHdVsOp45RIdw&_nc_ss=7a289&oh=00_AQRsMRW6NPlIxpFsA2623VlPnuO2CsvQQZdmUWiMQWJOUA&oe=6AE9ABF7",
       "promo": null,
       "is_promo_rate": false,
       "card_date": "2026-10-29",
-      "date_conflict": false,
-      "conflict_cards": []
-    },
-    "bri|HKD|IDR": {
-      "rate": 2306.0,
-      "note": "vision OCR; 29 Oktober 2026; Kurs Hari Ini 2306 (*berlaku di aplikasi remit.go! dan seluruh cabang BRI Global Financial)",
-      "confidence": 0.99,
-      "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/865502198_1674415240921801_6819733961752846323_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mpqkwY9gv7AQ7kNvwHJeGgM&_nc_oc=AdoK1rwNCKwXGx_Pntv5q5KGRR-5Gr2anb9TyeSeK9sEciXkQkCnVWrlqETWm3exD2c&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Jin40fFNHDcKaH3GpV4nhQ&_nc_ss=7b289&oh=00_AQRLiq_l88N1aA-nedXAtNlkrpq1UtYueAWPIjlQQQkpJQ&oe=6AE9ADD1",
-      "promo": null,
-      "is_promo_rate": false,
-      "card_date": null,
       "date_conflict": false,
       "conflict_cards": []
     }
