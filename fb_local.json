@@ -1,13 +1,13 @@
 {
-  "heartbeat": "2026-10-30T04:00:34+00:00",
+  "heartbeat": "2026-10-30T04:30:46+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2304.0,
-      "note": "vision OCR; 30/10/2026 11:02; Kurs Kirim 2304, Kurs Tukar 2230",
-      "confidence": 1.0,
+      "note": "vision OCR; 30/10/2026 11:02; Kurs Kirim: 2304, Kurs Tukar: 2230",
+      "confidence": 0.99,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/867028848_1006276642505849_321257383699605295_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_0aK9OrM6lMQ7kNvwHzywHs&_nc_oc=Adq0rgtIbDOGy-6ILfcVLtCbQr7XixQEBb2CyLWirjQo_b7kB9ybEwtiP0BBzwsQ8ek&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=CmongihIR-qNJ_hj7gQTJg&_nc_ss=7a289&oh=00_AQTSuxueUnqAHH05uydPU3cWEHQuo6eA9hz3aTTIaFR9zQ&oe=6AEA002A",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/867028848_1006276642505849_321257383699605295_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_0aK9OrM6lMQ7kNvwHzywHs&_nc_oc=Adq0rgtIbDOGy-6ILfcVLtCbQr7XixQEBb2CyLWirjQo_b7kB9ybEwtiP0BBzwsQ8ek&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=vDF_V3RIqTS9uKbco-Hf4g&_nc_ss=7a289&oh=00_AQRe2Pwuamlj30h0tIflZ9Ui7PmhbHcJFsLRAveQLkqNOg&oe=6AEA002A",
       "promo": null,
       "is_promo_rate": false,
       "card_date": "2026-10-30",
@@ -16,8 +16,8 @@
     },
     "bri|HKD|IDR": {
       "rate": 2306.0,
-      "note": "parsed from post text; KURS 2306 MASIH BERTAHAN! KURS remit.go!",
-      "confidence": 0.95,
+      "note": "parsed from post text; WOOOW, SEDULUR! KURS 2306 MASIH BERTAHAN! KURS remit.go! makin betah di angka tinggi, nih!",
+      "confidence": 0.9,
       "source_url": "https://www.facebook.com/briglobalfinancial",
       "raw_ref": null,
       "promo": null,
