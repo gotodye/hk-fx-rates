@@ -1,13 +1,13 @@
 {
-  "heartbeat": "2026-10-30T05:00:43+00:00",
+  "heartbeat": "2026-10-30T05:30:46+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2304.0,
-      "note": "vision OCR; 30/10/2026 11:02; Kurs Kirim 2304 (Kurs Tukar 2230)",
+      "note": "vision OCR; 30/10/2026 11:02; Kurs Kirim: 2304; Kurs Tukar: 2230",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/867028848_1006276642505849_321257383699605295_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_0aK9OrM6lMQ7kNvwHzywHs&_nc_oc=Adq0rgtIbDOGy-6ILfcVLtCbQr7XixQEBb2CyLWirjQo_b7kB9ybEwtiP0BBzwsQ8ek&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=zxN4ktnYdF-jsrYrC3FN9w&_nc_ss=7a289&oh=00_AQSXpzqSjYx3d0v9SEHSexVw2N80-GI_cfiqHKl3CP6umQ&oe=6AEA002A",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/867028848_1006276642505849_321257383699605295_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_0aK9OrM6lMQ7kNvwHzywHs&_nc_oc=Adq0rgtIbDOGy-6ILfcVLtCbQr7XixQEBb2CyLWirjQo_b7kB9ybEwtiP0BBzwsQ8ek&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=H4WD59-p2ISg6FBaPTd3Rg&_nc_ss=7a289&oh=00_AQT1gghFnjKQmADsyMXTz9SLLoFxzDXYQ1-gnmGQlRFNQw&oe=6AEA002A",
       "promo": null,
       "is_promo_rate": false,
       "card_date": "2026-10-30",
