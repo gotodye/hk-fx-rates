@@ -1,19 +1,14 @@
 {
-  "heartbeat": "2026-10-31T09:01:34+00:00",
+  "heartbeat": "2026-10-31T09:30:45+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2305.0,
-      "note": "vision OCR; 31/10/2026 08:00; Kurs Kirim: 2305, Kurs Tukar: 2230",
+      "note": "vision OCR; 31/10/2026 08:00; Kurs Kirim 2305 (Kurs Tukar is 2230)",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/869774021_1019998194456189_8646859061983179401_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MJGpLK8rI4AQ7kNvwGbfJM-&_nc_oc=AdoCvVn5vur-nDufcqaGFTVGQ4YCmqBrlRYOg-ZUH9J-5tO-_b3v_4zu5eu8xIOR5Rc&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=gCtLf-CWqlmVtDVq3ozDpA&_nc_ss=7a289&oh=00_AQRkRoR-KDbdBf3IDwxDp0QtlUGewK8oFz0oqMHYji8ODg&oe=6AEB865D",
-      "promo": {
-        "rate": 2277.0,
-        "note": "RATE CANTIK Kurs Kirim 2277 (restricted to under HK$8000 at specific branches on Saturday & Sunday); Kurs Tukar Cantik is 2220",
-        "date_text": "",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HbqZ9zcLVDwQ7kNvwHCWba7&_nc_oc=Adqw5z8ddtDaZKHFeV36vi7KDUEKWPovnMykQ5iOrxxrFtkfmk2slBaK78BAS3RLFzk&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=R5EVLsz0Njb_LI83uctgYA&_nc_ss=7a289&oh=00_AQT83UDdnEel23F4UhncrVGrds6plnjg5Brxftc49lY-Xw&oe=6AEB84DF"
-      },
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/869774021_1019998194456189_8646859061983179401_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MJGpLK8rI4AQ7kNvwGbfJM-&_nc_oc=AdoCvVn5vur-nDufcqaGFTVGQ4YCmqBrlRYOg-ZUH9J-5tO-_b3v_4zu5eu8xIOR5Rc&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=mnehZMUKuKjt8F28JZjatg&_nc_ss=7a289&oh=00_AQQjksK53W7hkIVTE5LHXfCmKYsy2oGG9mWE5i9vi8umVw&oe=6AEB865D",
+      "promo": null,
       "is_promo_rate": false,
       "card_date": "2026-10-31",
       "date_conflict": false,
@@ -21,10 +16,10 @@
     },
     "bri|HKD|IDR": {
       "rate": 2307.0,
-      "note": "vision OCR; 31 Oktober 2026; KURS HARI INI 2307 (berlaku di aplikasi remit.go! dan seluruh cabang BRI Global Financial)",
-      "confidence": 1.0,
+      "note": "vision OCR; 31 Oktober 2026; KURS HARI INI",
+      "confidence": 0.99,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/865588676_1792010828688116_171446316572581470_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dexd-Sj1n2sQ7kNvwFs3OfL&_nc_oc=AdoxtUd27dwa-wKpRB-z3cCLfMZAeL6KTcJ6cKVelOSZYJjEuXC8Kb6o9VD__Dpk7N4&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=I9yjx-fc_IMCwDeDBvad-Q&_nc_ss=7a289&oh=00_AQRC3qjY3n3XWul3UtenX8c55cOmVA53FhjhPDCTwOO9Jg&oe=6AEB95D7",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/865588676_1792010828688116_171446316572581470_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dexd-Sj1n2sQ7kNvwFs3OfL&_nc_oc=AdoxtUd27dwa-wKpRB-z3cCLfMZAeL6KTcJ6cKVelOSZYJjEuXC8Kb6o9VD__Dpk7N4&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=0Kfyp0CR6Am3Of6qh3eMiw&_nc_ss=7a289&oh=00_AQQ9oXcdZXm-yhMUkClDHppBmo9Tjt4xa2Zx7hH0zNDkjg&oe=6AEB95D7",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null,
