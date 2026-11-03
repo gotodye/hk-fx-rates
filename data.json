@@ -284,17 +284,17 @@
   ],
   "correction_log": [
     {
-      "applied": false,
+      "applied": true,
       "correct_rate": 2304.0026,
-      "corrected_at": "2026-11-03T02:44:02.674Z",
+      "corrected_at": "2026-11-03T08:09:13.754Z",
       "key": "pandaremit|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
       "source_rate": 2306.5259,
-      "status": "expired (source changed)",
-      "wrong_rate": 2306.2263
+      "status": "applied",
+      "wrong_rate": 2306.5259
     },
     {
       "applied": false,
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-11-03T08:08:36+00:00",
+  "generated_at": "2026-11-03T08:09:27+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -2491,6 +2491,10 @@
       {
         "rate": 2306.3144,
         "t": "2026-11-03T06:24:09+00:00"
+      },
+      {
+        "rate": 2304.0026,
+        "t": "2026-11-03T08:09:27+00:00"
       }
     ],
     "weremit|HKD|IDR": [
@@ -3140,7 +3144,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-11-03T08:08:36+00:00",
+      "captured_at": "2026-11-03T08:09:27+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3182,7 +3186,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-11-03T08:08:36+00:00",
+      "captured_at": "2026-11-03T08:09:27+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3202,15 +3206,15 @@
       "is_promo_rate": false,
       "method": "web",
       "needs_review": false,
-      "note": "貓熊匯率 standard rate (+0.01% vs 昨日)",
+      "note": "貓熊匯率 standard rate (+0.01% vs 昨日); corrected from 2306.53",
       "promo": null,
-      "rate": 2306.5259,
+      "rate": 2304.0026,
       "raw_ref": null,
       "review_reason": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-11-03T08:08:36+00:00",
+      "captured_at": "2026-11-03T08:09:27+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
