@@ -1,15 +1,5 @@
 {
-  "card_review": {
-    "chandra|HKD|IDR": {
-      "alerted": true,
-      "sig": [
-        2303.0,
-        2305.0,
-        2306.0,
-        2308.0
-      ]
-    }
-  },
+  "card_review": {},
   "changes": [
     {
       "changed_at": "2026-11-04T02:50:05+00:00",
@@ -302,21 +292,21 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2303.2898,
+      "source_rate": 2303.8616,
       "status": "expired (source changed)",
       "wrong_rate": 2306.4083
     },
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2303.0,
       "corrected_at": "2026-11-04T02:49:46.599Z",
       "key": "chandra|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/866567016_1844882259854408_7233046919477666407_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QjjVV3Xtf2wQ7kNvwHQhzyl&_nc_oc=Adoe07M2jubj5AIuoX3eNe2_7Xi8JhqRRV7Dn-3hgNZv36_z6BOdCd-p2qi-ucboy_o&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=e2Cg9-_JotbPhYzEQWrR6g&_nc_ss=7a289&oh=00_AQQ1HQ0Ys2Po687TUKxFbH2KsopZVluv6b5zK3DaP5uKNw&oe=6AF0524B",
-      "source_rate": 2306.0,
-      "status": "applied",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=jjJ4FiQxBLoQ7kNvwFT1v8d&_nc_oc=Adq7oWciHJlNYOO02i3FZfrX5apZzWywut5J-rZ2430Gx_KuYd2LHEZOiYTP7lPBbT8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=2LRZ9ja1Dawc3HDUE1FfLQ&_nc_ss=7a289&oh=00_AQTFwiI61-zvxVfMKOLjovgNvAb3T9mQb5g34j4eqoTpVQ&oe=6AF05DF9",
+      "source_rate": 2303.0,
+      "status": "expired (source changed)",
       "wrong_rate": 2306.0
     },
     {
@@ -327,7 +317,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/886445931_1461076802636756_4268839706729876921_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=RyxvRhh-n8oQ7kNvwFVSVVK&_nc_oc=AdpGhH9oSooqThwoXNcc1jUGFNs7kX-jwt4lQNWTpZGprmMzGi3wBRUvMFEHtIc7r_A&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=xsNoYIXVQi53c4qmJHVLaA&_nc_ss=7b289&oh=00_AQStK3V95KV-pUU92QKAn1p_Tcvrx_bMtJ7B1odqtzyB1Q&oe=6AF056CF",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/886445931_1461076802636756_4268839706729876921_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=RyxvRhh-n8oQ7kNvwFVSVVK&_nc_oc=AdpGhH9oSooqThwoXNcc1jUGFNs7kX-jwt4lQNWTpZGprmMzGi3wBRUvMFEHtIc7r_A&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=DE9QdqOoavndJ0WceiQLMA&_nc_ss=7b289&oh=00_AQTgs5KVrTQnfAAXrhMHVFJ9by2y29fD4cLjk41yJb8sQA&oe=6AF056CF",
       "source_rate": 2307.0,
       "status": "expired (source changed)",
       "wrong_rate": 2311.0
@@ -355,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-11-04T02:50:05+00:00",
+  "generated_at": "2026-11-04T02:58:21+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -3178,7 +3168,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-11-04T02:50:05+00:00",
+      "captured_at": "2026-11-04T02:58:21+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3192,35 +3182,35 @@
       "source_url": null
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-11-04T02:01:02+00:00",
+      "captured_at": "2026-11-04T02:58:21+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; 3 November 2026; Kurs Hari Ini",
+      "note": "vision OCR; 3 November 2026; KURS HARI INI",
       "promo": null,
       "rate": 2307.0,
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/886445931_1461076802636756_4268839706729876921_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=RyxvRhh-n8oQ7kNvwFVSVVK&_nc_oc=AdpGhH9oSooqThwoXNcc1jUGFNs7kX-jwt4lQNWTpZGprmMzGi3wBRUvMFEHtIc7r_A&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=xsNoYIXVQi53c4qmJHVLaA&_nc_ss=7b289&oh=00_AQStK3V95KV-pUU92QKAn1p_Tcvrx_bMtJ7B1odqtzyB1Q&oe=6AF056CF",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/886445931_1461076802636756_4268839706729876921_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=RyxvRhh-n8oQ7kNvwFVSVVK&_nc_oc=AdpGhH9oSooqThwoXNcc1jUGFNs7kX-jwt4lQNWTpZGprmMzGi3wBRUvMFEHtIc7r_A&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=DE9QdqOoavndJ0WceiQLMA&_nc_ss=7b289&oh=00_AQTgs5KVrTQnfAAXrhMHVFJ9by2y29fD4cLjk41yJb8sQA&oe=6AF056CF",
       "review_reason": null,
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
     "chandra|HKD|IDR": {
-      "captured_at": "2026-11-04T02:01:02+00:00",
-      "card_date": "2026-11-03",
+      "captured_at": "2026-11-04T02:58:21+00:00",
+      "card_date": "2026-11-04",
       "confidence": 1.0,
       "is_promo_rate": false,
       "method": "fb_ocr",
-      "needs_review": true,
-      "note": "vision OCR; 03/11/2026 15:14 am; Kurs Kirim; corrected from 2306",
+      "needs_review": false,
+      "note": "vision OCR; 04/11/2026 10:26 am; Kurs Kirim: 2303, Kurs Tukar: 2230",
       "promo": null,
       "rate": 2303.0,
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/866567016_1844882259854408_7233046919477666407_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QjjVV3Xtf2wQ7kNvwHQhzyl&_nc_oc=Adoe07M2jubj5AIuoX3eNe2_7Xi8JhqRRV7Dn-3hgNZv36_z6BOdCd-p2qi-ucboy_o&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=e2Cg9-_JotbPhYzEQWrR6g&_nc_ss=7a289&oh=00_AQQ1HQ0Ys2Po687TUKxFbH2KsopZVluv6b5zK3DaP5uKNw&oe=6AF0524B",
-      "review_reason": "多張標準卡數字不一致，且卡片日期與貼文時間對不上，待人工確認",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=jjJ4FiQxBLoQ7kNvwFT1v8d&_nc_oc=Adq7oWciHJlNYOO02i3FZfrX5apZzWywut5J-rZ2430Gx_KuYd2LHEZOiYTP7lPBbT8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=2LRZ9ja1Dawc3HDUE1FfLQ&_nc_ss=7a289&oh=00_AQTFwiI61-zvxVfMKOLjovgNvAb3T9mQb5g34j4eqoTpVQ&oe=6AF05DF9",
+      "review_reason": null,
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-11-04T02:50:05+00:00",
+      "captured_at": "2026-11-04T02:58:21+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3234,21 +3224,21 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-11-04T02:01:02+00:00",
+      "captured_at": "2026-11-04T02:58:21+00:00",
       "card_date": null,
       "confidence": 0.98,
       "is_promo_rate": false,
       "method": "web",
       "needs_review": false,
-      "note": "貓熊匯率 standard rate (+0.01% vs 昨日); corrected from 2306.41",
+      "note": "貓熊匯率 standard rate (-0.10% vs 昨日)",
       "promo": null,
-      "rate": 2303.2898,
+      "rate": 2303.8616,
       "raw_ref": null,
       "review_reason": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-11-04T02:50:05+00:00",
+      "captured_at": "2026-11-04T02:58:21+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3262,7 +3252,7 @@
       "source_url": null
     },
     "westernunion|HKD|IDR": {
-      "captured_at": "2026-11-04T02:01:02+00:00",
+      "captured_at": "2026-11-04T02:58:21+00:00",
       "card_date": null,
       "confidence": 0.98,
       "is_promo_rate": false,
