@@ -1,18 +1,18 @@
 {
-  "heartbeat": "2026-11-04T23:02:33+00:00",
+  "heartbeat": "2026-11-04T23:31:29+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2277.0,
-      "note": "vision OCR; PROMO; 10/10/2026 11/10/2026 8:00 am; Kurs Kirim Rate Cantik 2277 (khusus kiriman uang DIBAWAH HK$8000 di cabang tertentu pada hari SABTU & MINGGU); Kurs Tukar Cantik 2220",
+      "note": "vision OCR; PROMO; 10/10/2026 - 11/10/2026 8:00 am; RATE CANTIK Kurs KIRIM 2277 (berlaku untuk kiriman uang DIBAWAH HK$8000 di cabang-cabang tertentu pada hari SABTU & MINGGU)",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5XB0Pze-iMgQ7kNvwHDVkCa&_nc_oc=AdpeIbtE0rXkkbZw4nigCZWESZz4wr5P6TVuivbVvafMFcYp6MF2b5Pju0-g2uP6JaA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=IWFy-dFxBaLvHy0608WjRA&_nc_ss=7a289&oh=00_AQTVIoMJ44x8s2kUOPggKoXZikFEqEQlPe8eCKAM-29Tpg&oe=6AF1739F",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5XB0Pze-iMgQ7kNvwHDVkCa&_nc_oc=AdpeIbtE0rXkkbZw4nigCZWESZz4wr5P6TVuivbVvafMFcYp6MF2b5Pju0-g2uP6JaA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=J2n_r_XXmuLmM1SSlvqkOA&_nc_ss=7a289&oh=00_AQTWj0kMc9XbJ2RNxwQeSiXbum3b4Ofv8plmrWPwJLkCxQ&oe=6AF1ABDF",
       "promo": {
         "rate": 2277.0,
-        "note": "Kurs Kirim Rate Cantik 2277 (khusus kiriman uang DIBAWAH HK$8000 di cabang tertentu pada hari SABTU & MINGGU); Kurs Tukar Cantik 2220",
+        "note": "RATE CANTIK Kurs KIRIM 2277 (berlaku untuk kiriman uang DIBAWAH HK$8000 di cabang-cabang tertentu pada hari SABTU & MINGGU)",
         "date_text": "",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5XB0Pze-iMgQ7kNvwHDVkCa&_nc_oc=AdpeIbtE0rXkkbZw4nigCZWESZz4wr5P6TVuivbVvafMFcYp6MF2b5Pju0-g2uP6JaA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=IWFy-dFxBaLvHy0608WjRA&_nc_ss=7a289&oh=00_AQTVIoMJ44x8s2kUOPggKoXZikFEqEQlPe8eCKAM-29Tpg&oe=6AF1739F"
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5XB0Pze-iMgQ7kNvwHDVkCa&_nc_oc=AdpeIbtE0rXkkbZw4nigCZWESZz4wr5P6TVuivbVvafMFcYp6MF2b5Pju0-g2uP6JaA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=J2n_r_XXmuLmM1SSlvqkOA&_nc_ss=7a289&oh=00_AQTWj0kMc9XbJ2RNxwQeSiXbum3b4Ofv8plmrWPwJLkCxQ&oe=6AF1ABDF"
       },
       "is_promo_rate": true,
       "card_date": "2026-10-11",
