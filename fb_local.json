@@ -1,14 +1,19 @@
 {
-  "heartbeat": "2026-11-04T07:31:31+00:00",
+  "heartbeat": "2026-11-04T08:01:11+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
       "rate": 2303.0,
-      "note": "vision OCR; 04/11/2026 10:26 am; Kurs Kirim: 2303, Kurs Tukar: 2230",
+      "note": "vision OCR; 04/11/2026 10:26 am; Kurs Kirim",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=jjJ4FiQxBLoQ7kNvwFT1v8d&_nc_oc=Adq7oWciHJlNYOO02i3FZfrX5apZzWywut5J-rZ2430Gx_KuYd2LHEZOiYTP7lPBbT8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=_xKG-OMljQjTaE5BMiCshA&_nc_ss=7a289&oh=00_AQQf5rgHSHpG5j7T-sf0dVjcmAUSTU7b-6C8XQdJh_gFPg&oe=6AF09639",
-      "promo": null,
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=jjJ4FiQxBLoQ7kNvwFT1v8d&_nc_oc=Adq7oWciHJlNYOO02i3FZfrX5apZzWywut5J-rZ2430Gx_KuYd2LHEZOiYTP7lPBbT8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=e-OX8jIXNkK5QBaSxgCOvg&_nc_ss=7a289&oh=00_AQSRdmYCYWzViXoOFNIhGSx9Pze1oXzBukHoJwu82KJ95A&oe=6AF0CE79",
+      "promo": {
+        "rate": 2277.0,
+        "note": "RATE CANTIK Kurs KIRIM 2277 (berlaku di bawah HK$8000 pada hari Sabtu & Minggu di cabang tertentu). Kurs TUKAR CANTIK: 2220",
+        "date_text": "",
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5XB0Pze-iMgQ7kNvwHDVkCa&_nc_oc=AdpeIbtE0rXkkbZw4nigCZWESZz4wr5P6TVuivbVvafMFcYp6MF2b5Pju0-g2uP6JaA&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=hTTOXyfBbM_L0jFzibTtsg&_nc_ss=7b289&oh=00_AQTJK9fi-mJCB_nk1QcSrx3lpfwbYDYv7MssvUsIdW1Fmw&oe=6AF0CADF"
+      },
       "is_promo_rate": false,
       "card_date": "2026-11-04",
       "date_conflict": false,
