@@ -1,5 +1,18 @@
 {
-  "heartbeat": "2026-11-05T13:32:12+00:00",
-  "fetch_ok": false,
-  "records": {}
+  "heartbeat": "2026-11-05T14:02:14+00:00",
+  "fetch_ok": true,
+  "records": {
+    "chandra|HKD|IDR": {
+      "rate": 2300.0,
+      "note": "vision OCR; 5/11/2026 15:14; Kurs Kirim: 2300 (customer remittance rate). Kurs Tukar is also shown as 2230.",
+      "confidence": 1.0,
+      "source_url": "https://www.facebook.com/ChandraPusat",
+      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/888505846_28496959096650569_5918069037212931033_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kJ0wSApJLjkQ7kNvwFmppjU&_nc_oc=AdrmlRxQjMulvap-S6zgWTDL0CpRCw45QZisJBCZcnxnssV-ESv60661W7QNFVjoBAA&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=YkIzI654RIT88OeBFloSnw&_nc_ss=79289&oh=00_AQTuFknVn5sYfa2nipbQ1k3Lbib04GWI5oRfJK-8_KmkgA&oe=6AF25F90",
+      "promo": null,
+      "is_promo_rate": false,
+      "card_date": "2026-11-05",
+      "date_conflict": false,
+      "conflict_cards": []
+    }
+  }
 }
