@@ -1,30 +1,5 @@
 {
-  "heartbeat": "2026-11-05T12:32:09+00:00",
-  "fetch_ok": true,
-  "records": {
-    "chandra|HKD|IDR": {
-      "rate": 2300.0,
-      "note": "vision OCR; 5/11/2026 15:14; Kurs Kirim",
-      "confidence": 1.0,
-      "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/888505846_28496959096650569_5918069037212931033_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kJ0wSApJLjkQ7kNvwHmgjb-&_nc_oc=AdqJHrwopd7DPSIPr2F_K-JML8TYRO5gJ0GT54nhIcWc3NBpEb3L8L1VNFjvv4H9dAs&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=-td264dCqjvIC-rjP7hLkQ&_nc_ss=79289&oh=00_AQQ_H2mJRMdLhbYD1hmiDV8Fvj9WjgCmspCi43DVW__dMQ&oe=6AF25F90",
-      "promo": null,
-      "is_promo_rate": false,
-      "card_date": "2026-11-05",
-      "date_conflict": false,
-      "conflict_cards": []
-    },
-    "bri|HKD|IDR": {
-      "rate": 2307.0,
-      "note": "vision OCR; 5 November 2026; KURS HARI INI: 2307, berlaku di aplikasi remit.go! dan seluruh cabang BRI Global Financial",
-      "confidence": 1.0,
-      "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/888139412_1032988532848967_8689295151931034700_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qAU3FGLLkf0Q7kNvwENG29o&_nc_oc=Adp064dDOvMFWYYMkkmDHsEdgpEhENTgelPoBRgtkXcKWUYno8UhQ0vMo_D815Ehyhg&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=EvCdq-BZPQi6qz1euYa47g&_nc_ss=79289&oh=00_AQQIbT1q0anQARoF1pqrj1N_a404UugxVFJ0yQRF1KWHoA&oe=6AF2625B",
-      "promo": null,
-      "is_promo_rate": false,
-      "card_date": null,
-      "date_conflict": false,
-      "conflict_cards": []
-    }
-  }
+  "heartbeat": "2026-11-05T13:32:12+00:00",
+  "fetch_ok": false,
+  "records": {}
 }
