@@ -1,30 +1,25 @@
 {
-  "heartbeat": "2026-11-05T07:32:24+00:00",
+  "heartbeat": "2026-11-05T08:01:29+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
-      "rate": 2277.0,
-      "note": "vision OCR; PROMO; 10/10/2026 - 11/10/2026 8:00 am; Kurs KIRIM Rate Cantik (HANYA berlaku untuk kiriman uang DIBAWAH HK$8000 di Cabang Toko Chandra tertentu pada hari SABTU & MINGGU)",
-      "confidence": 0.95,
+      "rate": 2300.0,
+      "note": "vision OCR; 5/11/2026 15:14; Kurs Kirim",
+      "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5XB0Pze-iMgQ7kNvwGocaKl&_nc_oc=Adrh_1MRViBY8-oIN0XRaZVbi1Bs7NTezC7jNkq22E44A-wCVziq8zgxCNDPEcTR9oY&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=vhgZajM0ttpAHatdX9ud9Q&_nc_ss=7a289&oh=00_AQRQKjvmEK4LXbrIXyUU6rt6V43mAhsAj8n4adUk-dElBg&oe=6AF21C5F",
-      "promo": {
-        "rate": 2277.0,
-        "note": "Kurs KIRIM Rate Cantik (HANYA berlaku untuk kiriman uang DIBAWAH HK$8000 di Cabang Toko Chandra tertentu pada hari SABTU & MINGGU)",
-        "date_text": "",
-        "image": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5XB0Pze-iMgQ7kNvwGocaKl&_nc_oc=Adrh_1MRViBY8-oIN0XRaZVbi1Bs7NTezC7jNkq22E44A-wCVziq8zgxCNDPEcTR9oY&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=vhgZajM0ttpAHatdX9ud9Q&_nc_ss=7a289&oh=00_AQRQKjvmEK4LXbrIXyUU6rt6V43mAhsAj8n4adUk-dElBg&oe=6AF21C5F"
-      },
-      "is_promo_rate": true,
-      "card_date": "2026-10-11",
+      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/888505846_28496959096650569_5918069037212931033_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kJ0wSApJLjkQ7kNvwG-fblZ&_nc_oc=AdryY_8a05PsuYoHtTpRBb2WB39Q7i6vvdlhcxTWPzgTZnbnLuRvyJNYxc41xzXaVD4&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=tSThqVs6cw4lsRk9AYzxnA&_nc_ss=7a289&oh=00_AQTQShdZHf71bUu8d4PsW6r2-s65_0Wu-XBM9c60Fd5zoQ&oe=6AF1EF10",
+      "promo": null,
+      "is_promo_rate": false,
+      "card_date": "2026-11-05",
       "date_conflict": false,
       "conflict_cards": []
     },
     "bri|HKD|IDR": {
       "rate": 2307.0,
-      "note": "vision OCR; 5 November 2026; Kurs Hari Ini 2307 berlaku di aplikasi remit.go! dan seluruh cabang BRI Global Financial",
+      "note": "vision OCR; 5 November 2026; KURS HARI INI",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/888139412_1032988532848967_8689295151931034700_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qAU3FGLLkf0Q7kNvwHojFrU&_nc_oc=Adq6DMtrDxWl4oBLNb0Szmj9shTRE0S8dcK4B-jjyK5AxohzK8foT0RpJv_YFBVyZzg&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=LUR5Ok9bV0NOfYe4rP_pag&_nc_ss=7a289&oh=00_AQRqYF4KFK13-YVmh3xc5WLfq0jIbLrL-zFmBYOmeAQBGg&oe=6AF1F1DB",
+      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/888139412_1032988532848967_8689295151931034700_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qAU3FGLLkf0Q7kNvwHojFrU&_nc_oc=Adq6DMtrDxWl4oBLNb0Szmj9shTRE0S8dcK4B-jjyK5AxohzK8foT0RpJv_YFBVyZzg&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=QtxUU2cYfiveDjQwkLRCOA&_nc_ss=7a289&oh=00_AQQN3hxzClLGvDPn0cn11oaLeMNz9hR1y-YlL8C_eLDAqw&oe=6AF1F1DB",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null,
