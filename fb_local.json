@@ -1,5 +1,18 @@
 {
-  "heartbeat": "2026-11-05T14:31:34+00:00",
-  "fetch_ok": false,
-  "records": {}
+  "heartbeat": "2026-11-05T15:01:45+00:00",
+  "fetch_ok": true,
+  "records": {
+    "bri|HKD|IDR": {
+      "rate": 2307.0,
+      "note": "vision OCR; 5 November 2026; Kurs Hari Ini",
+      "confidence": 1.0,
+      "source_url": "https://www.facebook.com/briglobalfinancial",
+      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/888139412_1032988532848967_8689295151931034700_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qAU3FGLLkf0Q7kNvwHGQWeZ&_nc_oc=AdqE_csuzJ28gTCfr1b-WVG7VWRBqffj7ST8D5Eg4Z7R6D7fvvKxQemt7_ykb1MztTM&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=qCAN62CmcJXZ8fSWxnO8aA&_nc_ss=79289&oh=00_AQRYN9fkTwRPpuRdA9lcb3TRJ9i1IqUkfI2cOjtKGpbWWw&oe=6AF2625B",
+      "promo": null,
+      "is_promo_rate": false,
+      "card_date": null,
+      "date_conflict": false,
+      "conflict_cards": []
+    }
+  }
 }
