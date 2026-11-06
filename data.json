@@ -284,7 +284,7 @@
   ],
   "correction_log": [
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2304.8523,
       "corrected_at": "2026-11-06T02:44:01.131Z",
       "key": "pandaremit|HKD|IDR",
@@ -292,12 +292,12 @@
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
-      "source_rate": 2300.2779,
-      "status": "applied",
+      "source_rate": 2304.8523,
+      "status": "expired (source changed)",
       "wrong_rate": 2300.2779
     },
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2305.0,
       "corrected_at": "2026-11-06T02:42:26.668Z",
       "key": "chandra|HKD|IDR",
@@ -305,12 +305,12 @@
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/888505846_28496959096650569_5918069037212931033_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FIhiGslosiYQ7kNvwFO4bPc&_nc_oc=Ado187OKqSctXWWHOXW_teFArQgu72ZFyX4tBKkVPeKvU0CJGWKa7QfmPsL_kfp6TU8&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=ieS_8qjvQmk0kDP7QCz0Pg&_nc_ss=7a289&oh=00_AQTs1W2dgmsY93iu4epg5BxqJqdB47dPRGs7-dRfwkzjFg&oe=6AF30850",
-      "source_rate": 2300.0,
-      "status": "applied",
+      "source_rate": 2305.0,
+      "status": "expired (source changed)",
       "wrong_rate": 2300.0
     },
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2302.0,
       "corrected_at": "2026-11-06T02:42:49.881Z",
       "key": "bri|HKD|IDR",
@@ -318,8 +318,8 @@
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
       "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/888139412_1032988532848967_8689295151931034700_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qAU3FGLLkf0Q7kNvwFnOqXA&_nc_oc=AdoYLybpLwJyKF6SS3Mk5MAR_HIhT3cch7EuyLKcib7C332Er4j9yCfCvg8MIGskJ_U&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=Ekfh69ukTz4kxm_VdSRSkw&_nc_ss=7a289&oh=00_AQTku3J7ahIeY-LyKmrOSKqp4o4Wjy1DZTiuy0tzg3B2qQ&oe=6AF30B1B",
-      "source_rate": 2307.0,
-      "status": "applied",
+      "source_rate": 2302.0,
+      "status": "expired (source changed)",
       "wrong_rate": 2307.0
     },
     {
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-11-06T02:44:08+00:00",
+  "generated_at": "2026-11-06T02:44:25+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -3280,7 +3280,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-11-06T02:44:08+00:00",
+      "captured_at": "2026-11-06T02:44:25+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3322,7 +3322,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-11-06T02:44:08+00:00",
+      "captured_at": "2026-11-06T02:44:25+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3350,7 +3350,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-11-06T02:44:08+00:00",
+      "captured_at": "2026-11-06T02:44:25+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
