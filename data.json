@@ -317,7 +317,7 @@
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
-      "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/892848943_2051394812206459_8674054325485054402_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oYGX_pPbLP0Q7kNvwEJlhlm&_nc_oc=AdoT2IotZKRdGDqaOcTKk-nNsmMljnrsD8AzTM39E7D3z77zkprSlZ6T-9NuOF9i6Mo&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=ycY0pRzkxdTwesEcY32WRQ&_nc_ss=79289&oh=00_AQQFRxzx0X39QGercoMVizwoHCQtpryBEtiBIa1JL9hsZA&oe=6AF4DDB8",
+      "raw_ref": "https://scontent-nrt1-2.xx.fbcdn.net/v/t39.99422-6/892848943_2051394812206459_8674054325485054402_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oYGX_pPbLP0Q7kNvwHTNscj&_nc_oc=AdqKKXO0mvPQlbCmGsQxF-EIfU9_83gbkhKlkpG0cgPL7N3Y3Cig90KLXk4UL4qvBlY&_nc_zt=14&_nc_ht=scontent-nrt1-2.xx&_nc_gid=OzNcFL44rJFGy4JYLatzVA&_nc_ss=79289&oh=00_AQRbIWrqq7okgzZzsB2X7fTsjMUTtov4TJ7N9NaiNBQrnA&oe=6AF515F8",
       "source_rate": 2306.0,
       "status": "expired (source changed)",
       "wrong_rate": 2307.0
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-11-07T13:31:13+00:00",
+  "generated_at": "2026-11-07T14:30:56+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -3300,7 +3300,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-11-07T13:31:13+00:00",
+      "captured_at": "2026-11-07T14:30:56+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3314,7 +3314,7 @@
       "source_url": null
     },
     "bri|HKD|IDR": {
-      "captured_at": "2026-11-07T13:31:13+00:00",
+      "captured_at": "2026-11-07T14:30:56+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3323,7 +3323,7 @@
       "note": "vision OCR; 7 November 2026; Kurs Hari Ini",
       "promo": null,
       "rate": 2306.0,
-      "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/892848943_2051394812206459_8674054325485054402_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oYGX_pPbLP0Q7kNvwEJlhlm&_nc_oc=AdoT2IotZKRdGDqaOcTKk-nNsmMljnrsD8AzTM39E7D3z77zkprSlZ6T-9NuOF9i6Mo&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=ycY0pRzkxdTwesEcY32WRQ&_nc_ss=79289&oh=00_AQQFRxzx0X39QGercoMVizwoHCQtpryBEtiBIa1JL9hsZA&oe=6AF4DDB8",
+      "raw_ref": "https://scontent-nrt1-2.xx.fbcdn.net/v/t39.99422-6/892848943_2051394812206459_8674054325485054402_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oYGX_pPbLP0Q7kNvwHTNscj&_nc_oc=AdqKKXO0mvPQlbCmGsQxF-EIfU9_83gbkhKlkpG0cgPL7N3Y3Cig90KLXk4UL4qvBlY&_nc_zt=14&_nc_ht=scontent-nrt1-2.xx&_nc_gid=OzNcFL44rJFGy4JYLatzVA&_nc_ss=79289&oh=00_AQRbIWrqq7okgzZzsB2X7fTsjMUTtov4TJ7N9NaiNBQrnA&oe=6AF515F8",
       "review_reason": null,
       "source_url": "https://www.facebook.com/briglobalfinancial"
     },
@@ -3342,7 +3342,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-11-07T13:31:13+00:00",
+      "captured_at": "2026-11-07T14:30:56+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3356,7 +3356,7 @@
       "source_url": null
     },
     "pandaremit|HKD|IDR": {
-      "captured_at": "2026-11-07T13:31:13+00:00",
+      "captured_at": "2026-11-07T14:30:56+00:00",
       "card_date": null,
       "confidence": 0.98,
       "is_promo_rate": false,
@@ -3370,7 +3370,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-11-07T13:31:13+00:00",
+      "captured_at": "2026-11-07T14:30:56+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3384,7 +3384,7 @@
       "source_url": null
     },
     "westernunion|HKD|IDR": {
-      "captured_at": "2026-11-07T13:31:13+00:00",
+      "captured_at": "2026-11-07T14:30:56+00:00",
       "card_date": null,
       "confidence": 0.98,
       "is_promo_rate": false,
