@@ -1,25 +1,13 @@
 {
-  "heartbeat": "2026-11-07T13:02:00+00:00",
+  "heartbeat": "2026-11-07T14:02:09+00:00",
   "fetch_ok": true,
   "records": {
-    "chandra|HKD|IDR": {
-      "rate": 2303.0,
-      "note": "vision OCR; 04/11/2026 10:26 am; Kurs Kirim",
-      "confidence": 1.0,
-      "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=AvRCbKpe-LAQ7kNvwHMnmjF&_nc_oc=AdqMLaUyJ203tYhjvhqqeti6KsXmsGJwQbyoHBzQXRvfWzLnJ7WSr3hYEOrjgqQdR2Q&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=f9o6tdFNqFbuWINuKPvYbQ&_nc_ss=79289&oh=00_AQRFXPHH5RMEZfZTJUwFfXzCIvt_SRQhNF0eW8W-d-kVBQ&oe=6AF4FB39",
-      "promo": null,
-      "is_promo_rate": false,
-      "card_date": "2026-11-04",
-      "date_conflict": false,
-      "conflict_cards": []
-    },
     "bri|HKD|IDR": {
       "rate": 2306.0,
       "note": "vision OCR; 7 November 2026; Kurs Hari Ini",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/892848943_2051394812206459_8674054325485054402_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oYGX_pPbLP0Q7kNvwEJlhlm&_nc_oc=AdoT2IotZKRdGDqaOcTKk-nNsmMljnrsD8AzTM39E7D3z77zkprSlZ6T-9NuOF9i6Mo&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=ycY0pRzkxdTwesEcY32WRQ&_nc_ss=79289&oh=00_AQQFRxzx0X39QGercoMVizwoHCQtpryBEtiBIa1JL9hsZA&oe=6AF4DDB8",
+      "raw_ref": "https://scontent-nrt1-2.xx.fbcdn.net/v/t39.99422-6/892848943_2051394812206459_8674054325485054402_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oYGX_pPbLP0Q7kNvwHTNscj&_nc_oc=AdqKKXO0mvPQlbCmGsQxF-EIfU9_83gbkhKlkpG0cgPL7N3Y3Cig90KLXk4UL4qvBlY&_nc_zt=14&_nc_ht=scontent-nrt1-2.xx&_nc_gid=OzNcFL44rJFGy4JYLatzVA&_nc_ss=79289&oh=00_AQRbIWrqq7okgzZzsB2X7fTsjMUTtov4TJ7N9NaiNBQrnA&oe=6AF515F8",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null,
