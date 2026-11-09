@@ -1,5 +1,5 @@
 {
-  "heartbeat": "2026-11-09T01:31:53+00:00",
+  "heartbeat": "2026-11-09T02:01:58+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
@@ -7,7 +7,7 @@
       "note": "vision OCR; 04/11/2026 10:26 am; Kurs Kirim",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent-ams4-1.xx.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xn4pqAUBTvQQ7kNvwHahHhM&_nc_oc=AdpVlqsdHdeD1EKKjMt3xq99frHVzf_t9unfZT-BiWeB4wlWwuByqDxzpPmts7alWjs&_nc_zt=14&_nc_ht=scontent-ams4-1.xx&_nc_gid=BqICLvqUaR2goDA0i_4Mzg&_nc_ss=79289&oh=00_AQQyzHM-qHFsjapxcfheLRb2k6YzShlRlprBrRZUi9PMWw&oe=6AF6F579",
+      "raw_ref": "https://scontent-ams4-1.xx.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xn4pqAUBTvQQ7kNvwHahHhM&_nc_oc=AdpVlqsdHdeD1EKKjMt3xq99frHVzf_t9unfZT-BiWeB4wlWwuByqDxzpPmts7alWjs&_nc_zt=14&_nc_ht=scontent-ams4-1.xx&_nc_gid=QJOznAF_-rPRo7kM1iN7Yg&_nc_ss=79289&oh=00_AQQbBWjUoWD__CjYfdmrccU4fmqorNvqvdHDc8Zntf7C1Q&oe=6AF6F579",
       "promo": null,
       "is_promo_rate": false,
       "card_date": "2026-11-04",
