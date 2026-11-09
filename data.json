@@ -2,6 +2,14 @@
   "card_review": {},
   "changes": [
     {
+      "changed_at": "2026-11-09T02:36:48+00:00",
+      "new_rate": 2303.0,
+      "old_rate": 2306.0,
+      "pair": "HKD->IDR",
+      "provider": "BRI Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-11-08T23:01:04+00:00",
       "new_rate": 2301.7959,
       "old_rate": 2291.7164,
@@ -272,14 +280,6 @@
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
       "to_ccy": "IDR"
-    },
-    {
-      "changed_at": "2026-10-28T03:01:19+00:00",
-      "new_rate": 2307.0,
-      "old_rate": 2305.0,
-      "pair": "HKD->IDR",
-      "provider": "BRI Remittance",
-      "to_ccy": "IDR"
     }
   ],
   "correction_log": [
@@ -310,17 +310,17 @@
       "wrong_rate": 2300.0
     },
     {
-      "applied": false,
-      "correct_rate": 2302.0,
-      "corrected_at": "2026-11-06T02:42:49.881Z",
+      "applied": true,
+      "correct_rate": 2303.0,
+      "corrected_at": "2026-11-09T02:36:33.511Z",
       "key": "bri|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
       "raw_ref": "https://scontent.fhkg1-2.fna.fbcdn.net/v/t39.99422-6/889697265_2649717128778910_1811527411414847316_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=68vsu4-Ars8Q7kNvwFzIHuF&_nc_oc=Adri_BOXMVpjImjSHDpK3DtqL7WY2NjfiwUxlUuP_RCH8W7W0f6cB1WLQ-dyYLb95N8&_nc_zt=14&_nc_ht=scontent.fhkg1-2.fna&_nc_gid=lAvDlD7BDvKqxTMsrofg2w&_nc_ss=79289&oh=00_AQQifa7SlTF-OZ2-AAuyfMpMvII8PoxTY3NjrNK2fH6Rsw&oe=6AF6DA85",
       "source_rate": 2306.0,
-      "status": "expired (source changed)",
-      "wrong_rate": 2307.0
+      "status": "applied",
+      "wrong_rate": 2306.0
     },
     {
       "applied": false,
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-11-09T02:31:46+00:00",
+  "generated_at": "2026-11-09T02:36:48+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -837,6 +837,10 @@
       {
         "rate": 2306.0,
         "t": "2026-11-07T10:31:00+00:00"
+      },
+      {
+        "rate": 2303.0,
+        "t": "2026-11-09T02:36:48+00:00"
       }
     ],
     "chandra|HKD|IDR": [
@@ -3308,7 +3312,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-11-09T02:31:46+00:00",
+      "captured_at": "2026-11-09T02:36:48+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3328,9 +3332,9 @@
       "is_promo_rate": false,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; 8 November 2026; Kurs Hari Ini",
+      "note": "vision OCR; 8 November 2026; Kurs Hari Ini; corrected from 2306",
       "promo": null,
-      "rate": 2306.0,
+      "rate": 2303.0,
       "raw_ref": "https://scontent.fhkg1-2.fna.fbcdn.net/v/t39.99422-6/889697265_2649717128778910_1811527411414847316_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=68vsu4-Ars8Q7kNvwFzIHuF&_nc_oc=Adri_BOXMVpjImjSHDpK3DtqL7WY2NjfiwUxlUuP_RCH8W7W0f6cB1WLQ-dyYLb95N8&_nc_zt=14&_nc_ht=scontent.fhkg1-2.fna&_nc_gid=lAvDlD7BDvKqxTMsrofg2w&_nc_ss=79289&oh=00_AQQifa7SlTF-OZ2-AAuyfMpMvII8PoxTY3NjrNK2fH6Rsw&oe=6AF6DA85",
       "review_reason": null,
       "source_url": "https://www.facebook.com/briglobalfinancial"
@@ -3350,7 +3354,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-11-09T02:31:46+00:00",
+      "captured_at": "2026-11-09T02:36:48+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3378,7 +3382,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-11-09T02:31:46+00:00",
+      "captured_at": "2026-11-09T02:36:48+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
