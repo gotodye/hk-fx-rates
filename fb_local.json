@@ -1,5 +1,5 @@
 {
-  "heartbeat": "2026-11-10T13:31:58+00:00",
+  "heartbeat": "2026-11-11T03:01:41+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
@@ -7,10 +7,22 @@
       "note": "vision OCR; 04/11/2026 10:26 am; Kurs Kirim",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent-ams4-1.xx.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xn4pqAUBTvQQ7kNvwHahHhM&_nc_oc=AdpVlqsdHdeD1EKKjMt3xq99frHVzf_t9unfZT-BiWeB4wlWwuByqDxzpPmts7alWjs&_nc_zt=14&_nc_ht=scontent-ams4-1.xx&_nc_gid=KI3Npfn9OCT110FTqPyvUw&_nc_ss=79289&oh=00_AQQPwtNfvE-oyKTEqXqQThM1NrFcq00d839BZgYRT8GgvQ&oe=6AF8EFB9",
+      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xn4pqAUBTvQQ7kNvwEnng_H&_nc_oc=AdpK_qN851vZgSPC_DLkNe0hK9vPRFcEnvuHkum4fZ8JS2HwFVG93u77swsGSIaZ39I&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=CiUImz89OQQYU9WpqvVvVw&_nc_ss=79289&oh=00_AQTr5QiwjsXtckgZgxo0OlVM4e4OZUxVf6pqMBzk3jO9ag&oe=6AF99879",
       "promo": null,
       "is_promo_rate": false,
       "card_date": "2026-11-04",
+      "date_conflict": false,
+      "conflict_cards": []
+    },
+    "bri|HKD|IDR": {
+      "rate": 2302.0,
+      "note": "vision OCR; 11 November 2026; Kurs Hari Ini",
+      "confidence": 1.0,
+      "source_url": "https://www.facebook.com/briglobalfinancial",
+      "raw_ref": "https://scontent-itm1-1.xx.fbcdn.net/v/t39.99422-6/901785843_1678613810273881_950310930229621008_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PVkZU0uD6tgQ7kNvwGS339w&_nc_oc=AdqEItzhLm874_3Wo9f1juv3Wn8_3PRm6iNVQReomY86NfLaN6sZn7oZ-bRc4KrRck4&_nc_zt=14&_nc_ht=scontent-itm1-1.xx&_nc_gid=QGe-l-8pNfcLCN7b_RSD3Q&_nc_ss=79289&oh=00_AQRhTj483GqYg0Okt3LkQav3sYaeV1PQOvvO2Lc21OTjUA&oe=6AF9BBCA",
+      "promo": null,
+      "is_promo_rate": false,
+      "card_date": null,
       "date_conflict": false,
       "conflict_cards": []
     }
