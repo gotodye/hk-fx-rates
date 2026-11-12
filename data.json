@@ -284,17 +284,17 @@
   ],
   "correction_log": [
     {
-      "applied": false,
-      "correct_rate": 2306.8085,
-      "corrected_at": "2026-11-11T05:45:29.651Z",
+      "applied": true,
+      "correct_rate": 2309.0132,
+      "corrected_at": "2026-11-12T02:33:12.742Z",
       "key": "pandaremit|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
       "source_rate": 2306.414,
-      "status": "expired (source changed)",
-      "wrong_rate": 2306.8721
+      "status": "applied",
+      "wrong_rate": 2306.414
     },
     {
       "applied": false,
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-11-12T02:32:01+00:00",
+  "generated_at": "2026-11-12T02:33:28+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -2731,6 +2731,10 @@
       {
         "rate": 2305.8848,
         "t": "2026-11-11T08:30:55+00:00"
+      },
+      {
+        "rate": 2309.0132,
+        "t": "2026-11-12T02:33:28+00:00"
       }
     ],
     "weremit|HKD|IDR": [
@@ -3452,7 +3456,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-11-12T02:32:01+00:00",
+      "captured_at": "2026-11-12T02:33:28+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3494,7 +3498,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-11-12T02:32:01+00:00",
+      "captured_at": "2026-11-12T02:33:28+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3514,15 +3518,15 @@
       "is_promo_rate": false,
       "method": "web",
       "needs_review": false,
-      "note": "貓熊匯率 standard rate (+0.02% vs 昨日)",
+      "note": "貓熊匯率 standard rate (+0.02% vs 昨日); corrected from 2306.41",
       "promo": null,
-      "rate": 2306.414,
+      "rate": 2309.0132,
       "raw_ref": null,
       "review_reason": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-11-12T02:32:01+00:00",
+      "captured_at": "2026-11-12T02:33:28+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
