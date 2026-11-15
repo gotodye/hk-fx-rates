@@ -1,5 +1,5 @@
 {
-  "heartbeat": "2026-11-14T23:30:25+00:00",
+  "heartbeat": "2026-11-15T00:30:41+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
@@ -7,12 +7,12 @@
       "note": "vision OCR; 04/11/2026 10:26 am; Kurs Kirim",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=EG7LD5NgdBwQ7kNvwGJ7035&_nc_oc=AdpWtyeKU3Hu7hfYuYDoOI20GQ4jyh39QmJDL3ositwXZQN2XpMhzMu2SYAjjQD78pI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=RUcPKIKzPrVmOmaXoPRnyQ&_nc_ss=7a289&oh=00_AQS1e2-PZdb8tSbN5w1BINVUR52q5hSTW0fdqim0I6xlDw&oe=6AFEA639",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=EG7LD5NgdBwQ7kNvwGJ7035&_nc_oc=AdpWtyeKU3Hu7hfYuYDoOI20GQ4jyh39QmJDL3ositwXZQN2XpMhzMu2SYAjjQD78pI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=0m93vYJvpDtyznHzaa80_w&_nc_ss=7a289&oh=00_AQSrxyhRtUgsrMTtmausmOUOGe9Vp4pljWP3GlTFfYu_1w&oe=6AFEDE79",
       "promo": {
         "rate": 2277.0,
         "note": "RATE CANTIK / KURS KIRIM 2277 (berlaku untuk kiriman di bawah HK$8000 di cabang tertentu pada hari Sabtu & Minggu). Kurs Tukar Cantik: 2220.",
         "date_text": "",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pu78hfXheasQ7kNvwGhN4fC&_nc_oc=AdrM0C-_C5DNQotL03c5GD6RrBHCeIME5ltLe7Cw09jNnJ2LDJf8sB3JXBT6ol5jlus&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=xVWVDIPk_hjzIM0rzvhy_A&_nc_ss=7b289&oh=00_AQQoMhnXRKLxt_O4ob_ZzIQn_GXNL36kfkFLOZ2J75Bl9Q&oe=6AFEDADF"
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pu78hfXheasQ7kNvwGhN4fC&_nc_oc=AdrM0C-_C5DNQotL03c5GD6RrBHCeIME5ltLe7Cw09jNnJ2LDJf8sB3JXBT6ol5jlus&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=YrRNhGYPNNIUEQu9FDBSZQ&_nc_ss=7b289&oh=00_AQQnbDGes4zkTAxeYJ_tVDoq7Kxsif4jBl8frV_BodO6Zw&oe=6AFEDADF"
       },
       "is_promo_rate": false,
       "card_date": "2026-11-04",
@@ -20,14 +20,14 @@
       "conflict_cards": []
     },
     "bri|HKD|IDR": {
-      "rate": 2315.0,
-      "note": "vision OCR; 13 November 2026; Kurs Hari Ini",
-      "confidence": 1.0,
+      "rate": 2318.0,
+      "note": "vision OCR; 11/12/2026; Pergerakan Kurs 7 Hari Terakhir: latest rate for 11/12/2026 is 2318",
+      "confidence": 0.95,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/903684785_1505104384801249_1987786540258220101_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LZslpkB4N3kQ7kNvwEF7zam&_nc_oc=AdoY0Gpjob-5WCygDfbQ5pVY_n_JwaEzwAxMG7aFZx80pHIXJxLuQi1nPkCH4jBbIkM&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=d8snk3BKeFQobagqQJE3dg&_nc_ss=7b289&oh=00_AQTsFDsf2zGNewfbI9wD22Dlzrwy991c10ynI1w2TmliCw&oe=6AFEAD32",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/902049174_1001259629685578_5402129899047277128_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fDtbaOwMoaUQ7kNvwE9Egc6&_nc_oc=Adpzk30GeObme52zSjqISj4nXh7cCRD0sP0f9-d45VbnpymnQDG3hhRJdRtf9pQIQ9U&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Bq8UcDrwe7pZdvbVnISz-A&_nc_ss=7b289&oh=00_AQR7sXf-M6Z8LqvjiU4NCZAFPoHPnJaZg5g32mdcbNfvTw&oe=6AFECB47",
       "promo": null,
       "is_promo_rate": false,
-      "card_date": null,
+      "card_date": "2026-12-11",
       "date_conflict": false,
       "conflict_cards": []
     }
