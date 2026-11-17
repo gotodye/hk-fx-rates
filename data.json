@@ -297,7 +297,7 @@
       "wrong_rate": 2316.9954
     },
     {
-      "applied": true,
+      "applied": false,
       "correct_rate": 2315.0,
       "corrected_at": "2026-11-16T02:43:05.149Z",
       "key": "chandra|HKD|IDR",
@@ -305,22 +305,22 @@
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=EG7LD5NgdBwQ7kNvwGJ7035&_nc_oc=AdpWtyeKU3Hu7hfYuYDoOI20GQ4jyh39QmJDL3ositwXZQN2XpMhzMu2SYAjjQD78pI&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=qnxD6s02K7S1koknc5c4Gg&_nc_ss=7a289&oh=00_AQT-YZPgu7FcnVWTlanAdcEsEh7AuX1Y_nUOjkYLTk9U7g&oe=6B018179",
-      "source_rate": 2303.0,
-      "status": "applied",
+      "source_rate": 2315.0,
+      "status": "expired (source changed)",
       "wrong_rate": 2303.0
     },
     {
-      "applied": false,
-      "correct_rate": 2305.0,
-      "corrected_at": "2026-11-12T02:15:36.674Z",
+      "applied": true,
+      "correct_rate": 2318.0,
+      "corrected_at": "2026-11-17T02:36:28.196Z",
       "key": "bri|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "BRI Remittance",
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/913024554_2512006089607415_2413365380557296336_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=bczEFcHYQ80Q7kNvwFEHLWB&_nc_oc=Adohqqmt_QHeE8iFRIgjR0jlo2gPmv00PJhjz7kIulyZDO_-5144Gm-4VAe1pe7dET8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=th6Pqs9iBsCu-rVAu9kUxg&_nc_ss=7a289&oh=00_AQT09LokDd7yUgyfmMBnXDGPNsbEtCY2OQXviBI9zQNWcA&oe=6B01A1B7",
       "source_rate": 2317.0,
-      "status": "expired (source changed)",
-      "wrong_rate": 2302.0
+      "status": "applied",
+      "wrong_rate": 2317.0
     },
     {
       "applied": false,
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-11-17T02:22:40+00:00",
+  "generated_at": "2026-11-17T02:36:45+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -917,6 +917,10 @@
       {
         "rate": 2317.0,
         "t": "2026-11-16T05:00:55+00:00"
+      },
+      {
+        "rate": 2318.0,
+        "t": "2026-11-17T02:36:45+00:00"
       }
     ],
     "chandra|HKD|IDR": [
@@ -3660,7 +3664,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-11-17T02:22:40+00:00",
+      "captured_at": "2026-11-17T02:36:45+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3680,9 +3684,9 @@
       "is_promo_rate": false,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; 16 November 2026; Kurs Hari Ini",
+      "note": "vision OCR; 16 November 2026; Kurs Hari Ini; corrected from 2317",
       "promo": null,
-      "rate": 2317.0,
+      "rate": 2318.0,
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/913024554_2512006089607415_2413365380557296336_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=bczEFcHYQ80Q7kNvwFEHLWB&_nc_oc=Adohqqmt_QHeE8iFRIgjR0jlo2gPmv00PJhjz7kIulyZDO_-5144Gm-4VAe1pe7dET8&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=th6Pqs9iBsCu-rVAu9kUxg&_nc_ss=7a289&oh=00_AQT09LokDd7yUgyfmMBnXDGPNsbEtCY2OQXviBI9zQNWcA&oe=6B01A1B7",
       "review_reason": null,
       "source_url": "https://www.facebook.com/briglobalfinancial"
@@ -3707,7 +3711,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-11-17T02:22:40+00:00",
+      "captured_at": "2026-11-17T02:36:45+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3735,7 +3739,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-11-17T02:22:40+00:00",
+      "captured_at": "2026-11-17T02:36:45+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
