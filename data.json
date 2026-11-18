@@ -2,7 +2,7 @@
   "card_review": {},
   "changes": [
     {
-      "changed_at": "2026-11-18T02:16:07+00:00",
+      "changed_at": "2026-11-18T02:16:28+00:00",
       "new_rate": 2316.5096,
       "old_rate": 2319.6171,
       "pair": "HKD->IDR",
@@ -10,7 +10,7 @@
       "to_ccy": "IDR"
     },
     {
-      "changed_at": "2026-11-18T02:15:25+00:00",
+      "changed_at": "2026-11-18T02:16:28+00:00",
       "new_rate": 2316.851,
       "old_rate": 2322.301,
       "pair": "HKD->IDR",
@@ -284,17 +284,17 @@
   ],
   "correction_log": [
     {
-      "applied": false,
-      "correct_rate": 2323.4855,
-      "corrected_at": "2026-11-17T02:38:06.857Z",
+      "applied": true,
+      "correct_rate": 2317.6275,
+      "corrected_at": "2026-11-18T02:16:13.632Z",
       "key": "pandaremit|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Panda Remit",
       "raw_ref": null,
       "source_rate": 2319.2327,
-      "status": "expired (source changed)",
-      "wrong_rate": 2321.1206
+      "status": "applied",
+      "wrong_rate": 2319.2327
     },
     {
       "applied": false,
@@ -345,7 +345,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-11-18T02:16:07+00:00",
+  "generated_at": "2026-11-18T02:16:28+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -662,7 +662,7 @@
       },
       {
         "rate": 2316.851,
-        "t": "2026-11-18T02:15:25+00:00"
+        "t": "2026-11-18T02:16:28+00:00"
       }
     ],
     "bri|HKD|IDR": [
@@ -2959,6 +2959,10 @@
       {
         "rate": 2320.44,
         "t": "2026-11-17T04:00:58+00:00"
+      },
+      {
+        "rate": 2317.6275,
+        "t": "2026-11-18T02:16:28+00:00"
       }
     ],
     "weremit|HKD|IDR": [
@@ -3428,7 +3432,7 @@
       },
       {
         "rate": 2316.5096,
-        "t": "2026-11-18T02:16:07+00:00"
+        "t": "2026-11-18T02:16:28+00:00"
       }
     ],
     "westernunion|HKD|IDR": [
@@ -3728,7 +3732,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-11-18T02:16:07+00:00",
+      "captured_at": "2026-11-18T02:16:28+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3775,7 +3779,7 @@
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-11-18T02:16:07+00:00",
+      "captured_at": "2026-11-18T02:16:28+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3795,15 +3799,15 @@
       "is_promo_rate": false,
       "method": "web",
       "needs_review": false,
-      "note": "貓熊匯率 standard rate (+0.00% vs 昨日)",
+      "note": "貓熊匯率 standard rate (+0.00% vs 昨日); corrected from 2319.23",
       "promo": null,
-      "rate": 2319.2327,
+      "rate": 2317.6275,
       "raw_ref": null,
       "review_reason": null,
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-11-18T02:16:07+00:00",
+      "captured_at": "2026-11-18T02:16:28+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
