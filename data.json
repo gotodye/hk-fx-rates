@@ -2,6 +2,14 @@
   "card_review": {},
   "changes": [
     {
+      "changed_at": "2026-11-18T05:11:19+00:00",
+      "new_rate": 2319.0,
+      "old_rate": 2303.0,
+      "pair": "HKD->IDR",
+      "provider": "Chandra Remittance",
+      "to_ccy": "IDR"
+    },
+    {
       "changed_at": "2026-11-18T05:10:58+00:00",
       "new_rate": 2317.0,
       "old_rate": 2322.0,
@@ -305,17 +313,17 @@
       "wrong_rate": 2319.2327
     },
     {
-      "applied": false,
-      "correct_rate": 2316.0,
-      "corrected_at": "2026-11-18T02:16:31.551Z",
+      "applied": true,
+      "correct_rate": 2319.0,
+      "corrected_at": "2026-11-18T05:11:01.829Z",
       "key": "chandra|HKD|IDR",
       "note": "",
       "pair": "HKD->IDR",
       "provider": "Chandra Remittance",
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=V52v6lf0P1QQ7kNvwEZhE8x&_nc_oc=AdoqBjwhRRxX_SwefL_bjhZQn66F6XYkXY8BcUDBu2J-LqSfH42uMpjM43PvqhRrOEo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=MufVRHnfaqRGERx1EosZEg&_nc_ss=7a289&oh=00_AQQIMp6OOB46Cnz5qu_QEeV1O_q2je0La_doKfp2vs5e9Q&oe=6B030B39",
       "source_rate": 2303.0,
-      "status": "expired (source changed)",
-      "wrong_rate": 2319.0
+      "status": "applied",
+      "wrong_rate": 2303.0
     },
     {
       "applied": false,
@@ -353,7 +361,7 @@
   "fb_health": {},
   "fb_stale": {},
   "fb_value_stale": {},
-  "generated_at": "2026-11-18T05:10:58+00:00",
+  "generated_at": "2026-11-18T05:11:19+00:00",
   "history": {
     "alipayhk|HKD|IDR": [
       {
@@ -1511,6 +1519,10 @@
       {
         "rate": 2303.0,
         "t": "2026-11-18T02:30:55+00:00"
+      },
+      {
+        "rate": 2319.0,
+        "t": "2026-11-18T05:11:19+00:00"
       }
     ],
     "eui|HKD|IDR": [
@@ -3760,7 +3772,7 @@
   },
   "latest": {
     "alipayhk|HKD|IDR": {
-      "captured_at": "2026-11-18T05:10:58+00:00",
+      "captured_at": "2026-11-18T05:11:19+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3794,20 +3806,20 @@
       "is_promo_rate": false,
       "method": "fb_ocr",
       "needs_review": false,
-      "note": "vision OCR; 04/11/2026 10:26 am; Kurs Kirim",
+      "note": "vision OCR; 04/11/2026 10:26 am; Kurs Kirim; corrected from 2303",
       "promo": {
         "date_text": "",
         "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mQ8dMjf-v_gQ7kNvwEsakqs&_nc_oc=Adq-AzMglq8ZP2RZjF83blhxlo7XOzoPD-MQh1NsJbnguDfWFdp2p8wRE3hQNDQnahs&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Y9S7WSZ8TetUQDztXOr6lQ&_nc_ss=7b289&oh=00_AQTXprwl9wGaEUVCO2PFqTklDc3MJFhrX3CVUfv5mpqw4Q&oe=6B03079F",
         "note": "RATE CANTIK / KURS KIRIM 2277 (berlaku untuk kiriman di bawah HK$8000 di cabang tertentu pada hari Sabtu & Minggu). Kurs Tukar Cantik: 2220.",
         "rate": 2277.0
       },
-      "rate": 2303.0,
+      "rate": 2319.0,
       "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/890049475_1101924779279531_2327317040751556711_n.png?stp=dst-jpg_tt6&cstp=mx1600x1341&ctp=s600x600&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=V52v6lf0P1QQ7kNvwEZhE8x&_nc_oc=AdoqBjwhRRxX_SwefL_bjhZQn66F6XYkXY8BcUDBu2J-LqSfH42uMpjM43PvqhRrOEo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=MufVRHnfaqRGERx1EosZEg&_nc_ss=7a289&oh=00_AQQIMp6OOB46Cnz5qu_QEeV1O_q2je0La_doKfp2vs5e9Q&oe=6B030B39",
       "review_reason": null,
       "source_url": "https://www.facebook.com/ChandraPusat"
     },
     "eui|HKD|IDR": {
-      "captured_at": "2026-11-18T05:10:58+00:00",
+      "captured_at": "2026-11-18T05:11:19+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
@@ -3835,7 +3847,7 @@
       "source_url": "https://prod.pandaremit.com/pricing/rate/HKD/IDR"
     },
     "weremit|HKD|IDR": {
-      "captured_at": "2026-11-18T05:10:58+00:00",
+      "captured_at": "2026-11-18T05:11:19+00:00",
       "card_date": null,
       "confidence": 1.0,
       "is_promo_rate": false,
