@@ -1,5 +1,5 @@
 {
-  "heartbeat": "2026-11-20T23:30:37+00:00",
+  "heartbeat": "2026-11-21T00:00:36+00:00",
   "fetch_ok": true,
   "records": {
     "chandra|HKD|IDR": {
@@ -7,12 +7,12 @@
       "note": "vision OCR; PROMO; 10/10/2026 - 11/10/2026 8:00 am; RATE CANTIK / KURS KIRIM 2277 (berlaku untuk kiriman uang DIBAWAH HK$8000 di cabang tertentu pada hari SABTU & MINGGU)",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/ChandraPusat",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=rUs8bKNj8HsQ7kNvwFy0Qp4&_nc_oc=AdqJNZgcQLPeRceabuDLNJy3rg724pVWjMdHPUfLeoIgItaugOTWlhlVlx_WehF9EVo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=o0WVSvaN1okX3Xf2uBGaNQ&_nc_ss=7b289&oh=00_AQQMHojrRtasg_JF8_V8y059KCXOZ0eRZdWESXqX01ZABw&oe=6B06C3DF",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=rUs8bKNj8HsQ7kNvwFy0Qp4&_nc_oc=AdqJNZgcQLPeRceabuDLNJy3rg724pVWjMdHPUfLeoIgItaugOTWlhlVlx_WehF9EVo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Hn4BTdL5fniCAE24HvPziQ&_nc_ss=7b289&oh=00_AQRfcKNFjPbwHfl6RT1SLtgFeFQY3CMEfxBU3els8bazQQ&oe=6B06C3DF",
       "promo": {
         "rate": 2277.0,
         "note": "RATE CANTIK / KURS KIRIM 2277 (berlaku untuk kiriman uang DIBAWAH HK$8000 di cabang tertentu pada hari SABTU & MINGGU)",
         "date_text": "",
-        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=rUs8bKNj8HsQ7kNvwFy0Qp4&_nc_oc=AdqJNZgcQLPeRceabuDLNJy3rg724pVWjMdHPUfLeoIgItaugOTWlhlVlx_WehF9EVo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=o0WVSvaN1okX3Xf2uBGaNQ&_nc_ss=7b289&oh=00_AQQMHojrRtasg_JF8_V8y059KCXOZ0eRZdWESXqX01ZABw&oe=6B06C3DF"
+        "image": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/844177328_2986800305012859_7432537746140613964_n.png?stp=dst-jpg_tt6&cstp=mx1638x2048&ctp=s640x640&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=rUs8bKNj8HsQ7kNvwFy0Qp4&_nc_oc=AdqJNZgcQLPeRceabuDLNJy3rg724pVWjMdHPUfLeoIgItaugOTWlhlVlx_WehF9EVo&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=Hn4BTdL5fniCAE24HvPziQ&_nc_ss=7b289&oh=00_AQRfcKNFjPbwHfl6RT1SLtgFeFQY3CMEfxBU3els8bazQQ&oe=6B06C3DF"
       },
       "is_promo_rate": true,
       "card_date": "2026-10-11",
@@ -20,11 +20,11 @@
       "conflict_cards": []
     },
     "bri|HKD|IDR": {
-      "rate": 2322.0,
-      "note": "vision OCR; 19 November 2026; KURS HARI INI: 2322 (*berlaku di aplikasi remit.go! dan seluruh cabang BRI Global Financial)",
+      "rate": 2320.0,
+      "note": "vision OCR; 19 November 2026; KURS HARI INI",
       "confidence": 1.0,
       "source_url": "https://www.facebook.com/briglobalfinancial",
-      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/912709264_1154113390448589_5368551845119210098_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=UmJkVcfIHmoQ7kNvwGX6yay&_nc_oc=AdrwVYFAEc743bsE8VWqZs63iGCfDsjUR4vwoOLet5iq-CXmKGp8EgVU39szEsCEyhU&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=oXssugkfGZlxyfI8vA_abg&_nc_ss=7b289&oh=00_AQQjlBkxHHEsNZ1yuMlBuYtWaNt3dXvpIX3JAVo3nrBTuw&oe=6B069A8F",
+      "raw_ref": "https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.99422-6/913553700_2560571354352641_4474556526912702102_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s590x590&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=56CkQT6cxlAQ7kNvwGFeBUM&_nc_oc=Adp4HhyGC9MC3orhwE_tjWwhDkEjpWia09SisUAwoHoddPUYZSq2W8G3Owz8KzptC9A&_nc_zt=14&_nc_ht=scontent.ftpe14-1.fna&_nc_gid=C-Ry0s7FVgcrO5kzSmDsmA&_nc_ss=7b289&oh=00_AQRTRVRTB-k3sUQXWOfacW-87gxgt4d3qiHOmVvKaTzecg&oe=6B06BE43",
       "promo": null,
       "is_promo_rate": false,
       "card_date": null,
